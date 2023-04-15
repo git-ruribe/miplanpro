@@ -28,8 +28,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <!-- Avatar image in top left corner -->
   <img src="imagenes/Nikeses.jpg" style="width:100%">
   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
+    <i class="fa fa-users w3-xxlarge"></i>
+    <p>CLUB</p>
   </a>
   <a href="#calendar" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-trophy w3-xxlarge"></i>
@@ -48,7 +48,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">CLUB</a>
     <a href="#calendar" class="w3-bar-item w3-button" style="width:25% !important">RUN!</a>
     <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">FAQ</a>
     <a href="#videos" class="w3-bar-item w3-button" style="width:25% !important">LINKS</a>
@@ -70,24 +70,53 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       <h2 class="w3-text-light-grey">¿Quiénes somos?</h2>
       <hr style="width:200px" class="w3-opacity">
       <p>¡Somos un grupo de amigos que queremos CORRER! Formamos este grupo para integrarnos, conocer mas peronas que comparten este gusto y apoyarnos entre nosostros compartiendo experiencias para juntos mejorar en la práctica de este deporte.</p>
-      <h3>Estadísticas iniciales</h3>
-      <p><span class="w3-badge w3-large w3-padding w3-red">152</span> Personas inscritas</p>
-      <p><span class="w3-badge w3-large w3-padding w3-red">88</span> Hombres <span class="w3-badge w3-large w3-padding w3-red">64</span> Mujeres </p>
-      <p><span class="w3-badge w3-large w3-padding w3-red">34.5</span> Edad promedio (entre 23 y 59 años)</p>
-      <p><span class="w3-badge w3-large w3-padding w3-green">75</span> En grupo de Whatsapp</p>
-      <p><span class="w3-badge w3-large w3-padding w3-green">45</span> En club de Strava</p>
-      <p><span class="w3-badge w3-large w3-padding w3-blue">45%</span> Por Salud <span class="w3-badge w3-large w3-padding w3-blue">38%</span> Reto Personal <span class="w3-badge w3-large w3-padding w3-blue">8%</span> Siempre me ha gustado </p>
-      <canvas id="graphLevel" style="width:100%;max-width:600px;max-height:300px;"></canvas>
-      <br><br>
-      <canvas id="graphTenis" style="width:100%;max-width:600px;max-height:300px;"></canvas>
+      <button onclick="showDiv('Stats')" class="w3-button w3-gray w3-block w3-left-align">
+        <h3>Inicio</h3></button>
+      <div id="Stats" class="w3-container w3-hide">
+        <h4>Inscripciones iniciales</h4>
+        <p><span class="w3-badge w3-large w3-padding w3-red">152</span> Personas inscritas</p>
+        <p><span class="w3-badge w3-large w3-padding w3-red">88</span> Hombres <span class="w3-badge w3-large w3-padding w3-red">64</span> Mujeres </p>
+        <p><span class="w3-badge w3-large w3-padding w3-red">34.5</span> Edad promedio (entre 23 y 59 años)</p>
+        <h4>Participación antes de Kick-Off</h4>
+        <p><span class="w3-badge w3-large w3-padding w3-green">75</span> En grupo de Whatsapp</p>
+        <p><span class="w3-badge w3-large w3-padding w3-green">45</span> En club de Strava</p>
+        <h4>Encuestas</h4>
+        <h6>¿Por qué empezaste a correr?</h6>
+        <p><span class="w3-badge w3-large w3-padding w3-blue">21</span> Por Salud </p>
+        <p><span class="w3-badge w3-large w3-padding w3-blue">17</span> Reto Personal </p>
+        <p><span class="w3-badge w3-large w3-padding w3-blue"> 4</span> Siempre me ha gustado </p>
+        <p><span class="w3-badge w3-large w3-padding w3-blue"> 2</span> Otro </p>
+        <canvas id="graphLevel" style="width:100%;max-width:600px;max-height:300px;"></canvas>
+        <br><br>
+        <canvas id="graphTenis" style="width:100%;max-width:600px;max-height:300px;"></canvas>
+        <br><br>
+        <canvas id="graphAudio" style="width:100%;max-width:600px;max-height:300px;"></canvas>
+      </div>
+      <br>
+      <button onclick="showDiv('Progress')" class="w3-button w3-gray w3-block w3-left-align">
+        <h3>Progreso</h3></button>
+        <div id="Progress" class="w3-container w3-hide">
+          <h4>Inscripciones</h4>
+        </div>
     </div>  
 
-    
+    <script>
+      function showDiv(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+      </script>
+
 
     <script>
 
     const nivel = document.getElementById('graphLevel');
     const tenis = document.getElementById('graphTenis');
+    const audioS = document.getElementById('graphAudio');
 
     new Chart(tenis, {
       type: 'bar',
@@ -140,79 +169,38 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
                     }
             },
             legend: {
-              position: 'chartArea'
+              position: 'left'
             }
         }
     }
     });
 
-
-
-    var xTenisValues = ["<5K", "5K", "10K", "21K", "42K", ">50K"];
-    var yTenisValues = [22, 7, 7, 6, 4, 14];
-    var barTenisColors = [
-      "#ffbe0b",
-      "#fd8a09",
-      "#fb5607",
-      "#ff006e",
-      "#8338ec",
-      "#3a86ff",
-    ];
-
-    var xLevelValues = ["<5K", "5K", "10K", "21K", "42K", ">50K"];
-    var yLevelValues = [25, 12, 4, 6, 1,0];
-    var barLevelColors = [
-      "#ffbe0b",
-      "#fd8a09",
-      "#fb5607",
-      "#ff006e",
-      "#8338ec",
-      "#3a86ff",
-    ];
-
-    /*
-    new Chart("graphTenis", {
-      type: "bar",
+    new Chart(audioS, {
+      type: 'doughnut',
       data: {
-        labels: xTenisValues,
+        labels: ["SI", "NO"],
         datasets: [{
-          backgroundColor: barTenisColors,
-          data: yTenisValues
+          label: 'Respuestas: ',
+          data: [29, 11],
+          borderWidth: 1
         }]
       },
       options: {
-        title: {
-          display: true,
-          text: "¿Qué marca de tenis usas?"
-        },
-        scales: {
-          y: {
-            beginAtZero: true
-          }
+        plugins: {
+            title: {
+                display: true,
+                text: '¿Corres con audífonos?',
+                font: {
+                        size: 18
+                    }
+            },
+            legend: {
+              position: 'left'
+            }
         }
-      }
+    }
     });
 
-    new Chart("graphLevel", {
-      type: "pie",
-      data: {
-        labels: xLevelValues,
-        datasets: [{
-          backgroundColor: barLevelColors,
-          data: yLevelValues
-        }]
-      },
-      options: {
-        title: {
-          display: true,
-          text: "¿Qué distancia puedes correr actualmente? (48 respuestas)"
-        },
-        legend: {
-          position: "left"
-        }
-      }
-    });
-*/
 
     </script>
 
@@ -220,7 +208,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 
     <div class="w3-padding-64 w3-content w3-text-grey" id="calendar">
-      <h2 class="w3-text-light-grey">Calendario</h2>
+      <h2 class="w3-text-light-grey">RUN! - Calendario</h2>
       <hr style="width:200px" class="w3-opacity">
   
       <div class="w3-section"></div>
@@ -309,7 +297,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">Conceptos Base</h2>
+    <h2 class="w3-text-light-grey">FAQ - Conceptos Base</h2>
     <hr style="width:200px" class="w3-opacity">
     <h3 class="w3-padding-16 w3-text-light-grey">Correr vs Caminar</h3>
     <p>En términos simples, correr es el acto de mover tu cuerpo de manera rápida y constante utilizando tus piernas y músculos principales como los glúteos, los cuádriceps y los isquiotibiales. Es una actividad física que puede ser realizada en interiores o al aire libre y no requiere de ningún equipo especializado, lo que la convierte en una actividad accesible para todos.</p>
@@ -371,7 +359,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   
   <!-- Portfolio Section -->
   <div class="w3-padding-64 w3-content" id="videos">
-    <h2 class="w3-text-light-grey">Recursos útiles</h2>
+    <h2 class="w3-text-light-grey">LINKS - Recursos útiles</h2>
     <hr style="width:200px" class="w3-opacity">
 
     <!-- Grid for photos -->
