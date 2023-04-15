@@ -18,6 +18,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
 </head>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 <body class="w3-black">
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
@@ -62,6 +65,160 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </header>
 
     <!-- Próximos eventos -->
+
+    <div class="w3-padding-64 w3-content w3-text-grey" id="somos">
+      <h2 class="w3-text-light-grey">¿Quiénes somos?</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p>¡Somos un grupo de amigos que queremos CORRER! Formamos este grupo para integrarnos, conocer mas peronas que comparten este gusto y apoyarnos entre nosostros compartiendo experiencias para juntos mejorar en la práctica de este deporte.</p>
+      <h3>Estadísticas iniciales</h3>
+      <p><span class="w3-badge w3-large w3-padding w3-red">152</span> Personas inscritas</p>
+      <p><span class="w3-badge w3-large w3-padding w3-red">88</span> Hombres <span class="w3-badge w3-large w3-padding w3-red">64</span> Mujeres </p>
+      <p><span class="w3-badge w3-large w3-padding w3-red">34.5</span> Edad promedio (entre 23 y 59 años)</p>
+      <p><span class="w3-badge w3-large w3-padding w3-green">75</span> En grupo de Whatsapp</p>
+      <p><span class="w3-badge w3-large w3-padding w3-green">45</span> En club de Strava</p>
+      <p><span class="w3-badge w3-large w3-padding w3-blue">45%</span> Por Salud <span class="w3-badge w3-large w3-padding w3-blue">38%</span> Reto Personal <span class="w3-badge w3-large w3-padding w3-blue">8%</span> Siempre me ha gustado </p>
+      <canvas id="graphLevel" style="width:100%;max-width:600px;max-height:300px;"></canvas>
+      <br><br>
+      <canvas id="graphTenis" style="width:100%;max-width:600px;max-height:300px;"></canvas>
+    </div>  
+
+    
+
+    <script>
+
+    const nivel = document.getElementById('graphLevel');
+    const tenis = document.getElementById('graphTenis');
+
+    new Chart(tenis, {
+      type: 'bar',
+      data: {
+        labels: ["Nike", "Adidas", "Asics", "Puma", "Brooks", "Otros"],
+        datasets: [{
+          label: 'Marca de tenis',
+          data: [22, 7, 7, 6, 4, 14],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        },
+        plugins: {
+            title: {
+                display: true,
+                text: '¿Qué marca de tenis usas?',
+                font: {
+                        size: 18
+                    }
+            },
+            legend: {
+              display: false
+            }
+        }
+      }
+    });
+
+    new Chart(nivel, {
+      type: 'pie',
+      data: {
+        labels: ["<5K", "5K", "10K", "21K", "42K", ">50K"],
+        datasets: [{
+          label: 'Respuestas: ',
+          data: [25, 12, 4, 6, 1,0],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        plugins: {
+            title: {
+                display: true,
+                text: '¿Qué distancia puedes correr actualmente?',
+                font: {
+                        size: 18
+                    }
+            },
+            legend: {
+              position: 'chartArea'
+            }
+        }
+    }
+    });
+
+
+
+    var xTenisValues = ["<5K", "5K", "10K", "21K", "42K", ">50K"];
+    var yTenisValues = [22, 7, 7, 6, 4, 14];
+    var barTenisColors = [
+      "#ffbe0b",
+      "#fd8a09",
+      "#fb5607",
+      "#ff006e",
+      "#8338ec",
+      "#3a86ff",
+    ];
+
+    var xLevelValues = ["<5K", "5K", "10K", "21K", "42K", ">50K"];
+    var yLevelValues = [25, 12, 4, 6, 1,0];
+    var barLevelColors = [
+      "#ffbe0b",
+      "#fd8a09",
+      "#fb5607",
+      "#ff006e",
+      "#8338ec",
+      "#3a86ff",
+    ];
+
+    /*
+    new Chart("graphTenis", {
+      type: "bar",
+      data: {
+        labels: xTenisValues,
+        datasets: [{
+          backgroundColor: barTenisColors,
+          data: yTenisValues
+        }]
+      },
+      options: {
+        title: {
+          display: true,
+          text: "¿Qué marca de tenis usas?"
+        },
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+
+    new Chart("graphLevel", {
+      type: "pie",
+      data: {
+        labels: xLevelValues,
+        datasets: [{
+          backgroundColor: barLevelColors,
+          data: yLevelValues
+        }]
+      },
+      options: {
+        title: {
+          display: true,
+          text: "¿Qué distancia puedes correr actualmente? (48 respuestas)"
+        },
+        legend: {
+          position: "left"
+        }
+      }
+    });
+*/
+
+    </script>
+
+
+
+
     <div class="w3-padding-64 w3-content w3-text-grey" id="calendar">
       <h2 class="w3-text-light-grey">Calendario</h2>
       <hr style="width:200px" class="w3-opacity">
@@ -339,6 +496,17 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 <!-- END PAGE CONTENT -->
 </div>
+
+<script>
+  function toggleVisible(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  </script>
 
 </body>
 </html>
