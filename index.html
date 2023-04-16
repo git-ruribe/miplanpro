@@ -59,7 +59,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">Club de </span>Corredores</h1>
+    <h1 class="w3-jumbo"><span class="w3-hide-small">Club de </span>Corredores CX</h1>
     <p>Actualizado Abril 14 de 2023.</p>
     <img src="imagenes/jogging-7705055_1920.jpg" alt="boy" class="w3-image" width="992">
   </header>
@@ -69,7 +69,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <div class="w3-padding-64 w3-content w3-text-grey" id="somos">
       <h2 class="w3-text-light-grey">¿Quiénes somos?</h2>
       <hr style="width:200px" class="w3-opacity">
+      <!-- 
       <p>¡Somos un grupo de amigos que queremos CORRER! Formamos este grupo para integrarnos, conocer mas peronas que comparten este gusto y apoyarnos entre nosostros compartiendo experiencias para juntos mejorar en la práctica de este deporte.</p>
+     -->
       <button onclick="showDiv('Stats')" class="w3-button w3-gray w3-block w3-left-align">
         <h3>Inicio</h3></button>
       <div id="Stats" class="w3-container w3-hide">
@@ -95,7 +97,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       <br>
       <button onclick="showDiv('Progress')" class="w3-button w3-gray w3-block w3-left-align">
         <h3>Progreso</h3></button>
-        <div id="Progress" class="w3-container">
+        <div id="Progress" class="w3-container w3-hide w3-show">
           <h4>Club en Strava</h4>
           <p>Se registran las actividades de los miembros del club que correspondan a carrera (run) y que estén cargadas en la app de Strava.</p>
           <iframe allowtransparency frameborder='0' height='160' scrolling='no' src='https://www.strava.com/clubs/1123097/latest-rides/4fbbaae3aab06167dc15db3e9d68ccb617cad57e?show_rides=false' width='300'></iframe>
@@ -321,11 +323,117 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
     <h2 class="w3-text-light-grey">FAQ - Conceptos Base</h2>
     <hr style="width:200px" class="w3-opacity">
-    <h3 class="w3-padding-16 w3-text-light-grey">Correr vs Caminar</h3>
-    <p>En términos simples, correr es el acto de mover tu cuerpo de manera rápida y constante utilizando tus piernas y músculos principales como los glúteos, los cuádriceps y los isquiotibiales. Es una actividad física que puede ser realizada en interiores o al aire libre y no requiere de ningún equipo especializado, lo que la convierte en una actividad accesible para todos.</p>
-    <p>Más allá de los beneficios físicos, correr puede tener un impacto positivo en tu bienestar mental y emocional. Muchas personas encuentran la carrera como una forma efectiva de reducir el estrés, aumentar la confianza en sí mismos y mejorar su salud general.</p>
-    <p>Como corredor, es importante que comprendas la importancia de una buena técnica de carrera, el uso de ropa y calzado adecuados, y cómo programar tus entrenamientos de manera efectiva para evitar lesiones y obtener los resultados deseados. Como tu entrenador virtual, mi objetivo es ayudarte a alcanzar tus metas y disfrutar del proceso de correr, para que puedas sentirte fuerte, saludable y feliz en el camino.</p>
-    
+    <h3 class="w3-padding-16 w3-text-light-grey">Diferencia entre Correr y Caminar</h3>
+    <p>La principal diferencia entre correr y caminar es la velocidad y el patrón de movimiento. Al correr, se levantan ambos pies del suelo a la vez y se mantiene un período de suspensión en el aire, mientras que al caminar, siempre hay un pie en contacto con el suelo y nunca hay un período de suspensión en el aire. Además, correr suele requerir más esfuerzo cardiovascular y muscular que caminar.</p>
+
+    <h3 class="w3-padding-16 w3-text-light-grey">Tipos de entrenamiento</h3>
+
+    <h4 class="w3-padding-16 w3-text-light-grey">Trote fácil "Easy Run"</h4>
+    <p>Un entrenamiento "Easy Run" es un entrenamiento de carrera a un ritmo cómodo y relajado que se realiza a una intensidad baja o moderada. Este tipo de entrenamiento es utilizado para mejorar la resistencia cardiovascular y la capacidad pulmonar, pero sin poner demasiado estrés en el cuerpo. Un "Easy Run" es una sesión de entrenamiento de baja intensidad que ayuda a la recuperación después de entrenamientos más intensos y puede ser realizado como un entrenamiento activo de recuperación o como un entrenamiento de resistencia suave para aumentar el volumen de entrenamiento.</p>
+
+    <h4 class="w3-padding-16 w3-text-light-grey">Intervalos</h4>
+    <p>Un entrenamiento de intervalos es un tipo de entrenamiento en el que se alternan períodos de esfuerzo intenso con períodos de recuperación activa o descanso. Los intervalos pueden ser de diferentes duraciones y pueden realizarse a diferentes intensidades. Este tipo de entrenamiento se utiliza comúnmente para mejorar la velocidad, la potencia y la resistencia en corredores y atletas de resistencia. Por ejemplo, un entrenamiento de intervalos podría consistir en correr rápido durante un minuto, seguido de un período de recuperación activa, como caminar o correr más lento durante un minuto. Esto se repetiría varias veces durante el entrenamiento.</p>
+
+    <h4 class="w3-padding-16 w3-text-light-grey">Tempo</h4>
+    <p>Un entrenamiento de Tempo es un tipo de entrenamiento que se realiza a un ritmo constante y cómodo, pero más rápido que el ritmo de carrera normal. El objetivo de este entrenamiento es mejorar la resistencia y la capacidad de mantener un ritmo constante durante un período de tiempo prolongado. Por lo general, los entrenamientos de Tempo implican correr a un ritmo constante durante un período prolongado de tiempo, generalmente de 20 a 40 minutos, y se realizan a una intensidad que se siente "cómoda pero desafiante".</p>
+
+    <h4 class="w3-padding-16 w3-text-light-grey">Fondo "Long Run"</h4>
+    <p>Un entrenamiento de Fondo o "Long Run" es un tipo de entrenamiento en el que se corre una distancia relativamente larga a un ritmo moderado. Su objetivo principal es mejorar la resistencia y la capacidad aeróbica del corredor, así como aumentar su capacidad para quemar grasa y conservar el glucógeno muscular. Normalmente, los entrenamientos de Long Run se realizan una vez a la semana y la distancia aumenta gradualmente a lo largo del programa de entrenamiento para preparar al corredor para carreras de larga distancia como medias maratones o maratones.</p>
+
+    <h3 class="w3-padding-16 w3-text-light-grey">¿Qué es el Pace (ritmo)?</h3>
+    <p>El pace se refiere a la velocidad a la que corres o te mueves durante una determinada distancia, expresada en minutos por kilómetro (o milla). Es una medida útil para ayudarte a controlar tu ritmo durante una carrera y para establecer metas de tiempo para tus entrenamientos y competiciones.</p>
+    <button onclick="showDiv('paceCalc')" class="w3-btn w3-gray">Calculadora de Pace</button>
+    <div id="paceCalc" class="w3-container w3-hide">
+      <br>
+      <div id="inch-calculator-icw" data-ct="pace_distance" data-cw="100%" data-ch="925" data-cv="MTE2ODE0OTQ3OTY="><div id="inch-calculator-icwh">Pace and Distance Calculator</div><div id="inch-calculator-icwf"><a id="inch-calculator-icwi" href="https://www.inchcalculator.com/pace-distance-calculator/" target="_blank"><img id="inch-calculator-icwl" src="https://cdn.inchcalculator.com/e/inch-calculator-logo-tiny.png" alt="Inch Calculator Logo"><span id="inch-calculator-icwb">Inch Calculator</span></a></div></div>
+    </div>
+    <script src="https://cdn.inchcalculator.com/e/widgets.min.js" async defer></script>
+
+    <h3 class="w3-padding-16 w3-text-light-grey">Ritmo cardiaco</h3>
+    <p>El ritmo cardíaco es la frecuencia a la que late el corazón y se utiliza como un indicador de la intensidad del ejercicio físico. En el contexto de los corredores, el ritmo cardíaco puede utilizarse para controlar la intensidad del entrenamiento.</p>
+    <p><u>Ritmo cardíaco en reposo</u> :  El ritmo cardíaco en reposo es la frecuencia cardíaca cuando el cuerpo está en un estado de reposo total, como cuando estás sentado o acostado y no estás haciendo ninguna actividad física. Es una medida útil para evaluar la salud cardiovascular de una persona, ya que una frecuencia cardíaca en reposo más baja generalmente indica una mayor eficiencia del corazón y un menor riesgo de enfermedades cardiovasculares. Para la mayoría de las personas, el ritmo cardíaco en reposo se sitúa entre 60 y 100 latidos por minuto. Cuando vas adquiriendo una mejor condición física tu ritmo cardíaco en reposo baja.</p>
+    <p><u>Ritmo cardíaco máximo</u> :  El ritmo cardíaco máximo es la frecuencia cardíaca más alta que una persona puede alcanzar durante el ejercicio físico intenso. Es un indicador importante para los atletas y los entrenadores para determinar la intensidad del entrenamiento y diseñar programas de entrenamiento personalizados. La edad y el sexo son factores importantes de diferencias en el ritmo cardíaco máximo.</p>
+
+    <div class="w3-responsive">
+      <table class="w3-table">
+        <tr class="w3-blue">
+          <th>Zona</th>
+          <th>Porcentaje del Ritmo Cardiaco Máximo</th>
+          <th>Características</th>
+          <th>Uso</th>
+        </tr>
+        <tr>
+          <td>Zona 1</td>
+          <td>50-60%</td>
+          <td>Ritmo muy cómodo, conversacional ("echando el chal"). Una caminata rápida apenas trotando.</td>
+          <td>Moverse sin estresar el cuerpo.</td>
+        </tr>
+        <tr>
+          <td>Zona 2</td>
+          <td>60-70%</td>
+          <td>Trote suave, se puede sostener una conversación.</td>
+          <td>Recuperación, mejorar resistencia, quema de grasa.</td>
+        </tr>
+        <tr>
+          <td>Zona 3</td>
+          <td>70-80%</td>
+          <td>Ritmo retador, pero sostenible. Conversación difícil. </td>
+          <td>Mejorar capacidad aeróbica. Carrera.</td>
+        </tr>
+        <tr>
+          <td>Zona 4</td>
+          <td>80-90%</td>
+          <td>Ritmo duro, anaeróbico. Se pueden decir frases cortas.</td>
+          <td>Entrenamiento de velocidad (tempo, intervalos). Mejorar condición. Carreras cortas. </td>
+        </tr>
+        <tr>
+          <td>Zona 5</td>
+          <td>90-100%</td>
+          <td>Ritmo máximo, conversación imposible</td>
+          <td>Entrenamiento intervalos cortos. Mejora velocidad. Perfecciona la zancada.</td>
+        </tr>
+      </table>
+    </div>
+
+    <h3 class="w3-padding-16 w3-text-light-grey">VO2 Max</h3>
+    <p>El VO2Max, también conocido como consumo máximo de oxígeno, es la cantidad máxima de oxígeno que un individuo puede utilizar durante el ejercicio intenso. Es un indicador importante del nivel de condición física de una persona y puede ser utilizado para medir y monitorear la capacidad aeróbica del cuerpo para transportar y utilizar el oxígeno en los músculos durante el ejercicio. En general, cuanto mayor sea el VO2Max, mayor será la capacidad del cuerpo para realizar actividad física intensa y prolongada.</p>
+    <canvas id="graphVO2" style="width:100%;max-width:600px;max-height:300px;"></canvas>
+
+    <script>
+          const graphVO2 = document.getElementById('graphVO2');
+
+          new Chart(graphVO2, {
+            type: 'line',
+            data: {
+              labels: ['20','25','30','35','40','45','50','55','60'],
+              datasets: [{
+                label: 'Minutos',
+                data: [42.65, 35.65, 30.68, 26.98, 24.1, 21.82, 19.93, 18.37, 17.05],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              scales: {
+                y: {
+                  beginAtZero: false,
+                },
+              },
+              plugins: {
+                  title: {
+                      display: true,
+                      text: 'Tiempo estimado 5K en base a VO2 Max Efectivo',
+                      font: {
+                              size: 18
+                          }
+                  },
+                  legend: {
+                    display: false
+                  }
+              }
+            }
+          });
+    </script>
+
     <!--
     <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
     <p class="w3-wide">Photography</p>
@@ -386,7 +494,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
     <!-- Grid for photos -->
     <div class="w3-row-padding" style="margin:0 -16px">
-      <h4 class="w3-text-light-grey">Calculadora  - <a href="https://runninglevel.com/">runninglevel.com</a></h4>
+      <h4 class="w3-text-light-grey">Ranking de velocidad - <a href="https://runninglevel.com/">runninglevel.com</a></h4>
       <p>"RunningLevel existe para hacerte más rápido al ayudarte a entender qué tan rápido eres en comparación con otros corredores y recomendarte los ritmos adecuados para el entrenamiento.</p>
       <p>Nuestras normas se aplican a diferentes edades para que puedas obtener una comparación más justa de tu rendimiento. Al comprender tu rendimiento, puedes ajustar tus objetivos de distancia y velocidad."</p>
       <a href="https://runninglevel.com/" target="_blank" class="w3-bar-item w3-button w3-padding-large w3-hover-opacity" style="background-color: #f0d500; min-width: 155px; margin:0 0">
@@ -395,7 +503,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       <hr style="width:200px" class="w3-opacity">
       <br>
 
-      <h4 class="w3-text-light-grey">Calculadora VO2 Max - <a href="https://runalyze.com/tools/effective-vo2max">runalyze.com</a></h4>
+      <h4 class="w3-text-light-grey">Tiempos por VO2 Max - <a href="https://runalyze.com/tools/effective-vo2max">runalyze.com</a></h4>
       <p>Estima tu VO2 Max efectiva de acuerdo a tu tiempo de carrera o calcula tus tiempos de carrera si conoces tu VO2 Max efectivo.</p>
       <a href="https://runalyze.com/tools/effective-vo2max" target="_blank" class="w3-bar-item w3-button w3-padding-large w3-hover-opacity" style="background-color: #e2e2e2; min-width: 155px; margin:0 0">
         <img src="https://runalyze.com/assets/images/runalyze-swoosh.png" width="112" alt="Running Level">
