@@ -1,1080 +1,1477 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<title>Club de Corredores</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="app-title">Mi Plan Pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #374151;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .section-title {
+            color: #1f2937;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        details {
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            margin-bottom: 0.75rem;
+            background-color: #f9fafb;
+        }
+        summary {
+            font-weight: 700;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            background-color: #e0e7ff;
+            border-radius: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.2s ease-in-out;
+        }
+        summary:hover {
+            background-color: #c7d2fe;
+        }
+        .day-content {
+            padding: 1rem 1.5rem;
+        }
+        .exercise-item {
+            margin-bottom: 1rem;
+            padding: 0.75rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.375rem;
+            background-color: #ffffff;
+            position: relative;
+        }
+        .exercise-title {
+            font-weight: 600;
+            color: #4f46e5;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .exercise-title > span:first-child {
+            flex-grow: 1;
+            margin-right: 0.5rem;
+        }
+        .info-icon {
+            cursor: pointer;
+            color: #6b7280;
+            margin-left: 0.5rem;
+            font-size: 1.2em;
+            line-height: 1;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 1.5em;
+            height: 1.5em;
+            border-radius: 50%;
+            transition: background-color 0.2s;
+        }
+        .info-icon:hover {
+            background-color: #e5e7eb;
+        }
+        .set-buttons button, .session-button, .chart-button {
+            background-color: #4f46e5;
+            color: white;
+            padding: 0.4rem 0.8rem;
+            border-radius: 0.375rem;
+            font-weight: 500;
+            transition: background-color 0.2s;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        .set-buttons button:hover:not(.completed), .session-button:hover:not(.completed), .chart-button:hover {
+            background-color: #4338ca;
+        }
+        .set-buttons button.completed, .session-button.completed {
+            background-color: #10b981;
+        }
+        .set-buttons button.completed:hover, .session-button.completed:hover {
+             background-color: #059669;
+        }
+        .day-status {
+            font-size: 0.9rem;
+            color: #6b7280;
+        }
+        .day-status.completed-day {
+            color: #10b981;
+            font-weight: bold;
+        }
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.3s;
+        }
+        .modal-overlay.visible {
+            visibility: visible;
+            opacity: 1;
+        }
+        .modal-content {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 400px;
+            transform: translateY(-20px);
+            transition: transform 0.3s ease-out;
+            display: flex;
+            flex-direction: column;
+            max-height: 85vh;
+        }
+        .modal-content.chart-modal {
+            max-width: 800px;
+        }
+        .modal-overlay.visible .modal-content {
+            transform: translateY(0);
+        }
+        .modal-content h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        .modal-scrollable-content-area {
+            overflow-y: auto;
+            flex-grow: 1;
+            padding: 0 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .modal-scrollable-content-area label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #374151;
+        }
+        .modal-scrollable-content-area input,
+        .modal-scrollable-content-area select,
+        .modal-scrollable-content-area textarea {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #d1d5db;
+            border-radius: 0.375rem;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+        .modal-scrollable-content-area textarea {
+            min-height: 80px;
+        }
+        #info-modal .modal-scrollable-content-area p {
+             white-space: pre-wrap;
+        }
+        .modal-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 1rem;
+            flex-shrink: 0;
+            margin-top: auto;
+            padding-top: 0.5rem;
+        }
+        .modal-actions button {
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .modal-actions .save-btn {
+            background-color: #4f46e5;
+            color: white;
+        }
+        .modal-actions .save-btn:hover {
+            background-color: #4338ca;
+        }
+        .modal-actions .cancel-btn {
+            background-color: #e5e7eb;
+            color: #374151;
+        }
+        .modal-actions .cancel-btn:hover {
+            background-color: #d1d5db;
+        }
+        .exercise-group {
+            background-color: #f0f4ff;
+            border: 1px solid #c7d2fe;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .exercise-group-title {
+            font-weight: 700;
+            color: #374151;
+            margin-bottom: 0.75rem;
+            font-size: 1.125rem;
+            text-align: center;
+        }
+        .exercise-group .exercise-item {
+            background-color: #ffffff;
+            margin-bottom: 0.75rem;
+        }
+        .exercise-group .exercise-item:last-child {
+            margin-bottom: 0;
+        }
+        .week-nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .week-nav button {
+            background-color: #4f46e5;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem;
+            font-weight: 600;
+            transition: background-color 0.2s;
+            cursor: pointer;
+        }
+        .week-nav button:hover {
+            background-color: #4338ca;
+        }
+        .week-display {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #1f2937;
+            padding: 0 0.5rem;
+        }
+        #global-actions-bar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background-color: #e0e7ff;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        #global-actions-bar button {
+            padding: 0.6rem 1.2rem;
+            border-radius: 0.375rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s, transform 0.1s;
+            color: white;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        #global-actions-bar button:hover {
+            transform: translateY(-1px);
+        }
+        #export-data-btn { background-color: #22c55e; }
+        #export-data-btn:hover { background-color: #16a34a; }
+        #import-data-btn { background-color: #f59e0b; }
+        #import-data-btn:hover { background-color: #d97706; }
+        #toggle-edit-mode-btn { background-color: #4f46e5; }
+        #toggle-edit-mode-btn:hover { background-color: #4338ca; }
+        #unit-toggle-btn { background-color: #6b7280; font-size: 0.875rem; }
+        #unit-toggle-btn:hover { background-color: #4b5563; }
+        #edit-plan-actions {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: -0.5rem;
+            margin-bottom: 1.5rem;
+            padding: 0.5rem;
+        }
+         #edit-plan-actions button {
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            color: white;
+        }
+        #edit-plan-actions .save-changes-btn { background-color: #22c55e; }
+        #edit-plan-actions .save-changes-btn:hover { background-color: #16a34a; }
+        #edit-plan-actions .cancel-edit-btn { background-color: #6b7280; }
+        #edit-plan-actions .cancel-edit-btn:hover { background-color: #4b5563; }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1200x400/374151/F3F4F6?text=.') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            border-radius: 0.75rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .hero-section h1 {
+            font-size: 2.25rem; font-weight: 800; margin-bottom: 1rem; line-height: 1.1;
+        }
+         @media (min-width: 640px) { .hero-section h1 { font-size: 3rem; } }
+         @media (min-width: 1024px) { .hero-section h1 { font-size: 3.5rem; } }
+        .hero-section p {
+            font-size: 1.125rem; max-width: 700px; margin: 0 auto;
+        }
+         @media (min-width: 640px) { .hero-section p { font-size: 1.25rem; } }
+         .exercise-title .controls-container {
+             display: flex; align-items: center; margin-left: auto;
+         }
+        .edit-exercise-btn, .edit-protein-btn, .edit-sleep-btn {
+            padding: 0.3rem 0.6rem; font-size: 0.8rem; border-radius: 0.25rem; background-color: #f59e0b;
+            color: white; transition: background-color 0.2s; margin-left: 0.5rem;
+        }
+        .edit-exercise-btn:hover, .edit-protein-btn:hover, .edit-sleep-btn:hover { background-color: #d97706; }
+        .delete-exercise-btn, .delete-protein-btn, .delete-sleep-btn {
+            background-color: #ef4444; color: white; padding: 0.3rem 0.6rem; font-size: 0.8rem;
+            border-radius: 0.25rem; margin-left: 0.5rem; transition: background-color 0.2s;
+        }
+        .delete-exercise-btn:hover, .delete-protein-btn:hover, .delete-sleep-btn:hover { background-color: #dc2626; }
+        .add-exercise-btn {
+            background-color: #10b981; color: white; padding: 0.5rem 1rem; border-radius: 0.375rem;
+            font-weight: 600; margin-top: 1rem; cursor: pointer; transition: background-color 0.2s;
+            display: block; margin-left: auto; margin-right: auto; max-width: fit-content;
+        }
+        .add-exercise-btn:hover { background-color: #059669; }
+        .hidden { display: none !important; }
+        .protein-entry-item, .sleep-entry-item {
+            padding: 0.75rem 1rem; border-radius: 0.375rem; margin-bottom: 0.5rem;
+            display: flex; justify-content: space-between; align-items: flex-start;
+            border: 1px solid #c7d2fe;
+        }
+        .protein-entry-item { background-color: #e9efff; }
+        .sleep-entry-item { background-color: #e0f2fe; }
+        .protein-entry-item .data, .sleep-entry-item .data {
+            flex-grow: 1; margin-right: 1rem;
+        }
+        .protein-entry-item .grams, .sleep-entry-item .hours {
+            font-weight: 600; color: #374151; display: block; margin-bottom: 0.25rem;
+        }
+        .sleep-entry-item .quality {
+            font-size: 0.9rem; color: #4b5563; margin-bottom: 0.25rem;
+        }
+        .sleep-entry-item .notes {
+            font-size: 0.85rem; color: #6b7280; white-space: pre-wrap; margin-bottom: 0.25rem;
+        }
+        .protein-entry-item .time, .sleep-entry-item .time {
+            font-size: 0.8rem; color: #6b7280; display: block;
+        }
+        .protein-entry-item .actions, .sleep-entry-item .actions {
+            display: flex; align-items: center; flex-shrink: 0;
+        }
+        .protein-entry-item .actions button, .sleep-entry-item .actions button {
+            font-size: 0.8rem; padding: 0.25rem 0.5rem;
+        }
+    </style>
 </head>
+<body class="p-4">
+    <div class="container">
+        <header class="hero-section">
+            <h1 id="hero-title"></h1>
+            <p id="hero-subtitle"></p>
+        </header>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-<body class="w3-black">
-
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <img src="imagenes/Nikeses.jpg" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-users w3-xxlarge"></i>
-    <p>CLUB</p>
-  </a>
-  <a href="#calendar" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-trophy w3-xxlarge"></i>
-    <p>RUN!</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-question w3-xxlarge"></i>
-    <p>FAQ</p>
-  </a>
-  <a href="#videos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-diamond w3-xxlarge"></i>
-    <p>LINKS</p>
-  </a>
-</nav>
-
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">CLUB</a>
-    <a href="#calendar" class="w3-bar-item w3-button" style="width:25% !important">RUN!</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">FAQ</a>
-    <a href="#videos" class="w3-bar-item w3-button" style="width:25% !important">LINKS</a>
-  </div>
-</div>
-
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">Club de </span>Corredores CX</h1>
-    <p>Actualizado Junio 16 de 2023.</p>
-    <img src="imagenes/jogging-7705055_1920.jpg" alt="boy" class="w3-image" width="992">
-  </header>
-
-    <!-- Próximos eventos -->
-
-    <div class="w3-padding-64 w3-content w3-text-grey" id="somos">
-      <h2 class="w3-text-light-grey">¿Quiénes somos?</h2>
-      <hr style="width:200px" class="w3-opacity">
-      <!-- 
-      <p>¡Somos un grupo de amigos que queremos CORRER! Formamos este grupo para integrarnos, conocer mas peronas que comparten este gusto y apoyarnos entre nosostros compartiendo experiencias para juntos mejorar en la práctica de este deporte.</p>
-     -->
-      <button onclick="showDiv('Stats')" class="w3-button w3-gray w3-block w3-left-align">
-        <h3>Inicio</h3></button>
-      <div id="Stats" class="w3-container w3-hide">
-        <h4>Inscripciones iniciales</h4>
-        <p><span class="w3-badge w3-large w3-padding w3-red">152</span> Personas inscritas</p>
-        <p><span class="w3-badge w3-large w3-padding w3-red">88</span> Hombres <span class="w3-badge w3-large w3-padding w3-red">64</span> Mujeres </p>
-        <p><span class="w3-badge w3-large w3-padding w3-red">34.5</span> Edad promedio (entre 23 y 59 años)</p>
-        <h4>Participación antes de Kick-Off</h4>
-        <p><span class="w3-badge w3-large w3-padding w3-green">75</span> En grupo de Whatsapp</p>
-        <p><span class="w3-badge w3-large w3-padding w3-green">45</span> En club de Strava</p>
-        <h4>Encuestas</h4>
-        <h6>¿Por qué empezaste a correr?</h6>
-        <p><span class="w3-badge w3-large w3-padding w3-blue">21</span> Por Salud </p>
-        <p><span class="w3-badge w3-large w3-padding w3-blue">17</span> Reto Personal </p>
-        <p><span class="w3-badge w3-large w3-padding w3-blue"> 4</span> Siempre me ha gustado </p>
-        <p><span class="w3-badge w3-large w3-padding w3-blue"> 2</span> Otro </p>
-        <canvas id="graphLevel" style="width:100%;max-width:600px;max-height:300px;"></canvas>
-        <br><br>
-        <canvas id="graphTenis" style="width:100%;max-width:600px;max-height:300px;"></canvas>
-        <br><br>
-        <canvas id="graphAudio" style="width:100%;max-width:600px;max-height:300px;"></canvas>
-      </div>
-      <br>
-      <button onclick="showDiv('Progress')" class="w3-button w3-gray w3-block w3-left-align">
-        <h3>Progreso</h3></button>
-        <div id="Progress" class="w3-container w3-hide w3-show">
-          <h4>Club en Strava</h4>
-          <p>Se registran las actividades de los miembros del club que correspondan a carrera (run) y que estén cargadas en la app de Strava.</p>
-          <iframe allowtransparency frameborder='0' height='160' scrolling='no' src='https://www.strava.com/clubs/1123097/latest-rides/4fbbaae3aab06167dc15db3e9d68ccb617cad57e?show_rides=false' width='300'></iframe>
-          <div class="w3-responsive">
-            <table class="w3-table">
-              <tr>
-                <th>Wk</th>
-                <th>Runs</th>
-                <th>Runners</th>
-                <th>Dist.</th>
-                <th>Time</th>
-                <th>Pace</th>
-                <th>Elev.</th>
-              </tr>
-              <tr>
-                <td>0</td>
-                <td>68</td>
-                <td>21</td>
-                <td>420.4km</td>
-                <td>46h 51m</td>
-                <td>6m 41s / km</td>
-                <td>3,262m</td>              
-              </tr>
-              <tr>
-              <td>1</td>
-                <td>113</td>
-                <td>43</td>
-                <td>729.7km</td>
-                <td>79h 01m</td>
-                <td>6m 29s / km</td>
-                <td>6,581m</td>                
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>133</td>
-                <td>37</td>
-                <td>658.1km</td>
-                <td>73h 13m</td>
-                <td>6m 40s / km</td>
-                <td>7,721m</td>            
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>114</td>
-                <td>37</td>
-                <td>645.5km</td>
-                <td>69h 40m</td>
-                <td>6m 28s / km</td>
-                <td>5,192m</td>            
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>99</td>
-                <td>31</td>
-                <td>557.6km</td>
-                <td>61h 46m</td>
-                <td>6m 38s / km</td>
-                <td>3,451m</td>            
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>89</td>
-                <td>28</td>
-                <td>546.4km</td>
-                <td>56h 08m</td>
-                <td>6m 09s / km</td>
-                <td>4,311m</td>            
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>90</td>
-                <td>30</td>
-                <td>550.7km</td>
-                <td>58h 26m</td>
-                <td>6m 21s / km</td>
-                <td>4,353m</td>            
-              </tr>
-              <tr>
-                <td>7</td>
-                <td>97</td>
-                <td>30</td>
-                <td>636.8km</td>
-                <td>72h 06m</td>
-                <td>6m 47s / km</td>
-                <td>6,937m</td>            
-              </tr>
-              <tr>
-                <td>8</td>
-                <td>114</td>
-                <td>38</td>
-                <td>656.3km</td>
-                <td>73h 34m</td>
-                <td>6m 43s / km</td>
-                <td>6,633m</td>            
-              </tr>
-            </table>
-          </div>
+        <div class="flex flex-col sm:flex-row items-center justify-center mb-6"> <div class="week-nav w-full sm:w-auto">
+                <button id="prev-week-btn" title="Semana anterior">&lt; Anterior</button>
+                <span id="week-display" class="week-display">Semana 1</span>
+                <button id="next-week-btn" title="Siguiente semana">Siguiente &gt;</button>
+            </div>
         </div>
-    </div>  
 
-    <script>
-      function showDiv(id) {
-        var x = document.getElementById(id);
-        if (x.className.indexOf("w3-show") == -1) {
-          x.className += " w3-show";
-        } else {
-          x.className = x.className.replace(" w3-show", "");
-        }
-      }
-      </script>
+        <div class="card">
+            <h2 id="week-plan-card-title" class="text-3xl section-title"></h2>
+            <p id="week-plan-card-subtitle" class="text-center text-lg mb-6 text-gray-700"></p>
+            <div id="training-plan-container"></div>
+        </div>
 
-
-    <script>
-
-    const nivel = document.getElementById('graphLevel');
-    const tenis = document.getElementById('graphTenis');
-    const audioS = document.getElementById('graphAudio');
-
-    new Chart(tenis, {
-      type: 'bar',
-      data: {
-        labels: ["Nike", "Adidas", "Asics", "Puma", "Brooks", "Otros"],
-        datasets: [{
-          label: 'Marca de tenis',
-          data: [22, 7, 7, 6, 4, 14],
-          borderWidth: 1
-        }]
-      },
-      options: {
-        scales: {
-          y: {
-            beginAtZero: true
-          }
-        },
-        plugins: {
-            title: {
-                display: true,
-                text: '¿Qué marca de tenis usas?',
-                font: {
-                        size: 18
-                    }
-            },
-            legend: {
-              display: false
-            }
-        }
-      }
-    });
-
-    new Chart(nivel, {
-      type: 'pie',
-      data: {
-        labels: ["<5K", "5K", "10K", "21K", "42K", ">50K"],
-        datasets: [{
-          label: 'Respuestas: ',
-          data: [25, 12, 4, 6, 1,0],
-          borderWidth: 1
-        }]
-      },
-      options: {
-        plugins: {
-            title: {
-                display: true,
-                text: '¿Qué distancia puedes correr actualmente?',
-                font: {
-                        size: 18
-                    }
-            },
-            legend: {
-              position: 'left'
-            }
-        }
-    }
-    });
-
-    new Chart(audioS, {
-      type: 'doughnut',
-      data: {
-        labels: ["SI", "NO"],
-        datasets: [{
-          label: 'Respuestas: ',
-          data: [29, 11],
-          borderWidth: 1
-        }]
-      },
-      options: {
-        plugins: {
-            title: {
-                display: true,
-                text: '¿Corres con audífonos?',
-                font: {
-                        size: 18
-                    }
-            },
-            legend: {
-              position: 'left'
-            }
-        }
-    }
-    });
-
-
-    </script>
-
-
-
-
-    <div class="w3-padding-64 w3-content w3-text-grey" id="calendar">
-      <h2 class="w3-text-light-grey">RUN! - Calendario</h2>
-      <hr style="width:200px" class="w3-opacity">
-  
-      <div class="w3-section"></div>
-      <h3 class="w3-padding-16 w3-text-light-grey">NYRR Virtual 5K - Global Running Day</h3>
-      <img src="imagenes/23-virtual-global-running-day-logo.png" alt="Avatar" class="w3-left w3-margin-right" style="height:150px">
-      <p>Únete a miles de personas en todo el mundo que comparten tu pasión por el deporte con esta carrera virtual gratuita de 5 km. Corre la carrera virtual NYRR Global Running Day 5K en cualquier lugar y en cualquier momento entre el 3 y el 11 de junio.</p>
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> En cualquier parte</p>
-      <p><i class="fa fa-calendar-o fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Entre el 3 y el 11 de junio</p>
-      <p><i class="fa fa-ticket  fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> <a href="https://www.nyrr.org/races/virtualnyrrglobalrunningday5k"> Inscripciones en el sitio de NYRR </a> </p>
-
-      <div class="w3-section"></div>
-      <h3 class="w3-padding-16 w3-text-light-grey">Plan 5K para principiantes - 8 semanas</h3>
-      <p>¡Bienvenido/a al plan de entrenamiento para correr 5K para principiantes! Este programa está diseñado para ayudarte a construir una base sólida para correr una distancia de 5 kilómetros, incluso si nunca antes has corrido. El plan combina caminata y carrera para ayudarte a aumentar gradualmente tu resistencia y fuerza, minimizando el riesgo de lesiones. Con un enfoque en la consistencia y el progreso gradual, estarás listo/a para cruzar la línea de meta de tu primera carrera de 5K en solo unas pocas semanas. ¡Vamos a comenzar!</p>
-      <h4 class="w3-padding-16 w3-text-light-grey">Semana 1 - del 17 al 23 de Abril</h4>
-      <p>En la semana 1 de este plan de entrenamiento para correr 5K para principiantes, es importante que te centres en establecer una base sólida para el entrenamiento futuro. Para lograrlo, es esencial que corras a un ritmo que te permita mantener una conversación mientras corres. Esto significa que no debes estar completamente sin aliento o agotado/a mientras corres.</p>
-      <p>Correr a un ritmo cómodo y sostenible también te permitirá enfocarte en mantener una buena postura y una técnica adecuada de carrera, lo que es fundamental para prevenir lesiones en el futuro. Así que no te preocupes por la velocidad en esta etapa, lo importante es que mantengas un ritmo constante y agradable. Conforme avances en el plan, podrás aumentar gradualmente la intensidad y el volumen de tus entrenamientos. ¡Ánimo en tu primera semana!</p>
-          <!-- Grid for pricing tables -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-third w3-margin-bottom">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Martes 18 <br> 22 min.</li>
-          <li class="w3-padding-16">Calentamiento: <br> 5 minutos CAMINAR</li>
-          <li class="w3-padding-16">Repetir 6 veces: <br> 1 minuto CORRER <br> 1 minuto CAMINAR</li>
-          <li class="w3-padding-16">Enfriammiento: <br> 5 minutos CAMINAR</li>
-          <li class="w3-light-grey w3-padding-24">
-            <!--
-              <button class="w3-button w3-white w3-padding-large w3-hover-black"><i class="fa fa-headphones fa-fw w3-text-black w3-xxlarge w3-margin-right"></i>Audio Coach</button>
-            -->
-              <audio controls>
-              <source src="audio/W1T1ok.mp3" type="audio/mpeg">
-              Your browser does not support the audio element.
-            </audio>
-          </li>
-        </ul>
-      </div>
-
-      <div class="w3-third w3-margin-bottom">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Jueves 20 <br> 27:30 min.</li>
-          <li class="w3-padding-16">Calentamiento: <br> 5 minutos CAMINAR</li>
-          <li class="w3-padding-16">Repetir 5 veces: <br> 2 minuto CORRER <br> 90 segundos CAMINAR</li>
-          <li class="w3-padding-16">Enfriammiento: <br> 5 minutos CAMINAR</li>
-          <li class="w3-light-grey w3-padding-24">
-            <!--
-            <button class="w3-button w3-white w3-padding-large w3-hover-black"><i class="fa fa-headphones fa-fw w3-text-black w3-xxlarge w3-margin-right"></i>Audio Coach</button>
-            -->
-            <audio controls>
-              <source src="audio/W1T2.mp3" type="audio/mpeg">
-              Your browser does not support the audio element.
-            </audio>
-          </li>
-        </ul>
-      </div>
-
-      <div class="w3-third w3-margin-bottom">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Sábado 22 <br> 28 min.</li>
-          <li class="w3-padding-16">Calentamiento: <br> 5 minutos CAMINAR</li>
-          <li class="w3-padding-16">Repetir 6 veces: <br> 90 segundos CORRER <br> 90 segundos CAMINAR</li>
-          <li class="w3-padding-16">Enfriammiento: <br> 5 minutos CAMINAR</li>
-          <li class="w3-light-grey w3-padding-24">
-            <!--
-              <button class="w3-button w3-white w3-padding-large w3-hover-black"><i class="fa fa-headphones fa-fw w3-text-black w3-xxlarge w3-margin-right"></i>Audio Coach</button>
-            -->  
-            <audio controls>
-              <source src="audio/W1T3.mp3" type="audio/mpeg">
-              Your browser does not support the audio element.
-            </audio>
-          </li>
-        </ul>
-      </div>
-
-
-    </div>
-    <!-- End Grid/Pricing tables -->
-
-      <h4 class="w3-padding-16 w3-text-light-grey">Semana 2 - del 24 al 30 de Abril </h4>
-          <!-- Grid for pricing tables -->
-          <div class="w3-row-padding" style="margin:0 -16px">
-            <div class="w3-third w3-margin-bottom">
-              <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                <li class="w3-dark-grey w3-xlarge w3-padding-32">Martes 25 <br> 30 min.</li>
-                <li class="w3-padding-16">Calentamiento: <br> 5 minutos CAMINAR</li>
-                <li class="w3-padding-16">Repetir 4 veces: <br> 3 minutos CORRER <br> 2 minutos CAMINAR</li>
-                <li class="w3-padding-16">Enfriammiento: <br> 5 minutos CAMINAR</li>
-                <li class="w3-light-grey w3-padding-24">
-                  <!--
-                    <button class="w3-button w3-white w3-padding-large w3-hover-black"><i class="fa fa-headphones fa-fw w3-text-black w3-xxlarge w3-margin-right"></i>Audio Coach</button>
-                  -->
-                  <audio controls>
-                    <source src="audio/W2T1.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                  </audio>
-                </li>
-              </ul>
-            </div>
-      
-            <div class="w3-third w3-margin-bottom">
-              <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                <li class="w3-dark-grey w3-xlarge w3-padding-32">Jueves 27 <br> 35 min.</li>
-                <li class="w3-padding-16">Calentamiento: <br> 5 minutos CAMINAR</li>
-                <li class="w3-padding-16">Repetir 5 veces: <br> 3 minutos CORRER <br> 2 minutos CAMINAR</li>
-                <li class="w3-padding-16">Enfriammiento: <br> 5 minutos CAMINAR</li>
-                <li class="w3-light-grey w3-padding-24">
-                  <!--
-                  <button class="w3-button w3-white w3-padding-large w3-hover-black"><i class="fa fa-headphones fa-fw w3-text-black w3-xxlarge w3-margin-right"></i>Audio Coach</button>
-                  -->
-                  <audio controls>
-                    <source src="audio/W2T2.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                  </audio>
-                </li>
-              </ul>
-            </div>
-      
-            <div class="w3-third w3-margin-bottom">
-              <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                <li class="w3-dark-grey w3-xlarge w3-padding-32">Sábado 29 <br> 26 min.</li>
-                <li class="w3-padding-16">Calentamiento: <br> 5 minutos CAMINAR</li>
-                <li class="w3-padding-16">Repetir 4 veces: <br> 3 minutos CORRER <br> 1 minuto CAMINAR</li>
-                <li class="w3-padding-16">Enfriammiento: <br> 5 minutos CAMINAR</li>
-                <li class="w3-light-grey w3-padding-24">
-                  <!--
-                    <button class="w3-button w3-white w3-padding-large w3-hover-black"><i class="fa fa-headphones fa-fw w3-text-black w3-xxlarge w3-margin-right"></i>Audio Coach</button>
-                  -->  
-                  <audio controls>
-                    <source src="audio/W2T3.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                  </audio>
-                </li>
-              </ul>
-            </div>
-      
-      
-          </div>
-
-          <h4 class="w3-padding-16 w3-text-light-grey">Semana 3 - del 1 al 7 de Mayo </h4>
-          <!-- Grid for pricing tables -->
-          <div class="w3-row-padding" style="margin:0 -16px">
-            <div class="w3-third w3-margin-bottom">
-              <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                <li class="w3-dark-grey w3-xlarge w3-padding-32">Martes 2 <br> 34 min.</li>
-                <li class="w3-padding-16">Calentamiento: <br> 5 minutos CAMINAR</li>
-                <li class="w3-padding-16">Repetir 4 veces: <br> 4 minutos CORRER <br> 2 minutos CAMINAR</li>
-                <li class="w3-padding-16">Enfriammiento: <br> 5 minutos CAMINAR</li>
-                <li class="w3-light-grey w3-padding-24">
-                  <!--
-                    <button class="w3-button w3-white w3-padding-large w3-hover-black"><i class="fa fa-headphones fa-fw w3-text-black w3-xxlarge w3-margin-right"></i>Audio Coach</button>
-                  -->
-                  <audio controls>
-                    <source src="audio/W3T1.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                  </audio>
-                </li>
-              </ul>
-            </div>
-      
-            <div class="w3-third w3-margin-bottom">
-              <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                <li class="w3-dark-grey w3-xlarge w3-padding-32">Jueves 4 <br> 38 min.</li>
-                <li class="w3-padding-16">Calentamiento: <br> 5 minutos CAMINAR</li>
-                <li class="w3-padding-16">Repetir 4 veces: <br> 5 minutos CORRER <br> 2 minutos CAMINAR</li>
-                <li class="w3-padding-16">Enfriammiento: <br> 5 minutos CAMINAR</li>
-                <li class="w3-light-grey w3-padding-24">
-                  <!--
-                  <button class="w3-button w3-white w3-padding-large w3-hover-black"><i class="fa fa-headphones fa-fw w3-text-black w3-xxlarge w3-margin-right"></i>Audio Coach</button>
-                  -->
-                  <audio controls>
-                    <source src="audio/W3T2.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                  </audio>
-                </li>
-              </ul>
-            </div>
-      
-            <div class="w3-third w3-margin-bottom">
-              <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                <li class="w3-dark-grey w3-xlarge w3-padding-32">Sábado 6 <br> 35 min.</li>
-                <li class="w3-padding-16">Calentamiento: <br> 5 minutos CAMINAR</li>
-                <li class="w3-padding-16">Repetir 5 veces: <br> 4 minutos CORRER <br> 1 minuto CAMINAR</li>
-                <li class="w3-padding-16">Enfriammiento: <br> 5 minutos CAMINAR</li>
-                <li class="w3-light-grey w3-padding-24">
-                  <!--
-                    <button class="w3-button w3-white w3-padding-large w3-hover-black"><i class="fa fa-headphones fa-fw w3-text-black w3-xxlarge w3-margin-right"></i>Audio Coach</button>
-                  -->  
-                  <audio controls>
-                    <source src="audio/W3T3.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                  </audio>
-                </li>
-              </ul>
-            </div>
-      
-      
-          </div>  
-      
-      
-      <h4 class="w3-padding-16 w3-text-light-grey">Semana 4 - del 8 al 14 de Mayo</h4>
-                <!-- Grid for pricing tables -->
-                <div class="w3-row-padding" style="margin:0 -16px">
-                  <div class="w3-third w3-margin-bottom">
-                    <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                      <li class="w3-dark-grey w3-xlarge w3-padding-32">Martes 9 <br> 34 min.</li>
-                      <li class="w3-padding-16">Calentamiento: <br> 5 minutos CAMINAR</li>
-                      <li class="w3-padding-16">Repetir 4 veces: <br> 5 minutos CORRER <br> 1 minuto CAMINAR</li>
-                      <li class="w3-padding-16">Enfriammiento: <br> 5 minutos CAMINAR</li>
-                      <li class="w3-light-grey w3-padding-24">
-                        <!--
-                          <button class="w3-button w3-white w3-padding-large w3-hover-black"><i class="fa fa-headphones fa-fw w3-text-black w3-xxlarge w3-margin-right"></i>Audio Coach</button>
-                        -->
-                      </li>
-                    </ul>
-                  </div>
+        <div class="card">
+            <h2 id="nutrition-card-title" class="text-3xl section-title"></h2>
+            <img src="https://placehold.co/800x300/4A90E2/FFFFFF?text=Nutrici%C3%B3n+y+Recuperaci%C3%B3n" alt="Nutrición y Recuperación" class="w-full h-auto rounded-lg mb-6 shadow-md object-cover" style="max-height: 300px;">
             
-                  <div class="w3-third w3-margin-bottom">
-                    <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                      <li class="w3-dark-grey w3-xlarge w3-padding-32">Jueves 11 <br> 30 min.</li>
-                      <li class="w3-padding-16">Calentamiento: <br> 3 minutos CORRER (TROTE SUAVE) + 2 minutos CAMINAR</li>
-                      <li class="w3-padding-16">Repetir 2 veces: <br> 7 minutos CORRER <br> 3 minutos CAMINAR</li>
-                      <li class="w3-padding-16">Enfriammiento: <br> 5 minutos CAMINAR</li>
-                      <li class="w3-light-grey w3-padding-24">
-                        <!--
-                        <button class="w3-button w3-white w3-padding-large w3-hover-black"><i class="fa fa-headphones fa-fw w3-text-black w3-xxlarge w3-margin-right"></i>Audio Coach</button>
-                        -->
-                      </li>
-                    </ul>
-                  </div>
-            
-                  <div class="w3-third w3-margin-bottom">
-                    <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                      <li class="w3-dark-grey w3-xlarge w3-padding-32">Sábado 13 <br> 42 min.</li>
-                      <li class="w3-padding-16">Calentamiento: <br> 5 minutos CAMINAR</li>
-                      <li class="w3-padding-16">Repetir 4 veces: <br> 6 minutos CORRER <br> 2 minutos CAMINAR</li>
-                      <li class="w3-padding-16">Enfriammiento: <br> 5 minutos CAMINAR</li>
-                      <li class="w3-light-grey w3-padding-24">
-                        <!--
-                          <button class="w3-button w3-white w3-padding-large w3-hover-black"><i class="fa fa-headphones fa-fw w3-text-black w3-xxlarge w3-margin-right"></i>Audio Coach</button>
-                        -->  
-                      </li>
-                    </ul>
-                  </div>
-            
-            
-                </div>  
-      
+            <div>
+                <h3 id="nutrition-section-title" class="text-xl font-semibold mb-2 text-gray-800"></h3>
+                <p id="nutrition-section-paragraph" class="mb-4 text-gray-700"></p>
+                <div class="mt-6 pt-6 border-t border-gray-200">
+                    <h3 id="protein-tracker-title" class="text-xl font-semibold mb-3 text-gray-800"></h3>
+                    <p class="text-sm text-gray-600 mb-2">Datos para: Semana <span id="current-week-protein-display">1</span>, Día <span id="current-day-protein-display">Lunes</span></p>
+                    <button id="register-protein-btn" class="set-buttons button bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-md inline-flex items-center mb-4">
+                        <i class="fas fa-drumstick-bite mr-2"></i><span data-textkey="proteinTrackerButton"></span>
+                    </button>
+                    <div id="protein-entries-list-container" class="mb-6">
+                         <h4 id="protein-entries-today-title" class="text-lg font-medium mb-2 text-gray-700"></h4>
+                        <div id="protein-entries-list"><p id="no-protein-entries-text" class="text-gray-500 italic"></p></div>
+                    </div>
+                    <h4 id="protein-chart-title" class="text-lg font-semibold mb-2 text-gray-800"></h4>
+                    <div class="bg-gray-50 p-4 rounded-lg shadow-inner" style="min-height: 300px;"><canvas id="protein-week-chart"></canvas></div>
+                </div>
+            </div>
 
-                
-      <h4 class="w3-padding-16 w3-text-light-grey">Semana 5 - del 15 al 21 de Mayo </h4>
+            <div class="mt-10 pt-6 border-t border-gray-200">
+                <h3 id="sleep-section-title" class="text-xl font-semibold mb-2 text-gray-800"></h3>
+                <p id="sleep-section-paragraph" class="mb-4 text-gray-700"></p>
+                <div class="mt-6 pt-6 border-t border-gray-200">
+                    <h3 id="sleep-tracker-title" class="text-xl font-semibold mb-3 text-gray-800"></h3>
+                     <p class="text-sm text-gray-600 mb-2">Datos para: Semana <span id="current-week-sleep-display">1</span>, Día <span id="current-day-sleep-display">Lunes</span></p>
+                    <button id="register-sleep-btn" class="set-buttons button bg-sky-500 hover:bg-sky-600 text-white py-2 px-4 rounded-md inline-flex items-center mb-4">
+                        <i class="fas fa-bed mr-2"></i><span data-textkey="sleepTrackerButton"></span>
+                    </button>
+                    <div id="sleep-entries-list-container" class="mb-6">
+                         <h4 id="sleep-entries-today-title" class="text-lg font-medium mb-2 text-gray-700"></h4>
+                        <div id="sleep-entries-list"><p id="no-sleep-entries-text" class="text-gray-500 italic"></p></div>
+                    </div>
+                    <h4 id="sleep-chart-title" class="text-lg font-semibold mb-2 text-gray-800"></h4>
+                    <div class="bg-gray-50 p-4 rounded-lg shadow-inner" style="min-height: 300px;"><canvas id="sleep-week-chart"></canvas></div>
+                </div>
+            </div>
 
-                      <!-- Grid for pricing tables -->
-                      <div class="w3-row-padding" style="margin:0 -16px">
-                        <div class="w3-third w3-margin-bottom">
-                          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                            <li class="w3-dark-grey w3-xlarge w3-padding-32">Martes 16 <br> 40 min.</li>
-                            <li class="w3-padding-16">Calentamiento: <br> 5 minutos CAMINAR</li>
-                            <li class="w3-padding-16">Repetir 5 veces: <br> 4 minutos CORRER <br> 2 minutos CAMINAR</li>
-                            <li class="w3-padding-16">Enfriammiento: <br> 5 minutos CAMINAR</li>
-                            <li class="w3-light-grey w3-padding-24">
-                              <!--
-                                <button class="w3-button w3-white w3-padding-large w3-hover-black"><i class="fa fa-headphones fa-fw w3-text-black w3-xxlarge w3-margin-right"></i>Audio Coach</button>
-                              -->
-                            </li>
-                          </ul>
-                        </div>
-                  
-                        <div class="w3-third w3-margin-bottom">
-                          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                            <li class="w3-dark-grey w3-xlarge w3-padding-32">Jueves 18 <br> 34 min.</li>
-                            <li class="w3-padding-16">Calentamiento: <br> 7 minutos CORRER (TROTE SUAVE) + 2 minutos CAMINAR</li>
-                            <li class="w3-padding-16">Repetir 5 veces: <br> 2 minutos CORRER ("PUSHING THE PACE") <br> 2 minutos CAMINAR</li>
-                            <li class="w3-padding-16">Enfriammiento: <br> 7 minutos CORRER (TROTE SUAVE)</li>
-                            <li class="w3-light-grey w3-padding-24">
-                              <!--
-                              <button class="w3-button w3-white w3-padding-large w3-hover-black"><i class="fa fa-headphones fa-fw w3-text-black w3-xxlarge w3-margin-right"></i>Audio Coach</button>
-                              -->
-                            </li>
-                          </ul>
-                        </div>
-                  
-                        <div class="w3-third w3-margin-bottom">
-                          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                            <li class="w3-dark-grey w3-xlarge w3-padding-32">Sábado 20 <br> 37 min.</li>
-                            <li class="w3-padding-16">Calentamiento: <br> 4 minutos CORRER (TROTE SUAVE) + 2 minutos CAMINAR</li>
-                            <li class="w3-padding-16">Repetir 2 veces: <br> 10 minutos CORRER (TROTE SUAVE) <br> 3 minutos CAMINAR</li>
-                            <li class="w3-padding-16">Enfriammiento: <br> 5 minutos CAMINAR</li>
-                            <li class="w3-light-grey w3-padding-24">
-                              <!--
-                                <button class="w3-button w3-white w3-padding-large w3-hover-black"><i class="fa fa-headphones fa-fw w3-text-black w3-xxlarge w3-margin-right"></i>Audio Coach</button>
-                              -->  
-                            </li>
-                          </ul>
-                        </div>
-                  
-                  
-                      </div> 
+            <h3 id="recovery-section-title" class="text-xl font-semibold mb-2 mt-10 pt-6 border-t border-gray-200 text-gray-800"></h3>
+            <p id="recovery-section-paragraph" class="text-gray-700"></p>
+        </div>
 
-      <h4 class="w3-padding-16 w3-text-light-grey">Semana 6 - del 22 al 28 de Mayo  </h4>
-
-                            <!-- Grid for pricing tables -->
-                            <div class="w3-row-padding" style="margin:0 -16px">
-                              <div class="w3-third w3-margin-bottom">
-                                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                                  <li class="w3-dark-grey w3-xlarge w3-padding-32">Martes 23 <br> 50 min.</li>
-                                  <li class="w3-padding-16">Calentamiento: <br> 5 minutos CAMINAR</li>
-                                  <li class="w3-padding-16">Repetir 5 veces: <br> 6 minutos CORRER <br> 2 minutos CAMINAR</li>
-                                  <li class="w3-padding-16">Enfriammiento: <br> 5 minutos CAMINAR</li>
-                                  <li class="w3-light-grey w3-padding-24">
-                                    <!--
-                                      <button class="w3-button w3-white w3-padding-large w3-hover-black"><i class="fa fa-headphones fa-fw w3-text-black w3-xxlarge w3-margin-right"></i>Audio Coach</button>
-                                    -->
-                                  </li>
-                                </ul>
-                              </div>
-                        
-                              <div class="w3-third w3-margin-bottom">
-                                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                                  <li class="w3-dark-grey w3-xlarge w3-padding-32">Jueves 25 <br> 40 min.</li>
-                                  <li class="w3-padding-16">Calentamiento: <br> 7 minutos CORRER (TROTE SUAVE) + 2 minutos CAMINAR</li>
-                                  <li class="w3-padding-16">Repetir 4 veces: <br> 4 minutos CORRER ("PUSHING THE PACE") <br> 2 minutos CAMINAR</li>
-                                  <li class="w3-padding-16">Enfriammiento: <br> 7 minutos CORRER (TROTE SUAVE)</li>
-                                  <li class="w3-light-grey w3-padding-24">
-                                    <!--
-                                    <button class="w3-button w3-white w3-padding-large w3-hover-black"><i class="fa fa-headphones fa-fw w3-text-black w3-xxlarge w3-margin-right"></i>Audio Coach</button>
-                                    -->
-                                  </li>
-                                </ul>
-                              </div>
-                        
-                              <div class="w3-third w3-margin-bottom">
-                                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                                  <li class="w3-dark-grey w3-xlarge w3-padding-32">Sábado 27 <br> 41 min.</li>
-                                  <li class="w3-padding-16">Calentamiento: <br> 4 minutos CORRER (TROTE SUAVE) + 2 minutos CAMINAR</li>
-                                  <li class="w3-padding-16">Repetir 3 veces: <br> 8 minutos CORRER (TROTE SUAVE) <br> 2 minutos CAMINAR</li>
-                                  <li class="w3-padding-16">Enfriammiento: <br> 5 minutos CAMINAR</li>
-                                  <li class="w3-light-grey w3-padding-24">
-                                    <!--
-                                      <button class="w3-button w3-white w3-padding-large w3-hover-black"><i class="fa fa-headphones fa-fw w3-text-black w3-xxlarge w3-margin-right"></i>Audio Coach</button>
-                                    -->  
-                                  </li>
-                                </ul>
-                              </div>
-                        
-                        
-                            </div> 
-
-      <h4 class="w3-padding-16 w3-text-light-grey">Semana 7 - del 29 Mayo al 4 de Junio  </h4>
-
-                            <!-- Grid for pricing tables -->
-                            <div class="w3-row-padding" style="margin:0 -16px">
-                              <div class="w3-third w3-margin-bottom">
-                                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                                  <li class="w3-dark-grey w3-xlarge w3-padding-32">Martes 30 <br> 48 min.</li>
-                                  <li class="w3-padding-16">Calentamiento: <br> 5 minutos CORRER (TROTE SUAVE) + 2 minutos CAMINAR</li>
-                                  <li class="w3-padding-16">Repetir 2 veces: <br> 15 minutos CORRER <br> 3 minutos CAMINAR</li>
-                                  <li class="w3-padding-16">Enfriammiento: <br> 5 minutos CAMINAR</li>
-                                  <li class="w3-light-grey w3-padding-24">
-                                    <!--
-                                      <button class="w3-button w3-white w3-padding-large w3-hover-black"><i class="fa fa-headphones fa-fw w3-text-black w3-xxlarge w3-margin-right"></i>Audio Coach</button>
-                                    -->
-                                  </li>
-                                </ul>
-                              </div>
-                        
-                              <div class="w3-third w3-margin-bottom">
-                                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                                  <li class="w3-dark-grey w3-xlarge w3-padding-32">Jueves 1 <br> 44 min.</li>
-                                  <li class="w3-padding-16">Calentamiento: <br> 7 minutos CORRER (TROTE SUAVE) + 2 minutos CAMINAR</li>
-                                  <li class="w3-padding-16">Repetir 4 veces: <br> 5 minutos CORRER ("PUSHING THE PACE") <br> 2 minutos CAMINAR</li>
-                                  <li class="w3-padding-16">Enfriammiento: <br> 7 minutos CORRER (TROTE SUAVE)</li>
-                                  <li class="w3-light-grey w3-padding-24">
-                                    <!--
-                                    <button class="w3-button w3-white w3-padding-large w3-hover-black"><i class="fa fa-headphones fa-fw w3-text-black w3-xxlarge w3-margin-right"></i>Audio Coach</button>
-                                    -->
-                                  </li>
-                                </ul>
-                              </div>
-                        
-                              <div class="w3-third w3-margin-bottom">
-                                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                                  <li class="w3-dark-grey w3-xlarge w3-padding-32">Sábado 3 <br> 46 min.</li>
-                                  <li class="w3-padding-16">Calentamiento: <br> 5 minutos CAMINAR</li>
-                                  <li class="w3-padding-16">Repetir 3 veces: <br> 10 minutos CORRER (TROTE SUAVE) <br> 2 minutos CAMINAR</li>
-                                  <li class="w3-padding-16">Enfriammiento: <br> 5 minutos CAMINAR</li>
-                                  <li class="w3-light-grey w3-padding-24">
-                                    <!--
-                                      <button class="w3-button w3-white w3-padding-large w3-hover-black"><i class="fa fa-headphones fa-fw w3-text-black w3-xxlarge w3-margin-right"></i>Audio Coach</button>
-                                    -->  
-                                  </li>
-                                </ul>
-                              </div>
-                        
-                        
-                            </div> 
-      <h4 class="w3-padding-16 w3-text-light-grey">Semana 8 - del 5 al 11 de Junio </h4>
-
-                            <!-- Grid for pricing tables -->
-                            <div class="w3-row-padding" style="margin:0 -16px">
-                              <div class="w3-third w3-margin-bottom">
-                                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                                  <li class="w3-dark-grey w3-xlarge w3-padding-32">Martes 6 <br> 34 min.</li>
-                                  <li class="w3-padding-16">Calentamiento: <br> 8 minutos CORRER (TROTE SUAVE) + 2 minutos CAMINAR</li>
-                                  <li class="w3-padding-16">Repetir 8 veces: <br> 1 minuto CORRER ("PUSHING THE PACE") <br> 1 minuto CAMINAR</li>
-                                  <li class="w3-padding-16">Enfriammiento: <br> 8 minutos CORRER (TROTE SUAVE)</li>
-                                  <li class="w3-light-grey w3-padding-24">
-                                    <!--
-                                      <button class="w3-button w3-white w3-padding-large w3-hover-black"><i class="fa fa-headphones fa-fw w3-text-black w3-xxlarge w3-margin-right"></i>Audio Coach</button>
-                                    -->
-                                  </li>
-                                </ul>
-                              </div>
-                        
-                              <div class="w3-third w3-margin-bottom">
-                                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                                  <li class="w3-dark-grey w3-xlarge w3-padding-32">Jueves 8 <br> 30 min.</li>
-                                  <li class="w3-padding-16">Calentamiento: <br> 5 minutos CAMINAR</li>
-                                  <li class="w3-padding-16"> 20 minutos CORRER</li>
-                                  <li class="w3-padding-16">Enfriammiento: <br> 5 minutos CAMINAR</li>
-                                  <li class="w3-light-grey w3-padding-24">
-                                    <!--
-                                    <button class="w3-button w3-white w3-padding-large w3-hover-black"><i class="fa fa-headphones fa-fw w3-text-black w3-xxlarge w3-margin-right"></i>Audio Coach</button>
-                                    -->
-                                  </li>
-                                </ul>
-                              </div>
-                        
-                              <div class="w3-third w3-margin-bottom">
-                                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                                  <li class="w3-dark-grey w3-xlarge w3-padding-32">Sábado 3 <br> 30-40 min.</li>
-                                  <li class="w3-padding-16">Calentamiento: <br> Calentar</li>
-                                  <li class="w3-padding-16"> CORRE 5K <br> (ritmo que puedas sostener, camina si lo necesitas) </li>
-                                  <li class="w3-padding-16">Enfriammiento: <br> Enfriar </li>
-                                  <li class="w3-light-grey w3-padding-24">
-                                    <!--
-                                      <button class="w3-button w3-white w3-padding-large w3-hover-black"><i class="fa fa-headphones fa-fw w3-text-black w3-xxlarge w3-margin-right"></i>Audio Coach</button>
-                                    -->  
-                                  </li>
-                                </ul>
-                              </div>
-                        
-                        
-                            </div> 
-
-
-      </div><br>
-      
-  
-      <!--
-      <form action="/action_page.php" target="_blank">
-        <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-        <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-        <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-        <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-        <p>
-          <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-          </button>
-        </p>
-      </form>
-      -->
-
-    <!-- End Próximos Eventos -->
-
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">FAQ - Conceptos Base</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <h3 class="w3-padding-16 w3-text-light-grey">Diferencia entre Correr y Caminar</h3>
-    <p>La principal diferencia entre correr y caminar es la velocidad y el patrón de movimiento. Al correr, se levantan ambos pies del suelo a la vez y se mantiene un período de suspensión en el aire, mientras que al caminar, siempre hay un pie en contacto con el suelo y nunca hay un período de suspensión en el aire. Además, correr suele requerir más esfuerzo cardiovascular y muscular que caminar.</p>
-
-    <h3 class="w3-padding-16 w3-text-light-grey">Tipos de entrenamiento</h3>
-
-    <h4 class="w3-padding-16 w3-text-light-grey">Trote fácil "Easy Run"</h4>
-    <p>Un entrenamiento "Easy Run" es un entrenamiento de carrera a un ritmo cómodo y relajado que se realiza a una intensidad baja o moderada. Este tipo de entrenamiento es utilizado para mejorar la resistencia cardiovascular y la capacidad pulmonar, pero sin poner demasiado estrés en el cuerpo. Un "Easy Run" es una sesión de entrenamiento de baja intensidad que ayuda a la recuperación después de entrenamientos más intensos y puede ser realizado como un entrenamiento activo de recuperación o como un entrenamiento de resistencia suave para aumentar el volumen de entrenamiento.</p>
-
-    <h4 class="w3-padding-16 w3-text-light-grey">Intervalos</h4>
-    <p>Un entrenamiento de intervalos es un tipo de entrenamiento en el que se alternan períodos de esfuerzo intenso con períodos de recuperación activa o descanso. Los intervalos pueden ser de diferentes duraciones y pueden realizarse a diferentes intensidades. Este tipo de entrenamiento se utiliza comúnmente para mejorar la velocidad, la potencia y la resistencia en corredores y atletas de resistencia. Por ejemplo, un entrenamiento de intervalos podría consistir en correr rápido durante un minuto, seguido de un período de recuperación activa, como caminar o correr más lento durante un minuto. Esto se repetiría varias veces durante el entrenamiento.</p>
-
-    <h4 class="w3-padding-16 w3-text-light-grey">Tempo</h4>
-    <p>Un entrenamiento de Tempo es un tipo de entrenamiento que se realiza a un ritmo constante y cómodo, pero más rápido que el ritmo de carrera normal. El objetivo de este entrenamiento es mejorar la resistencia y la capacidad de mantener un ritmo constante durante un período de tiempo prolongado. Por lo general, los entrenamientos de Tempo implican correr a un ritmo constante durante un período prolongado de tiempo, generalmente de 20 a 40 minutos, y se realizan a una intensidad que se siente "cómoda pero desafiante".</p>
-
-    <h4 class="w3-padding-16 w3-text-light-grey">Fondo "Long Run"</h4>
-    <p>Un entrenamiento de Fondo o "Long Run" es un tipo de entrenamiento en el que se corre una distancia relativamente larga a un ritmo moderado. Su objetivo principal es mejorar la resistencia y la capacidad aeróbica del corredor, así como aumentar su capacidad para quemar grasa y conservar el glucógeno muscular. Normalmente, los entrenamientos de Long Run se realizan una vez a la semana y la distancia aumenta gradualmente a lo largo del programa de entrenamiento para preparar al corredor para carreras de larga distancia como medias maratones o maratones.</p>
-
-    <h3 class="w3-padding-16 w3-text-light-grey">¿Qué es el Pace (ritmo)?</h3>
-    <p>El pace se refiere a la velocidad a la que corres o te mueves durante una determinada distancia, expresada en minutos por kilómetro (o milla). Es una medida útil para ayudarte a controlar tu ritmo durante una carrera y para establecer metas de tiempo para tus entrenamientos y competiciones.</p>
-    <button onclick="showDiv('paceCalc')" class="w3-btn w3-gray">Calculadora de Pace</button>
-    <div id="paceCalc" class="w3-container w3-hide">
-      <br>
-      <div id="inch-calculator-icw" data-ct="pace_distance" data-cw="100%" data-ch="925" data-cv="MTE2ODE0OTQ3OTY="><div id="inch-calculator-icwh">Pace and Distance Calculator</div><div id="inch-calculator-icwf"><a id="inch-calculator-icwi" href="https://www.inchcalculator.com/pace-distance-calculator/" target="_blank"><img id="inch-calculator-icwl" src="https://cdn.inchcalculator.com/e/inch-calculator-logo-tiny.png" alt="Inch Calculator Logo"><span id="inch-calculator-icwb">Inch Calculator</span></a></div></div>
-    </div>
-    <script src="https://cdn.inchcalculator.com/e/widgets.min.js" async defer></script>
-
-    <h3 class="w3-padding-16 w3-text-light-grey">Ritmo cardiaco</h3>
-    <p>El ritmo cardíaco es la frecuencia a la que late el corazón y se utiliza como un indicador de la intensidad del ejercicio físico. En el contexto de los corredores, el ritmo cardíaco puede utilizarse para controlar la intensidad del entrenamiento.</p>
-    <p><u>Ritmo cardíaco en reposo</u> :  El ritmo cardíaco en reposo es la frecuencia cardíaca cuando el cuerpo está en un estado de reposo total, como cuando estás sentado o acostado y no estás haciendo ninguna actividad física. Es una medida útil para evaluar la salud cardiovascular de una persona, ya que una frecuencia cardíaca en reposo más baja generalmente indica una mayor eficiencia del corazón y un menor riesgo de enfermedades cardiovasculares. Para la mayoría de las personas, el ritmo cardíaco en reposo se sitúa entre 60 y 100 latidos por minuto. Cuando vas adquiriendo una mejor condición física tu ritmo cardíaco en reposo baja.</p>
-    <p><u>Ritmo cardíaco máximo</u> :  El ritmo cardíaco máximo es la frecuencia cardíaca más alta que una persona puede alcanzar durante el ejercicio físico intenso. Es un indicador importante para los atletas y los entrenadores para determinar la intensidad del entrenamiento y diseñar programas de entrenamiento personalizados. La edad y el sexo son factores importantes de diferencias en el ritmo cardíaco máximo.</p>
-
-    <div class="w3-responsive">
-      <table class="w3-table">
-        <tr class="w3-blue">
-          <th>Zona</th>
-          <th>Porcentaje del Ritmo Cardiaco Máximo</th>
-          <th>Características</th>
-          <th>Uso</th>
-        </tr>
-        <tr>
-          <td>Zona 1</td>
-          <td>50-60%</td>
-          <td>Ritmo muy cómodo, conversacional ("echando el chal"). Una caminata rápida apenas trotando.</td>
-          <td>Moverse sin estresar el cuerpo.</td>
-        </tr>
-        <tr>
-          <td>Zona 2</td>
-          <td>60-70%</td>
-          <td>Trote suave, se puede sostener una conversación.</td>
-          <td>Recuperación, mejorar resistencia, quema de grasa.</td>
-        </tr>
-        <tr>
-          <td>Zona 3</td>
-          <td>70-80%</td>
-          <td>Ritmo retador, pero sostenible. Conversación difícil. </td>
-          <td>Mejorar capacidad aeróbica. Carrera.</td>
-        </tr>
-        <tr>
-          <td>Zona 4</td>
-          <td>80-90%</td>
-          <td>Ritmo duro, anaeróbico. Se pueden decir frases cortas.</td>
-          <td>Entrenamiento de velocidad (tempo, intervalos). Mejorar condición. Carreras cortas. </td>
-        </tr>
-        <tr>
-          <td>Zona 5</td>
-          <td>90-100%</td>
-          <td>Ritmo máximo, conversación imposible</td>
-          <td>Entrenamiento intervalos cortos. Mejora velocidad. Perfecciona la zancada.</td>
-        </tr>
-      </table>
+        <div class="card">
+            <h2 id="progression-card-title" class="text-3xl section-title"></h2>
+            <img src="https://placehold.co/800x300/50C878/FFFFFF?text=Progreso+Sostenible" alt="Progreso Sostenible" class="w-full h-auto rounded-lg mb-6 shadow-md object-cover" style="max-height: 300px;">
+            <h3 id="periodization-section-title" class="text-xl font-semibold mb-2 text-gray-800"></h3>
+            <p id="periodization-section-paragraph" class="mb-4 text-gray-700"></p>
+            <h3 id="overload-section-title" class="text-xl font-semibold mb-2 text-gray-800"></h3>
+            <p id="overload-section-paragraph" class="mb-4 text-gray-700"></p>
+            <h3 id="listen-body-section-title" class="text-xl font-semibold mb-2 text-gray-800"></h3>
+            <p id="listen-body-section-paragraph" class="text-gray-700"></p>
+        </div>
     </div>
 
-    <h3 class="w3-padding-16 w3-text-light-grey">VO2 Max</h3>
-    <p>El VO2Max, también conocido como consumo máximo de oxígeno, es la cantidad máxima de oxígeno que un individuo puede utilizar durante el ejercicio intenso. Es un indicador importante del nivel de condición física de una persona y puede ser utilizado para medir y monitorear la capacidad aeróbica del cuerpo para transportar y utilizar el oxígeno en los músculos durante el ejercicio. En general, cuanto mayor sea el VO2Max, mayor será la capacidad del cuerpo para realizar actividad física intensa y prolongada.</p>
-    <canvas id="graphVO2" style="width:100%;max-width:600px;max-height:300px;"></canvas>
+        <div id="global-actions-bar">
+            <button id="export-data-btn" title="Exportar plan y progreso"><i class="fas fa-file-export"></i> <span data-textkey="globalActionsBar.exportButton"></span></button>
+            <button id="import-data-btn" title="Importar plan y progreso desde JSON"><i class="fas fa-file-import"></i> <span data-textkey="globalActionsBar.importButton"></span></button>
+            <input type="file" id="import-file-input" class="hidden" accept=".json">
+            <button id="toggle-edit-mode-btn" title="Activar/Desactivar edición del plan"><i class="fas fa-edit"></i> <span data-textkey="globalActionsBar.editPlanButton"></span></button>
+            <button id="unit-toggle-btn" title="Cambiar unidad de medida (Lb/Kg)"><i class="fas fa-weight-hanging"></i> <span id="unit-toggle-btn-text" data-textkey-kg="globalActionsBar.toggleUnitButtonLabelKg" data-textkey-lb="globalActionsBar.toggleUnitButtonLabelLb"></span></button>
+        </div>
+
+        <div id="edit-plan-actions" class="hidden">
+            <button id="save-plan-changes-btn" class="save-changes-btn"><i class="fas fa-save"></i> <span data-textkey="editPlanActions.savePlanChangesButton"></span></button>
+            <button id="cancel-edit-plan-btn" class="cancel-edit-btn"><i class="fas fa-times-circle"></i> <span data-textkey="editPlanActions.cancelEditPlanButton"></span></button>
+        </div>
+
+    <div id="data-modal" class="modal-overlay"><div class="modal-content"><h3 id="modal-title"></h3><div class="modal-scrollable-content-area"><label for="reps-input" data-textkey="modals.repsLabel"></label><input type="number" id="reps-input" min="1"><label for="weight-input"><span data-textkey="modals.weightLabel"></span> (<span id="weight-unit-label">lb</span>):</label><input type="number" id="weight-input" min="0"></div><div class="modal-actions"><button id="cancel-modal-btn" class="cancel-btn" data-textkey="modals.cancelButton"></button><button id="save-modal-btn" class="save-btn" data-textkey="modals.saveButton"></button></div></div></div>
+    <div id="info-modal" class="modal-overlay"><div class="modal-content"><h3 id="info-modal-title"></h3><div class="modal-scrollable-content-area"><p id="info-modal-content" class="text-gray-700 whitespace-pre-wrap"></p></div><div class="modal-actions justify-center"><button class="save-btn" id="close-info-modal" data-textkey="modals.closeButton"></button></div></div></div>
+    <div id="chart-modal" class="modal-overlay"><div class="modal-content chart-modal"><h3 id="chart-modal-title"></h3><div class="modal-scrollable-content-area" style="height: 350px;"><div style="width: 100%; height: 100%;"><canvas id="exerciseChart"></canvas></div></div><div class="modal-actions justify-center mt-4"><button class="save-btn" id="close-chart-modal" data-textkey="modals.closeButton"></button></div></div></div>
+    <div id="edit-exercise-modal" class="modal-overlay"><div class="modal-content"><h3 id="edit-exercise-modal-title"></h3><div class="modal-scrollable-content-area"><label for="edit-exercise-name" data-textkey="modals.exerciseNameLabel"></label><input type="text" id="edit-exercise-name"><label for="edit-exercise-info" data-textkey="modals.exerciseInfoLabel"></label><textarea id="edit-exercise-info"></textarea><label for="edit-exercise-type" data-textkey="modals.exerciseTypeLabel"></label><select id="edit-exercise-type"><option value="strength" data-textkey="modals.exerciseTypeStrength"></option><option value="session" data-textkey="modals.exerciseTypeSession"></option></select><div id="strength-options"><label for="edit-exercise-sets" data-textkey="modals.exerciseSetsLabel"></label><input type="number" id="edit-exercise-sets" min="1"><label for="edit-exercise-reps-range" data-textkey="modals.exerciseRepsRangeLabel"></label><input type="text" id="edit-exercise-reps-range"></div></div><div class="modal-actions"><button id="cancel-edit-exercise-btn" class="cancel-btn" data-textkey="modals.cancelButton"></button><button id="save-edit-exercise-btn" class="save-btn" data-textkey="modals.saveExerciseButton"></button></div></div></div>
+    <div id="protein-modal" class="modal-overlay"><div class="modal-content"><h3 id="protein-modal-title"></h3><div class="modal-scrollable-content-area"><input type="hidden" id="protein-entry-id"><label for="protein-modal-week" data-textkey="modals.weekLabel"></label><input type="number" id="protein-modal-week" min="1" class="w-full p-2 border border-gray-300 rounded-md mb-3"><label for="protein-modal-day" data-textkey="modals.dayOfWeekLabel"></label><select id="protein-modal-day" class="w-full p-2 border border-gray-300 rounded-md mb-3"></select><label for="protein-modal-grams" data-textkey="modals.proteinGramsLabel"></label><input type="number" id="protein-modal-grams" min="1" class="w-full p-2 border border-gray-300 rounded-md"></div><div class="modal-actions"><button id="cancel-protein-modal-btn" class="cancel-btn" data-textkey="modals.cancelButton"></button><button id="save-protein-modal-btn" class="save-btn" data-textkey="modals.saveButton"></button></div></div></div>
+    <div id="sleep-modal" class="modal-overlay"><div class="modal-content"><h3 id="sleep-modal-title"></h3><div class="modal-scrollable-content-area"><input type="hidden" id="sleep-entry-id"><label for="sleep-modal-week" data-textkey="modals.weekLabel"></label><input type="number" id="sleep-modal-week" min="1" class="w-full p-2 border border-gray-300 rounded-md mb-3"><label for="sleep-modal-day" data-textkey="modals.sleepDayLabel"></label><select id="sleep-modal-day" class="w-full p-2 border border-gray-300 rounded-md mb-3"></select><label for="sleep-modal-hours" data-textkey="modals.sleepHoursLabel"></label><input type="number" id="sleep-modal-hours" min="0" step="0.25" class="w-full p-2 border border-gray-300 rounded-md mb-3"><label for="sleep-modal-quality" data-textkey="modals.sleepQualityLabel"></label><select id="sleep-modal-quality" class="w-full p-2 border border-gray-300 rounded-md mb-3"></select><label for="sleep-modal-notes" data-textkey="modals.sleepNotesLabel"></label><textarea id="sleep-modal-notes" rows="3" class="w-full p-2 border border-gray-300 rounded-md"></textarea></div><div class="modal-actions"><button id="cancel-sleep-modal-btn" class="cancel-btn" data-textkey="modals.cancelButton"></button><button id="save-sleep-modal-btn" class="save-btn" data-textkey="modals.saveButton"></button></div></div></div>
 
     <script>
-          const graphVO2 = document.getElementById('graphVO2');
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- Claves para localStorage ---
+            const localStorageKey = 'detailedTrainingProgress_v2';
+            const planDataKey = 'customTrainingPlan_v2';
+            const PROTEIN_LOG_KEY = 'hyroxProteinLog_v1';
+            const SLEEP_LOG_KEY = 'hyroxSleepLog_v1';
+            const UI_TEXTS_KEY = 'hyroxUiTexts_v1';
 
-          new Chart(graphVO2, {
-            type: 'line',
-            data: {
-              labels: ['20','25','30','35','40','45','50','55','60'],
-              datasets: [{
-                label: 'Minutos',
-                data: [42.65, 35.65, 30.68, 26.98, 24.1, 21.82, 19.93, 18.37, 17.05],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              scales: {
-                y: {
-                  beginAtZero: false,
+            // --- Constantes ---
+            const DAYS_OF_WEEK_ES_FULL = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+            const DAYS_OF_WEEK_ES_SHORT = ["Dom", "Lun", "Mar", "Mié", "Jue", "Vie", "Sáb"];
+            const SLEEP_QUALITY_OPTIONS = ["No registrada", "Mala", "Regular", "Buena", "Excelente"];
+
+            // --- Default UI Texts ---
+            const defaultUiTexts = {
+                "appTitle": "Mi Plan Pro",
+                "heroTitle": "Tu Plan Hyrox Master",
+                "heroSubtitle": "Diseñado para atletas de 50+ que buscan hipertrofia, velocidad y dominar el desafío Hyrox. ¡Tu viaje hacia una forma física excepcional comienza aquí!",
+                "weekPlanCardTitle": "Tu Plan Semanal: ¡A Entrenar!",
+                "weekPlanCardSubtitle": "Marca cada serie y sesión completada para seguir tu increíble progreso. ¡Cada paso cuenta!",
+                "nutritionCardTitle": "Nutre tu Rendimiento: Pilares Fundamentales",
+                "nutritionSectionTitle": "Combustible de Campeón: Nutrición para Hipertrofia y Recuperación",
+                "nutritionSectionParagraph": "La proteína es tu aliada clave para el crecimiento muscular, especialmente después de los 50. Apunta a 1.2-1.6g por kg de peso corporal, distribuyendo 30-35g por comida. ¡Alimenta tus músculos para que crezcan y se recuperen!",
+                "proteinTrackerTitle": "Registro de Proteínas Diario",
+                "proteinTrackerButton": "Registrar Proteína",
+                "proteinEntriesTodayTitle": "Entradas de Hoy (Semana {week}, {day}):",
+                "proteinChartTitle": "Consumo de Proteína Semanal (Semana {week})",
+                "noProteinEntriesText": "No hay registros de proteína para hoy.",
+                "sleepSectionTitle": "El Poder del Descanso: Optimización del Sueño",
+                "sleepSectionParagraph": "Tu cuerpo se reconstruye mientras duermes. Busca 7-9 horas de sueño de calidad cada noche. Un buen descanso es fundamental para la reparación muscular, la optimización hormonal y la prevención del agotamiento. ¡Haz de tu sueño una prioridad de entrenamiento!",
+                "sleepTrackerTitle": "Registro de Sueño Diario",
+                "sleepTrackerButton": "Registrar Sueño",
+                "sleepEntriesTodayTitle": "Sueño Registrado para Hoy (Noche finalizando en Semana {week}, {day}):",
+                "sleepChartTitle": "Horas de Sueño Semanal (Semana {week})",
+                "noSleepEntriesText": "No hay registros de sueño para hoy.",
+                "recoverySectionTitle": "Recuperación Inteligente: Activa y Estratégica",
+                "recoverySectionParagraph": "Da a tus músculos al menos 48 horas de descanso entre sesiones intensas. Incorpora movilidad diaria y días de recuperación activa (caminatas, ciclismo suave). Considera la terapia de contraste y gestiona el estrés para optimizar tu recuperación. ¡Escucha a tu cuerpo y prospera!",
+                "progressionCardTitle": "Domina la Progresión: Tu Camino a Largo Plazo",
+                "periodizationSectionTitle": "La Ciencia del Éxito: Periodización",
+                "periodizationSectionParagraph": "Tu entrenamiento no es estático. La periodización es la hoja de ruta para el progreso continuo, dividiendo tu año en Macrociclos (grandes objetivos), Mesociclos (fases de 4-6 semanas) y Microciclos (tu plan semanal). ¡Esta estrategia asegura que siempre estés desafiando y adaptando tu cuerpo de forma inteligente!",
+                "overloadSectionTitle": "Crecimiento Constante: Estrategias de Sobrecarga Progresiva",
+                "overloadSectionParagraph": "Para seguir mejorando, necesitas desafiarte progresivamente. En Fuerza: aumenta peso, repeticiones o series. En Carrera: incrementa kilometraje, duración o intensidad. Para atletas máster, la clave es la progresión gradual y las semanas de descarga cada 4-6 semanas. ¡Pequeños pasos consistentes llevan a grandes resultados!",
+                "listenBodySectionTitle": "Tu Guía Interna: Escucha a tu Cuerpo",
+                "listenBodySectionParagraph": "Un plan es una guía, pero tu cuerpo es el mejor entrenador. Aprende a escuchar sus señales de fatiga o dolor. Ajusta tu entrenamiento cuando sea necesario y no dudes en consultar a profesionales. ¡Tu seguridad y bienestar son la base de un rendimiento duradero!",
+                "globalActionsBar": {
+                    "exportButton": "Exportar", "importButton": "Importar", "editPlanButton": "Editar Plan",
+                    "toggleUnitButtonLabelKg": "Cambiar a Kg", "toggleUnitButtonLabelLb": "Cambiar a Lb"
                 },
-              },
-              plugins: {
-                  title: {
-                      display: true,
-                      text: 'Tiempo estimado 5K en base a VO2 Max Efectivo',
-                      font: {
-                              size: 18
-                          }
-                  },
-                  legend: {
-                    display: false
-                  }
-              }
+                "editPlanActions": {
+                    "savePlanChangesButton": "Guardar Cambios del Plan", "cancelEditPlanButton": "Cancelar Edición"
+                },
+                "modals": {
+                    "registerSetTitle": "Registrar Serie", "repsLabel": "Repeticiones:", "weightLabel": "Peso",
+                    "saveButton": "Confirmar", "cancelButton": "Cancelar", "infoTitle": "Detalles del Ejercicio",
+                    "closeButton": "Cerrar", "chartTitle": "Progreso del Ejercicio",
+                    "editExerciseTitlePrefix": "Editar Ejercicio:", "addExerciseToDayTitle": "Añadir Ejercicio Independiente a {day}",
+                    "addOptionToGroupTitle": "Añadir Opción a \"{groupTitle}\" en {day}",
+                    "exerciseNameLabel": "Nombre del Ejercicio:", "exerciseInfoLabel": "Descripción Detallada:",
+                    "exerciseTypeLabel": "Tipo de Ejercicio:", "exerciseTypeStrength": "Fuerza (con series/reps)",
+                    "exerciseTypeSession": "Sesión (marcar completado)", "exerciseSetsLabel": "Número de Series:",
+                    "exerciseRepsRangeLabel": "Rango de Repeticiones (texto):", "saveExerciseButton": "Guardar Ejercicio",
+                    "registerProteinTitle": "Registrar Proteína", "editProteinTitle": "Editar Registro de Proteína",
+                    "weekLabel": "Semana:", "dayOfWeekLabel": "Día de la Semana:",
+                    "proteinGramsLabel": "Gramos de Proteína:", "registerSleepTitle": "Registrar Sueño",
+                    "editSleepTitle": "Editar Registro de Sueño", "sleepDayLabel": "Noche del (finalizando en este día):",
+                    "sleepHoursLabel": "Horas Dormidas:", "sleepQualityLabel": "Calidad del Sueño (Opcional):",
+                    "sleepNotesLabel": "Notas (Opcional):"
+                },
+                "placeholders": {
+                    "repsInput": "Ej. 10", "weightInput": "Ej. 100",
+                    "editExerciseName": "Ej. Sentadilla con Barra", "editExerciseInfo": "Qué es el ejercicio, cómo se hace, consejos...",
+                    "editExerciseSets": "Ej. 3", "editExerciseRepsRange": "Ej. 8-12 reps",
+                    "proteinGrams": "Ej. 30", "sleepHours": "Ej. 7.5",
+                    "sleepNotes": "Ej. Me desperté una vez, sueño reparador..."
+                },
+                "confirmationMessages": {
+                    "cancelEditPlan": "¿Estás seguro de que quieres cancelar la edición? Se perderán todos los cambios no guardados en el plan.",
+                    "importData": "Atención: Esta acción reemplazará tu plan de entrenamiento, progreso, proteínas y sueño actual con los datos del archivo seleccionado. ¿Estás seguro de que quieres continuar?",
+                    "deleteExercise": "¿Estás seguro de que quieres eliminar el ejercicio \"{exerciseName}\" del día {day} del plan? Esta acción no se puede deshacer. El historial de seguimiento de este ejercicio NO será eliminado automáticamente de los registros globales.",
+                    "deleteProteinEntry": "¿Seguro que quieres eliminar este registro de {grams}g de proteína?",
+                    "deleteSleepEntry": "¿Eliminar registro de {hours}h de sueño?"
+                },
+                "notifications": {
+                    "planSavedSuccess": "¡Plan de entrenamiento guardado con éxito!", "dataExportedSuccess": "¡Datos exportados con éxito!",
+                    "dataImportedSuccess": "¡Datos importados con éxito!", "dataImportError": "Error al importar: {errorMessage}",
+                    "fileReadError": "Error al leer el archivo.", "exerciseDeleted": "El ejercicio \"{exerciseName}\" ha sido eliminado del plan para el día {day}.",
+                    "genericError": "Error: {errorMessage}", "warningInvalidReps": "Por favor, introduce un número válido de repeticiones (mayor que 0).",
+                    "warningExerciseNameEmpty": "El nombre del ejercicio no puede estar vacío.", "warningInvalidSets": "El número de series debe ser un número válido mayor que 0.",
+                    "warningSectionNotFound": "Error: La sección del plan no se encontró.", "warningExerciseNotFoundInGroup": "Error: El ejercicio dentro del grupo no se encontró.",
+                    "warningCannotAddOptionToSection": "Error: No se puede añadir opción a esta sección (tipo: {sectionType}).",
+                    "warningNoDataForChart": "No hay datos registrados para {exerciseName} para mostrar en el gráfico.",
+                    "warningInvalidWeek": "Por favor, introduce un número de semana válido.", "warningSelectDay": "Por favor, selecciona un día de la semana.",
+                    "warningInvalidGrams": "Por favor, introduce una cantidad válida de gramos (mayor que 0).",
+                    "warningInvalidSleepHours": "Horas de sueño inválidas."
+                }
+            };
+            let loadedUiTexts = { ...defaultUiTexts };
+
+            // --- Elementos DOM ---
+            const appTitleElement = document.getElementById('app-title');
+            const heroTitleElement = document.getElementById('hero-title');
+            const heroSubtitleElement = document.getElementById('hero-subtitle');
+            const weekPlanCardTitleElement = document.getElementById('week-plan-card-title');
+            const weekPlanCardSubtitleElement = document.getElementById('week-plan-card-subtitle');
+            const nutritionCardTitleElement = document.getElementById('nutrition-card-title');
+            const nutritionSectionTitleElement = document.getElementById('nutrition-section-title');
+            const nutritionSectionParagraphElement = document.getElementById('nutrition-section-paragraph');
+            const proteinTrackerTitleElement = document.getElementById('protein-tracker-title');
+            const proteinEntriesTodayTitleElement = document.getElementById('protein-entries-today-title');
+            const proteinChartTitleElement = document.getElementById('protein-chart-title');
+            const noProteinEntriesTextElement = document.getElementById('no-protein-entries-text');
+            const sleepSectionTitleElement = document.getElementById('sleep-section-title');
+            const sleepSectionParagraphElement = document.getElementById('sleep-section-paragraph');
+            const sleepTrackerTitleElement = document.getElementById('sleep-tracker-title');
+            const sleepEntriesTodayTitleElement = document.getElementById('sleep-entries-today-title');
+            const sleepChartTitleElement = document.getElementById('sleep-chart-title');
+            const noSleepEntriesTextElement = document.getElementById('no-sleep-entries-text');
+            const recoverySectionTitleElement = document.getElementById('recovery-section-title');
+            const recoverySectionParagraphElement = document.getElementById('recovery-section-paragraph');
+            const progressionCardTitleElement = document.getElementById('progression-card-title');
+            const periodizationSectionTitleElement = document.getElementById('periodization-section-title');
+            const periodizationSectionParagraphElement = document.getElementById('periodization-section-paragraph');
+            const overloadSectionTitleElement = document.getElementById('overload-section-title');
+            const overloadSectionParagraphElement = document.getElementById('overload-section-paragraph');
+            const listenBodySectionTitleElement = document.getElementById('listen-body-section-title');
+            const listenBodySectionParagraphElement = document.getElementById('listen-body-section-paragraph');
+            
+            const dataModal = document.getElementById('data-modal');
+            const modalTitle = document.getElementById('modal-title');
+            const repsInput = document.getElementById('reps-input');
+            const weightInput = document.getElementById('weight-input');
+            const weightUnitLabel = document.getElementById('weight-unit-label');
+            const saveModalBtn = document.getElementById('save-modal-btn');
+            const cancelModalBtn = document.getElementById('cancel-modal-btn');
+            const infoModal = document.getElementById('info-modal');
+            const infoModalTitle = document.getElementById('info-modal-title');
+            const infoModalContent = document.getElementById('info-modal-content');
+            const closeInfoModalBtn = document.getElementById('close-info-modal');
+            const chartModal = document.getElementById('chart-modal');
+            const chartModalTitleEl = document.getElementById('chart-modal-title');
+            const closeChartModalBtn = document.getElementById('close-chart-modal');
+            const exerciseChartCanvas = document.getElementById('exerciseChart');
+            const editExerciseModal = document.getElementById('edit-exercise-modal');
+            const editExerciseModalTitle = document.getElementById('edit-exercise-modal-title');
+            const editExerciseNameInput = document.getElementById('edit-exercise-name');
+            const editExerciseInfoTextarea = document.getElementById('edit-exercise-info');
+            const editExerciseTypeSelect = document.getElementById('edit-exercise-type');
+            const strengthOptionsDiv = document.getElementById('strength-options');
+            const editExerciseSetsInput = document.getElementById('edit-exercise-sets');
+            const editExerciseRepsRangeInput = document.getElementById('edit-exercise-reps-range');
+            const saveEditExerciseBtn = document.getElementById('save-edit-exercise-btn');
+            const cancelEditExerciseBtn = document.getElementById('cancel-edit-exercise-btn');
+            const trainingPlanContainer = document.getElementById('training-plan-container');
+            const weekDisplay = document.getElementById('week-display');
+            const prevWeekBtn = document.getElementById('prev-week-btn');
+            const nextWeekBtn = document.getElementById('next-week-btn');
+            
+            const exportBtn = document.getElementById('export-data-btn'); 
+            const importBtn = document.getElementById('import-data-btn'); 
+            const importFileInput = document.getElementById('import-file-input');
+            const toggleEditModeBtn = document.getElementById('toggle-edit-mode-btn');
+            const unitToggleButton = document.getElementById('unit-toggle-btn');
+            const editPlanActionsDiv = document.getElementById('edit-plan-actions');
+            const savePlanChangesBtn = document.getElementById('save-plan-changes-btn');
+            const cancelEditPlanBtn = document.getElementById('cancel-edit-plan-btn');
+
+            const registerProteinBtn = document.getElementById('register-protein-btn');
+            const proteinModal = document.getElementById('protein-modal');
+            const proteinModalTitle = document.getElementById('protein-modal-title');
+            const proteinEntryIdInput = document.getElementById('protein-entry-id');
+            const proteinModalWeekInput = document.getElementById('protein-modal-week');
+            const proteinModalDaySelect = document.getElementById('protein-modal-day');
+            const proteinModalGramsInput = document.getElementById('protein-modal-grams');
+            const saveProteinModalBtn = document.getElementById('save-protein-modal-btn');
+            const cancelProteinModalBtn = document.getElementById('cancel-protein-modal-btn');
+            const proteinEntriesListContainer = document.getElementById('protein-entries-list');
+            const proteinWeekChartCanvasContext = document.getElementById('protein-week-chart').getContext('2d');
+            const currentWeekProteinDisplay = document.getElementById('current-week-protein-display');
+            const currentDayProteinDisplay = document.getElementById('current-day-protein-display');
+
+            const registerSleepBtn = document.getElementById('register-sleep-btn');
+            const sleepModal = document.getElementById('sleep-modal');
+            const sleepModalTitle = document.getElementById('sleep-modal-title');
+            const sleepEntryIdInput = document.getElementById('sleep-entry-id');
+            const sleepModalWeekInput = document.getElementById('sleep-modal-week');
+            const sleepModalDaySelect = document.getElementById('sleep-modal-day');
+            const sleepModalHoursInput = document.getElementById('sleep-modal-hours');
+            const sleepModalQualitySelect = document.getElementById('sleep-modal-quality');
+            const sleepModalNotesTextarea = document.getElementById('sleep-modal-notes');
+            const saveSleepModalBtn = document.getElementById('save-sleep-modal-btn');
+            const cancelSleepModalBtn = document.getElementById('cancel-sleep-modal-btn');
+            const sleepEntriesListContainer = document.getElementById('sleep-entries-list');
+            const sleepWeekChartCanvasContext = document.getElementById('sleep-week-chart').getContext('2d');
+            const currentWeekSleepDisplay = document.getElementById('current-week-sleep-display');
+            const currentDaySleepDisplay = document.getElementById('current-day-sleep-display');
+            
+            const exportDataBtnText = exportBtn.querySelector('span');
+            const importDataBtnText = importBtn.querySelector('span');
+            const toggleEditModeBtnText = toggleEditModeBtn.querySelector('span');
+            const unitToggleButtonText = document.getElementById('unit-toggle-btn-text');
+            const savePlanChangesBtnText = savePlanChangesBtn.querySelector('span');
+            const cancelEditPlanBtnText = cancelEditPlanBtn.querySelector('span');
+            const registerProteinBtnText = registerProteinBtn.querySelector('span');
+            const registerSleepBtnText = registerSleepBtn.querySelector('span');
+            const modalLabelsAndButtons = document.querySelectorAll('[data-textkey]');
+
+            // --- Estado de la Aplicación ---
+            let currentWeek = parseInt(localStorage.getItem('currentWeek_v2') || '1');
+            let currentUnit = localStorage.getItem('unit_v2') || 'lb'; // 'lb' or 'kg'
+            let editMode = false;
+            let currentPlanData = {};
+            let proteinLog = [];
+            let sleepLog = [];
+            let proteinChartInstance = null;
+            let sleepChartInstance = null;
+            let myChart = null; // For exercise progress chart
+            let editingContext = { mode: '', day: '', sectionIndex: -1, exerciseIndex: -1 };
+            let currentDay, currentExercise, currentSet;
+
+            // --- Default Plan Data (Autocontenido) ---
+            const defaultPlanData = { /* ... Tu estructura de defaultPlanData aquí ... */ 
+                "Lunes": { "dayPurposeTitle": "Fuerza (Tren Inferior y Empuje Superior) + Core", "warmup": "10-15 minutos de movilidad articular y activación muscular ligera (ej. sentadillas con peso corporal, estocadas dinámicas, círculos de brazos).", "sections": [{"type": "option_group", "title": "Opción Principal Tren Inferior (Elige uno):", "exercises": [{"name": "Sentadilla con Barra (Barbell Squat)", "type": "strength", "sets": 4, "reps_range": "8-12", "info": "Setup: Coloca la barra sobre tus trapecios..."}, {"name": "Prensa de Piernas (Leg Press)", "type": "strength", "sets": 4, "reps_range": "8-12", "info": "Setup: Siéntate en la máquina..."}]}, {"type": "standalone", "exercise": {"name": "Peso Muerto Rumano (Romanian Deadlift - RDLs)", "type": "strength", "sets": 4, "reps_range": "8-12", "info": "Setup: De pie, con la barra..."}}, {"type": "option_group", "title": "Opción Principal Empuje Superior (Elige uno):", "exercises": [{"name": "Press de Banca con Barra (Barbell Bench Press)", "type": "strength", "sets": 4, "reps_range": "8-12", "info": "Setup: Acuéstate en el banco..."}, {"name": "Press de Banca con Mancuernas (Dumbbell Bench Press)", "type": "strength", "sets": 4, "reps_range": "8-12", "info": "Setup: Siéntate en el banco..."}]}, {"type": "option_group", "title": "Opción Press de Hombros (Elige uno):", "exercises": [{"name": "Press de Hombros con Mancuernas (Sentado o de Pie)", "type": "strength", "sets": 3, "reps_range": "8-12", "info": "Setup: Sentado en un banco..."}, {"name": "Press Militar con Barra (De Pie)", "type": "strength", "sets": 3, "reps_range": "8-12", "info": "Setup: De pie, pies al ancho..."}]}, {"type": "option_group", "title": "Opción Core (Elige uno):", "exercises": [{"name": "Plancha Frontal (Plank)", "type": "strength", "sets": 3, "reps_range": "Máx. tiempo (ej. 30-60s)", "info": "Setup: Apoya los antebrazos..."}, {"name": "Rueda Abdominal (Ab Wheel Rollout)", "type": "strength", "sets": 3, "reps_range": "Máx. reps controladas (ej. 6-12)", "info": "Setup: De rodillas..."}]}, {"type": "standalone", "exercise": {"name": "Elevación de Gemelos (De pie o sentado)", "type": "strength", "sets": 3, "reps_range": "12-15", "info": "Setup: De pie (con o sin peso)..."}}], "cooldown": "10-15 minutos de cardio ligero..." },
+                "Martes": { "dayPurposeTitle": "Running de Calidad (Umbral/Tempo)", "warmup": "15-20 minutos de trote muy suave...", "sections": [{"type": "option_group", "title": "Running de Umbral/Tempo (Elige una opción):", "exercises": [{"name": "Tempo Run Continuo", "type": "session", "info": "Correr 20-30 minutos..."}, {"name": "Intervalos de Tempo Largos", "type": "session", "info": "3-4 repeticiones de 5-8 minutos..."}, {"name": "Intervalos de Crucero (Cruise Intervals)", "type": "session", "info": "4-6 repeticiones de 1000m-1600m..."}]}], "cooldown": "10-15 minutos de trote muy suave..." },
+                "Miércoles": { "dayPurposeTitle": "Descanso Activo / Movilidad", "warmup": "5-10 minutos de movilidad articular suave si se desea...", "sections": [{"type": "option_group", "title": "Descanso Activo / Movilidad (Elige una opción principal):", "exercises": [{"name": "Caminata Ligera", "type": "session", "info": "30-45 minutos a un ritmo suave..."}, {"name": "Ciclismo Suave (Estático o al aire libre)", "type": "session", "info": "30-45 minutos a baja intensidad..."}, {"name": "Natación Ligera", "type": "session", "info": "30-45 minutos de nado suave..."}, {"name": "Sesión de Movilidad y Yoga Suave", "type": "session", "info": "20-30 minutos enfocados en movilidad..."}]}], "cooldown": "No es estrictamente necesario..." },
+                "Jueves": { "dayPurposeTitle": "Fuerza (Tren Superior y Cadena Posterior) + Core", "warmup": "10-15 minutos de movilidad articular y activación muscular...", "sections": [ {"type": "option_group", "title": "Opción Principal de Jalón Vertical (Elige uno):", "exercises": [ {"name": "Dominadas (Asistidas, con peso corporal o lastradas)", "type": "strength", "sets": 4, "reps_range": "6-12 (o AMRAP si es con peso corporal y se superan las 12 reps)", "info": "Setup: Agarra la barra..."}, {"name": "Jalón al Pecho (Lat Pulldown)", "type": "strength", "sets": 4, "reps_range": "8-12", "info": "Setup: Siéntate en la máquina..."}]}, {"type": "option_group", "title": "Opción Principal de Remo (Elige uno):", "exercises": [ {"name": "Remo con Barra (Pendlay Row o Barbell Row)", "type": "strength", "sets": 4, "reps_range": "8-12", "info": "Setup (Pendlay): Barra en el suelo..."}, {"name": "Remo Sentado en Máquina (Cable Row)", "type": "strength", "sets": 4, "reps_range": "8-12", "info": "Setup: Siéntate con los pies apoyados..."}, {"name": "Remo con Mancuerna a una mano (Dumbbell Row)", "type": "strength", "sets": 3, "reps_range": "8-12 por lado", "info": "Setup: Apoya una rodilla..."}]}, {"type": "option_group", "title": "Opción Press de Hombros (Elige uno, diferente al Lunes si es posible):", "exercises": [ {"name": "Press Militar con Barra (De Pie)", "type": "strength", "sets": 3, "reps_range": "8-12", "info": "Setup: De pie, pies al ancho de hombros..."}, {"name": "Press de Hombros con Mancuernas (Sentado o de Pie)", "type": "strength", "sets": 3, "reps_range": "8-12", "info": "Setup: Sentado en un banco..."}]}, {"type": "option_group", "title": "Opción Tríceps (Elige uno):", "exercises": [ {"name": "Fondos en Paralelas (Dips) (o en banco si es necesario)", "type": "strength", "sets": 3, "reps_range": "8-12 (o AMRAP si es con peso corporal)", "info": "Setup: En barras paralelas..."}, {"name": "Extensiones de Tríceps sobre la cabeza (con mancuerna o cable)", "type": "strength", "sets": 3, "reps_range": "10-15", "info": "Setup: De pie o sentado..."}, {"name": "Press Francés (Skullcrushers) con barra Z o mancuernas", "type": "strength", "sets": 3, "reps_range": "10-15", "info": "Setup: Acostado en un banco plano..."}]}, {"type": "standalone", "exercise": {"name": "Curl de Bíceps (con barra o mancuernas, alterno o simultáneo)", "type": "strength", "sets": 3, "reps_range": "10-15", "info": "Setup: De pie o sentado..."}}, {"type": "option_group", "title": "Opción Core (Elige uno, diferente al Lunes):", "exercises": [ {"name": "Elevaciones de Piernas Colgado (Hanging Leg Raises) (o en silla romana)", "type": "strength", "sets": 3, "reps_range": "10-20", "info": "Setup: Colgado de una barra..."}, {"name": "Crunch en polea alta (Rope Crunch)", "type": "strength", "sets": 3, "reps_range": "12-20", "info": "Setup: De rodillas frente a una polea alta..."}, {"name": "Giros Rusos (Russian Twists) (con o sin peso)", "type": "strength", "sets": 3, "reps_range": "15-20 por lado", "info": "Setup: Siéntate en el suelo..."}]}], "cooldown": "10-15 minutos de cardio ligero y estiramientos..." },
+                "Viernes": { "dayPurposeTitle": "Running de Calidad (VO2 Max/Velocidad)", "warmup": "15-20 minutos de trote suave...", "sections": [{"type": "option_group", "title": "Running de VO2 Max/Velocidad (Elige una opción):", "exercises": [{"name": "Sprints Progresivos en Pista/Plano", "type": "session", "info": "8-10 repeticiones de 200m..."}, {"name": "Intervalos a Ritmo de 5k (VO2 Max)", "type": "session", "info": "4-5 repeticiones de 800m..."}, {"name": "Sprints en Cuesta (Hill Sprints)", "type": "session", "info": "6-8 repeticiones de 60-100m..."}, {"name": "Intervalos Cortos (Repeticiones de 400m)", "type": "session", "info": "6-8 repeticiones de 400m..."}]}], "cooldown": "10-15 minutos de trote muy suave..." },
+                "Sábado": { "dayPurposeTitle": "Sesión Hyrox/Híbrida (Comprometida)", "warmup": "10-15 minutos de movilidad articular y activación específica de Hyrox...", "sections": [{"type": "option_group", "title": "Sesión Hyrox/Híbrida (Comprometida - Elige una simulación o enfoque):", "exercises": [{"name": "Simulación Hyrox Parcial (Carrera + Fuerza)", "type": "session", "info": "3-4 rondas de: 1km carrera..."}, {"name": "Simulación Hyrox Parcial (Carrera + Resistencia Muscular)", "type": "session", "info": "3 rondas de: 1km carrera + 750m-1000m Remo..."}, {"name": "Enfoque en Estaciones Débiles + Carrera", "type": "session", "info": "Elegir 2-3 estaciones Hyrox..."}, {"name": "Entrenamiento Comprometido General (Más Corto e Intenso)", "type": "session", "info": "EMOM (Every Minute On the Minute) por 20-30 minutos..."}]}], "cooldown": "10-15 minutos de trote muy suave o caminata..." },
+                "Domingo": { "dayPurposeTitle": "Descanso Completo", "warmup": "N/A", "sections": [{"type": "standalone", "exercise": {"name": "Descanso Completo o Recuperación Muy Ligera", "type": "session", "info": "Opción 1: Descanso total..."}}], "cooldown": "N/A" }
+            };
+            
+            // --- Funciones de Conversión de Unidades ---
+            function kgToLb(kg) { return kg * 2.20462; }
+            function lbToKg(lb) { return lb / 2.20462; }
+
+            // Convierte un peso (asumido como almacenado en libras) a la targetUnit para mostrar.
+            function convertWeightForDisplay(weightInLb, targetUnit) {
+                if (targetUnit === 'kg') {
+                    return lbToKg(weightInLb);
+                }
+                return weightInLb; // La unidad objetivo es lb
             }
-          });
+
+
+            // --- Funciones Auxiliares ---
+            function getText(key, replacements = {}) {
+                let text = key.split('.').reduce((obj, k) => (obj && obj[k] !== undefined) ? obj[k] : undefined, loadedUiTexts);
+                if (text === undefined) { 
+                    text = key.split('.').reduce((obj, k) => (obj && obj[k] !== undefined) ? obj[k] : undefined, defaultUiTexts);
+                }
+                if (text === undefined) {
+                    console.warn(`Texto no encontrado para la clave: ${key}`);
+                    return `[${key}]`;
+                }
+                if (typeof text === 'string') {
+                    for (const placeholder in replacements) {
+                        text = text.replace(new RegExp(`{${placeholder}}`, 'g'), replacements[placeholder]);
+                    }
+                }
+                return text;
+            }
+
+            function applyUiTexts() {
+                document.title = getText('appTitle');
+                if (heroTitleElement) heroTitleElement.textContent = getText('heroTitle');
+                if (heroSubtitleElement) heroSubtitleElement.textContent = getText('heroSubtitle');
+                if (weekPlanCardTitleElement) weekPlanCardTitleElement.textContent = getText('weekPlanCardTitle');
+                if (weekPlanCardSubtitleElement) weekPlanCardSubtitleElement.textContent = getText('weekPlanCardSubtitle');
+                if (nutritionCardTitleElement) nutritionCardTitleElement.textContent = getText('nutritionCardTitle');
+                if (nutritionSectionTitleElement) nutritionSectionTitleElement.textContent = getText('nutritionSectionTitle');
+                if (nutritionSectionParagraphElement) nutritionSectionParagraphElement.textContent = getText('nutritionSectionParagraph');
+                if (proteinTrackerTitleElement) proteinTrackerTitleElement.textContent = getText('proteinTrackerTitle');
+                if (noProteinEntriesTextElement) noProteinEntriesTextElement.textContent = getText('noProteinEntriesText');
+                
+                if (sleepSectionTitleElement) sleepSectionTitleElement.textContent = getText('sleepSectionTitle');
+                if (sleepSectionParagraphElement) sleepSectionParagraphElement.textContent = getText('sleepSectionParagraph');
+                if (sleepTrackerTitleElement) sleepTrackerTitleElement.textContent = getText('sleepTrackerTitle');
+                if (noSleepEntriesTextElement) noSleepEntriesTextElement.textContent = getText('noSleepEntriesText');
+
+                if (recoverySectionTitleElement) recoverySectionTitleElement.textContent = getText('recoverySectionTitle');
+                if (recoverySectionParagraphElement) recoverySectionParagraphElement.textContent = getText('recoverySectionParagraph');
+                if (progressionCardTitleElement) progressionCardTitleElement.textContent = getText('progressionCardTitle');
+                if (periodizationSectionTitleElement) periodizationSectionTitleElement.textContent = getText('periodizationSectionTitle');
+                if (periodizationSectionParagraphElement) periodizationSectionParagraphElement.textContent = getText('periodizationSectionParagraph');
+                if (overloadSectionTitleElement) overloadSectionTitleElement.textContent = getText('overloadSectionTitle');
+                if (overloadSectionParagraphElement) overloadSectionParagraphElement.textContent = getText('overloadSectionParagraph');
+                if (listenBodySectionTitleElement) listenBodySectionTitleElement.textContent = getText('listenBodySectionTitle');
+                if (listenBodySectionParagraphElement) listenBodySectionParagraphElement.textContent = getText('listenBodySectionParagraph');
+
+                if(exportDataBtnText) exportDataBtnText.textContent = getText('globalActionsBar.exportButton');
+                if(importDataBtnText) importDataBtnText.textContent = getText('globalActionsBar.importButton');
+                if(toggleEditModeBtnText) toggleEditModeBtnText.textContent = getText('globalActionsBar.editPlanButton');
+                if(savePlanChangesBtnText) savePlanChangesBtnText.textContent = getText('editPlanActions.savePlanChangesButton');
+                if(cancelEditPlanBtnText) cancelEditPlanBtnText.textContent = getText('editPlanActions.cancelEditPlanButton');
+                if(registerProteinBtnText) registerProteinBtnText.textContent = getText('proteinTrackerButton');
+                if(registerSleepBtnText) registerSleepBtnText.textContent = getText('sleepTrackerButton');
+                
+                modalLabelsAndButtons.forEach(el => {
+                    const key = el.dataset.textkey;
+                    if (key) {
+                        // Para el botón de unidad, manejamos las claves específicas de lb/kg en updateDynamicUiText
+                        if (el.id !== 'unit-toggle-btn-text') {
+                             el.textContent = getText(key);
+                        }
+                    }
+                });
+
+                repsInput.placeholder = getText('placeholders.repsInput');
+                weightInput.placeholder = getText('placeholders.weightInput');
+                editExerciseNameInput.placeholder = getText('placeholders.editExerciseName');
+                editExerciseInfoTextarea.placeholder = getText('placeholders.editExerciseInfo');
+                editExerciseSetsInput.placeholder = getText('placeholders.editExerciseSets');
+                editExerciseRepsRangeInput.placeholder = getText('placeholders.editExerciseRepsRange');
+                proteinModalGramsInput.placeholder = getText('placeholders.proteinGrams');
+                sleepModalHoursInput.placeholder = getText('placeholders.sleepHours');
+                sleepModalNotesTextarea.placeholder = getText('placeholders.sleepNotes');
+
+                updateDynamicUiText();
+            }
+            
+            function updateDynamicUiText() {
+                 if (proteinEntriesTodayTitleElement) proteinEntriesTodayTitleElement.textContent = getText('proteinEntriesTodayTitle', { week: currentWeek, day: getActualCurrentDayName() });
+                 if (proteinChartTitleElement) proteinChartTitleElement.textContent = getText('proteinChartTitle', { week: currentWeek });
+                 if (sleepEntriesTodayTitleElement) sleepEntriesTodayTitleElement.textContent = getText('sleepEntriesTodayTitle', { week: currentWeek, day: getActualCurrentDayName() });
+                 if (sleepChartTitleElement) sleepChartTitleElement.textContent = getText('sleepChartTitle', { week: currentWeek });
+                 if (unitToggleButtonText) unitToggleButtonText.textContent = currentUnit === 'lb' ? getText('globalActionsBar.toggleUnitButtonLabelKg') : getText('globalActionsBar.toggleUnitButtonLabelLb');
+            }
+
+            function updateUnitDisplay() {
+                weightUnitLabel.textContent = currentUnit;
+                updateDynamicUiText(); // Actualiza el texto del botón de unidades
+            }
+
+            function updateWeekDisplay() {
+                if (weekDisplay) weekDisplay.textContent = getText('modals.weekLabel').replace(':', '') + ` ${currentWeek}`;
+                if (currentWeekProteinDisplay) currentWeekProteinDisplay.textContent = currentWeek;
+                if (currentWeekSleepDisplay) currentWeekSleepDisplay.textContent = currentWeek;
+                updateDynamicUiText();
+            }
+
+            function loadProgress() {
+                updateWeekDisplay(); 
+                updateUnitDisplay(); 
+                const allProgress = JSON.parse(localStorage.getItem(localStorageKey)) || {};
+                const currentWeekProgress = allProgress.weeks ? allProgress.weeks[`week${currentWeek}`] || {} : {};
+                document.querySelectorAll('details').forEach(dayDetail => {
+                    const day = dayDetail.dataset.day;
+                    const dayProgress = currentWeekProgress[day] || {};
+                    let exercisesCompletedCount = 0; let totalExercisesCount = 0; const completedOptionGroups = new Set();
+                    dayDetail.querySelectorAll('.exercise-item[data-exercise]').forEach(exerciseItem => {
+                        const exerciseName = exerciseItem.dataset.exercise;
+                        const setButtonsContainer = exerciseItem.querySelector('.set-buttons');
+                        const sessionButton = exerciseItem.querySelector('.session-button');
+                        const parentGroup = exerciseItem.closest('.exercise-group[data-option-group]');
+                        let isExerciseItemCompleted = false;
+                        if (setButtonsContainer) {
+                            let setsCompleted = 0; let totalSets = 0;
+                            setButtonsContainer.querySelectorAll('button[data-set]').forEach(button => {
+                                totalSets++; const setIndex = button.dataset.set;
+                                const setData = dayProgress[exerciseName] ? dayProgress[exerciseName][`set${setIndex}`] : null;
+                                button.disabled = false;
+                                if (setData && setData.completed) {
+                                    button.classList.add('completed');
+                                    // setData.weight está en lb, setData.unit también debería ser 'lb' o no existir
+                                    const displayedWeight = convertWeightForDisplay(setData.weight, currentUnit).toFixed(1);
+                                    button.textContent = `${setData.reps} reps @ ${displayedWeight}${currentUnit}`; setsCompleted++;
+                                } else { button.classList.remove('completed'); button.textContent = `Serie ${setIndex}`; }
+                            });
+                            if (totalSets > 0 && setsCompleted === totalSets) isExerciseItemCompleted = true;
+                        } else if (sessionButton) {
+                            const exerciseData = dayProgress[exerciseName];
+                            if (exerciseData && exerciseData.completed) {
+                                sessionButton.classList.add('completed'); sessionButton.textContent = 'Completado'; isExerciseItemCompleted = true;
+                            } else { sessionButton.classList.remove('completed'); sessionButton.textContent = 'Marcar como Completado'; }
+                            sessionButton.disabled = false;
+                        }
+                        if (parentGroup) { if (isExerciseItemCompleted) completedOptionGroups.add(parentGroup.dataset.optionGroup); }
+                        else { totalExercisesCount++; if (isExerciseItemCompleted) exercisesCompletedCount++; }
+                    });
+                    dayDetail.querySelectorAll('.exercise-group[data-option-group]').forEach(group => {
+                        totalExercisesCount++; if (completedOptionGroups.has(group.dataset.optionGroup)) exercisesCompletedCount++;
+                    });
+                    const dayStatusSpan = document.getElementById(`status-${day}`);
+                    if (dayStatusSpan) {
+                        if (totalExercisesCount > 0 && exercisesCompletedCount === totalExercisesCount) { dayStatusSpan.textContent = ' (Completado)'; dayStatusSpan.classList.add('completed-day'); }
+                        else if (exercisesCompletedCount > 0) { dayStatusSpan.textContent = ` (${exercisesCompletedCount}/${totalExercisesCount} completados)`; dayStatusSpan.classList.remove('completed-day'); }
+                        else { dayStatusSpan.textContent = ''; dayStatusSpan.classList.remove('completed-day'); }
+                    }
+                });
+            }
+
+            function loadPlan() {
+                const storedPlan = localStorage.getItem(planDataKey);
+                const storedUiTexts = localStorage.getItem(UI_TEXTS_KEY);
+
+                if (storedUiTexts) {
+                    try {
+                        loadedUiTexts = { ...defaultUiTexts, ...JSON.parse(storedUiTexts) };
+                    } catch (e) {
+                        console.error("Error parsing UI texts from localStorage, using defaults:", e);
+                        loadedUiTexts = { ...defaultUiTexts };
+                    }
+                } else {
+                    loadedUiTexts = { ...defaultUiTexts };
+                }
+
+                try {
+                    if (storedPlan) {
+                        currentPlanData = JSON.parse(storedPlan);
+                        if (Object.keys(currentPlanData).length === 0) throw new Error("Empty plan loaded");
+                         Object.keys(defaultPlanData).forEach(dayKey => {
+                             if (currentPlanData[dayKey] && !currentPlanData[dayKey].dayPurposeTitle && defaultPlanData[dayKey].dayPurposeTitle) {
+                                 currentPlanData[dayKey].dayPurposeTitle = defaultPlanData[dayKey].dayPurposeTitle;
+                             }
+                         });
+                    } else {
+                        currentPlanData = JSON.parse(JSON.stringify(defaultPlanData));
+                        savePlan();
+                    }
+                } catch (e) {
+                    console.error("Error parsing plan from localStorage or plan is empty, resetting to default:", e);
+                    currentPlanData = JSON.parse(JSON.stringify(defaultPlanData));
+                    savePlan();
+                }
+                applyUiTexts();
+            }
+            
+            function savePlan() { localStorage.setItem(planDataKey, JSON.stringify(currentPlanData)); }
+
+            function saveProgress(day, exercise, set, data) {
+                const allProgress = JSON.parse(localStorage.getItem(localStorageKey)) || { weeks: {} };
+                if (!allProgress.weeks) allProgress.weeks = {};
+                if (!allProgress.weeks[`week${currentWeek}`]) allProgress.weeks[`week${currentWeek}`] = {};
+                if (!allProgress.weeks[`week${currentWeek}`][day]) allProgress.weeks[`week${currentWeek}`][day] = {};
+                
+                const entryDate = new Date().toISOString();
+
+                if (!set && data.hasOwnProperty('completed')) { // For session type exercises
+                    if (!allProgress.weeks[`week${currentWeek}`][day][exercise]) allProgress.weeks[`week${currentWeek}`][day][exercise] = {};
+                    allProgress.weeks[`week${currentWeek}`][day][exercise].completed = data.completed;
+                    allProgress.weeks[`week${currentWeek}`][day][exercise].date = entryDate;
+                } else if (set) { // For strength type exercises (individual sets)
+                    if (!allProgress.weeks[`week${currentWeek}`][day][exercise]) allProgress.weeks[`week${currentWeek}`][day][exercise] = {};
+                    // Ensure data.weight is in lbs before saving
+                    const progressData = {
+                        ...data,
+                        date: entryDate,
+                        unit: 'lb' // Always store unit as lb
+                    };
+                    allProgress.weeks[`week${currentWeek}`][day][exercise][`set${set}`] = progressData;
+                }
+                // Note: The original code had an 'else' case here that seemed redundant with the 'set' case.
+                // If there was another type of progress to save, that logic would go here.
+
+                localStorage.setItem(localStorageKey, JSON.stringify(allProgress));
+                loadProgress();
+            }
+
+            function renderPlan() {
+
+                document.addEventListener('click', function(event) {
+                    const target = event.target;
+                    let message = `[DOC CLICK] Target: ${target.tagName}`;
+                    if (target.id) message += ` id="${target.id}"`;
+                    if (target.classList && target.classList.length > 0) message += ` class="${target.classList}"`;
+
+                    // Comprobar propiedad JS
+                    if (target.DEBUG_ID) {
+                        message += ` -- Propiedad JS DEBUG_ID: ${target.DEBUG_ID}`;
+                    } else {
+                        message += ` -- Propiedad JS DEBUG_ID: NO ENCONTRADA`;
+                    }
+                    // Comprobar atributo HTML
+                    if (target.getAttribute('data-debug-id')) {
+                        message += ` -- Atributo data-debug-id: ${target.getAttribute('data-debug-id')}`;
+                    } else {
+                        message += ` -- Atributo data-debug-id: NO ENCONTRADO`;
+                    }
+                    console.log(message);
+                }, true); // Fase de captura
+
+                trainingPlanContainer.innerHTML = '';
+                const daysOrder = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado" ];
+                daysOrder.forEach(dayName => {
+                    const dayData = currentPlanData[dayName];
+                    if (!dayData) return;
+                    const detailsElement = document.createElement('details'); detailsElement.dataset.day = dayName;
+                    const summaryElement = document.createElement('summary');
+                    let purposeTitle = "Día de Entrenamiento"; 
+                    if (dayData && dayData.dayPurposeTitle) {
+                        purposeTitle = dayData.dayPurposeTitle;
+                    } else if (defaultPlanData[dayName] && defaultPlanData[dayName].dayPurposeTitle) {
+                        purposeTitle = defaultPlanData[dayName].dayPurposeTitle;
+                    }
+                    summaryElement.innerHTML = `${dayName}: ${purposeTitle} <span class="day-status" id="status-${dayName}"></span>`;
+                    detailsElement.appendChild(summaryElement);
+                    const dayContentDiv = document.createElement('div'); dayContentDiv.classList.add('day-content');
+                    if (dayData.warmup) dayContentDiv.innerHTML += `<p class="mb-4 text-gray-700"><strong>Calentamiento:</strong> ${dayData.warmup}</p>`;
+                    (dayData.sections || []).forEach((section, sectionIndex) => {
+                        if (section.type === 'standalone' && section.exercise) { dayContentDiv.appendChild(createExerciseItem(dayName, section.exercise, sectionIndex, -1)); }
+                        else if (section.type === 'option_group' && section.exercises) {
+                            const groupDiv = document.createElement('div'); groupDiv.classList.add('exercise-group'); groupDiv.dataset.optionGroup = `${dayName}_${sectionIndex}`;
+                            groupDiv.innerHTML = `<div class="exercise-group-title">${section.title}</div>`;
+                            section.exercises.forEach((exercise, exerciseIndexInGroup) => groupDiv.appendChild(createExerciseItem(dayName, exercise, sectionIndex, exerciseIndexInGroup)));                            
+                            if (editMode) {
+                                const addOptionBtn = document.createElement('button'); addOptionBtn.classList.add('add-exercise-btn'); addOptionBtn.innerHTML = '<i class="fas fa-plus-circle"></i> Añadir Opción';
+                                addOptionBtn.setAttribute('data-day', dayName); addOptionBtn.setAttribute('data-section-index', sectionIndex);
+                                addOptionBtn.addEventListener('click', function(event) { 
+                                    event.stopPropagation(); 
+                                    const d = event.currentTarget.getAttribute('data-day'); 
+                                    const si = parseInt(event.currentTarget.getAttribute('data-section-index')); 
+                                    openExerciseModal('add', d, si); });
+                                groupDiv.appendChild(addOptionBtn);
+                            }
+
+                            
+                            dayContentDiv.appendChild(groupDiv);
+                        }
+
+                    });
+
+                    if (dayData.cooldown) {
+                        const cooldownParagraph = document.createElement('p');
+                        cooldownParagraph.classList.add('mt-4', 'text-gray-700');
+                        // Es seguro usar innerHTML aquí porque cooldownParagraph es un elemento nuevo y vacío
+                        cooldownParagraph.innerHTML = `<strong>Enfriamiento:</strong> ${dayData.cooldown}`;
+                        dayContentDiv.appendChild(cooldownParagraph); // Esto añade el nuevo párrafo sin destruir lo demás
+                    }
+
+                    if (editMode) {
+                        const addStandaloneBtn = document.createElement('button'); addStandaloneBtn.classList.add('add-exercise-btn'); addStandaloneBtn.innerHTML = '<i class="fas fa-plus"></i> Añadir Ejercicio al Día';
+                        addStandaloneBtn.addEventListener('click', (e) => { e.stopPropagation(); openExerciseModal('add', dayName, -1); }); dayContentDiv.appendChild(addStandaloneBtn);
+                    } 
+
+                    detailsElement.appendChild(dayContentDiv); 
+                    trainingPlanContainer.appendChild(detailsElement);
+                });
+
+
+
+
+                attachEventListenersToPlan(); 
+                loadProgress();
+            }
+
+            function createExerciseItem(dayName, exercise, sectionIndex, exerciseIndexInGroup) {
+                const item = document.createElement('div'); item.classList.add('exercise-item'); item.dataset.exercise = exercise.name; item.dataset.day = dayName; item.dataset.sectionIndex = sectionIndex; item.dataset.exerciseIndexInGroup = exerciseIndexInGroup;
+                const titleDiv = document.createElement('div'); titleDiv.classList.add('exercise-title');
+                const titleSpan = document.createElement('span'); titleSpan.textContent = exercise.name; titleDiv.appendChild(titleSpan);
+                const controls = document.createElement('div'); controls.classList.add('controls-container');
+                const info = document.createElement('span'); info.classList.add('info-icon'); info.innerHTML = '&#x24D8;'; info.dataset.info = exercise.info; info.title = "Ver info"; controls.appendChild(info);
+                if (editMode) {
+                    const editBtn = document.createElement('button'); editBtn.classList.add('edit-exercise-btn'); editBtn.innerHTML = '<i class="fas fa-pencil-alt"></i>'; editBtn.title = "Editar"; controls.appendChild(editBtn);
+                    const delBtn = document.createElement('button'); delBtn.classList.add('delete-exercise-btn'); delBtn.innerHTML = '<i class="fas fa-trash-alt"></i>'; delBtn.title = "Eliminar"; controls.appendChild(delBtn);
+                } titleDiv.appendChild(controls); item.appendChild(titleDiv);
+                const repsP = document.createElement('p'); repsP.classList.add('text-sm', 'text-gray-600', 'mb-2'); repsP.textContent = exercise.reps_range || ''; item.appendChild(repsP);
+                if (exercise.type === 'strength') {
+                    const setsDiv = document.createElement('div'); setsDiv.classList.add('set-buttons');
+                    for (let i = 1; i <= exercise.sets; i++) { const btn = document.createElement('button'); btn.dataset.set = i; btn.textContent = `Serie ${i}`; setsDiv.appendChild(btn); } item.appendChild(setsDiv);
+                    const chartBtn = document.createElement('button'); chartBtn.classList.add('chart-button', 'mt-2'); chartBtn.innerHTML = '<i class="fas fa-chart-line"></i> Gráfico'; chartBtn.dataset.exerciseNameForChart = exercise.name; item.appendChild(chartBtn);
+                } else if (exercise.type === 'session') {
+                    const sessionBtn = document.createElement('button'); sessionBtn.classList.add('session-button'); sessionBtn.textContent = 'Marcar Completado'; item.appendChild(sessionBtn);
+                } return item;
+            }
+            
+            function getDaySummaryTitle(dayName) { 
+                const dayInfo = defaultPlanData[dayName];
+                return (dayInfo && dayInfo.dayPurposeTitle) ? dayInfo.dayPurposeTitle : "Día de Entrenamiento";
+            }
+
+            function attachEventListenersToPlan() { trainingPlanContainer.removeEventListener('click', handlePlanContainerClick); trainingPlanContainer.addEventListener('click', handlePlanContainerClick); }
+            
+            closeInfoModalBtn.onclick = () => infoModal.classList.remove('visible');
+            closeChartModalBtn.onclick = () => { chartModal.classList.remove('visible'); if (myChart) myChart.destroy(); myChart = null; };
+            cancelModalBtn.onclick = () => dataModal.classList.remove('visible');
+            cancelEditExerciseBtn.onclick = () => editExerciseModal.classList.remove('visible');
+
+            function handlePlanContainerClick(event) {
+                const target = event.target.closest('button') || event.target.closest('.info-icon'); if (!target) return;
+                const exerciseItemElement = target.closest('.exercise-item'); if (!exerciseItemElement && !target.classList.contains('add-exercise-btn')) return;
+
+                if (target.dataset.set && exerciseItemElement) {
+                    currentDay = exerciseItemElement.dataset.day; currentExercise = exerciseItemElement.dataset.exercise; currentSet = target.dataset.set;
+                    modalTitle.textContent = getText('modals.registerSetTitle') + ` ${currentSet} - ${currentExercise}`;
+                    const allProgress = JSON.parse(localStorage.getItem(localStorageKey)) || {};
+                    const currentWeekProgress = allProgress.weeks ? allProgress.weeks[`week${currentWeek}`] || {} : {};
+                    const existingData = currentWeekProgress[currentDay]?.[currentExercise]?.[`set${currentSet}`];
+                    repsInput.value = (existingData && existingData.reps) ? existingData.reps : '';
+                    // existingData.weight está en lb. Convertir a currentUnit para mostrar en el input.
+                    weightInput.value = (existingData && existingData.weight !== undefined) ? convertWeightForDisplay(existingData.weight, currentUnit).toFixed(1) : '';
+                    dataModal.classList.add('visible'); repsInput.focus(); event.stopPropagation();
+                }
+                else if (target.classList.contains('session-button') && exerciseItemElement) {
+                    currentDay = exerciseItemElement.dataset.day; currentExercise = exerciseItemElement.dataset.exercise;
+                    const allProgress = JSON.parse(localStorage.getItem(localStorageKey)) || { weeks: {} };
+                    const weekProgress = allProgress.weeks?.[`week${currentWeek}`] || {}; const dayProgress = weekProgress[currentDay] || {};
+                    const exerciseData = dayProgress[currentExercise]; const isCurrentlyCompleted = exerciseData && exerciseData.completed;
+                    saveProgress(currentDay, currentExercise, null, { completed: !isCurrentlyCompleted }); // date se añade en saveProgress
+                    event.stopPropagation();
+                }
+                else if (target.classList.contains('info-icon') && exerciseItemElement) {
+                    const infoText = target.dataset.info; const exerciseTitleText = exerciseItemElement.querySelector('.exercise-title > span:first-child').textContent;
+                    infoModalTitle.textContent = getText('modals.infoTitle') + `: ${exerciseTitleText}`; infoModalContent.textContent = infoText;
+                    infoModal.classList.add('visible'); event.stopPropagation();
+                }
+                else if (target.classList.contains('chart-button') && exerciseItemElement) {
+                    const exerciseNameForChart = target.dataset.exerciseNameForChart;
+                    chartModalTitleEl.textContent = getText('modals.chartTitle') + `: ${exerciseNameForChart}`; renderExerciseChart(exerciseNameForChart);
+                    chartModal.classList.add('visible'); event.stopPropagation();
+                }
+                else if (target.classList.contains('edit-exercise-btn') && editMode && exerciseItemElement) {
+                    const day = exerciseItemElement.dataset.day; const sectionIndex = parseInt(exerciseItemElement.dataset.sectionIndex);
+                    const exerciseIndexInGroup = parseInt(exerciseItemElement.dataset.exerciseIndexInGroup);
+                    openExerciseModal('edit', day, sectionIndex, exerciseIndexInGroup); event.stopPropagation();
+                }
+                 else if (target.classList.contains('delete-exercise-btn') && editMode && exerciseItemElement) {
+                    const day = exerciseItemElement.dataset.day; const sectionIndex = parseInt(exerciseItemElement.dataset.sectionIndex);
+                    const exerciseIndexInGroup = parseInt(exerciseItemElement.dataset.exerciseIndexInGroup); const exerciseName = exerciseItemElement.dataset.exercise;
+                    confirmDeleteExercise(day, sectionIndex, exerciseIndexInGroup, exerciseName); event.stopPropagation();
+                }
+            }
+
+            saveModalBtn.addEventListener('click', () => {
+                const reps = parseInt(repsInput.value);
+                let weightFromInput = parseFloat(weightInput.value); // Este peso está en currentUnit
+
+                if (isNaN(reps) || reps <= 0) { showCustomMessage(getText('notifications.warningInvalidReps'), 'warning'); return; }
+                if (isNaN(weightFromInput) || weightFromInput < 0) weightFromInput = 0;
+
+                let weightToSaveInLb;
+                if (currentUnit === 'kg') {
+                    weightToSaveInLb = kgToLb(weightFromInput);
+                } else {
+                    weightToSaveInLb = weightFromInput; // Ya está en lb
+                }
+                // Guardar siempre en lb
+                saveProgress(currentDay, currentExercise, currentSet, { completed: true, reps: reps, weight: weightToSaveInLb });
+                dataModal.classList.remove('visible');
+            });
+
+            editExerciseTypeSelect.addEventListener('change', (event) => { strengthOptionsDiv.classList.toggle('hidden', event.target.value !== 'strength'); });
+            
+            function openExerciseModal(mode, day, sectionIdx, exerciseIdxInGroup = -1, groupTitleParam = '') {
+                editingContext.mode = mode; editingContext.day = day; editingContext.sectionIndex = sectionIdx; editingContext.exerciseIndex = exerciseIdxInGroup;
+                if (mode === 'edit') {
+                    let exerciseToEdit; const section = currentPlanData[day].sections[sectionIdx];
+                    if (!section) { showCustomMessage(getText('notifications.warningSectionNotFound'), "error"); return; }
+                    if (section.type === 'standalone') { exerciseToEdit = section.exercise; }
+                    else { if (!section.exercises || exerciseIdxInGroup < 0 || exerciseIdxInGroup >= section.exercises.length) { showCustomMessage(getText('notifications.warningExerciseNotFoundInGroup'), "error"); return; } exerciseToEdit = section.exercises[exerciseIdxInGroup]; }
+                    if (!exerciseToEdit) { showCustomMessage(getText('notifications.genericError', {errorMessage: "No se pudo cargar el ejercicio."}), "error"); return; }
+                    editExerciseModalTitle.textContent = getText('modals.editExerciseTitlePrefix') + ` ${exerciseToEdit.name}`; 
+                    editExerciseNameInput.value = exerciseToEdit.name;
+                    editExerciseInfoTextarea.value = exerciseToEdit.info; editExerciseTypeSelect.value = exerciseToEdit.type;
+                    strengthOptionsDiv.classList.toggle('hidden', exerciseToEdit.type !== 'strength');
+                    if (exerciseToEdit.type === 'strength') { editExerciseSetsInput.value = exerciseToEdit.sets; editExerciseRepsRangeInput.value = exerciseToEdit.reps_range; }
+                } else { // add mode
+                    const section = sectionIdx !== -1 ? currentPlanData[day].sections[sectionIdx] : null;
+                    const groupTitleForModal = groupTitleParam || (section && section.type === 'option_group' ? section.title.replace(/\*\*([^*]+)\*\*/g, '$1') : '');
+                    editExerciseModalTitle.textContent = sectionIdx === -1 ? getText('modals.addExerciseToDayTitle', {day: day}) : getText('modals.addOptionToGroupTitle', {groupTitle: groupTitleForModal, day: day});
+                     if (sectionIdx !== -1 && (!section || section.type !== 'option_group')) { showCustomMessage(getText('notifications.warningCannotAddOptionToSection', {sectionType: section ? section.type : 'inexistente'}), "error"); return; }
+                    editExerciseNameInput.value = ''; editExerciseInfoTextarea.value = ''; editExerciseTypeSelect.value = 'strength';
+                    strengthOptionsDiv.classList.remove('hidden'); editExerciseSetsInput.value = '3'; 
+                    editExerciseRepsRangeInput.value = getText('placeholders.editExerciseRepsRange'); // Set placeholder for new exercise
+                }
+                editExerciseModal.classList.add('visible'); editExerciseNameInput.focus();
+            }
+
+            saveEditExerciseBtn.addEventListener('click', () => {
+                const name = editExerciseNameInput.value.trim(); const info = editExerciseInfoTextarea.value.trim();
+                const type = editExerciseTypeSelect.value; const sets = type === 'strength' ? parseInt(editExerciseSetsInput.value) : 0;
+                const reps_range = type === 'strength' ? editExerciseRepsRangeInput.value.trim() : '';
+                if (!name) { showCustomMessage(getText('notifications.warningExerciseNameEmpty'), 'warning'); return; }
+                if (type === 'strength' && (isNaN(sets) || sets <= 0)) { showCustomMessage(getText('notifications.warningInvalidSets'), 'warning'); return; }
+                const newExerciseData = { name, type, info }; if (type === 'strength') { newExerciseData.sets = sets; newExerciseData.reps_range = reps_range; }
+                const { mode, day, sectionIndex, exerciseIndex } = editingContext;
+                if (mode === 'edit') {
+                    let oldName = ''; const section = currentPlanData[day].sections[sectionIndex];
+                    if (!section) { showCustomMessage(getText('notifications.genericError', {errorMessage: "Sección no encontrada al guardar."}), "error"); return; }
+                    if (section.type === 'standalone') { oldName = section.exercise.name; section.exercise = newExerciseData; }
+                    else { if (!section.exercises || exerciseIndex < 0 || exerciseIndex >= section.exercises.length) { showCustomMessage(getText('notifications.genericError', {errorMessage: "Ejercicio en grupo no encontrado al guardar."}), "error"); return; } oldName = section.exercises[exerciseIndex].name; section.exercises[exerciseIndex] = newExerciseData; }
+                    if (oldName !== name) { showCustomMessage(getText('notifications.exerciseDeleted', {exerciseName: oldName, day: day}) + ` Renombrado a "${name}". Historial no se transfiere.`, 'warning');} // Ajustar mensaje si es necesario
+                } else if (mode === 'add') {
+                    if (sectionIndex === -1) { if (!currentPlanData[day].sections) currentPlanData[day].sections = []; currentPlanData[day].sections.push({ type: 'standalone', exercise: newExerciseData }); }
+                    else { const section = currentPlanData[day].sections[sectionIndex]; if(section && section.type === 'option_group'){ if (!section.exercises) section.exercises = []; section.exercises.push(newExerciseData); } else { showCustomMessage(getText('notifications.genericError', {errorMessage: "Grupo no válido al añadir opción."}), "error"); editExerciseModal.classList.remove('visible'); return; } }
+                }
+                savePlan(); renderPlan(); editExerciseModal.classList.remove('visible');
+            });
+
+            toggleEditModeBtn.addEventListener('click', () => {
+                editMode = true; toggleEditModeBtn.classList.add('hidden'); editPlanActionsDiv.classList.remove('hidden');
+                renderPlan(); renderCurrentProteinData(); renderCurrentSleepData();
+            });
+            savePlanChangesBtn.addEventListener('click', () => {
+                savePlan(); editMode = false; editPlanActionsDiv.classList.add('hidden'); toggleEditModeBtn.classList.remove('hidden');
+                if (toggleEditModeBtnText) toggleEditModeBtnText.textContent = getText('globalActionsBar.editPlanButton');
+                renderPlan(); renderCurrentProteinData(); renderCurrentSleepData(); showCustomMessage(getText('notifications.planSavedSuccess'));
+            });
+            cancelEditPlanBtn.addEventListener('click', () => {
+                showCustomConfirmation(getText('confirmationMessages.cancelEditPlan'), () => {
+                    loadPlan(); editMode = false; editPlanActionsDiv.classList.add('hidden'); toggleEditModeBtn.classList.remove('hidden');
+                    if (toggleEditModeBtnText) toggleEditModeBtnText.textContent = getText('globalActionsBar.editPlanButton');
+                    renderPlan(); renderCurrentProteinData(); renderCurrentSleepData();
+                });
+            });
+            exportBtn.addEventListener('click', () => {
+                const progressData = localStorage.getItem(localStorageKey); const planStructure = localStorage.getItem(planDataKey);
+                const proteinData = localStorage.getItem(PROTEIN_LOG_KEY); const sleepData = localStorage.getItem(SLEEP_LOG_KEY);
+                const uiTextsDataToExport = localStorage.getItem(UI_TEXTS_KEY); 
+                const exportObject = {
+                    trainingProgress: JSON.parse(progressData || '{}'), customPlan: JSON.parse(planStructure || '{}'),
+                    proteinLog: JSON.parse(proteinData || '[]'), sleepLog: JSON.parse(sleepData || '[]'),
+                    uiTexts: JSON.parse(uiTextsDataToExport || JSON.stringify(defaultUiTexts)),
+                    meta: { currentWeek: currentWeek, currentUnit: currentUnit, exportDate: new Date().toISOString() }
+                };
+                if (Object.keys(exportObject.customPlan).length === 0 && exportObject.proteinLog.length === 0 && exportObject.sleepLog.length === 0 && Object.keys(exportObject.trainingProgress).length === 0 ) { showCustomMessage(getText('notifications.genericError', {errorMessage: "No hay datos para exportar."}), "warning"); return; }
+                const blob = new Blob([JSON.stringify(exportObject, null, 2)], { type: 'application/json' });
+                const url = URL.createObjectURL(blob); const a = document.createElement('a');
+                a.href = url; a.download = `hyrox_master_data_${new Date().toISOString().split('T')[0]}.json`;
+                document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(url);
+                showCustomMessage(getText('notifications.dataExportedSuccess'));
+            });
+            importBtn.addEventListener('click', () => { importFileInput.click(); });
+            importFileInput.addEventListener('change', (event) => {
+                const file = event.target.files[0]; if (!file) return;
+                showCustomConfirmation(getText('confirmationMessages.importData'), () => {
+                    const reader = new FileReader();
+                    reader.onload = (e) => {
+                        try {
+                            const importedData = JSON.parse(e.target.result);
+                            if (typeof importedData.customPlan !== 'object' || typeof importedData.trainingProgress !== 'object') { throw new Error(getText('notifications.dataImportError', {errorMessage: "Estructura de archivo no esperada."})); }
+                            
+                            if (importedData.uiTexts && typeof importedData.uiTexts === 'object') {
+                                loadedUiTexts = { ...defaultUiTexts, ...importedData.uiTexts };
+                                localStorage.setItem(UI_TEXTS_KEY, JSON.stringify(loadedUiTexts));
+                            } else {
+                                loadedUiTexts = { ...defaultUiTexts };
+                                localStorage.removeItem(UI_TEXTS_KEY);
+                            }
+                            applyUiTexts(); // Aplicar textos inmediatamente después de cargarlos
+
+                            currentPlanData = importedData.customPlan || JSON.parse(JSON.stringify(defaultPlanData)); 
+                             Object.keys(defaultPlanData).forEach(dayKey => {
+                                 if (currentPlanData[dayKey] && !currentPlanData[dayKey].dayPurposeTitle && defaultPlanData[dayKey].dayPurposeTitle) {
+                                     currentPlanData[dayKey].dayPurposeTitle = defaultPlanData[dayKey].dayPurposeTitle;
+                                 }
+                             });
+                            savePlan();
+
+                            localStorage.setItem(localStorageKey, JSON.stringify(importedData.trainingProgress || { weeks: {} }));
+                            proteinLog = (importedData.proteinLog && Array.isArray(importedData.proteinLog)) ? importedData.proteinLog : []; saveProteinLogToStorage();
+                            sleepLog = (importedData.sleepLog && Array.isArray(importedData.sleepLog)) ? importedData.sleepLog : []; saveSleepLogToStorage();
+                            
+                            if (importedData.meta) {
+                                currentWeek = parseInt(importedData.meta.currentWeek) || 1; currentUnit = importedData.meta.currentUnit === 'kg' ? 'kg' : 'lb';
+                                localStorage.setItem('currentWeek_v2', currentWeek); localStorage.setItem('unit_v2', currentUnit);
+                            }
+                            renderPlan(); // Esto llamará a loadProgress, que a su vez llama a updateUnitDisplay y updateWeekDisplay
+                            loadProteinLogFromStorage(); renderCurrentProteinData();
+                            loadSleepLogFromStorage(); renderCurrentSleepData();
+                            showCustomMessage(getText('notifications.dataImportedSuccess'));
+                        } catch (error) { showCustomMessage(getText('notifications.dataImportError', {errorMessage: error.message}), "error"); }
+                        finally { importFileInput.value = null; }
+                    };
+                    reader.onerror = () => { showCustomMessage(getText('notifications.fileReadError'), "error"); importFileInput.value = null; };
+                    reader.readAsText(file);
+                }, () => { importFileInput.value = null; });
+            });
+            prevWeekBtn.addEventListener('click', () => {
+                if (currentWeek > 1) { currentWeek--; localStorage.setItem('currentWeek_v2', currentWeek); renderPlan(); renderCurrentProteinData(); renderCurrentSleepData(); }
+            });
+            nextWeekBtn.addEventListener('click', () => {
+                currentWeek++; localStorage.setItem('currentWeek_v2', currentWeek); renderPlan(); renderCurrentProteinData(); renderCurrentSleepData();
+            });
+            unitToggleButton.addEventListener('click', () => {
+                currentUnit = currentUnit === 'lb' ? 'kg' : 'lb'; localStorage.setItem('unit_v2', currentUnit);
+                updateUnitDisplay(); loadProgress(); // loadProgress se encarga de refrescar la vista con la nueva unidad
+            });
+
+            function renderExerciseChart(exerciseName) {
+                if (myChart) { myChart.destroy(); myChart = null;} // Asegurar que myChart se anule después de destruirlo
+                const allProgress = JSON.parse(localStorage.getItem(localStorageKey)) || {}; const weeksData = allProgress.weeks || {};
+                const chartDataPoints = [];
+                for (const weekKey in weeksData) { const weekData = weeksData[weekKey]; for (const dayKey in weekData) { const dayData = weekData[dayKey]; if (dayData[exerciseName]) { const exerciseSets = dayData[exerciseName]; for (const setKey in exerciseSets) { if (setKey.startsWith('set')) { const setData = exerciseSets[setKey]; if (setData.completed && setData.date && setData.weight !== undefined && setData.reps !== undefined) { 
+                    // setData.weight está en lb. Convertir a currentUnit para el gráfico.
+                    const weightInDisplayUnit = convertWeightForDisplay(setData.weight, currentUnit); 
+                    const reps = parseInt(setData.reps); chartDataPoints.push({ date: new Date(setData.date), volume: reps * weightInDisplayUnit, reps: reps, weight: weightInDisplayUnit }); } } } } } }
+                chartDataPoints.sort((a, b) => a.date - b.date);
+                if (chartDataPoints.length === 0) { showCustomMessage(getText('notifications.warningNoDataForChart', {exerciseName: exerciseName})); chartModal.classList.remove('visible'); return; }
+                const labels = chartDataPoints.map(dp => dp.date); const volumeData = chartDataPoints.map(dp => dp.volume);
+                myChart = new Chart(exerciseChartCanvas, {
+                    type: 'line', data: { labels: labels, datasets: [{ label: `Volumen (${currentUnit}*reps)`, data: volumeData, borderColor: '#4f46e5', backgroundColor: 'rgba(79, 70, 229, 0.2)', yAxisID: 'y-volume', tension: 0.2, fill: true, pointRadius: 5, pointHoverRadius: 7 }] },
+                    options: { responsive: true, maintainAspectRatio: false, scales: { x: { type: 'time', time: { unit: 'day', tooltipFormat: 'PPP MMM d, HH:mm', displayFormats: { day: 'MMM d' } }, title: { display: true, text: 'Fecha' } }, 'y-volume': { type: 'linear', position: 'left', title: { display: true, text: `Volumen (${currentUnit}*reps)` }, beginAtZero: true } },
+                        plugins: { tooltip: { mode: 'index', intersect: false, callbacks: {
+                            title: function(tooltipItems) { if (tooltipItems.length > 0) { const date = new Date(tooltipItems[0].parsed.x); try { return Chart.adapters.date.format(date, 'PPP'); } catch (e) { return date.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' }); } } return ''; },
+                            label: function(context) { const dp = chartDataPoints[context.dataIndex]; if (!dp) return ''; return [`Volumen: ${dp.volume.toFixed(1)}`, `Reps: ${dp.reps}`, `Peso: ${dp.weight.toFixed(1)} ${currentUnit}`]; }
+                        }}, title: { display: true, text: getText('modals.chartTitle') + `: ${exerciseName}`, padding: { top:10, bottom: 10 } }}
+                    }
+                });
+            }
+
+            function showCustomMessage(message, type = 'info') {
+                const existingModal = document.getElementById('custom-message-modal'); if (existingModal) existingModal.remove();
+                let titleText = "Información"; let titleColor = "text-blue-600";
+                if (type === 'warning') { titleText = "Advertencia"; titleColor = "text-yellow-600"; } else if (type === 'error') { titleText = "Error"; titleColor = "text-red-600"; }
+                const modalHtml = `<div class="modal-overlay visible" id="custom-message-modal" style="z-index: 1050;"><div class="modal-content"><h3 class="text-center text-xl font-bold mb-4 ${titleColor}">${titleText}</h3><div class="modal-scrollable-content-area"><p class="text-center">${message}</p></div><div class="modal-actions justify-center"><button class="save-btn" id="close-message-modal">${getText('modals.closeButton')}</button></div></div></div>`;
+                document.body.insertAdjacentHTML('beforeend', modalHtml);
+                const closeBtn = document.getElementById('close-message-modal'); closeBtn.addEventListener('click', () => closeBtn.closest('.modal-overlay').remove()); closeBtn.focus();
+            }
+            function showCustomConfirmation(message, onConfirm, onCancel = () => {}) {
+                const existingModal = document.getElementById('custom-confirmation-modal'); if (existingModal) existingModal.remove();
+                const modalHtml = `<div class="modal-overlay visible" id="custom-confirmation-modal" style="z-index: 1050;"><div class="modal-content"><h3 class="text-center text-xl font-bold mb-4">Confirmación</h3><div class="modal-scrollable-content-area"><p class="text-center">${message}</p></div><div class="modal-actions justify-end"><button class="cancel-btn" id="cancel-confirmation-modal">${getText('modals.cancelButton')}</button><button class="save-btn" id="confirm-confirmation-modal">${getText('modals.saveButton')}</button></div></div></div>`;
+                document.body.insertAdjacentHTML('beforeend', modalHtml);
+                const cancelBtn = document.getElementById('cancel-confirmation-modal'); const confirmBtn = document.getElementById('confirm-confirmation-modal');
+                const confirmationModal = document.getElementById('custom-confirmation-modal');
+                cancelBtn.addEventListener('click', () => { onCancel(); confirmationModal.remove(); });
+                confirmBtn.addEventListener('click', () => { onConfirm(); confirmationModal.remove(); }); confirmBtn.focus();
+            }
+
+            function confirmDeleteExercise(day, sectionIndex, exerciseIndexInGroup, exerciseName) {
+                showCustomConfirmation(getText('confirmationMessages.deleteExercise', {exerciseName: exerciseName, day: day}), () => {
+                    const dayPlan = currentPlanData[day]; if (!dayPlan || !dayPlan.sections || sectionIndex < 0 || sectionIndex >= dayPlan.sections.length) { showCustomMessage(getText('notifications.warningSectionNotFound'), "error"); return; }
+                    const section = dayPlan.sections[sectionIndex]; let deleted = false;
+                    if (section.type === 'standalone') { if (section.exercise && section.exercise.name === exerciseName) { dayPlan.sections.splice(sectionIndex, 1); deleted = true; } else { showCustomMessage(getText('notifications.genericError', {errorMessage: "Ejercicio no coincide."}), "error"); return; } }
+                    else if (section.type === 'option_group') { if (!section.exercises || exerciseIndexInGroup < 0 || exerciseIndexInGroup >= section.exercises.length || section.exercises[exerciseIndexInGroup].name !== exerciseName) { showCustomMessage(getText('notifications.warningExerciseNotFoundInGroup'), "error"); return; } section.exercises.splice(exerciseIndexInGroup, 1); deleted = true; }
+                    else { showCustomMessage(getText('notifications.genericError', {errorMessage: "Tipo de sección desconocido."}), "error"); return; }
+                    if(deleted){ savePlan(); renderPlan(); showCustomMessage(getText('notifications.exerciseDeleted', {exerciseName: exerciseName, day: day})); }
+                });
+            }
+
+            function getActualCurrentDayName() { return DAYS_OF_WEEK_ES_FULL[new Date().getDay()]; }
+            function populateDaySelect(selectElement, selectedDayName = null) {
+                selectElement.innerHTML = '';
+                DAYS_OF_WEEK_ES_FULL.forEach(dayName => { const option = document.createElement('option'); option.value = dayName; option.textContent = dayName; if (dayName === selectedDayName) option.selected = true; selectElement.appendChild(option); });
+            }
+
+            function loadProteinLogFromStorage() { proteinLog = JSON.parse(localStorage.getItem(PROTEIN_LOG_KEY) || '[]'); }
+            function saveProteinLogToStorage() { localStorage.setItem(PROTEIN_LOG_KEY, JSON.stringify(proteinLog)); }
+            function renderCurrentProteinData() {
+                const actualDay = getActualCurrentDayName(); 
+                if(currentDayProteinDisplay) currentDayProteinDisplay.textContent = actualDay; 
+                updateWeekDisplay();
+                renderProteinEntriesList(currentWeek, actualDay); 
+                renderProteinWeekChart(currentWeek);
+            }
+            function renderProteinEntriesList(week, dayName) {
+                proteinEntriesListContainer.innerHTML = '';
+                const entries = proteinLog.filter(e => e.week === week && e.dayOfWeek === dayName).sort((a,b) => new Date(a.timestamp) - new Date(b.timestamp));
+                if (entries.length === 0) { proteinEntriesListContainer.innerHTML = `<p class="text-gray-500 italic">${getText('noProteinEntriesText')}</p>`; return; }
+                entries.forEach(entry => {
+                    const itemDiv = document.createElement('div'); itemDiv.classList.add('protein-entry-item'); itemDiv.dataset.entryId = entry.id;
+                    const entryTime = new Date(entry.timestamp).toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' });
+                    itemDiv.innerHTML = `<div class="data"><span class="grams">${entry.grams}g</span><span class="time">registrado a las ${entryTime}</span></div><div class="actions ${editMode ? '' : 'hidden'}"><button class="edit-protein-btn" title="Editar"><i class="fas fa-pencil-alt"></i></button><button class="delete-protein-btn" title="Eliminar"><i class="fas fa-trash-alt"></i></button></div>`;
+                    proteinEntriesListContainer.appendChild(itemDiv);
+                });
+            }
+            function renderProteinWeekChart(week) {
+                if (proteinChartInstance) proteinChartInstance.destroy();
+                const totals = DAYS_OF_WEEK_ES_FULL.map(day => proteinLog.filter(e => e.week === week && e.dayOfWeek === day).reduce((sum, e) => sum + e.grams, 0));
+                proteinChartInstance = new Chart(proteinWeekChartCanvasContext, { type: 'bar', data: { labels: DAYS_OF_WEEK_ES_SHORT, datasets: [{ label: getText('modals.proteinGramsLabel').replace(':',''), data: totals, backgroundColor: 'rgba(75, 192, 192, 0.6)', borderColor: 'rgba(75, 192, 192, 1)', borderWidth: 1 }] }, options: { responsive: true, maintainAspectRatio: false, scales: { y: { beginAtZero: true, title: { display: true, text: 'Gramos Totales' } }, x: { title: { display: true, text: getText('modals.dayOfWeekLabel').replace(':','') } } }, plugins: { legend: { display: false }, title: { display: true, text: getText('proteinChartTitle', {week: week}), font: {size: 16}, padding: {bottom: 15}} } } });
+            }
+            function handleRegisterProteinClick() {
+                proteinModalTitle.textContent = getText('modals.registerProteinTitle'); proteinEntryIdInput.value = '';
+                proteinModalWeekInput.value = currentWeek; populateDaySelect(proteinModalDaySelect, getActualCurrentDayName());
+                proteinModalGramsInput.value = ''; proteinModal.classList.add('visible'); proteinModalGramsInput.focus();
+            }
+            function handleSaveProteinClick() {
+                const id = proteinEntryIdInput.value; const week = parseInt(proteinModalWeekInput.value);
+                const dayOfWeek = proteinModalDaySelect.value; const grams = parseInt(proteinModalGramsInput.value);
+                if (isNaN(week) || week < 1) { showCustomMessage(getText('notifications.warningInvalidWeek'), "warning"); return; }
+                if (!dayOfWeek) { showCustomMessage(getText('notifications.warningSelectDay'), "warning"); return; }
+                if (isNaN(grams) || grams <= 0) { showCustomMessage(getText('notifications.warningInvalidGrams'), "warning"); return; }
+                if (id) { const idx = proteinLog.findIndex(e => e.id === id); if (idx > -1) { proteinLog[idx] = {...proteinLog[idx], week, dayOfWeek, grams }; } }
+                else { proteinLog.push({ id: Date.now().toString(), week, dayOfWeek, grams, timestamp: new Date().toISOString() }); }
+                saveProteinLogToStorage(); renderCurrentProteinData(); proteinModal.classList.remove('visible');
+            }
+            proteinEntriesListContainer.addEventListener('click', (event) => {
+                const target = event.target.closest('button'); if (!target) return;
+                const entryItem = target.closest('.protein-entry-item'); if (!entryItem) return;
+                const entryId = entryItem.dataset.entryId;
+                if (target.classList.contains('edit-protein-btn')) {
+                    const entry = proteinLog.find(e => e.id === entryId); if (entry) {
+                        proteinModalTitle.textContent = getText('modals.editProteinTitle'); proteinEntryIdInput.value = entry.id; proteinModalWeekInput.value = entry.week;
+                        populateDaySelect(proteinModalDaySelect, entry.dayOfWeek); proteinModalGramsInput.value = entry.grams;
+                        proteinModal.classList.add('visible'); proteinModalGramsInput.focus();
+                    }
+                } else if (target.classList.contains('delete-protein-btn')) {
+                    const entry = proteinLog.find(e=>e.id===entryId);
+                    showCustomConfirmation(getText('confirmationMessages.deleteProteinEntry', {grams: entry?.grams}), () => { proteinLog = proteinLog.filter(e => e.id !== entryId); saveProteinLogToStorage(); renderCurrentProteinData(); });
+                }
+            });
+
+            function loadSleepLogFromStorage() { sleepLog = JSON.parse(localStorage.getItem(SLEEP_LOG_KEY) || '[]'); }
+            function saveSleepLogToStorage() { localStorage.setItem(SLEEP_LOG_KEY, JSON.stringify(sleepLog)); }
+            function populateSleepQualitySelect(selectElement, selectedQuality = null) {
+                selectElement.innerHTML = '';
+                SLEEP_QUALITY_OPTIONS.forEach(quality => { const option = document.createElement('option'); option.value = quality; option.textContent = quality; if (quality === selectedQuality) option.selected = true; selectElement.appendChild(option); });
+            }
+            function renderCurrentSleepData() {
+                const actualDay = getActualCurrentDayName(); 
+                if(currentDaySleepDisplay) currentDaySleepDisplay.textContent = actualDay; 
+                updateWeekDisplay();
+                renderSleepEntriesList(currentWeek, actualDay); 
+                renderSleepWeekChart(currentWeek);
+            }
+            function renderSleepEntriesList(week, dayName) {
+                sleepEntriesListContainer.innerHTML = '';
+                const entries = sleepLog.filter(e => e.week === week && e.dayOfWeek === dayName).sort((a,b) => new Date(a.timestamp) - new Date(b.timestamp));
+                if (entries.length === 0) { sleepEntriesListContainer.innerHTML = `<p class="text-gray-500 italic">${getText('noSleepEntriesText')}</p>`; return; }
+                entries.forEach(entry => {
+                    const itemDiv = document.createElement('div'); itemDiv.classList.add('sleep-entry-item'); itemDiv.dataset.entryId = entry.id;
+                    const entryTime = new Date(entry.timestamp).toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' });
+                    let qualityText = entry.quality && entry.quality !== "No registrada" ? `<span class="quality">Calidad: ${entry.quality}</span>` : '';
+                    let notesText = entry.notes ? `<span class="notes">Notas: ${entry.notes.replace(/\n/g, "<br>")}</span>` : '';
+                    itemDiv.innerHTML = `<div class="data"><span class="hours">${entry.hours} horas</span>${qualityText}${notesText}<span class="time">Registrado a las ${entryTime}</span></div><div class="actions ${editMode ? '' : 'hidden'}"><button class="edit-sleep-btn" title="Editar sueño"><i class="fas fa-pencil-alt"></i></button><button class="delete-sleep-btn" title="Eliminar sueño"><i class="fas fa-trash-alt"></i></button></div>`;
+                    sleepEntriesListContainer.appendChild(itemDiv);
+                });
+            }
+            function renderSleepWeekChart(week) {
+                if (sleepChartInstance) sleepChartInstance.destroy();
+                const totals = DAYS_OF_WEEK_ES_FULL.map(day => sleepLog.filter(e => e.week === week && e.dayOfWeek === day).reduce((sum, e) => sum + parseFloat(e.hours || 0), 0));
+                sleepChartInstance = new Chart(sleepWeekChartCanvasContext, { type: 'bar', data: { labels: DAYS_OF_WEEK_ES_SHORT, datasets: [{ label: getText('modals.sleepHoursLabel').replace(':',''), data: totals, backgroundColor: 'rgba(54, 162, 235, 0.6)', borderColor: 'rgba(54, 162, 235, 1)', borderWidth: 1 }] }, options: { responsive: true, maintainAspectRatio: false, scales: { y: { beginAtZero: true, title: { display: true, text: 'Horas Totales' } }, x: { title: { display: true, text: getText('modals.dayOfWeekLabel').replace(':','') + ' (Noche finalizando en)' } } }, plugins: { legend: { display: false }, title: { display: true, text: getText('sleepChartTitle', {week: week}), font: {size: 16}, padding: {bottom: 15}} } } });
+            }
+            function handleRegisterSleepClick() {
+                sleepModalTitle.textContent = getText('modals.registerSleepTitle'); sleepEntryIdInput.value = '';
+                sleepModalWeekInput.value = currentWeek; populateDaySelect(sleepModalDaySelect, getActualCurrentDayName());
+                populateSleepQualitySelect(sleepModalQualitySelect, "No registrada"); sleepModalHoursInput.value = ''; sleepModalNotesTextarea.value = '';
+                sleepModal.classList.add('visible'); sleepModalHoursInput.focus();
+            }
+            function handleSaveSleepClick() {
+                const id = sleepEntryIdInput.value; const week = parseInt(sleepModalWeekInput.value);
+                const dayOfWeek = sleepModalDaySelect.value; const hours = parseFloat(sleepModalHoursInput.value);
+                const quality = sleepModalQualitySelect.value; const notes = sleepModalNotesTextarea.value.trim();
+                if (isNaN(week) || week < 1) { showCustomMessage(getText('notifications.warningInvalidWeek'), "warning"); return; }
+                if (!dayOfWeek) { showCustomMessage(getText('notifications.warningSelectDay'), "warning"); return; }
+                if (isNaN(hours) || hours <= 0) { showCustomMessage(getText('notifications.warningInvalidSleepHours'), "warning"); return; }
+                if (id) { const idx = sleepLog.findIndex(e => e.id === id); if (idx > -1) { sleepLog[idx] = { ...sleepLog[idx], week, dayOfWeek, hours, quality, notes }; } }
+                else { sleepLog.push({ id: Date.now().toString(), week, dayOfWeek, hours, quality, notes, timestamp: new Date().toISOString() }); }
+                saveSleepLogToStorage(); renderCurrentSleepData(); sleepModal.classList.remove('visible');
+            }
+            sleepEntriesListContainer.addEventListener('click', (event) => {
+                const target = event.target.closest('button'); if (!target) return;
+                const entryItem = target.closest('.sleep-entry-item'); if (!entryItem) return;
+                const entryId = entryItem.dataset.entryId;
+                if (target.classList.contains('edit-sleep-btn')) {
+                    const entry = sleepLog.find(e => e.id === entryId); if (entry) {
+                        sleepModalTitle.textContent = getText('modals.editSleepTitle'); sleepEntryIdInput.value = entry.id; sleepModalWeekInput.value = entry.week;
+                        populateDaySelect(sleepModalDaySelect, entry.dayOfWeek); sleepModalHoursInput.value = entry.hours;
+                        populateSleepQualitySelect(sleepModalQualitySelect, entry.quality); sleepModalNotesTextarea.value = entry.notes;
+                        sleepModal.classList.add('visible'); sleepModalHoursInput.focus();
+                    }
+                } else if (target.classList.contains('delete-sleep-btn')) {
+                    const entry = sleepLog.find(e => e.id === entryId);
+                    showCustomConfirmation(getText('confirmationMessages.deleteSleepEntry', {hours: entry?.hours}), () => { sleepLog = sleepLog.filter(e => e.id !== entryId); saveSleepLogToStorage(); renderCurrentSleepData(); });
+                }
+            });
+
+            function initializeApp() {
+                loadPlan(); 
+                renderPlan(); 
+                updateUnitDisplay();
+                loadProteinLogFromStorage(); renderCurrentProteinData();
+                loadSleepLogFromStorage(); renderCurrentSleepData();
+
+                if (!editMode) { editPlanActionsDiv.classList.add('hidden'); toggleEditModeBtn.classList.remove('hidden'); }
+                else { editPlanActionsDiv.classList.remove('hidden'); toggleEditModeBtn.classList.add('hidden'); }
+
+                registerProteinBtn.addEventListener('click', handleRegisterProteinClick);
+                saveProteinModalBtn.addEventListener('click', handleSaveProteinClick);
+                cancelProteinModalBtn.addEventListener('click', () => proteinModal.classList.remove('visible'));
+                populateDaySelect(proteinModalDaySelect); // Populate once at init
+
+                registerSleepBtn.addEventListener('click', handleRegisterSleepClick);
+                saveSleepModalBtn.addEventListener('click', handleSaveSleepClick);
+                cancelSleepModalBtn.addEventListener('click', () => sleepModal.classList.remove('visible'));
+                populateDaySelect(sleepModalDaySelect); // Populate once at init
+                populateSleepQualitySelect(sleepModalQualitySelect); // Populate once at init
+            }
+
+            initializeApp();
+        });
     </script>
-
-    <!--
-    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">Photography</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
-    </div>
-    <p class="w3-wide">Web Design</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
-    </div>
-    <p class="w3-wide">Photoshop</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-    </div><br>
-    
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">11+</span><br>
-        Partners
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">55+</span><br>
-        Projects Done
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">89+</span><br>
-        Happy Clients
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">150+</span><br>
-        Meetings
-      </div>
-    </div>
-
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i> Download Resume
-    </button>
-    -->
-    
-    <!-- Testimonials -->
-    <!--
-    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
-    <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
-    <p>John Doe saved us from a web disaster.</p><br>
-    
-    <img src="https:/www.w3schools.com//w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
-    <p>No one is better than John Doe.</p>
-    -->
-  <!-- End About Section -->
-  </div>
-  
-  <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="videos">
-    <h2 class="w3-text-light-grey">LINKS - Recursos útiles</h2>
-    <hr style="width:200px" class="w3-opacity">
-
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <h4 class="w3-text-light-grey">Ranking de velocidad - <a href="https://runninglevel.com/">runninglevel.com</a></h4>
-      <p>"RunningLevel existe para hacerte más rápido al ayudarte a entender qué tan rápido eres en comparación con otros corredores y recomendarte los ritmos adecuados para el entrenamiento.</p>
-      <p>Nuestras normas se aplican a diferentes edades para que puedas obtener una comparación más justa de tu rendimiento. Al comprender tu rendimiento, puedes ajustar tus objetivos de distancia y velocidad."</p>
-      <a href="https://runninglevel.com/" target="_blank" class="w3-bar-item w3-button w3-padding-large w3-hover-opacity" style="background-color: #f0d500; min-width: 155px; margin:0 0">
-        <img src="https://runninglevel.com/images/logos/runninglevel.svg" width="112" alt="Running Level">
-      </a>
-      <hr style="width:200px" class="w3-opacity">
-      <br>
-
-      <h4 class="w3-text-light-grey">Tiempos por VO2 Max - <a href="https://runalyze.com/tools/effective-vo2max">runalyze.com</a></h4>
-      <p>Estima tu VO2 Max efectiva de acuerdo a tu tiempo de carrera o calcula tus tiempos de carrera si conoces tu VO2 Max efectivo.</p>
-      <a href="https://runalyze.com/tools/effective-vo2max" target="_blank" class="w3-bar-item w3-button w3-padding-large w3-hover-opacity" style="background-color: #e2e2e2; min-width: 155px; margin:0 0">
-        <img src="https://runalyze.com/assets/images/runalyze-swoosh.png" width="112" alt="Running Level">
-      </a>
-      <hr style="width:200px" class="w3-opacity">
-      <br>
-
-      <h4 class="w3-text-light-grey">Selección - Leonardo Murguía</h4>
-      <div class="w3-third">
-        <p>Sobre el descanso.</p>
-        <iframe style="width:100%"
-          src="https://www.youtube.com/embed/vdkDsw1HAek">
-        </iframe>
-        <p>Cuidar las rodillas.</p>
-        <iframe style="width:100%"
-         src="https://www.youtube.com/embed/yJxJgccsJzs">
-        </iframe>
-        <p>Recuperación.</p>
-        <iframe style="width:100%"
-         src="https://www.youtube.com/embed/izjy5UZGQYM">
-        </iframe>
-      </div>
-      <div class="w3-third">
-        <p>Técnica de carrera.</p>
-        <iframe style="width:100%"
-          src="https://www.youtube.com/embed/tdJ5mIpIpXg">
-        </iframe>
-        <p>Movimiento de brazos.</p>
-        <iframe style="width:100%"
-          src="https://www.youtube.com/embed/05mpDQHhQUM">
-        </iframe>
-        <p>Capacidad cardio-pulmonar.</p>
-        <iframe style="width:100%"
-          src="https://www.youtube.com/embed/el8X9xkp_gs">
-        </iframe>
-      </div>
-      <div class="w3-third">
-        <p>Errores al correr.</p>
-        <iframe style="width:100%"
-          src="https://www.youtube.com/embed/JEf-5HQcMy4">
-        </iframe>
-        <p>Carreras virtuales.</p>
-        <iframe style="width:100%"
-          src="https://www.youtube.com/embed/S2mKaZZTprU">
-        </iframe>
-      </div>
-    </div>
-      
-
-      <hr style="width:200px" class="w3-opacity">
-      <br>
-      
-      <h4 class="w3-text-light-grey">Curso Correr - Canal ONE Running</h4>
-      <div class="w3-third">
-        <iframe style="width:100%"
-          src="https://www.youtube.com/embed/jMszhuq89KY">
-        </iframe>
-        <iframe style="width:100%"
-        src="https://www.youtube.com/embed/FY3O5T4fji0">
-      </iframe>
-      <iframe style="width:100%"
-        src="https://www.youtube.com/embed/TIkSr33dbV8">
-      </iframe>
-      </div>
-      <div class="w3-third">
-        <iframe style="width:100%"
-          src="https://www.youtube.com/embed/cStm46lF5QY">
-        </iframe>
-        <iframe style="width:100%"
-          src="https://www.youtube.com/embed/eEzqYouSOic">
-        </iframe>
-        <iframe style="width:100%"
-          src="https://www.youtube.com/embed/1-Bj1ZfZ1i4">
-        </iframe>        
-      </div>
-      <div class="w3-third">
-        <iframe style="width:100%"
-          src="https://www.youtube.com/embed/1S-vFqwC-2k">
-        </iframe>
-        <iframe style="width:100%"
-          src="https://www.youtube.com/embed/opzcBfwyqXU">
-        </iframe>
-        <iframe style="width:100%"
-          src="https://www.youtube.com/embed/vHjPkffXdQo">
-        </iframe>
-      </div>
-
-
-    <!-- End photo grid -->
-    </div>
-  <!-- End Portfolio Section -->
-  </div>
-
-  </div>
-  
-    <!-- Footer 
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  
-  </footer>
-   End footer -->
-
-<!-- END PAGE CONTENT -->
-</div>
-
-<script>
-  function toggleVisible(id) {
-    var x = document.getElementById(id);
-    if (x.className.indexOf("w3-show") == -1) {
-      x.className += " w3-show";
-    } else { 
-      x.className = x.className.replace(" w3-show", "");
-    }
-  }
-  </script>
-
 </body>
 </html>
