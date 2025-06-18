@@ -6,8 +6,11 @@
     <title id="app-title">Mi Plan Pro</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/2.2.1/chartjs-plugin-annotation.min.js"></script>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <style>
@@ -1868,6 +1871,9 @@
                 const labels = sessionData.map((_, index) => `Sesión ${index + 1}`);
                 const paceData = sessionData.map(d => d.averagePace);
 
+                // --- NUEVA LÓGICA: Calcular el mejor ritmo para la línea de anotación ---
+                const bestPace = Math.min(...paceData);
+
                 myChart = new Chart(exerciseChartCanvas, {
                     type: 'bar',
                     data: {
@@ -1877,8 +1883,6 @@
                             data: paceData,
                             borderColor: '#4f46e5',
                             backgroundColor: 'rgba(79, 70, 229, 0.6)',
-                            fill: true,
-                            tension: 0.1
                         }]
                     },
                     options: {
@@ -1893,11 +1897,12 @@
                         },
                         scales: {
                             y: {
-                                reverse: true, // Eje Y invertido: menos tiempo es mejor (más arriba)
+                                // CAMBIO: Ya no invertimos el eje. Las barras crecen hacia arriba.
+                                // reverse: true, // <-- LÍNEA ELIMINADA
+                                beginAtZero: false, // Empezamos cerca de los valores para mejor visualización
                                 title: { display: true, text: 'Ritmo Promedio (min/km)' },
                                 ticks: {
                                     callback: function(value) {
-                                        // Formatear segundos a mm:ss
                                         return formatSecondsToTime(value);
                                     }
                                 }
@@ -1911,12 +1916,33 @@
                                         return `Ritmo: ${formatSecondsToTime(paceInSeconds)} /km`;
                                     }
                                 }
+                            },
+                            // --- NUEVA LÓGICA: Añadimos la configuración de la línea de anotación ---
+                            annotation: {
+                                annotations: {
+                                    bestPaceLine: {
+                                        type: 'line',
+                                        yMin: bestPace,
+                                        yMax: bestPace,
+                                        borderColor: 'rgb(255, 99, 132)',
+                                        borderWidth: 2,
+                                        borderDash: [6, 6],
+                                        label: {
+                                            enabled: true,
+                                            content: `Mejor Ritmo: ${formatSecondsToTime(bestPace)}`,
+                                            position: 'end',
+                                            backgroundColor: 'rgba(255, 99, 132, 0.8)',
+                                            font: {
+                                                size: 10
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
                 });
-            }
-            
+            }          
 //=============== TERMINA CÓDIGO A AÑADIR ===============-->
 
             initializeApp();
