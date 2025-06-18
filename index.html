@@ -488,7 +488,22 @@
 
     <div id="data-modal" class="modal-overlay"><div class="modal-content"><h3 id="modal-title"></h3><div class="modal-scrollable-content-area"><label for="reps-input" data-textkey="modals.repsLabel"></label><input type="number" id="reps-input" min="1"><label for="weight-input"><span data-textkey="modals.weightLabel"></span> (<span id="weight-unit-label">lb</span>):</label><input type="number" id="weight-input" min="0"></div><div class="modal-actions"><button id="cancel-modal-btn" class="cancel-btn" data-textkey="modals.cancelButton"></button><button id="save-modal-btn" class="save-btn" data-textkey="modals.saveButton"></button></div></div></div>
     <div id="info-modal" class="modal-overlay"><div class="modal-content"><h3 id="info-modal-title"></h3><div class="modal-scrollable-content-area"><p id="info-modal-content" class="text-gray-700 whitespace-pre-wrap"></p></div><div class="modal-actions justify-center"><button class="save-btn" id="close-info-modal" data-textkey="modals.closeButton"></button></div></div></div>
-    <div id="chart-modal" class="modal-overlay"><div class="modal-content chart-modal"><h3 id="chart-modal-title"></h3><div class="modal-scrollable-content-area" style="height: 350px;"><div style="width: 100%; height: 100%;"><canvas id="exerciseChart"></canvas></div></div><div class="modal-actions justify-center mt-4"><button class="save-btn" id="close-chart-modal" data-textkey="modals.closeButton"></button></div></div></div>
+    <div id="chart-modal" class="modal-overlay">
+        <div class="modal-content chart-modal">
+            <h3 id="chart-modal-title"></h3>
+            <div class="modal-scrollable-content-area" style="height: 350px;">
+                <div style="width: 100%; height: 100%;">
+                    <canvas id="exerciseChart"></canvas>
+                </div>
+            </div>
+            <div id="chart-details-table-container" class="mt-4 px-4 hidden">
+             </div>
+            <div class="modal-actions justify-center mt-4">
+                <button class="save-btn" id="close-chart-modal" data-textkey="modals.closeButton">
+                </button>
+            </div>
+        </div>
+    </div>
     <div id="edit-exercise-modal" class="modal-overlay"><div class="modal-content"><h3 id="edit-exercise-modal-title"></h3><div class="modal-scrollable-content-area"><label for="edit-exercise-name" data-textkey="modals.exerciseNameLabel"></label><input type="text" id="edit-exercise-name"><label for="edit-exercise-info" data-textkey="modals.exerciseInfoLabel"></label><textarea id="edit-exercise-info"></textarea><label for="edit-exercise-type" data-textkey="modals.exerciseTypeLabel"></label><select id="edit-exercise-type"><option value="strength" data-textkey="modals.exerciseTypeStrength"></option><option value="session" data-textkey="modals.exerciseTypeSession"></option></select><div id="strength-options"><label for="edit-exercise-sets" data-textkey="modals.exerciseSetsLabel"></label><input type="number" id="edit-exercise-sets" min="1"><label for="edit-exercise-reps-range" data-textkey="modals.exerciseRepsRangeLabel"></label><input type="text" id="edit-exercise-reps-range"></div></div><div class="modal-actions"><button id="cancel-edit-exercise-btn" class="cancel-btn" data-textkey="modals.cancelButton"></button><button id="save-edit-exercise-btn" class="save-btn" data-textkey="modals.saveExerciseButton"></button></div></div></div>
     <div id="protein-modal" class="modal-overlay"><div class="modal-content"><h3 id="protein-modal-title"></h3><div class="modal-scrollable-content-area"><input type="hidden" id="protein-entry-id"><label for="protein-modal-week" data-textkey="modals.weekLabel"></label><input type="number" id="protein-modal-week" min="1" class="w-full p-2 border border-gray-300 rounded-md mb-3"><label for="protein-modal-day" data-textkey="modals.dayOfWeekLabel"></label><select id="protein-modal-day" class="w-full p-2 border border-gray-300 rounded-md mb-3"></select><label for="protein-modal-grams" data-textkey="modals.proteinGramsLabel"></label><input type="number" id="protein-modal-grams" min="1" class="w-full p-2 border border-gray-300 rounded-md"></div><div class="modal-actions"><button id="cancel-protein-modal-btn" class="cancel-btn" data-textkey="modals.cancelButton"></button><button id="save-protein-modal-btn" class="save-btn" data-textkey="modals.saveButton"></button></div></div></div>
     <div id="sleep-modal" class="modal-overlay"><div class="modal-content"><h3 id="sleep-modal-title"></h3><div class="modal-scrollable-content-area"><input type="hidden" id="sleep-entry-id"><label for="sleep-modal-week" data-textkey="modals.weekLabel"></label><input type="number" id="sleep-modal-week" min="1" class="w-full p-2 border border-gray-300 rounded-md mb-3"><label for="sleep-modal-day" data-textkey="modals.sleepDayLabel"></label><select id="sleep-modal-day" class="w-full p-2 border border-gray-300 rounded-md mb-3"></select><label for="sleep-modal-hours" data-textkey="modals.sleepHoursLabel"></label><input type="number" id="sleep-modal-hours" min="0" step="0.25" class="w-full p-2 border border-gray-300 rounded-md mb-3"><label for="sleep-modal-quality" data-textkey="modals.sleepQualityLabel"></label><select id="sleep-modal-quality" class="w-full p-2 border border-gray-300 rounded-md mb-3"></select><label for="sleep-modal-notes" data-textkey="modals.sleepNotesLabel"></label><textarea id="sleep-modal-notes" rows="3" class="w-full p-2 border border-gray-300 rounded-md"></textarea></div><div class="modal-actions"><button id="cancel-sleep-modal-btn" class="cancel-btn" data-textkey="modals.cancelButton"></button><button id="save-sleep-modal-btn" class="save-btn" data-textkey="modals.saveButton"></button></div></div></div>
@@ -1105,15 +1120,26 @@
                     const delBtn = document.createElement('button'); delBtn.classList.add('delete-exercise-btn'); delBtn.innerHTML = '<i class="fas fa-trash-alt"></i>'; delBtn.title = "Eliminar"; controls.appendChild(delBtn);
                 } titleDiv.appendChild(controls); item.appendChild(titleDiv);
                 const repsP = document.createElement('p'); repsP.classList.add('text-sm', 'text-gray-600', 'mb-2'); repsP.textContent = exercise.reps_range || ''; item.appendChild(repsP);
+                
                 if (exercise.type === 'strength') {
                     const setsDiv = document.createElement('div'); setsDiv.classList.add('set-buttons');
                     for (let i = 1; i <= exercise.sets; i++) { const btn = document.createElement('button'); btn.dataset.set = i; btn.textContent = `Serie ${i}`; setsDiv.appendChild(btn); } item.appendChild(setsDiv);
-                    const chartBtn = document.createElement('button'); chartBtn.classList.add('chart-button', 'mt-2'); chartBtn.innerHTML = '<i class="fas fa-chart-line"></i> Gráfico'; chartBtn.dataset.exerciseNameForChart = exercise.name; item.appendChild(chartBtn);
+                    const chartBtn = document.createElement('button'); chartBtn.classList.add('chart-button', 'mt-2'); chartBtn.innerHTML = '<i class="fas fa-chart-line"></i> Gráfico de Fuerza'; 
+                    chartBtn.dataset.exerciseNameForChart = exercise.name;
+                    chartBtn.dataset.exerciseType = 'strength'; // <-- Indicamos el tipo
+                    item.appendChild(chartBtn);
                 } else if (exercise.type === 'session') {
                     const sessionBtn = document.createElement('button'); sessionBtn.classList.add('session-button'); sessionBtn.textContent = 'Marcar Completado'; item.appendChild(sessionBtn);
-                } return item;
+                    const chartBtn = document.createElement('button'); chartBtn.classList.add('chart-button', 'mt-2'); chartBtn.innerHTML = '<i class="fas fa-chart-line"></i> Gráfica de Carrera';
+                    chartBtn.dataset.exerciseNameForChart = exercise.name;
+                    chartBtn.dataset.exerciseType = 'session'; // <-- Indicamos el tipo
+                    item.appendChild(chartBtn);
+                } 
+                
+                return item;
             }
-            
+
+
             function getDaySummaryTitle(dayName) { 
                 const dayInfo = defaultPlanData[dayName];
                 return (dayInfo && dayInfo.dayPurposeTitle) ? dayInfo.dayPurposeTitle : "Día de Entrenamiento";
@@ -1165,8 +1191,21 @@
                 }
                 else if (target.classList.contains('chart-button') && exerciseItemElement) {
                     const exerciseNameForChart = target.dataset.exerciseNameForChart;
-                    chartModalTitleEl.textContent = getText('modals.chartTitle') + `: ${exerciseNameForChart}`; renderExerciseChart(exerciseNameForChart);
-                    chartModal.classList.add('visible'); event.stopPropagation();
+                    const exerciseType = target.dataset.exerciseType;
+                    
+                    // Limpiar la tabla de detalles al abrir cualquier gráfico
+                    document.getElementById('chart-details-table-container').classList.add('hidden');
+
+                    if (exerciseType === 'strength') {
+                        chartModalTitleEl.textContent = getText('modals.chartTitle') + `: ${exerciseNameForChart}`;
+                        renderExerciseChart(exerciseNameForChart);
+                    } else if (exerciseType === 'session') {
+                        chartModalTitleEl.textContent = `Progresión de Ritmo: ${exerciseNameForChart}`;
+                        renderSessionChart(exerciseNameForChart);
+                    }
+                    
+                    chartModal.classList.add('visible');
+                    event.stopPropagation();
                 }
                 else if (target.classList.contains('edit-exercise-btn') && editMode && exerciseItemElement) {
                     const day = exerciseItemElement.dataset.day; const sectionIndex = parseInt(exerciseItemElement.dataset.sectionIndex);
@@ -1731,6 +1770,154 @@
                     sessionDetailsModal.classList.remove('visible');
                 };
             }
+//=============== INICIA CÓDIGO A AÑADIR ===============-->
+
+            // --- Funciones de Ayuda para Carrera ---
+            function parseTimeToSeconds(timeStr) {
+                if (!timeStr || typeof timeStr !== 'string' || !timeStr.includes(':')) return 0;
+                const parts = timeStr.split(':');
+                const minutes = parseInt(parts[0], 10) || 0;
+                const seconds = parseInt(parts[1], 10) || 0;
+                return (minutes * 60) + seconds;
+            }
+
+            function formatSecondsToTime(totalSeconds) {
+                if (isNaN(totalSeconds) || totalSeconds === 0) return "0:00";
+                const minutes = Math.floor(totalSeconds / 60);
+                const seconds = Math.round(totalSeconds % 60);
+                return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+            }
+
+            function getSessionChartData(exerciseName) {
+                const allProgress = JSON.parse(localStorage.getItem(localStorageKey)) || { weeks: {} };
+                const sessionEntries = [];
+
+                for (const weekKey in allProgress.weeks) {
+                    for (const dayKey in allProgress.weeks[weekKey]) {
+                        const dayData = allProgress.weeks[weekKey][dayKey];
+                        if (dayData[exerciseName] && dayData[exerciseName].completed && dayData[exerciseName].details) {
+                            const details = dayData[exerciseName].details;
+                            let totalDistance = 0;
+                            let totalTimeInSeconds = 0;
+                            details.entries.forEach(entry => {
+                                totalDistance += parseFloat(entry.distance) || 0;
+                                totalTimeInSeconds += parseTimeToSeconds(entry.time);
+                            });
+
+                            if (totalDistance > 0 && totalTimeInSeconds > 0) {
+                                // Ritmo en segundos por metro
+                                const pacePerMeter = totalTimeInSeconds / totalDistance;
+                                // Lo normalizamos a segundos por kilómetro
+                                const pacePerKm = pacePerMeter * 1000;
+                                sessionEntries.push({
+                                    date: new Date(dayData[exerciseName].date),
+                                    averagePace: pacePerKm,
+                                    originalData: dayData[exerciseName]
+                                });
+                            }
+                        }
+                    }
+                }
+                // Ordenar por fecha para asegurar que el eje X consecutivo es cronológico
+                return sessionEntries.sort((a, b) => a.date - b.date);
+            }
+            
+            function displaySessionDetailsTable(sessionData) {
+                const container = document.getElementById('chart-details-table-container');
+                if (!sessionData || !sessionData.details) {
+                    container.innerHTML = '';
+                    container.classList.add('hidden');
+                    return;
+                }
+
+                let tableHTML = `<h4 class="font-bold text-lg mb-2 text-center">Detalles de la Sesión (${new Date(sessionData.date).toLocaleDateString()})</h4>
+                                 <table class="w-full text-left border-collapse">
+                                    <thead>
+                                        <tr>
+                                            <th class="p-2 border-b-2 border-gray-300">Ronda</th>
+                                            <th class="p-2 border-b-2 border-gray-300">Distancia (m)</th>
+                                            <th class="p-2 border-b-2 border-gray-300">Tiempo</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>`;
+                
+                sessionData.details.entries.forEach((entry, index) => {
+                    tableHTML += `<tr>
+                                    <td class="p-2 border-b">${index + 1}</td>
+                                    <td class="p-2 border-b">${entry.distance}</td>
+                                    <td class="p-2 border-b">${entry.time}</td>
+                                  </tr>`;
+                });
+
+                tableHTML += '</tbody></table>';
+                container.innerHTML = tableHTML;
+                container.classList.remove('hidden');
+            }
+
+            function renderSessionChart(exerciseName) {
+                if (myChart) myChart.destroy();
+                document.getElementById('chart-details-table-container').classList.add('hidden');
+
+                const sessionData = getSessionChartData(exerciseName);
+                if (sessionData.length === 0) {
+                    showCustomMessage(`No hay datos detallados de carrera para "${exerciseName}" para mostrar en el gráfico.`);
+                    chartModal.classList.remove('visible');
+                    return;
+                }
+
+                const labels = sessionData.map((_, index) => `Sesión ${index + 1}`);
+                const paceData = sessionData.map(d => d.averagePace);
+
+                myChart = new Chart(exerciseChartCanvas, {
+                    type: 'line',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: 'Ritmo Promedio (min/km)',
+                            data: paceData,
+                            borderColor: '#4f46e5',
+                            backgroundColor: 'rgba(79, 70, 229, 0.1)',
+                            fill: true,
+                            tension: 0.1
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        onClick: (event, elements) => {
+                            if (elements.length > 0) {
+                                const dataIndex = elements[0].index;
+                                const clickedSessionData = sessionData[dataIndex].originalData;
+                                displaySessionDetailsTable(clickedSessionData);
+                            }
+                        },
+                        scales: {
+                            y: {
+                                reverse: true, // Eje Y invertido: menos tiempo es mejor (más arriba)
+                                title: { display: true, text: 'Ritmo Promedio (min/km)' },
+                                ticks: {
+                                    callback: function(value) {
+                                        // Formatear segundos a mm:ss
+                                        return formatSecondsToTime(value);
+                                    }
+                                }
+                            }
+                        },
+                        plugins: {
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        const paceInSeconds = context.raw;
+                                        return `Ritmo: ${formatSecondsToTime(paceInSeconds)} /km`;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+            
+//=============== TERMINA CÓDIGO A AÑADIR ===============-->
 
             initializeApp();
         });
