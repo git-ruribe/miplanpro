@@ -1869,14 +1869,14 @@
                 const paceData = sessionData.map(d => d.averagePace);
 
                 myChart = new Chart(exerciseChartCanvas, {
-                    type: 'line',
+                    type: 'bar',
                     data: {
                         labels: labels,
                         datasets: [{
                             label: 'Ritmo Promedio (min/km)',
                             data: paceData,
                             borderColor: '#4f46e5',
-                            backgroundColor: 'rgba(79, 70, 229, 0.1)',
+                            backgroundColor: 'rgba(79, 70, 229, 0.6)',
                             fill: true,
                             tension: 0.1
                         }]
