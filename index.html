@@ -491,6 +491,29 @@
     <div id="edit-exercise-modal" class="modal-overlay"><div class="modal-content"><h3 id="edit-exercise-modal-title"></h3><div class="modal-scrollable-content-area"><label for="edit-exercise-name" data-textkey="modals.exerciseNameLabel"></label><input type="text" id="edit-exercise-name"><label for="edit-exercise-info" data-textkey="modals.exerciseInfoLabel"></label><textarea id="edit-exercise-info"></textarea><label for="edit-exercise-type" data-textkey="modals.exerciseTypeLabel"></label><select id="edit-exercise-type"><option value="strength" data-textkey="modals.exerciseTypeStrength"></option><option value="session" data-textkey="modals.exerciseTypeSession"></option></select><div id="strength-options"><label for="edit-exercise-sets" data-textkey="modals.exerciseSetsLabel"></label><input type="number" id="edit-exercise-sets" min="1"><label for="edit-exercise-reps-range" data-textkey="modals.exerciseRepsRangeLabel"></label><input type="text" id="edit-exercise-reps-range"></div></div><div class="modal-actions"><button id="cancel-edit-exercise-btn" class="cancel-btn" data-textkey="modals.cancelButton"></button><button id="save-edit-exercise-btn" class="save-btn" data-textkey="modals.saveExerciseButton"></button></div></div></div>
     <div id="protein-modal" class="modal-overlay"><div class="modal-content"><h3 id="protein-modal-title"></h3><div class="modal-scrollable-content-area"><input type="hidden" id="protein-entry-id"><label for="protein-modal-week" data-textkey="modals.weekLabel"></label><input type="number" id="protein-modal-week" min="1" class="w-full p-2 border border-gray-300 rounded-md mb-3"><label for="protein-modal-day" data-textkey="modals.dayOfWeekLabel"></label><select id="protein-modal-day" class="w-full p-2 border border-gray-300 rounded-md mb-3"></select><label for="protein-modal-grams" data-textkey="modals.proteinGramsLabel"></label><input type="number" id="protein-modal-grams" min="1" class="w-full p-2 border border-gray-300 rounded-md"></div><div class="modal-actions"><button id="cancel-protein-modal-btn" class="cancel-btn" data-textkey="modals.cancelButton"></button><button id="save-protein-modal-btn" class="save-btn" data-textkey="modals.saveButton"></button></div></div></div>
     <div id="sleep-modal" class="modal-overlay"><div class="modal-content"><h3 id="sleep-modal-title"></h3><div class="modal-scrollable-content-area"><input type="hidden" id="sleep-entry-id"><label for="sleep-modal-week" data-textkey="modals.weekLabel"></label><input type="number" id="sleep-modal-week" min="1" class="w-full p-2 border border-gray-300 rounded-md mb-3"><label for="sleep-modal-day" data-textkey="modals.sleepDayLabel"></label><select id="sleep-modal-day" class="w-full p-2 border border-gray-300 rounded-md mb-3"></select><label for="sleep-modal-hours" data-textkey="modals.sleepHoursLabel"></label><input type="number" id="sleep-modal-hours" min="0" step="0.25" class="w-full p-2 border border-gray-300 rounded-md mb-3"><label for="sleep-modal-quality" data-textkey="modals.sleepQualityLabel"></label><select id="sleep-modal-quality" class="w-full p-2 border border-gray-300 rounded-md mb-3"></select><label for="sleep-modal-notes" data-textkey="modals.sleepNotesLabel"></label><textarea id="sleep-modal-notes" rows="3" class="w-full p-2 border border-gray-300 rounded-md"></textarea></div><div class="modal-actions"><button id="cancel-sleep-modal-btn" class="cancel-btn" data-textkey="modals.cancelButton"></button><button id="save-sleep-modal-btn" class="save-btn" data-textkey="modals.saveButton"></button></div></div></div>
+    <div id="session-details-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h3 id="session-modal-title"></h3>
+            <div class="modal-scrollable-content-area">
+                <div id="session-modal-step1">
+                    <label for="session-rounds-input">Número de Repeticiones/Rondas (Opcional):</label>
+                    <input type="number" id="session-rounds-input" min="1" placeholder="Deja en blanco para no registrar detalles">
+                    <button id="generate-session-fields-btn" class="set-buttons mt-2 w-full">Generar Campos</button>
+                </div>
+                <hr class="my-4">
+                <div id="dynamic-entries-container">
+                    <p class="text-gray-500 italic">Completa el número de rondas y pulsa "Generar Campos" para añadir detalles.</p>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button id="cancel-session-modal-btn" class="cancel-btn">Cancelar</button>
+                <button id="delete-session-btn" class="cancel-btn" style="background-color: #ef4444; color: white;">Borrar Registro</button> 
+                <button id="save-session-simple-btn" class="save-btn" style="background-color: #10b981;">Guardar solo como Completado</button>
+                <button id="save-session-details-btn" class="save-btn">Guardar Detalles</button>
+            </div>
+        </div>
+    </div>
+
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -699,6 +722,17 @@
             const registerSleepBtnText = registerSleepBtn.querySelector('span');
             const modalLabelsAndButtons = document.querySelectorAll('[data-textkey]');
 
+            const sessionDetailsModal = document.getElementById('session-details-modal');
+            const sessionModalTitle = document.getElementById('session-modal-title');
+            const sessionRoundsInput = document.getElementById('session-rounds-input');
+            const generateSessionFieldsBtn = document.getElementById('generate-session-fields-btn');
+            const dynamicEntriesContainer = document.getElementById('dynamic-entries-container');
+            const cancelSessionModalBtn = document.getElementById('cancel-session-modal-btn');
+            const saveSessionSimpleBtn = document.getElementById('save-session-simple-btn');
+            const saveSessionDetailsBtn = document.getElementById('save-session-details-btn');
+            const deleteSessionBtn = document.getElementById('delete-session-btn');
+
+
             // --- Estado de la Aplicación ---
             let currentWeek = parseInt(localStorage.getItem('currentWeek_v2') || '1');
             let currentUnit = localStorage.getItem('unit_v2') || 'lb'; // 'lb' or 'kg'
@@ -832,56 +866,69 @@
                 updateDynamicUiText();
             }
 
-            function loadProgress() {
-                updateWeekDisplay(); 
-                updateUnitDisplay(); 
-                const allProgress = JSON.parse(localStorage.getItem(localStorageKey)) || {};
-                const currentWeekProgress = allProgress.weeks ? allProgress.weeks[`week${currentWeek}`] || {} : {};
-                document.querySelectorAll('details').forEach(dayDetail => {
-                    const day = dayDetail.dataset.day;
-                    const dayProgress = currentWeekProgress[day] || {};
-                    let exercisesCompletedCount = 0; let totalExercisesCount = 0; const completedOptionGroups = new Set();
-                    dayDetail.querySelectorAll('.exercise-item[data-exercise]').forEach(exerciseItem => {
-                        const exerciseName = exerciseItem.dataset.exercise;
-                        const setButtonsContainer = exerciseItem.querySelector('.set-buttons');
-                        const sessionButton = exerciseItem.querySelector('.session-button');
-                        const parentGroup = exerciseItem.closest('.exercise-group[data-option-group]');
-                        let isExerciseItemCompleted = false;
-                        if (setButtonsContainer) {
-                            let setsCompleted = 0; let totalSets = 0;
-                            setButtonsContainer.querySelectorAll('button[data-set]').forEach(button => {
-                                totalSets++; const setIndex = button.dataset.set;
-                                const setData = dayProgress[exerciseName] ? dayProgress[exerciseName][`set${setIndex}`] : null;
-                                button.disabled = false;
-                                if (setData && setData.completed) {
-                                    button.classList.add('completed');
-                                    // setData.weight está en lb, setData.unit también debería ser 'lb' o no existir
-                                    const displayedWeight = convertWeightForDisplay(setData.weight, currentUnit).toFixed(1);
-                                    button.textContent = `${setData.reps} reps @ ${displayedWeight}${currentUnit}`; setsCompleted++;
-                                } else { button.classList.remove('completed'); button.textContent = `Serie ${setIndex}`; }
-                            });
-                            if (totalSets > 0 && setsCompleted === totalSets) isExerciseItemCompleted = true;
-                        } else if (sessionButton) {
-                            const exerciseData = dayProgress[exerciseName];
-                            if (exerciseData && exerciseData.completed) {
-                                sessionButton.classList.add('completed'); sessionButton.textContent = 'Completado'; isExerciseItemCompleted = true;
-                            } else { sessionButton.classList.remove('completed'); sessionButton.textContent = 'Marcar como Completado'; }
-                            sessionButton.disabled = false;
-                        }
-                        if (parentGroup) { if (isExerciseItemCompleted) completedOptionGroups.add(parentGroup.dataset.optionGroup); }
-                        else { totalExercisesCount++; if (isExerciseItemCompleted) exercisesCompletedCount++; }
-                    });
-                    dayDetail.querySelectorAll('.exercise-group[data-option-group]').forEach(group => {
-                        totalExercisesCount++; if (completedOptionGroups.has(group.dataset.optionGroup)) exercisesCompletedCount++;
-                    });
-                    const dayStatusSpan = document.getElementById(`status-${day}`);
-                    if (dayStatusSpan) {
-                        if (totalExercisesCount > 0 && exercisesCompletedCount === totalExercisesCount) { dayStatusSpan.textContent = ' (Completado)'; dayStatusSpan.classList.add('completed-day'); }
-                        else if (exercisesCompletedCount > 0) { dayStatusSpan.textContent = ` (${exercisesCompletedCount}/${totalExercisesCount} completados)`; dayStatusSpan.classList.remove('completed-day'); }
-                        else { dayStatusSpan.textContent = ''; dayStatusSpan.classList.remove('completed-day'); }
-                    }
-                });
-            }
+//=============== INICIA CÓDIGO A REEMPLAZAR ===============-->
+
+                  function loadProgress() {
+                        updateWeekDisplay();  
+                        updateUnitDisplay();  
+                        const allProgress = JSON.parse(localStorage.getItem(localStorageKey)) || {};
+                        const currentWeekProgress = allProgress.weeks ? allProgress.weeks[`week${currentWeek}`] || {} : {};
+                        document.querySelectorAll('details').forEach(dayDetail => {
+                              const day = dayDetail.dataset.day;
+                              const dayProgress = currentWeekProgress[day] || {};
+                              let exercisesCompletedCount = 0; let totalExercisesCount = 0; const completedOptionGroups = new Set();
+                              dayDetail.querySelectorAll('.exercise-item[data-exercise]').forEach(exerciseItem => {
+                                    const exerciseName = exerciseItem.dataset.exercise;
+                                    const setButtonsContainer = exerciseItem.querySelector('.set-buttons');
+                                    const sessionButton = exerciseItem.querySelector('.session-button');
+                                    const parentGroup = exerciseItem.closest('.exercise-group[data-option-group]');
+                                    let isExerciseItemCompleted = false;
+                                    if (setButtonsContainer) {
+                                          let setsCompleted = 0; let totalSets = 0;
+                                          setButtonsContainer.querySelectorAll('button[data-set]').forEach(button => {
+                                                totalSets++; const setIndex = button.dataset.set;
+                                                const setData = dayProgress[exerciseName] ? dayProgress[exerciseName][`set${setIndex}`] : null;
+                                                button.disabled = false;
+                                                if (setData && setData.completed) {
+                                                      button.classList.add('completed');
+                                                      const displayedWeight = convertWeightForDisplay(setData.weight, currentUnit).toFixed(1);
+                                                      button.textContent = `${setData.reps} reps @ ${displayedWeight}${currentUnit}`; setsCompleted++;
+                                                } else { button.classList.remove('completed'); button.textContent = `Serie ${setIndex}`; }
+                                          });
+                                          if (totalSets > 0 && setsCompleted === totalSets) isExerciseItemCompleted = true;
+                                    } else if (sessionButton) {
+                                          const exerciseData = dayProgress[exerciseName];
+                                          if (exerciseData && exerciseData.completed) {
+                                                sessionButton.classList.add('completed');
+                                                // Comprueba si hay detalles guardados
+                                                if (exerciseData.details && exerciseData.details.entries) {
+                                                      sessionButton.innerHTML = '<i class="fas fa-list-alt mr-2"></i>Ver Detalles';
+                                                } else {
+                                                      sessionButton.textContent = 'Completado';
+                                                }
+                                                isExerciseItemCompleted = true;
+                                          } else { 
+                                                sessionButton.classList.remove('completed'); 
+                                                sessionButton.textContent = 'Marcar como Completado'; 
+                                          }
+                                          sessionButton.disabled = false;
+                                    }
+                                    if (parentGroup) { if (isExerciseItemCompleted) completedOptionGroups.add(parentGroup.dataset.optionGroup); }
+                                    else { totalExercisesCount++; if (isExerciseItemCompleted) exercisesCompletedCount++; }
+                              });
+                              dayDetail.querySelectorAll('.exercise-group[data-option-group]').forEach(group => {
+                                    totalExercisesCount++; if (completedOptionGroups.has(group.dataset.optionGroup)) exercisesCompletedCount++;
+                              });
+                              const dayStatusSpan = document.getElementById(`status-${day}`);
+                              if (dayStatusSpan) {
+                                    if (totalExercisesCount > 0 && exercisesCompletedCount === totalExercisesCount) { dayStatusSpan.textContent = ' (Completado)'; dayStatusSpan.classList.add('completed-day'); }
+                                    else if (exercisesCompletedCount > 0) { dayStatusSpan.textContent = ` (${exercisesCompletedCount}/${totalExercisesCount} completados)`; dayStatusSpan.classList.remove('completed-day'); }
+                                    else { dayStatusSpan.textContent = ''; dayStatusSpan.classList.remove('completed-day'); }
+                              }
+                        });
+                  }
+
+//=============== TERMINA CÓDIGO A REEMPLAZAR ===============-->
 
             function loadPlan() {
                 const storedPlan = localStorage.getItem(planDataKey);
@@ -921,6 +968,8 @@
             
             function savePlan() { localStorage.setItem(planDataKey, JSON.stringify(currentPlanData)); }
 
+//=============== INICIA CÓDIGO A REEMPLAZAR ===============-->
+
             function saveProgress(day, exercise, set, data) {
                 const allProgress = JSON.parse(localStorage.getItem(localStorageKey)) || { weeks: {} };
                 if (!allProgress.weeks) allProgress.weeks = {};
@@ -929,26 +978,33 @@
                 
                 const entryDate = new Date().toISOString();
 
-                if (!set && data.hasOwnProperty('completed')) { // For session type exercises
-                    if (!allProgress.weeks[`week${currentWeek}`][day][exercise]) allProgress.weeks[`week${currentWeek}`][day][exercise] = {};
-                    allProgress.weeks[`week${currentWeek}`][day][exercise].completed = data.completed;
-                    allProgress.weeks[`week${currentWeek}`][day][exercise].date = entryDate;
-                } else if (set) { // For strength type exercises (individual sets)
-                    if (!allProgress.weeks[`week${currentWeek}`][day][exercise]) allProgress.weeks[`week${currentWeek}`][day][exercise] = {};
-                    // Ensure data.weight is in lbs before saving
+                if (set) { // Para ejercicios de fuerza (con series)
+                    if (!allProgress.weeks[`week${currentWeek}`][day][exercise]) {
+                        allProgress.weeks[`week${currentWeek}`][day][exercise] = {};
+                    }
                     const progressData = {
                         ...data,
                         date: entryDate,
-                        unit: 'lb' // Always store unit as lb
+                        unit: 'lb' 
                     };
                     allProgress.weeks[`week${currentWeek}`][day][exercise][`set${set}`] = progressData;
+                } else { // Para ejercicios de sesión (con o sin detalles)
+                    if (data.completed === false) { // Si estamos desmarcando
+                        delete allProgress.weeks[`week${currentWeek}`][day][exercise];
+                    } else {
+                        if (!allProgress.weeks[`week${currentWeek}`][day][exercise]) {
+                            allProgress.weeks[`week${currentWeek}`][day][exercise] = {};
+                        }
+                        // Combina los nuevos datos con la fecha. Esto guarda el objeto `details` si existe.
+                        Object.assign(allProgress.weeks[`week${currentWeek}`][day][exercise], { ...data, date: entryDate });
+                    }
                 }
-                // Note: The original code had an 'else' case here that seemed redundant with the 'set' case.
-                // If there was another type of progress to save, that logic would go here.
-
+                
                 localStorage.setItem(localStorageKey, JSON.stringify(allProgress));
                 loadProgress();
             }
+
+//=============== TERMINA CÓDIGO A REEMPLAZAR ===============-->
 
             function renderPlan() {
 
@@ -1080,16 +1136,25 @@
                     const currentWeekProgress = allProgress.weeks ? allProgress.weeks[`week${currentWeek}`] || {} : {};
                     const existingData = currentWeekProgress[currentDay]?.[currentExercise]?.[`set${currentSet}`];
                     repsInput.value = (existingData && existingData.reps) ? existingData.reps : '';
-                    // existingData.weight está en lb. Convertir a currentUnit para mostrar en el input.
                     weightInput.value = (existingData && existingData.weight !== undefined) ? convertWeightForDisplay(existingData.weight, currentUnit).toFixed(1) : '';
                     dataModal.classList.add('visible'); repsInput.focus(); event.stopPropagation();
                 }
                 else if (target.classList.contains('session-button') && exerciseItemElement) {
-                    currentDay = exerciseItemElement.dataset.day; currentExercise = exerciseItemElement.dataset.exercise;
-                    const allProgress = JSON.parse(localStorage.getItem(localStorageKey)) || { weeks: {} };
-                    const weekProgress = allProgress.weeks?.[`week${currentWeek}`] || {}; const dayProgress = weekProgress[currentDay] || {};
-                    const exerciseData = dayProgress[currentExercise]; const isCurrentlyCompleted = exerciseData && exerciseData.completed;
-                    saveProgress(currentDay, currentExercise, null, { completed: !isCurrentlyCompleted }); // date se añade en saveProgress
+                    const day = exerciseItemElement.dataset.day; 
+                    const exerciseName = exerciseItemElement.dataset.exercise;
+                    const isCurrentlyCompleted = target.classList.contains('completed');
+
+                    // Obtener datos existentes para decidir si estamos viendo/editando o creando
+                    const allProgress = JSON.parse(localStorage.getItem(localStorageKey)) || {};
+                    const existingData = allProgress.weeks?.[`week${currentWeek}`]?.[day]?.[exerciseName];
+
+                    if (isCurrentlyCompleted && existingData) {
+                        // Si está completado, abrimos el modal con los datos existentes para ver/editar.
+                        openSessionDetailsModal(day, exerciseName, existingData);
+                    } else {
+                        // Si no está completado, abrimos el modal en modo de creación.
+                        openSessionDetailsModal(day, exerciseName, null);
+                    }
                     event.stopPropagation();
                 }
                 else if (target.classList.contains('info-icon') && exerciseItemElement) {
@@ -1112,7 +1177,7 @@
                     const exerciseIndexInGroup = parseInt(exerciseItemElement.dataset.exerciseIndexInGroup); const exerciseName = exerciseItemElement.dataset.exercise;
                     confirmDeleteExercise(day, sectionIndex, exerciseIndexInGroup, exerciseName); event.stopPropagation();
                 }
-            }
+              }
 
             saveModalBtn.addEventListener('click', () => {
                 const reps = parseInt(repsInput.value);
@@ -1570,6 +1635,100 @@
                 cancelSleepModalBtn.addEventListener('click', () => sleepModal.classList.remove('visible'));
                 populateDaySelect(sleepModalDaySelect); // Populate once at init
                 populateSleepQualitySelect(sleepModalQualitySelect); // Populate once at init
+            }
+
+            function openSessionDetailsModal(day, exerciseName, existingData = null) {
+                // Función interna para generar los campos
+                const generateFields = (rounds) => {
+                    dynamicEntriesContainer.innerHTML = ''; // Limpiar el contenedor
+                    for (let i = 1; i <= rounds; i++) {
+                        const entryHtml = `
+                            <div class="session-entry-row mb-3 p-2 border rounded-md">
+                                <label class="font-bold block mb-1">Repetición ${i}</label>
+                                <div class="flex gap-2">
+                                    <input type="number" class="session-distance-input w-full p-2 border rounded-md" placeholder="Distancia (ej. metros)">
+                                    <input type="text" class="session-time-input w-full p-2 border rounded-md" placeholder="Tiempo (mm:ss)">
+                                </div>
+                           </div>`;
+                        dynamicEntriesContainer.insertAdjacentHTML('beforeend', entryHtml);
+                    }
+                };
+
+                // --- Lógica principal de la función ---
+                sessionRoundsInput.value = '';
+                dynamicEntriesContainer.innerHTML = '<p class="text-gray-500 italic">Completa el número de rondas y pulsa "Generar Campos" para añadir detalles.</p>';
+
+                if (existingData && existingData.details) {
+                    // MODO EDICIÓN: Hay datos existentes, los cargamos
+                    sessionModalTitle.textContent = `Editar/Ver Detalles: ${exerciseName}`;
+                    const details = existingData.details;
+                    sessionRoundsInput.value = details.rounds;
+                    generateFields(details.rounds); // Generamos los campos
+                    // Rellenamos los campos con los datos guardados
+                    const entryRows = dynamicEntriesContainer.querySelectorAll('.session-entry-row');
+                    entryRows.forEach((row, index) => {
+                        if (details.entries[index]) {
+                            row.querySelector('.session-distance-input').value = details.entries[index].distance;
+                            row.querySelector('.session-time-input').value = details.entries[index].time;
+                        }
+                    });
+                    // Ajustar visibilidad de botones
+                    saveSessionSimpleBtn.classList.add('hidden');
+                    deleteSessionBtn.classList.remove('hidden');
+
+                } else {
+                    // MODO CREACIÓN: No hay datos, modal limpio
+                    sessionModalTitle.textContent = `Registrar Detalles para: ${exerciseName}`;
+                    // Ajustar visibilidad de botones
+                    saveSessionSimpleBtn.classList.remove('hidden');
+                    deleteSessionBtn.classList.add('hidden');
+                }
+
+                sessionDetailsModal.classList.add('visible');
+
+                // --- Lógica para los botones del modal ---
+                generateSessionFieldsBtn.onclick = () => {
+                    const rounds = parseInt(sessionRoundsInput.value);
+                    if (isNaN(rounds) || rounds < 1) {
+                        showCustomMessage("Por favor, introduce un número válido de repeticiones (1 o más).", "warning");
+                        return;
+                    }
+                    generateFields(rounds);
+                };
+
+                saveSessionDetailsBtn.onclick = () => {
+                    const rounds = parseInt(sessionRoundsInput.value) || 0;
+                    const entries = [];
+                    const entryRows = dynamicEntriesContainer.querySelectorAll('.session-entry-row');
+                    if (entryRows.length === 0) {
+                        showCustomMessage("No hay campos de detalle para guardar. Genéralos primero o usa 'Guardar solo como Completado'.", "warning");
+                        return;
+                    }
+                    for (const row of entryRows) {
+                        const distance = row.querySelector('.session-distance-input').value;
+                        const time = row.querySelector('.session-time-input').value;
+                        entries.push({ distance, time });
+                    }
+                    const progressData = { completed: true, details: { rounds, entries } };
+                    saveProgress(day, exerciseName, null, progressData);
+                    sessionDetailsModal.classList.remove('visible');
+                };
+
+                saveSessionSimpleBtn.onclick = () => {
+                    saveProgress(day, exerciseName, null, { completed: true });
+                    sessionDetailsModal.classList.remove('visible');
+                };
+                
+                deleteSessionBtn.onclick = () => {
+                    showCustomConfirmation(`¿Estás seguro de que quieres borrar el registro de "${exerciseName}"?`, () => {
+                        saveProgress(day, exerciseName, null, { completed: false });
+                        sessionDetailsModal.classList.remove('visible');
+                    });
+                };
+
+                cancelSessionModalBtn.onclick = () => {
+                    sessionDetailsModal.classList.remove('visible');
+                };
             }
 
             initializeApp();
