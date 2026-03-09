@@ -3,272 +3,262 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MiPlan.pro | El mejor regalo para mamá es tu tiempo</title>
-    <meta name="description" content="Programa premium de 4 semanas de vitalidad para adultos mayores. Regálale a tu mamá salud y tiempo de calidad este 10 de mayo.">
+    <title>MiPlan.pro | Devuélvele la vitalidad a mamá</title>
+    <meta name="description" content="El tiempo no se detiene. Este 10 de mayo, regálale a tu mamá 4 semanas de vitalidad, prevención de caídas y tu tiempo exclusivo.">
     <style>
         /* Variables y Reset */
         :root {
             --primary-navy: #0A192F;
             --premium-gold: #D4AF37;
+            --alert-red: #C8102E;
             --light-bg: #F8F9FA;
-            --text-dark: #333333;
-            --text-light: #666666;
+            --text-dark: #222222;
+            --text-light: #555555;
             --white: #FFFFFF;
         }
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Helvetica Neue', Arial, sans-serif; }
         body { color: var(--text-dark); background-color: var(--light-bg); line-height: 1.6; }
-        a { text-decoration: none; color: inherit; }
         
         /* Tipografía y Botones */
-        h1, h2, h3 { color: var(--primary-navy); margin-bottom: 1rem; }
-        p { margin-bottom: 1rem; color: var(--text-light); }
+        h1, h2, h3 { color: var(--primary-navy); line-height: 1.2; margin-bottom: 1rem; }
+        p { margin-bottom: 1rem; color: var(--text-light); font-size: 1.1rem; }
+        .highlight { color: var(--premium-gold); }
+        
         .btn {
             display: inline-block;
             background-color: var(--premium-gold);
             color: var(--primary-navy);
-            padding: 15px 30px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            border-radius: 5px;
+            padding: 18px 35px;
+            font-size: 1.2rem;
+            font-weight: 800;
+            border-radius: 4px;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
             border: none;
             cursor: pointer;
             transition: all 0.3s ease;
             text-align: center;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+            text-decoration: none;
         }
-        .btn:hover { background-color: #b5952f; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4); }
+        .btn:hover { background-color: #b5952f; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5); }
         
-        /* Layout Sections */
-        section { padding: 80px 20px; }
+        /* Layout */
+        section { padding: 90px 20px; }
         .container { max-width: 1100px; margin: 0 auto; }
         .text-center { text-align: center; }
 
         /* Navigation */
-        nav { background-color: var(--primary-navy); padding: 20px; position: sticky; top: 0; z-index: 100; }
+        nav { background-color: var(--primary-navy); padding: 15px 20px; position: sticky; top: 0; z-index: 100; border-bottom: 3px solid var(--premium-gold); }
         .nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1100px; margin: 0 auto; }
-        .logo { color: var(--premium-gold); font-size: 1.5rem; font-weight: bold; letter-spacing: 2px; }
-        .nav-btn { background: transparent; border: 1px solid var(--premium-gold); color: var(--premium-gold); padding: 8px 20px; border-radius: 3px; cursor: pointer; }
-
-        /* Hero Section */
-        .hero {
-            background-color: var(--primary-navy);
-            color: var(--white);
-            text-align: center;
-            padding: 100px 20px;
-        }
-        .hero h1 { color: var(--white); font-size: 3rem; margin-bottom: 20px; }
-        .hero h1 span { color: var(--premium-gold); }
-        .hero p { color: #cccccc; font-size: 1.2rem; max-width: 700px; margin: 0 auto 30px; }
+        .logo { color: var(--white); font-size: 1.8rem; font-weight: 900; letter-spacing: 1px; }
+        .logo span { color: var(--premium-gold); }
         
-        /* Urgency Banner */
-        .urgency-banner {
-            background-color: #fff3cd;
-            color: #856404;
-            padding: 15px;
-            border-radius: 5px;
-            margin: 30px auto;
-            max-width: 600px;
-            font-weight: bold;
-            border: 1px solid #ffeeba;
+        /* Hero Section (Punchy) */
+        .hero { background-color: var(--primary-navy); color: var(--white); text-align: center; padding: 120px 20px; }
+        .hero h1 { color: var(--white); font-size: 3.5rem; max-width: 900px; margin: 0 auto 20px; }
+        .hero p { color: #e0e0e0; font-size: 1.4rem; max-width: 750px; margin: 0 auto 40px; font-weight: 300; }
+        
+        /* Deadline Banner */
+        .deadline-banner {
+            background: linear-gradient(135deg, var(--alert-red) 0%, #900b21 100%);
+            color: var(--white);
+            padding: 20px 30px;
+            border-radius: 8px;
+            margin: 0 auto 40px;
+            max-width: 700px;
+            border: 2px solid #ff4d4d;
+            box-shadow: 0 10px 30px rgba(200, 16, 46, 0.3);
         }
-        .spots-left { color: #dc3545; font-size: 1.2rem; }
+        .deadline-banner h3 { color: var(--white); font-size: 1.5rem; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px; }
+        .deadline-banner p { color: #ffd1d1; font-size: 1.1rem; margin-bottom: 0; }
+        
+        /* Live Counter Widget */
+        .live-spots {
+            background-color: rgba(0,0,0,0.5);
+            display: inline-block;
+            padding: 10px 25px;
+            border-radius: 50px;
+            border: 1px solid var(--premium-gold);
+            margin-top: 30px;
+            font-size: 1.1rem;
+            color: var(--premium-gold);
+            font-weight: bold;
+        }
+        .live-spots span { color: var(--white); font-size: 1.3rem; margin: 0 5px; }
 
-        /* Features / The Problem */
-        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
-        @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
-        .feature-box { background: var(--white); padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; }
-        .feature-box h3 { color: var(--premium-gold); }
+        /* Empathy & Pain Points */
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } .hero h1 { font-size: 2.5rem; } }
+        
+        .pain-point-box { background: var(--white); padding: 40px; border-radius: 10px; border-left: 5px solid var(--primary-navy); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .pain-point-box h3 { font-size: 1.8rem; }
 
         /* The Kit Section */
-        .kit-section { background-color: var(--primary-navy); color: var(--white); }
-        .kit-section h2 { color: var(--premium-gold); }
-        .kit-section p { color: #cccccc; }
-        .kit-list { list-style: none; margin-top: 20px; }
-        .kit-list li { margin-bottom: 15px; font-size: 1.1rem; display: flex; align-items: center; }
-        .kit-list li::before { content: '✓'; color: var(--premium-gold); font-weight: bold; margin-right: 10px; font-size: 1.5rem; }
+        .kit-section { background-color: var(--white); }
+        .kit-box { background: var(--light-bg); border: 2px solid var(--premium-gold); border-radius: 12px; padding: 40px; position: relative; }
+        .badge { background: var(--alert-red); color: white; padding: 8px 15px; position: absolute; top: -15px; right: 30px; font-weight: bold; border-radius: 20px; letter-spacing: 1px; }
+        .kit-list { list-style: none; margin-top: 25px; }
+        .kit-list li { margin-bottom: 18px; font-size: 1.2rem; display: flex; align-items: flex-start; }
+        .kit-list li::before { content: '✓'; color: var(--premium-gold); font-weight: bold; margin-right: 15px; font-size: 1.4rem; }
 
         /* Pricing */
-        .pricing-card {
-            background: var(--white);
-            border: 2px solid var(--premium-gold);
-            border-radius: 10px;
-            padding: 40px;
-            max-width: 500px;
-            margin: 0 auto;
-            text-align: center;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-        }
-        .price { font-size: 3rem; font-weight: bold; color: var(--primary-navy); margin: 20px 0; }
-        .price span { font-size: 1.2rem; color: var(--text-light); font-weight: normal; }
-
-        /* FAQ */
-        .faq-item { background: var(--white); margin-bottom: 10px; border-radius: 5px; overflow: hidden; }
-        .faq-question { padding: 20px; cursor: pointer; font-weight: bold; background: #e9ecef; display: flex; justify-content: space-between; align-items: center; }
-        .faq-answer { padding: 0 20px; max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
-        .faq-item.active .faq-answer { padding: 20px; max-height: 300px; }
+        .pricing { background-color: var(--primary-navy); color: var(--white); }
+        .pricing h2, .pricing h3 { color: var(--white); }
+        .pricing-card { background: var(--white); color: var(--text-dark); border-radius: 12px; padding: 50px 40px; max-width: 500px; margin: 0 auto; text-align: center; }
+        .pricing-card h3 { color: var(--primary-navy); font-size: 2rem; }
+        .price { font-size: 4rem; font-weight: 900; color: var(--primary-navy); margin: 10px 0; line-height: 1; }
+        .price span { font-size: 1.5rem; font-weight: normal; color: var(--text-light); }
         
         /* Footer */
-        footer { background: var(--primary-navy); color: white; text-align: center; padding: 30px; border-top: 1px solid rgba(255,255,255,0.1); }
-        footer p { color: #888; margin: 0; font-size: 0.9rem; }
+        footer { background: #050d1a; color: #666; text-align: center; padding: 40px 20px; font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
     <nav>
         <div class="nav-container">
-            <div class="logo">MIPLAN.PRO</div>
-            <button class="nav-btn" onclick="scrollToPricing()">Reservar Cupo</button>
+            <div class="logo">MiPlan<span>.pro</span></div>
         </div>
     </nav>
 
     <section class="hero">
         <div class="container">
-            <h1>Este 10 de Mayo, no le regales cosas. <span>Regálale vitalidad y tu tiempo.</span></h1>
-            <p>Un programa premium de 4 semanas de prevención y movilidad para adultos mayores, operado 100% por WhatsApp. Diseñado para que TÚ seas su Coach personal y fortalezcan su vínculo.</p>
+            <h1>El tiempo no perdona. <br><span class="highlight">Tu atención lo cambia todo.</span></h1>
+            <p>Un sistema de 4 semanas de vitalidad y movilidad guiada para adultos mayores. Nosotros ponemos la ciencia gerontológica de Harvard; tú pones el amor filial. El mejor regalo para este 10 de Mayo.</p>
             
-            <div class="urgency-banner">
-                Edición Especial 10 de Mayo. 
-                <br>Solo aceptaremos 50 familias para garantizar atención personalizada.
-                <br><span class="spots-left">Quedan <span id="counter">14</span> cupos disponibles.</span>
+            <div class="deadline-banner">
+                <h3>⚠️ Bono de Personalización Gratuita</h3>
+                <p>Si reservas tu lugar antes del <strong>20 de Abril</strong>, bordaremos tu nombre y el de tu mamá en las gorras oficiales del programa sin costo adicional.</p>
             </div>
 
-            <button class="btn" onclick="scrollToPricing()">Asegurar mi lugar ahora</button>
+            <a href="#checkout-section" class="btn" onclick="scrollToPricing(event)">Asegurar nuestro lugar</a>
+            
+            <br>
+            <div class="live-spots">
+                CUPOS RESTANTES DE LA GENERACIÓN BETA: <span id="real-time-counter">Cargando...</span> / 50
+            </div>
         </div>
     </section>
 
     <section class="container">
-        <div class="text-center" style="margin-bottom: 50px;">
-            <h2>El problema de la tecnología en la tercera edad</h2>
-            <p style="max-width: 800px; margin: 0 auto;">Las aplicaciones de ejercicio fracasan porque le exigen al adulto mayor pelear con la tecnología. Nuestro modelo "Nano-Franquicia" elimina esa barrera. Nosotros te damos el sistema gerontológico basado en Harvard y Japón, y tú pones el amor filial.</p>
-        </div>
-
         <div class="grid-2">
-            <div class="feature-box">
-                <h3>Tú eres el Coach</h3>
-                <p>Recibes el plan de entrenamiento estructurado 3 veces por semana en tu celular. Tú llevas a tu mamá al parque o lo hacen en casa. Ella solo interactúa contigo, cero frustración digital.</p>
+            <div>
+                <h2>Las apps de ejercicio la frustran. <br><span class="highlight">Tú la inspiras.</span></h2>
+                <p>La inactividad física acelera la pérdida de independencia y el riesgo de caídas. Pero pedirle a un adulto mayor de 70 años que pelee con la tecnología de una app es la receta perfecta para el abandono.</p>
+                <p><strong>Por eso creamos una "Nano-Franquicia" familiar.</strong> El programa no vive en el celular de tu mamá, vive en el tuyo. Tú recibes las instrucciones, tú la llevas al parque 3 veces por semana, y tú te conviertes en su héroe.</p>
             </div>
-            <div class="feature-box">
-                <h3>Fricción Cero</h3>
-                <p>¿Terminaron la sesión? Solo necesitas 15 segundos para contestar 4 preguntas rápidas en nuestro portal web. Nosotros analizamos los datos y calibramos la siguiente rutina.</p>
-            </div>
-            <div class="feature-box">
-                <h3>3 Niveles de Intensidad</h3>
-                <p>Antes de empezar, haremos una sencilla prueba de fuerza en silla. Con eso, adaptamos el plan en Ruta Verde (asistida), Amarilla (intermedia) o Azul (independiente) para evitar cualquier riesgo de lesión.</p>
-            </div>
-            <div class="feature-box">
-                <h3>Tareas Duales y Hábitos</h3>
-                <p>No solo es fuerza. Incluimos protocolos del Instituto Karolinska para "Interferencia Cognitivo-Motora" (ejercicios de equilibrio y memoria) y micro-retos para sus días de descanso.</p>
+            <div class="pain-point-box">
+                <h3>¿Cómo funciona la Fricción Cero?</h3>
+                <ul class="kit-list" style="margin-top: 15px;">
+                    <li><strong>Día 0:</strong> Escanean el código QR en su caja física y hacen una evaluación de 2 minutos en la sala.</li>
+                    <li><strong>Semana 1 a 4:</strong> Recibes en WhatsApp los PDFs visuales con el nivel exacto de intensidad para ella.</li>
+                    <li><strong>Tu única tarea tecnológica:</strong> Al terminar la rutina, contestas 4 preguntas con emojis en nuestro portal. Tarda 15 segundos. Nosotros nos encargamos del resto.</li>
+                </ul>
             </div>
         </div>
     </section>
 
     <section class="kit-section">
-        <div class="container grid-2">
-            <div>
-                <h2>El "Unboxing" Físico del Día de las Madres</h2>
-                <p>Tu compra no es una simple suscripción digital. Para este 10 de mayo, enviaremos a tu domicilio (o al suyo) una caja premium que materializa tu compromiso con su longevidad.</p>
-                <ul class="kit-list">
-                    <li>Carta de Bienvenida Premium con instrucciones y Código QR para su primera evaluación.</li>
-                    <li>1 Gorra Ajustable Bordada Oficial "COACH" (Para ti).</li>
-                    <li>1 Gorra Ajustable Bordada Oficial "CAPITANA" (Para ella).</li>
-                    <li>Acceso vitalicio a su expediente de movilidad.</li>
-                </ul>
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 50px;">
+                <h2 style="font-size: 2.5rem;">El "Unboxing" del Día de las Madres</h2>
+                <p>Tu compra incluye el envío local de nuestro Kit Físico Premium para entregarle en su día.</p>
             </div>
-            <div class="text-center">
-                <div style="background: rgba(255,255,255,0.1); padding: 50px; border-radius: 10px; border: 2px dashed var(--premium-gold);">
-                    <h3 style="color: var(--premium-gold);">FOTO DEL KIT PREMIUM AQUÍ</h3>
-                    <p style="color: #aaa;">Las gorras que usarán con orgullo en el parque</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="container" id="pricing">
-        <div class="text-center" style="margin-bottom: 40px;">
-            <h2>Tu Inversión en su Independencia</h2>
-            <p>Cierra la brecha. Pasa tiempo de calidad estructurado con ella.</p>
-        </div>
-
-        <div class="pricing-card">
-            <h3>Programa Integral 4 Semanas</h3>
-            <div class="price">$1,990 <span>MXN</span></div>
-            <p>Pago único. Incluye Kit Físico y envíos locales (Monterrey).</p>
-            <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
-            <ul style="text-align: left; margin-bottom: 30px; color: var(--text-light); line-height: 2;">
-                <li>✓ Kit Físico "Día de las Madres" (Gorras + Carta)</li>
-                <li>✓ 12 Sesiones de Movilidad (3 Niveles)</li>
-                <li>✓ 16 Retos de Descanso y Tarea Dual</li>
-                <li>✓ Soporte directo del "Mago de Oz" por WhatsApp</li>
-                <li>✓ Reporte de Resultados al finalizar</li>
-            </ul>
-            <button class="btn" style="width: 100%;">Quiero ser su Coach</button>
-            <p style="font-size: 0.8rem; margin-top: 15px;">*Pagos seguros procesados vía Stripe / MercadoPago.</p>
-        </div>
-    </section>
-
-    <section class="container text-center">
-        <h2 style="margin-bottom: 30px;">Preguntas Frecuentes</h2>
-        <div style="max-width: 800px; margin: 0 auto; text-align: left;">
             
-            <div class="faq-item">
-                <div class="faq-question">¿Qué pasa si mi mamá usa andador o bastón? <span style="font-size: 1.2rem;">+</span></div>
-                <div class="faq-answer">
-                    <p>No hay problema. Nuestro programa cuenta con la "Ruta Verde", diseñada específicamente para adultos con movilidad asistida. Todos los ejercicios se realizan sentados o sostenidos firmemente.</p>
+            <div class="kit-box">
+                <div class="badge">ENVÍO INCLUIDO (MONTERREY)</div>
+                <div class="grid-2">
+                    <div>
+                        <h3 style="font-size: 1.8rem;">¿Qué hay dentro de la caja?</h3>
+                        <ul class="kit-list">
+                            <li><strong>Carta de Nombramiento Oficial:</strong> Una tarjeta rígida premium donde le declaras que a partir de hoy, su salud es un proyecto de equipo.</li>
+                            <li><strong>Gorra "COACH":</strong> Ajustable, bordada con el nombre del programa <span class="highlight">(+ Tu nombre bordado si compras antes del 20 de Abril)</span>.</li>
+                            <li><strong>Gorra "CAPITANA":</strong> Para ella. El símbolo de estatus perfecto para cuando la lleves a ejercitarse.</li>
+                            <li><strong>Acceso a la Bóveda de Datos:</strong> Gráficas de su progreso que te enviaremos al final del mes.</li>
+                        </ul>
+                    </div>
+                    <div class="text-center" style="background: #e9ecef; border-radius: 8px; padding: 60px 20px;">
+                        <span style="font-size: 4rem;">📦 🧢</span>
+                        <h4 style="margin-top: 20px; color: var(--text-light);">Visualización del Kit Premium</h4>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="faq-item">
-                <div class="faq-question">¿Me va a quitar mucho tiempo administrar esto? <span style="font-size: 1.2rem;">+</span></div>
-                <div class="faq-answer">
-                    <p>Diseñamos este programa para adultos jóvenes ocupados. Solo te tomará 20 minutos acompañarla en su rutina 3 veces por semana, y reportar sus avances en nuestra plataforma web te tomará exactamente 15 segundos gracias a nuestro diseño de "fricción cero".</p>
-                </div>
+    <section class="pricing" id="checkout-section">
+        <div class="container">
+            <div class="pricing-card">
+                <h3>Generación Pioneros</h3>
+                <div class="price">$1,990 <span>MXN</span></div>
+                <p style="margin-bottom: 30px;">Pago único por la experiencia completa de 4 semanas y envío físico.</p>
+                
+                <a href="URL_DE_TU_CHECKOUT_AQUI" class="btn" style="width: 100%; font-size: 1.1rem;" id="checkout-btn">Pagar y Reservar Cupo Seguro</a>
+                
+                <p style="font-size: 0.85rem; margin-top: 20px; color: #888;">
+                    🔒 Procesado de forma segura. El cierre de inscripciones con personalización es el 20 de Abril a las 11:59 PM.
+                </p>
             </div>
-
-            <div class="faq-item">
-                <div class="faq-question">¿Cuándo llega el paquete físico? <span style="font-size: 1.2rem;">+</span></div>
-                <div class="faq-answer">
-                    <p>Los envíos se coordinan para que lleguen a la dirección indicada entre el 5 y el 8 de mayo, garantizando que tengas la caja lista para entregarla en la comida del domingo 10 de Mayo.</p>
-                </div>
-            </div>
-
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 MiPlan.pro. Diseñado para la vitalidad de nuestras familias.</p>
+        <p>&copy; 2026 MiPlan.pro | Monterrey, N.L. | Diseñado con fundamentos clínicos globales para el cuidado del adulto mayor.</p>
     </footer>
 
     <script>
-        // Smooth scroll al área de precios
-        function scrollToPricing() {
-            document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' });
+        // Smooth Scroll
+        function scrollToPricing(e) {
+            e.preventDefault();
+            document.getElementById('checkout-section').scrollIntoView({ behavior: 'smooth' });
         }
 
-        // Lógica del acordeón FAQ
-        const faqItems = document.querySelectorAll('.faq-item');
-        faqItems.forEach(item => {
-            const question = item.querySelector('.faq-question');
-            question.addEventListener('click', () => {
-                const isActive = item.classList.contains('active');
-                faqItems.forEach(i => i.classList.remove('active')); // Cierra los demás
-                if (!isActive) item.classList.add('active'); // Abre el clickeado
-            });
-        });
-
-        // Simulador de escasez (Baja de 14 a 7 en la primera sesión para crear urgencia sutil)
-        let spots = 14;
-        const counterElement = document.getElementById('counter');
+        // ==========================================
+        // LÓGICA DE BACKEND (VERDADERA ESCASEZ)
+        // ==========================================
         
-        // Simular que alguien más compró después de un tiempo
-        setTimeout(() => {
-            if(spots > 7) {
-                spots = Math.floor(Math.random() * (12 - 7 + 1) + 7); // Random entre 7 y 12
-                counterElement.style.color = '#ff0000';
-                counterElement.innerText = spots;
-                setTimeout(() => { counterElement.style.color = '#dc3545'; }, 500);
+        /* INSTRUCCIONES PARA EL DESARROLLADOR:
+        En lugar de fingir el número, conectaremos esto a un endpoint en tu servidor (ej. tu Mac Mini local o una Cloud Function).
+        El endpoint debe devolver el número real de compras exitosas.
+        */
+
+        async function fetchRealTimeSpots() {
+            const counterElement = document.getElementById('real-time-counter');
+            const totalSpots = 50;
+            const fallbackSpots = 38; // Número inicial si falla la red
+            
+            try {
+                // Reemplaza esta URL con el endpoint real de tu base de datos (Ej. InfluxDB/Stripe API)
+                // const response = await fetch('https://api.miplan.pro/v1/spots-sold');
+                // const data = await response.json();
+                // const spotsLeft = totalSpots - data.sold;
+                
+                // SIMULACIÓN PARA VISUALIZAR AHORA MISMO (Borrar en producción):
+                const spotsLeft = 38; 
+                
+                counterElement.innerText = spotsLeft;
+                
+                if(spotsLeft <= 5) {
+                    counterElement.style.color = '#ff4d4d'; // Alerta roja si quedan muy pocos
+                }
+
+                // Si se agotan, deshabilitar botón de compra
+                if(spotsLeft <= 0) {
+                    counterElement.innerText = "0";
+                    const btn = document.getElementById('checkout-btn');
+                    btn.innerText = "LISTA DE ESPERA CERRADA";
+                    btn.style.backgroundColor = "#cccccc";
+                    btn.style.pointerEvents = "none";
+                }
+            } catch (error) {
+                console.error("Error cargando disponibilidad:", error);
+                counterElement.innerText = fallbackSpots;
             }
-        }, 12000); // 12 segundos después de entrar a la página
+        }
+
+        // Cargar el número real al abrir la página
+        document.addEventListener('DOMContentLoaded', fetchRealTimeSpots);
     </script>
 </body>
 </html>
