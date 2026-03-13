@@ -7,7 +7,6 @@
     <title>miplan.pro | Regala Años de Vida Funcionales</title>
     <meta name="description"
         content="El programa premium de 12 semanas vía WhatsApp para mejorar la movilidad, salud y calidad de vida de tu ser querido, guiado por ti.">
-    <!-- Google Fonts: Lora para Títulos, Inter para texto de lectura -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -33,6 +32,18 @@
                 <a href="sppb-test.html" class="btn btn-outline">Test de Nivel Inicial</a>
                 <a href="#comenzar" class="btn btn-primary">Comenzar Ahora</a>
             </div>
+            <!-- Hamburger para móvil -->
+            <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <!-- Menú móvil desplegable -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#el-desafio">Por qué miplan.pro</a>
+            <a href="#como-funciona">El Programa</a>
+            <a href="#ciencia">Base Científica</a>
+            <a href="sppb-test.html">Test de Nivel Inicial</a>
+            <a href="#comenzar" class="btn btn-primary" style="text-align:center; margin-top: 0.5rem;">Comenzar Ahora</a>
         </div>
     </header>
 
@@ -58,7 +69,6 @@
                 </div>
             </div>
             <div class="hero-visual" data-animate="fade-left">
-                <!-- Imagen interactiva a borde completo -->
                 <div class="visual-placeholder">
                     <img src="assets/hero_binomio.png" alt="Madre e hijo interactuando juntos cálidamente"
                         class="hero-img">
@@ -78,7 +88,6 @@
                     Por eso, sacamos la tecnología de su camino: <strong>nosotros te damos las instrucciones a ti, y tú
                         te conectas de corazón con ella.</strong></p>
             </div>
-
             <div class="grid-2 mt-2">
                 <div class="feature-card with-image" data-animate="fade-left">
                     <img src="assets/coach_instrucciones.png" alt="Hijo recibiendo instrucciones claras en su celular"
@@ -113,7 +122,6 @@
                     <h2 class="section-title">El Método: Simple, Efectivo y Conectado</h2>
                     <p class="section-subtitle mb-2">Un sistema diseñado para avanzar sin abrumar: 30 minutos
                         presenciales tu fin de semana y breves check-ins diarios por WhatsApp.</p>
-
                     <div class="timeline">
                         <div class="timeline-item">
                             <div class="timeline-dot" style="background: var(--primary)">0</div>
@@ -153,9 +161,7 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="visual-stack" data-animate="fade-left">
-                    <!-- Placeholder de Chat / Interface -->
                     <div class="mockup-placeholder glass-card">
                         <div class="mockup-header">
                             <div class="dot red"></div>
@@ -164,7 +170,6 @@
                             <span class="mockup-title">Check-in Diario (WhatsApp)</span>
                         </div>
                         <div class="mockup-body">
-                            <!-- WhatsApp like bubbles -->
                             <div class="chat-bubble receive">
                                 ¡Hola Coach! 👋 ¿Cómo le fue a tu campeona hoy?
                             </div>
@@ -198,7 +203,6 @@
             <p class="section-subtitle max-w-lg mx-auto" data-animate="fade-up">Nuestro diseño se basa en protocolos
                 globales reconocidos de ejercicio multicomponente, diseñados específicamente para promover la capacidad
                 funcional, la autonomía y la vitalidad en adultos mayores.</p>
-
             <div class="grid-3 mt-3">
                 <div class="science-card glass-card hover-lift" data-animate="fade-up">
                     <div class="science-number">Fuerte</div>
@@ -209,9 +213,7 @@
                         semanas.
                         <br><a href="https://pubmed.ncbi.nlm.nih.gov/26947059/" target="_blank" class="btn-link"
                             style="font-size: 0.8rem; display: inline-block; margin-top: 0.5rem;">Tarazona-Santabalbina,
-                            F. J., et al. (2016). A Multicomponent Exercise Intervention that Reverses Frailty and
-                            Improves Cognition, Emotion, and Social Networking in the Community-Dwelling Frail Elderly:
-                            A Randomized Clinical Trial. JAMDA.</a>
+                            F. J., et al. (2016). JAMDA.</a>
                     </p>
                 </div>
                 <div class="science-card glass-card hover-lift" data-animate="fade-up" style="animation-delay: 0.1s">
@@ -222,8 +224,7 @@
                         y reduce significativamente la incidencia de caídas.
                         <br><a href="https://pubmed.ncbi.nlm.nih.gov/23327448/" target="_blank" class="btn-link"
                             style="font-size: 0.8rem; display: inline-block; margin-top: 0.5rem;">Cadore, E. L., et al.
-                            (2013). Effects of different exercise interventions on risk of falls, gait ability, and
-                            balance in physically frail older adults: a systematic review. Rejuvenation Research.</a>
+                            (2013). Rejuvenation Research.</a>
                     </p>
                 </div>
                 <div class="science-card glass-card hover-lift" data-animate="fade-up" style="animation-delay: 0.2s">
@@ -234,37 +235,189 @@
                         protege la capacidad cognitiva frente al envejecimiento.
                         <br><a href="https://pubmed.ncbi.nlm.nih.gov/30419096/" target="_blank" class="btn-link"
                             style="font-size: 0.8rem; display: inline-block; margin-top: 0.5rem;">Martínez-Velilla, N.,
-                            et al. (2019). Effect of Exercise Intervention on Functional Decline in Very Elderly
-                            Patients During Acute Hospitalization: A Randomized Clinical Trial. JAMA Internal
-                            Medicine.</a>
+                            et al. (2019). JAMA Internal Medicine.</a>
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Llamado a la Acción y Pricing Placeholder -->
+    <!-- ============================================================
+         NUEVA SECCIÓN: Testimonios
+    ============================================================ -->
+    <section id="testimonios" class="section bg-cream">
+        <div class="container section-container">
+            <div class="text-center section-header" data-animate="fade-up">
+                <span class="badge">Lo que dicen las familias</span>
+                <h2 class="section-title">Resultados reales. Familias reales.</h2>
+                <p class="section-subtitle">— Reemplaza estos testimonios con los de tus primeros usuarios —</p>
+            </div>
+            <div class="grid-3 mt-2">
+                <div class="testimonial-card glass-card hover-lift" data-animate="fade-up">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Mi mamá llevaba dos años sin querer salir sola por miedo a caerse.
+                        Después de 4 semanas con miplan.pro ya sube las escaleras sin agarrarse del barandal. No lo
+                        podía creer."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">MR</div>
+                        <div>
+                            <strong>Marcos R.</strong>
+                            <span>Monterrey, NL — Hijo Coach</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-card hover-lift" data-animate="fade-up" style="animation-delay: 0.1s">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Lo que más me sorprendió fue que mi papá lo esperaba con ganas cada
+                        día. Nunca pensé que haría ejercicio de forma constante a sus 78 años. El seguimiento por
+                        WhatsApp lo hace muy fácil para mí."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">LC</div>
+                        <div>
+                            <strong>Laura C.</strong>
+                            <span>CDMX — Hija Coach</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-card hover-lift" data-animate="fade-up" style="animation-delay: 0.2s">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Vivimos en ciudades distintas. Pensé que eso sería un problema, pero el
+                        programa está diseñado exactamente para eso. Yo le doy instrucciones por video y ella hace los
+                        ejercicios. Su médico quedó impresionado con la mejora."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">AG</div>
+                        <div>
+                            <strong>Andrea G.</strong>
+                            <span>Guadalajara, Jal. — Hija Coach</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         NUEVA SECCIÓN: FAQ
+    ============================================================ -->
+    <section id="faq" class="section bg-white">
+        <div class="container section-container">
+            <div class="text-center section-header" data-animate="fade-up">
+                <span class="badge">Preguntas Frecuentes</span>
+                <h2 class="section-title">Todo lo que necesitas saber</h2>
+            </div>
+            <div class="faq-list" data-animate="fade-up">
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        ¿Qué pasa si mi mamá o papá vive en otra ciudad?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>El programa está diseñado precisamente para familias a distancia. Tú recibes las instrucciones
+                            en tu celular por WhatsApp y puedes guiar los ejercicios del Día 0 en una videollamada. El
+                            seguimiento diario funciona igual sin importar la distancia.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        ¿Necesito saber de medicina o fisioterapia?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Para nada. Eso es exactamente lo que miplan.pro resuelve: nosotros traducimos la ciencia a
+                            instrucciones simples y seguras. Tu único rol es estar presente, leer la instrucción del día
+                            y acompañar a tu ser querido con amor.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        ¿Qué hay físicamente dentro de la caja?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>La Caja de Arranque incluye: <strong>Gorra Coach</strong> (para ti) y <strong>Gorra
+                            Campeona</strong> (para ella/él), un <strong>código QR</strong> con una carta de
+                            bienvenida personalizada, y acceso a los <strong>12 PDFs de entrenamiento</strong>
+                            segmentados por nivel de movilidad.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        ¿Es seguro para adultos mayores con condiciones de salud?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>El programa comienza con una evaluación funcional (SPPB/VIVIFRAIL) que determina el nivel de
+                            movilidad exacto antes de asignar cualquier rutina. Los ejercicios son de bajo impacto y
+                            progresivos. Siempre recomendamos consultar al médico tratante si existen condiciones
+                            cardíacas, ortopédicas o neurológicas de consideración.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        ¿Cuánto tiempo tengo que dedicarle yo como coach?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>El fin de semana del Día 0 necesitas aproximadamente 30 minutos presenciales (o en
+                            videollamada). Durante la semana, el check-in diario por WhatsApp toma menos de 2 minutos.
+                            El compromiso real es de un fin de semana al mes para el ajuste del programa.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        ¿Qué pasa al terminar las 4 semanas iniciales?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Al finalizar el primer mes se repite el test de evaluación para medir el progreso. Con base
+                            en los resultados, podemos decidir juntos si continuar con el programa de 8 semanas
+                            adicionales para completar el ciclo completo de 12 semanas.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA con Garantía -->
     <section id="comenzar" class="section bg-primary-gradient text-white">
         <div class="container section-container text-center">
             <h2 class="cta-title" data-animate="fade-up">El Regalo que Salva Vidas</h2>
-            <p class="cta-subtitle max-w-lg mx-auto" data-animate="fade-up">Reserva uno de nuestros lugares de la
-                y demuestra tu amor con un programa interactivo que le ayudará a recuperar su mejor
-                versión.</p>
+            <p class="cta-subtitle max-w-lg mx-auto" data-animate="fade-up">Reserva uno de nuestros cupos disponibles
+                y demuestra tu amor con un programa interactivo que le ayudará a recuperar su mejor versión.</p>
 
             <div class="cta-card glass-card mt-3 max-w-md mx-auto" data-animate="fade-up">
                 <h3>Caja de Arranque miplan.pro (4 Semanas)</h3>
                 <div class="price"><span>$1,990 MXN</span></div>
                 <ul class="pricing-features">
-                    <li><span class="check">✓</span> <strong>Caja Física:</strong> Gorra Coach + Gorra Campeona + QR de
-                        Carta.</li>
-                    <li><span class="check">✓</span> <strong>Evaluación Día 0:</strong> Identificación precisa de las
-                        Rutas de riesgo.</li>
-                    <li><span class="check">✓</span> <strong>12 PDFs de Entrenamiento:</strong> Ejercicios segmentados
-                        por Ruta.</li>
-                    <li><span class="check">✓</span> <strong>Acompañamiento VIP:</strong> Soporte dedicado con análisis
-                        diario del "Mago de Oz".</li>
+                    <li><span class="check">✓</span> <strong>Caja Física:</strong> Gorra Coach + Gorra Campeona + QR de Carta.</li>
+                    <li><span class="check">✓</span> <strong>Evaluación Día 0:</strong> Identificación precisa de las Rutas de riesgo.</li>
+                    <li><span class="check">✓</span> <strong>12 PDFs de Entrenamiento:</strong> Ejercicios segmentados por Ruta.</li>
+                    <li><span class="check">✓</span> <strong>Soporte Personal:</strong> Acompañamiento y análisis diario directo por WhatsApp.</li>
                 </ul>
-                <button class="btn btn-primary btn-large cta-btn">Reservar Mi Caja Premium</button>
+
+                <!-- Garantía -->
+                <div class="guarantee-badge">
+                    <span class="guarantee-icon">🛡️</span>
+                    <div>
+                        <strong>Garantía de Satisfacción</strong>
+                        <p>Si en la primera semana sientes que el programa no es para tu familia, te devolvemos tu inversión sin preguntas.</p>
+                    </div>
+                </div>
+
+                <!-- TODO: Reemplaza el href con tu número de WhatsApp: https://wa.me/521XXXXXXXXXX -->
+                <a href="https://wa.me/521XXXXXXXXXX?text=Hola%2C%20quiero%20reservar%20mi%20Caja%20de%20Arranque%20miplan.pro"
+                   target="_blank"
+                   class="btn btn-primary btn-large cta-btn">
+                    Reservar Mi Caja Premium →
+                </a>
+                <p class="cta-secure">🔒 Pago seguro · Envío incluido · Cupos limitados</p>
             </div>
 
             <div class="mt-2 cta-test" data-animate="fade-up">
@@ -283,12 +436,10 @@
             </div>
             <p style="opacity: 0.7; font-size: 0.9rem;">Empoderando a las familias. Transformando generaciones a través
                 de la salud.</p>
-            <p class="mt-2" style="opacity: 0.5; font-size: 0.8rem;">© 2026 miplan.pro. Regala años de vida funcionales.
-            </p>
+            <p class="mt-2" style="opacity: 0.5; font-size: 0.8rem;">© 2026 miplan.pro. Regala años de vida funcionales.</p>
         </div>
     </footer>
 
-    <!-- Script Principal -->
     <script src="js/main.js"></script>
 </body>
 
