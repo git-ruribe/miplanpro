@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test VIVIFRAIL | miplan.pro</title>
+    <meta name="description" content="Descubre el nivel de movilidad de tu familiar con nuestra evaluación interactiva basada en evidencia clínica.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* SPPB Layout Specific Styles */
+        body { background-color: var(--bg-surface); }
+        .wizard-container { max-width: 800px; margin: 0 auto; padding: 120px var(--space-md) var(--space-xl); min-height: 100vh; display: flex; flex-direction: column; }
+        .progress-bar { width: 100%; height: 8px; background: var(--bg-base); border-radius: 4px; margin-bottom: var(--space-lg); overflow: hidden; }
+        .progress-fill { height: 100%; background: var(--primary); width: 0%; transition: width var(--transition-base); }
+        
+        .step { display: none; animation: fadeIn 0.4s ease-out forwards; }
+        .step.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        
+        .step-header { text-align: center; margin-bottom: var(--space-lg); }
+        .step-title { font-size: 2rem; color: var(--secondary); margin-bottom: var(--space-xs); }
+        .step-subtitle { color: var(--text-muted); }
+        
+        .visual-guide { width: 100%; aspect-ratio: 16/9; background: var(--bg-base); border-radius: var(--radius-md); margin-bottom: var(--space-md); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; border: 1px solid rgba(0,0,0,0.05); }
+        .visual-guide img { width: 100%; height: 100%; object-fit: contain; padding: 1rem; }
+        
+        .options-grid { display: grid; gap: var(--space-sm); }
+        .option-btn { background: white; border: 2px solid var(--bg-base); border-radius: var(--radius-md); padding: 1.25rem; text-align: left; cursor: pointer; transition: all var(--transition-fast); display: flex; align-items: center; justify-content: space-between; font-family: var(--font-body); font-size: 1rem; color: var(--text-main); }
+        .option-btn:hover { border-color: var(--primary-light); background: var(--primary-light); }
+        .option-btn.selected { border-color: var(--primary); background: rgba(217, 119, 87, 0.05); }
+        
+        .controls { display: flex; justify-content: space-between; margin-top: var(--space-lg); padding-top: var(--space-md); border-top: 1px solid var(--bg-base); }
+        
+        /* Timer Styles */
+        .timer-container { text-align: center; margin: 1.5rem 0; padding: 1rem; background: rgba(217, 119, 87, 0.05); border: 2px solid var(--primary-light); border-radius: var(--radius-md); }
+        .timer-display { font-size: 3rem; font-family: monospace; font-weight: bold; color: var(--primary); margin-bottom: 0.8rem; font-variant-numeric: tabular-nums; }
+        .timer-controls button { margin: 0 0.25rem; min-width: 100px; }
+
+        /* Result Screen */
+        .result-card { text-align: center; padding: var(--space-md); }
+        .level-badge { display: inline-block; padding: 0.5rem 1rem; border-radius: 20px; font-weight: bold; font-size: 1.1rem; margin-bottom: var(--space-sm); color: white;}
+    </style>
+</head>
+<body>
+
+    <header class="navbar" style="height: 70px; box-shadow: var(--shadow-sm);">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">miplan<span>.pro</span></a>
+            </div>
+            <div class="nav-actions">
+                <a href="index.html" class="btn btn-link">← Volver al inicio</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="wizard-container">
+        
+        <div class="progress-bar" id="progressBar" style="display: none;">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <!-- Paso 0: Intro -->
+        <div class="step active" id="step-0">
+            <div class="step-header">
+                <span class="badge">Evaluación VIVIFRAIL</span>
+                <h1 class="step-title">Descubre su punto de partida ideal</h1>
+                <p class="step-subtitle">Esta prueba (15 min aprox.) nos permite determinar el programa físico más recomendable a la capacidad funcional y riesgo de caídas de la persona mayor.</p>
+            </div>
+            
+            <div class="glass-card" style="padding: 1.5rem; margin-bottom: 1.5rem; text-align: left;">
+                <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Antes de empezar asegúrate de tener:</h3>
+                <ul style="color: var(--text-muted); margin-left: 1.5rem; line-height: 1.8;">
+                    <li>Un espacio libre para caminar (4 metros / 6 metros).</li>
+                    <li>Una silla firme sin apoyabrazos apoyada en una pared.</li>
+                    <li>Estar siempre a su lado por seguridad.</li>
+                    <li>Nuestra herramienta de cronómetro integrada te ayudará a medir tiempos.</li>
+                </ul>
+            </div>
+            
+            <div style="text-align: center;">
+                <button class="btn btn-primary btn-large" onclick="SPPB.nextStep()">Empezar prueba</button>
+            </div>
+        </div>
+
+        <!-- Paso 1: Equilibrio (Pies Juntos) -->
+        <div class="step" id="step-1">
+            <div class="step-header">
+                <h2 class="step-title">1. Test de Equilibrio - Prueba 1</h2>
+                <p class="step-subtitle"><strong>UN PIE AL LADO DEL OTRO</strong>: De pie colocando los pies juntos, uno al lado del otro. Mide el tiempo que es capaz de aguantar.</p>
+            </div>
+            
+            <div class="timer-container">
+                <div class="timer-display" id="timer-display-1">0.00 s</div>
+                <div class="timer-controls">
+                    <button class="btn btn-outline" id="btn-start-1" onclick="SPPB.startTimer(1)">Iniciar</button>
+                    <button class="btn btn-primary" id="btn-stop-1" onclick="SPPB.stopTimer(1, 'options-eq1')" disabled>Parar</button>
+                    <button class="btn btn-link" onclick="SPPB.resetTimer(1)">Reiniciar</button>
+                </div>
+            </div>
+
+            <div class="options-grid" id="options-eq1">
+                <button class="option-btn" data-score="1" data-cat="eq1" onclick="SPPB.selectOption(this)">Aguantó 10 segundos.</button>
+                <button class="option-btn" data-score="0" data-cat="eq1" onclick="SPPB.selectOption(this)">Menos de 10 segundos.</button>
+            </div>
+            
+            <div class="controls">
+                <button class="btn btn-outline" onclick="SPPB.prevStep()">Anterior</button>
+                <button class="btn btn-primary" onclick="SPPB.submitStep('eq1')">Siguiente</button>
+            </div>
+        </div>
+
+        <!-- Paso 2: Equilibrio (Semi-tándem) -->
+        <div class="step" id="step-2">
+            <div class="step-header">
+                <h2 class="step-title">1. Test de Equilibrio - Prueba 2</h2>
+                <p class="step-subtitle"><strong>POSICIÓN SEMI-TÁNDEM</strong>: De pie, colocando el talón de un pie a la altura del dedo gordo del contrario. Mide el tiempo que es capaz de aguantar.</p>
+            </div>
+            
+            <div class="timer-container">
+                <div class="timer-display" id="timer-display-2">0.00 s</div>
+                <div class="timer-controls">
+                    <button class="btn btn-outline" id="btn-start-2" onclick="SPPB.startTimer(2)">Iniciar</button>
+                    <button class="btn btn-primary" id="btn-stop-2" onclick="SPPB.stopTimer(2, 'options-eq2')" disabled>Parar</button>
+                    <button class="btn btn-link" onclick="SPPB.resetTimer(2)">Reiniciar</button>
+                </div>
+            </div>
+
+            <div class="options-grid" id="options-eq2">
+                <button class="option-btn" data-score="1" data-cat="eq2" onclick="SPPB.selectOption(this)">Aguantó 10 segundos.</button>
+                <button class="option-btn" data-score="0" data-cat="eq2" onclick="SPPB.selectOption(this)">Menos de 10 segundos.</button>
+            </div>
+            
+            <div class="controls">
+                <button class="btn btn-outline" onclick="SPPB.prevStep()">Anterior</button>
+                <button class="btn btn-primary" onclick="SPPB.submitStep('eq2')">Siguiente</button>
+            </div>
+        </div>
+
+        <!-- Paso 3: Equilibrio (Tándem) -->
+        <div class="step" id="step-3">
+            <div class="step-header">
+                <h2 class="step-title">1. Test de Equilibrio - Prueba 3</h2>
+                <p class="step-subtitle"><strong>POSICIÓN TÁNDEM</strong>: De pie, colocando el talón de un pie en contacto directo con la punta del otro. Mide cuánto aguanta.</p>
+            </div>
+            
+            <div class="timer-container">
+                <div class="timer-display" id="timer-display-3">0.00 s</div>
+                <div class="timer-controls">
+                    <button class="btn btn-outline" id="btn-start-3" onclick="SPPB.startTimer(3)">Iniciar</button>
+                    <button class="btn btn-primary" id="btn-stop-3" onclick="SPPB.stopTimer(3, 'options-eq3')" disabled>Parar</button>
+                    <button class="btn btn-link" onclick="SPPB.resetTimer(3)">Reiniciar</button>
+                </div>
+            </div>
+
+            <div class="options-grid" id="options-eq3">
+                <button class="option-btn" data-score="2" data-cat="eq3" onclick="SPPB.selectOption(this)">10 segundos o más.</button>
+                <button class="option-btn" data-score="1" data-cat="eq3" onclick="SPPB.selectOption(this)">Entre 3 y 9 segundos.</button>
+                <button class="option-btn" data-score="0" data-cat="eq3" onclick="SPPB.selectOption(this)">Menos de 3 segundos.</button>
+            </div>
+            
+            <div class="controls">
+                <button class="btn btn-outline" onclick="SPPB.prevStep()">Anterior</button>
+                <button class="btn btn-primary" onclick="SPPB.submitStep('eq3')">Siguiente</button>
+            </div>
+        </div>
+
+        <!-- Paso 4: Velocidad 4m -->
+        <div class="step" id="step-4">
+            <div class="step-header">
+                <h2 class="step-title">2. Velocidad de Marcha en 4m</h2>
+                <p class="step-subtitle">Pídele que camine 4 metros a paso normal. Selecciona su tiempo.</p>
+            </div>
+            
+            <div class="timer-container">
+                <div class="timer-display" id="timer-display-4">0.00 s</div>
+                <div class="timer-controls">
+                    <button class="btn btn-outline" id="btn-start-4" onclick="SPPB.startTimer(4)">Iniciar</button>
+                    <button class="btn btn-primary" id="btn-stop-4" onclick="SPPB.stopTimer(4, 'options-gait4m', [4.82, 6.20, 8.70])" disabled>Parar</button>
+                    <button class="btn btn-link" onclick="SPPB.resetTimer(4)">Reiniciar</button>
+                </div>
+            </div>
+
+            <div class="options-grid" id="options-gait4m">
+                <button class="option-btn" data-score="4" data-cat="gait4m" onclick="SPPB.selectOption(this)">Menos de 4.82 s</button>
+                <button class="option-btn" data-score="3" data-cat="gait4m" onclick="SPPB.selectOption(this)">Entre 4.82 y 6.20 s</button>
+                <button class="option-btn" data-score="2" data-cat="gait4m" onclick="SPPB.selectOption(this)">Entre 6.21 y 8.70 s</button>
+                <button class="option-btn" data-score="1" data-cat="gait4m" onclick="SPPB.selectOption(this)">Más de 8.70 s</button>
+                <button class="option-btn" data-score="0" data-cat="gait4m" onclick="SPPB.selectOption(this)">Incapaz de realizar la prueba</button>
+            </div>
+            
+            <div class="controls">
+                <button class="btn btn-outline" onclick="SPPB.prevStep()">Anterior</button>
+                <button class="btn btn-primary" onclick="SPPB.submitStep('gait4m')">Siguiente</button>
+            </div>
+        </div>
+
+        <!-- Paso 5: Levantarse Silla -->
+        <div class="step" id="step-5">
+            <div class="step-header">
+                <h2 class="step-title">3. Levantarse de la Silla</h2>
+                <p class="step-subtitle">Pídele que se levante 5 veces de la silla, lo más rápido posible, brazos cruzados. Comienza sentado y termina de pie. Mide el tiempo de las 5 veces.</p>
+            </div>
+            
+            <div class="timer-container">
+                <div class="timer-display" id="timer-display-5">0.00 s</div>
+                <div class="timer-controls">
+                    <button class="btn btn-outline" id="btn-start-5" onclick="SPPB.startTimer(5)">Iniciar</button>
+                    <button class="btn btn-primary" id="btn-stop-5" onclick="SPPB.stopTimer(5, 'options-chair', [11.19, 13.69, 16.69, 59.00])" disabled>Parar</button>
+                    <button class="btn btn-link" onclick="SPPB.resetTimer(5)">Reiniciar</button>
+                </div>
+            </div>
+
+            <div class="options-grid" id="options-chair">
+                <button class="option-btn" data-score="4" data-cat="chair" onclick="SPPB.selectOption(this)">Menos de 11.19 s</button>
+                <button class="option-btn" data-score="3" data-cat="chair" onclick="SPPB.selectOption(this)">Entre 11.20 y 13.69 s</button>
+                <button class="option-btn" data-score="2" data-cat="chair" onclick="SPPB.selectOption(this)">Entre 13.70 y 16.69 s</button>
+                <button class="option-btn" data-score="1" data-cat="chair" onclick="SPPB.selectOption(this)">Entre 16.70 y 59.00 s</button>
+                <button class="option-btn" data-score="0" data-cat="chair" onclick="SPPB.selectOption(this)">Más de 60 s o incapaz</button>
+            </div>
+            
+            <div class="controls">
+                <button class="btn btn-outline" onclick="SPPB.prevStep()">Anterior</button>
+                <button class="btn btn-primary" onclick="SPPB.submitStep('chair')">Siguiente</button>
+            </div>
+        </div>
+
+        <!-- Paso 6: Riesgo Caida 1 -->
+        <div class="step" id="step-6">
+            <div class="step-header">
+                <h2 class="step-title">4. Caídas Recientes</h2>
+                <p class="step-subtitle">Test Riesgo de Caídas (1/4).</p>
+            </div>
+            
+            <div class="options-grid" id="options-fall1">
+                <p style="text-align: center; margin-bottom: 1rem; font-size: 1.1rem;">Hazle la siguiente pregunta:<br><strong>¿Has tenido 2 o más caídas en el último año, ó 1 caída que ha precisado atención médica?</strong></p>
+                <button class="option-btn" data-score="1" data-cat="fall1" onclick="SPPB.selectOption(this)">Sí, es afirmativo.</button>
+                <button class="option-btn" data-score="0" data-cat="fall1" onclick="SPPB.selectOption(this)">No, es negativo.</button>
+            </div>
+            
+            <div class="controls">
+                <button class="btn btn-outline" onclick="SPPB.prevStep()">Anterior</button>
+                <button class="btn btn-primary" onclick="SPPB.submitStep('fall1')">Siguiente</button>
+            </div>
+        </div>
+
+        <!-- Paso 7: Riesgo Caida 2 (TUG) -->
+        <div class="step" id="step-7">
+            <div class="step-header">
+                <h2 class="step-title">5. Timed Up and Go</h2>
+                <p class="step-subtitle">Test Riesgo de Caídas (2/4). Pídele que se levante velozmente sin usar los brazos, camine 3m, se dé la vuelta y vuelva a sentarse.</p>
+            </div>
+            
+            <div class="timer-container">
+                <div class="timer-display" id="timer-display-7">0.00 s</div>
+                <div class="timer-controls">
+                    <button class="btn btn-outline" id="btn-start-7" onclick="SPPB.startTimer(7)">Iniciar</button>
+                    <button class="btn btn-primary" id="btn-stop-7" onclick="SPPB.stopTimer(7, 'options-fall2', [20.00])" disabled>Parar</button>
+                    <button class="btn btn-link" onclick="SPPB.resetTimer(7)">Reiniciar</button>
+                </div>
+            </div>
+
+            <div class="options-grid" id="options-fall2">
+                <p style="text-align: center; margin-bottom: 1rem; font-size: 1.1rem;"><strong>¿El tiempo es superior a 20 segundos?</strong></p>
+                <button class="option-btn" data-score="1" data-cat="fall2" onclick="SPPB.selectOption(this)">Sí (> 20 seg)</button>
+                <button class="option-btn" data-score="0" data-cat="fall2" onclick="SPPB.selectOption(this)">No (≤ 20 seg)</button>
+            </div>
+            
+            <div class="controls">
+                <button class="btn btn-outline" onclick="SPPB.prevStep()">Anterior</button>
+                <button class="btn btn-primary" onclick="SPPB.submitStep('fall2')">Siguiente</button>
+            </div>
+        </div>
+
+        <!-- Paso 8: Riesgo Caida 3 (Vel 6m) -->
+        <div class="step" id="step-8">
+            <div class="step-header">
+                <h2 class="step-title">6. Marcha en 6 metros</h2>
+                <p class="step-subtitle">Test Riesgo de Caídas (3/4). Pídele que camine 6 metros a paso normal.</p>
+            </div>
+            
+            <div class="timer-container">
+                <div class="timer-display" id="timer-display-8">0.00 s</div>
+                <div class="timer-controls">
+                    <button class="btn btn-outline" id="btn-start-8" onclick="SPPB.startTimer(8)">Iniciar</button>
+                    <button class="btn btn-primary" id="btn-stop-8" onclick="SPPB.stopTimer(8, 'options-fall3', [7.50])" disabled>Parar</button>
+                    <button class="btn btn-link" onclick="SPPB.resetTimer(8)">Reiniciar</button>
+                </div>
+            </div>
+
+            <div class="options-grid" id="options-fall3">
+                <p style="text-align: center; margin-bottom: 1rem; font-size: 1.1rem;"><strong>¿El tiempo es superior a 7,5 segundos?</strong></p>
+                <button class="option-btn" data-score="1" data-cat="fall3" onclick="SPPB.selectOption(this)">Sí (> 7.5 seg)</button>
+                <button class="option-btn" data-score="0" data-cat="fall3" onclick="SPPB.selectOption(this)">No (≤ 7.5 seg)</button>
+            </div>
+            
+            <div class="controls">
+                <button class="btn btn-outline" onclick="SPPB.prevStep()">Anterior</button>
+                <button class="btn btn-primary" onclick="SPPB.submitStep('fall3')">Siguiente</button>
+            </div>
+        </div>
+
+        <!-- Paso 9: Riesgo Caida 4 (Cognitivo) -->
+        <div class="step" id="step-9">
+            <div class="step-header">
+                <h2 class="step-title">7. Deterioro Cognitivo</h2>
+                <p class="step-subtitle">Test Riesgo de Caídas (4/4).</p>
+            </div>
+            
+            <div class="options-grid" id="options-fall4">
+                <p style="text-align: center; margin-bottom: 1rem; font-size: 1.1rem;"><strong>¿Ha sido diagnosticado el paciente de deterioro cognitivo?</strong></p>
+                <button class="option-btn" data-score="1" data-cat="fall4" onclick="SPPB.selectOption(this)">Sí, es afirmativo.</button>
+                <button class="option-btn" data-score="0" data-cat="fall4" onclick="SPPB.selectOption(this)">No, es negativo.</button>
+            </div>
+            
+            <div class="controls">
+                <button class="btn btn-outline" onclick="SPPB.prevStep()">Anterior</button>
+                <button class="btn btn-primary" onclick="SPPB.submitStep('fall4')">Ver Resultados</button>
+            </div>
+        </div>
+
+        <!-- Paso 10: Resultados -->
+        <div class="step" id="step-10">
+            <div class="result-card glass-card">
+                <h2 class="step-title" style="margin-bottom: 2rem;">Resultados VIVIFRAIL</h2>
+                
+                <h1 id="resultTipo" style="font-size: 5rem; color: var(--primary); margin: 0; line-height: 1;">Tipo -</h1>
+                <div id="levelBadge" class="level-badge" style="font-size: 1.25rem; margin-top: 1rem;">Calculando...</div>
+                
+                <div id="riskWarning" style="color: #d32f2f; font-weight: bold; margin-bottom: 1rem; display: none;">⚠️ Se detectó Alto Riesgo de Caídas</div>
+
+                <p id="resultDesc" style="color: var(--text-muted); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6;">
+                    --
+                </p>
+                
+                <div style="background: var(--bg-surface); padding: 1.5rem; border-radius: var(--radius-md); text-align: left; max-width: 600px; margin: 0 auto 2rem; border: 1px solid var(--primary-light);">
+                    <h4 style="color: var(--primary); margin-bottom: 0.5rem;">Prescripción para el Coach:</h4>
+                    <p id="resultPlan">miplan.pro adaptará los ejercicios diarios específicamente para este nivel.</p>
+                </div>
+                
+                <a href="index.html#comenzar" class="btn btn-primary btn-large cta-btn" style="width: 100%; max-width: 400px; margin-bottom: 1rem;">Adquirir Mi Caja de Arranque</a>
+                <br>
+                <button class="btn btn-link" onclick="SPPB.restart()">Volver a hacer el test</button>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="js/sppb.js"></script>
+</body>
+</html>
