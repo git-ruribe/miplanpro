@@ -4,11 +4,11 @@
     "details": "Mientras lavas los platos o te lavas los dientes, ponte de puntillas (10-15 repeticiones).",
     "instructions": "1. Colócate frente al lavabo o fregadero y apoya tus manos suavemente. 2. Empuja tu cuerpo hacia arriba levantando los talones del suelo hasta quedar de puntillas. 3. Sostén la posición alta por un segundo y baja muy lentamente controlando el peso.",
     "easier": "Sube solo a la mitad del rango de movimiento o apóyate con fuerza utilizando ambas manos.",
-    "harder": "Realiza el ejercicio sobre una sola pierna a la vez, manteniendo el otro pie suspendido en el aire detrás de ti.",
+    "harder": "Realiza el ejercicio sobre una sola pierna a la vez, manteniendo el otro pie suspendido detrás de ti. Mantén al menos una mano ligeramente apoyada en el lavabo.",
     "image": "",
-    "trimp": 2,
+    "trimp": 3,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 5
   },
   "ecf89e711f363ec0ba365df7136ee904": {
     "phase": "1. Práctica de Respiración Activa",
@@ -17,9 +17,9 @@
     "easier": "Realiza la práctica respiratoria acostado boca arriba en la cama, donde es más fácil sentir el movimiento del diafragma.",
     "harder": "Inhala contando hasta 4 segundos, sostén el aire durante 2 segundos y exhala muy lentamente contando hasta 6 segundos.",
     "image": "",
-    "trimp": 2,
+    "trimp": 1,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 2
   },
   "f51c9745bac4eb286609ac5ca1b43614": {
     "phase": "2. Desafío de Postura",
@@ -39,9 +39,9 @@
     "easier": "Hagan la plática de manera informal y relajada durante el desayuno o la comida, sin estructura formal.",
     "harder": "Creen un 'Diario de Logros' físico donde el adulto mayor o el familiar anote un pequeño párrafo sobre qué mejoró respecto al Día 0.",
     "image": "",
-    "trimp": 2,
+    "trimp": 1,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 1
   },
   "bb0f44edd399db9a108a292dbe8b0412": {
     "phase": "2. Caminata Social",
@@ -50,9 +50,9 @@
     "easier": "Caminen por 10 minutos solamente o háganlo dentro de un lugar cerrado, seguro y plano como un centro comercial.",
     "harder": "Caminen por un parque que tenga terrenos con ligeras pendientes (subidas y bajadas muy suaves) para empezar a estimular el sistema cardiovascular.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 4,
+    "trimpEasier": 2,
+    "trimpHarder": 6
   },
   "e5df82dcb4518c3c1ab7f108a7466c6f": {
     "phase": "1. Descanso Activo (Libre)",
@@ -61,9 +61,9 @@
     "easier": "Mantén reposo total absoluto si el cuerpo presenta fatiga significativa o dolor muscular retardado (agujetas).",
     "harder": "Realiza una caminata recreativa muy ligera de 10-15 minutos a un ritmo donde el esfuerzo sea mínimo, solo para hacer circular la sangre.",
     "image": "",
-    "trimp": 2,
+    "trimp": 1,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 2
   },
   "295c496715707150bfa8a87a82cd85e5": {
     "phase": "2. Chequeo Nutricional",
@@ -72,16 +72,16 @@
     "easier": "Si no hay mucho apetito, usen complementos como leche, yogur griego o suplementos proteicos recetados médicamente.",
     "harder": "Elaboren juntos la planificación del menú completo (Meal Prep) de la Semana 2 priorizando ingredientes frescos, vegetales oscuros y fuentes de omega-3.",
     "image": "",
-    "trimp": 2,
+    "trimp": 1,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 1
   },
   "32cc18eded32354dda7eb19d3858f685": {
     "phase": "2. Retracciones Escapulares Activas",
     "details": "Sentado o de pie. Dobla los codos a 90 grados a los lados. Aprieta los omóplatos hacia atrás y junta como si quisieras aplastar una nuez. Mantén 3 segundos. Repite 12 veces.",
     "instructions": "1. Colócate con la espalda recta. 2. Pega los codos a tus costillas doblados a 90 grados (como si llevaras dos bandejas). 3. Lleva los hombros y codos hacia atrás fuertemente, sintiendo cómo se juntan los omóplatos en tu espalda. 4. Mantén esa contracción fuerte por 3 segundos y relaja al frente.",
     "easier": "Realiza el movimiento de juntar y relajar los omóplatos de manera fluida, sin mantener la contracción de los 3 segundos.",
-    "harder": "Sostén una banda elástica ligera o una toalla pequeña muy tensa frente a ti y llévala hacia tu pecho mientras juntas los omóplatos con fuerza.",
+    "harder": "Sostén una banda elástica ligera o presiona las palmas de ambas manos una contra otra frente a tu pecho mientras juntas los omóplatos con fuerza.",
     "image": "",
     "trimp": 2,
     "trimpEasier": 1,
@@ -94,31 +94,31 @@
     "easier": "Si restar de 3 en 3 te paraliza o te hace parar de marchar, cambia el reto mental a restar de 1 en 1, o de 2 en 2 desde el 20.",
     "harder": "Si cometes un error en la resta matemática, debes dar un aplauso fuerte antes de corregir el número, sin dejar de marchar.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 4,
+    "trimpEasier": 2,
+    "trimpHarder": 5
   },
   "6b2ad1022c9f6e27bcb08481d17783cd": {
     "phase": "3. Elevación de Pantorrillas",
     "details": "15 repeticiones apoyado en el fregadero. Sube rápido, baja lento. Exhala al subir.",
     "instructions": "1. En tu lugar habitual para este hábito LiFE, apóyate firmemente. 2. Empújate hacia arriba muy rápido (potencia). 3. Sopla el aire fuerte al subir. 4. Baja lentamente en 3 segundos. Completa 15 repeticiones ininterrumpidas.",
     "easier": "Sube a un ritmo normal y tranquilo, completando solo 10 repeticiones si tus pantorrillas se sienten muy fatigadas de días anteriores.",
-    "harder": "Al llegar a la posición máxima de puntillas, suelta sutilmente las manos del apoyo durante 1 o 2 segundos intentando no caer, y luego apóyate para bajar lento.",
+    "harder": "En la posición máxima de puntillas, reduce el apoyo a solo las yemas de los dedos durante 2 segundos, luego apóyate completamente para bajar de forma controlada.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 4,
+    "trimpEasier": 2,
+    "trimpHarder": 6
   },
   "e92bac83c48490857842a4c9d833b878": {
     "phase": "2. Step-ups (Subidas al escalón)",
     "details": "Frente al primer escalón de la escalera (agarrado del barandal). Sube el pie derecho, luego el izquierdo. Baja el derecho, baja el izquierdo. Hazlo 10 veces empezando con el pie derecho, luego 10 veces empezando con el izquierdo.",
     "instructions": "1. Párate frente a la escalera, sostenido firmemente del barandal. 2. Coloca el pie derecho completo en el escalón y empuja hacia arriba, subiendo el pie izquierdo para juntarlos. 3. Baja controladamente primero el pie derecho al piso, y luego el izquierdo. 4. Repite 10 veces liderando con el derecho, luego invierte y lidera 10 veces con el izquierdo.",
-    "easier": "Si el escalón es muy alto, utiliza un cajón más bajo, un step de aeróbic pequeño o un bloque grueso muy firme y seguro que reduzca la altura de la zancada.",
+    "easier": "Si el escalón es muy alto, utiliza un cajón más bajo o un step firme. Agárrate con ambas manos del barandal durante todo el ejercicio.",
     "harder": "Inicia la subida empujando de forma explosiva (rápida), pero sigue bajando del escalón hacia atrás con mucho control y lentitud.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 6,
+    "trimpEasier": 4,
+    "trimpHarder": 9
   },
   "6f87bbacc235a4cbeeaa0e48a795555b": {
     "phase": "3. Tarea Dual (Sit-to-stand)",
@@ -127,9 +127,9 @@
     "easier": "Deletrea la palabra de manera normal (de izquierda a derecha) si invertir las letras es demasiado frustrante y te impide hacer el ejercicio físico.",
     "harder": "Resta números (ej. desde el 30, restando 3) en cada descenso. En el primer descenso di '30', en el segundo descenso di '27', y así sucesivamente.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 6,
+    "trimpEasier": 3,
+    "trimpHarder": 8
   },
   "86424b26d77d717b89580dd766ca7661": {
     "phase": "1. Sesión de Coaching (15 min)",
@@ -138,9 +138,9 @@
     "easier": "Realicen una charla corta e informal de 5 minutos mientras se cambian los zapatos para salir a caminar.",
     "harder": "Familiar: anota en un cuaderno un registro formal de cuáles ejercicios se ven dominados y cuáles aún cuestan trabajo para tener un diario de la progresión.",
     "image": "",
-    "trimp": 2,
+    "trimp": 1,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 1
   },
   "9baa1fea0fb082b06c7b4eeb0910bf4b": {
     "phase": "2. Caminata Continua (NEPA Expandido)",
@@ -149,9 +149,9 @@
     "easier": "Camina solamente 15 minutos en total, o divide la caminata en dos bloques de 10 minutos (uno en la mañana y otro por la tarde).",
     "harder": "Acelera el paso deliberadamente durante la caminata, intentando que tu ritmo de respiración sea profundo y te cueste un poco más de trabajo hablar fluidamente.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 6,
+    "trimpEasier": 3,
+    "trimpHarder": 8
   },
   "650ba1c34cf953a4b9050c2feea38e38": {
     "phase": "1. Descanso Activo",
@@ -160,9 +160,9 @@
     "easier": "Permanece en reposo pasivo si tienes un cansancio muscular marcado, sentándote en un sillón cómodo a descansar las piernas.",
     "harder": "Realiza una caminata recreativa, muy relajada y a paso lento, de unos 10 a 15 minutos en exteriores, solo por el placer de tomar el sol y estirar las piernas.",
     "image": "",
-    "trimp": 2,
+    "trimp": 1,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 2
   },
   "28343c6138340587719b43d8e57afcaf": {
     "phase": "2. Auditoría Nutricional",
@@ -171,9 +171,9 @@
     "easier": "Enfocarse únicamente en que la comida principal (almuerzo) cumpla de manera abundante con los requerimientos de proteína.",
     "harder": "Anotar o usar una aplicación de celular para contabilizar los gramos exactos de proteína consumidos durante el día, apuntando a superar los 80g o 90g totales dependiendo del peso del adulto.",
     "image": "",
-    "trimp": 2,
+    "trimp": 1,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 1
   },
   "1ac19c2b308c0d946a0e7a3fa1aa40d0": {
     "phase": "3. Visualización",
@@ -182,42 +182,42 @@
     "easier": "Tómate 2 minutos antes de dormir únicamente para hacer respiraciones profundas diafragmáticas y relajar el cuerpo para el descanso nocturno.",
     "harder": "Acompaña la visualización mental con un 'escaneo corporal', donde llevas tu atención y relajas voluntariamente tus músculos empezando por los dedos de los pies hasta la coronilla.",
     "image": "",
-    "trimp": 2,
+    "trimp": 1,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 1
   },
   "9a21b0bd1856990cee910a52df82edeb": {
     "phase": "1. Marcha con Palmadas (Cognicise HEPOP)",
     "details": "Marcha en el sitio elevando rodillas. Cuenta los pasos en voz alta: '1, 2, [Palmada], 4, 5, [Palmada], 7...'. Llega hasta el 30 y repite 3 veces.",
     "instructions": "1. Ponte de pie en un área despejada e inicia una marcha en tu lugar (subiendo y bajando rodillas). 2. Cuenta cada paso en voz alta: 'Uno, dos...'. 3. Al llegar a un número múltiplo de 3 (tres, seis, nueve...), da una fuerte palmada y omite decir el número. (Ej. 'Uno, dos, *clap*, cuatro, cinco, *clap*...'). 4. Sigue marchando hasta llegar a 30. Descansa 1 minuto y repítelo 3 veces en total.",
     "easier": "Hagan el ejercicio sentados en la silla levantando los pies alternadamente. Si la tabla del 3 confunde demasiado, háganlo con la tabla del 5 (aplaudir en el 5, 10, 15).",
-    "harder": "Cuenten hacia atrás desde el 30 (30, 29, 28...) y aplaudan en los números que sean pares o múltiplos de 3.",
+    "harder": "Cuenten hacia atrás desde el 30 (30, 29, 28...) y aplaudan únicamente en los múltiplos de 3 (27, 24, 21...) sin decir ese número.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 4,
+    "trimpEasier": 2,
+    "trimpHarder": 6
   },
   "02b3bba78c1202e1eff91d3f0cef8327": {
     "phase": "2. Elevación de Pantorrillas (Ritmo Rápido)",
     "details": "Apoyado en el lavabo, haz 15 elevaciones subiendo rápidamente y bajando en 3 segundos. Exhala al subir.",
     "instructions": "1. Ve a tu lavabo o fregadero de apoyo usual. 2. Empuja el piso con las puntas de tus pies lo más rápido que puedas hasta quedar de puntillas (1 segundo). Exhala fuerte. 3. Baja controlando tu peso en 3 segundos completos. 4. Repite esto 15 veces seguidas sin descansar en el suelo.",
     "easier": "Haz solo 10 repeticiones. Si el impulso rápido molesta la planta del pie, sube a una velocidad normal de 2 segundos.",
-    "harder": "Realiza las elevaciones sobre una sola pierna: dobla una pierna hacia atrás en el aire y haz 10 repeticiones con la derecha, luego 10 con la izquierda.",
+    "harder": "Realiza las elevaciones sobre una sola pierna: 10 reps con la derecha y 10 con la izquierda, manteniendo al menos una mano ligeramente apoyada en el lavabo.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 4,
+    "trimpEasier": 2,
+    "trimpHarder": 6
   },
   "3f2e61a9648abcebc9a83e6f634aabc1": {
     "phase": "3. Step-ups (Escalones)",
     "details": "Con los ojos ABIERTOS y apoyado del barandal, sube y baja el primer escalón 10 veces por cada pierna.",
     "instructions": "1. Ojos bien abiertos. Ve al primer escalón de tu casa o usa un bloque firme. Sostente del barandal. 2. Sube el pie derecho y empuja hacia arriba; sube el izquierdo. 3. Baja el derecho, luego el izquierdo. 4. Haz este ciclo 10 veces liderando con el pie derecho, y luego 10 veces liderando con el pie izquierdo.",
     "easier": "Sube y baja el escalón siempre liderando con tu pierna más fuerte, y realiza solo 6 u 8 repeticiones si tus rodillas se sienten tensas.",
-    "harder": "Sube impulsándote fuerte y rápido, y al estar arriba en el escalón, levanta la otra rodilla hacia tu pecho antes de volver a bajarla (como simulando dar otro paso).",
+    "harder": "Sube impulsándote fuerte y rápido. Al estar arriba en el escalón, asegúrate de tener el barandal bien agarrado; luego levanta la otra rodilla hacia tu pecho antes de bajar.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 5,
+    "trimpEasier": 3,
+    "trimpHarder": 9
   },
   "5ce9d65ffccf3636881b3f8c1dd59098": {
     "phase": "1. Práctica de 'Bracing' Sentado",
@@ -237,9 +237,9 @@
     "easier": "Tómate 45 segundos de descanso sentado entre CADA ejercicio, en lugar de encadenarlos todos de golpe.",
     "harder": "Añade una Tercera Ronda al circuito y reduce el tiempo de descanso al final de cada vuelta a solo 1 minuto.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 10,
+    "trimpEasier": 6,
+    "trimpHarder": 14
   },
   "e3809ede92aa4d4f3fa66b4f830219d5": {
     "phase": "1. Sesión de Coaching (15 min)",
@@ -248,20 +248,20 @@
     "easier": "No estructures una reunión. Únicamente elogia el buen trabajo que hizo ayer mientras le ayudas a ponerse un calzado cómodo para la caminata.",
     "harder": "Anoten en un cuaderno cuáles han sido los 2 ejercicios en los que sienten que han mejorado de forma más dramática desde el día 1.",
     "image": "",
-    "trimp": 2,
+    "trimp": 1,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 1
   },
   "69961e7da987181ccc600ac13d7747c7": {
     "phase": "2. Caminata Ecológica (20-30 min)",
     "details": "Caminar al aire libre. Intentar caminar 2 minutos sobre césped (pasto) seguro y sin hoyos, y luego volver al pavimento. Familiar: mantente atento en el cambio de terreno.",
     "instructions": "1. Diríjanse a un parque cercano. 2. Empiecen caminando por los caminos asfaltados o de concreto. 3. Busquen una zona de césped plana y sin obstáculos obvios. Caminen sobre el pasto durante unos 2 minutos. 4. Observa cómo tus pies tienen que 'leer' el terreno irregular. 5. Vuelvan al camino pavimentado y alternen este cambio de texturas unas 3 veces en la caminata.",
     "easier": "Eviten el pasto por completo si genera demasiada ansiedad o si llovió, y caminen 15 a 20 minutos solo en superficies completamente planas y conocidas.",
-    "harder": "Caminen sobre pasto un poco más alto, caminos de tierra suelta o zonas con adoquines irregulares (siempre seguros) para forzar los reflejos de corrección del tobillo.",
+    "harder": "Caminen sobre pasto un poco más alto, caminos de tierra suelta o zonas con adoquines irregulares seguros. El familiar debe inspeccionar el tramo antes de que el adulto mayor lo pise.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 6,
+    "trimpEasier": 3,
+    "trimpHarder": 8
   },
   "3d8adc3250b73407d36cf4d48fa48cc9": {
     "phase": "3. Retracciones Escapulares",
@@ -272,7 +272,7 @@
     "image": "",
     "trimp": 2,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 4
   },
   "bd602d15d08258948d9092f50efee32c": {
     "phase": "2. Control de Hidratación y Nutrición",
@@ -281,9 +281,9 @@
     "easier": "Si beber agua pura cuesta trabajo, sumen líquidos a través de sopas, caldos desgrasados, tés de manzanilla o comiendo gelatinas.",
     "harder": "Aseguren que la fuente de proteínas de hoy esté enfocada en el pescado o agreguen semillas de chía/linaza para sumar ácidos grasos Omega-3 antiinflamatorios.",
     "image": "",
-    "trimp": 2,
+    "trimp": 1,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 1
   },
   "98006d2f5977757e16d5d41f366023a3": {
     "phase": "3. Cierre de Fase",
@@ -292,9 +292,9 @@
     "easier": "Descansen la mente y no hablen del programa; simplemente disfruten de una película o actividad recreativa en casa.",
     "harder": "Revisen la planificación de la Semana 4 juntos, preparen la ropa cómoda que usarán y asignen un horario fijo y estricto para los entrenamientos del mes que viene.",
     "image": "",
-    "trimp": 2,
+    "trimp": 1,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 1
   },
   "4db383f045b636cea089c4fbf913d068": {
     "phase": "1. Marcha con Reto Matemático (Cognicise)",
@@ -303,9 +303,9 @@
     "easier": "Cambia la resta a restas de 2 en 2 desde el 50, o de 5 en 5 desde el 100, para disminuir la frustración cognitiva.",
     "harder": "Resta de 7 en 7 empezando desde el 100 y, cada vez que digas un número impar, da una palmada al aire sin detener el paso.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 5,
+    "trimpEasier": 3,
+    "trimpHarder": 7
   },
   "e9b5f3ad412550dbdf34f512368d8b9d": {
     "phase": "1. Activación de Core (Bracing)",
@@ -316,18 +316,18 @@
     "image": "",
     "trimp": 2,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 4
   },
   "522de2c4c3d23be50ab460a0c7c0607b": {
     "phase": "2. Marcha con Rotación Rápida",
     "details": "Marcha en tu sitio (levantando rodillas). El familiar indicará '¡Izquierda!' o '¡Derecha!'. Debes girar la cabeza rápidamente hacia ese lado sin dejar de marchar.",
     "instructions": "1. Ponte de pie y comienza a marchar en tu lugar a buen ritmo. 2. El familiar, que estará frente a ti de forma segura, gritará de forma impredecible '¡Derecha!' o '¡Izquierda!'. 3. Inmediatamente gira tu cabeza hacia el lado indicado (solo la cabeza, el cuerpo sigue al frente) sin dejar de marchar los pies. 4. Vuelve la mirada al frente y espera la siguiente indicación. Haz esto por 2 minutos.",
     "easier": "Macha muy lento. Cuando el familiar dé la instrucción, puedes detener tus pies un microsegundo, girar la cabeza, y retomar la marcha.",
-    "harder": "El familiar también puede gritar '¡Arriba!' (mirar al techo) o '¡Abajo!' (mirar al piso), requiriendo procesar más direcciones rápidamente.",
+    "harder": "El familiar también puede gritar '¡Arriba!' (mirar al techo), añadiendo una dirección más al reto reactivo. Nunca se indica mirar al piso mientras los pies están en movimiento.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 5,
+    "trimpEasier": 2,
+    "trimpHarder": 7
   },
   "d3138841a7413f1424412ebaa16537d3": {
     "phase": "3. Regreso a la Calma",
@@ -338,7 +338,7 @@
     "image": "",
     "trimp": 2,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 4
   },
   "d5d256580c7865339af68e31df9b81a8": {
     "phase": "2. Caminata de Celebración (30 minutos)",
@@ -347,9 +347,9 @@
     "easier": "Caminen solo 15 a 20 minutos a un ritmo de paseo (muy relajado), o vayan a un centro comercial llano y seguro.",
     "harder": "Aceleren el paso deliberadamente durante los últimos 5 minutos de la caminata para sentir cómo el corazón bombea con fuerza y salud antes de llegar a casa.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 5,
+    "trimpEasier": 3,
+    "trimpHarder": 7
   },
   "0131303df01f4b67a7d2a33002c4f4ad": {
     "phase": "1. Reposo Total Activo",
@@ -358,9 +358,9 @@
     "easier": "Opta por un descanso pasivo absoluto. Pasa tiempo leyendo, viendo televisión, conversando o en un pasatiempo sentado.",
     "harder": "Realiza un 'paseo libre' de 10 minutos (ej. salir a la tienda de la esquina o pasear a la mascota) solo para mantener la movilidad sin que se considere 'entrenamiento'.",
     "image": "",
-    "trimp": 2,
+    "trimp": 1,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 2
   },
   "ee088c770beb504b8a19ff0ac8e3ba5a": {
     "phase": "2. Auditoría Nutricional y Suplementación",
@@ -369,9 +369,9 @@
     "easier": "Enfóquense solamente en que cada comida principal (desayuno, comida y cena) contenga al menos un buen alimento proteico visible en el plato.",
     "harder": "Midan o registren la ingesta proteica exacta del día en un diario nutricional o aplicación móvil para asegurar matemáticamente que se cumple la meta de gramos por kilo.",
     "image": "",
-    "trimp": 2,
+    "trimp": 1,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 1
   },
   "21c20404221d94cef0817fa8f043e6e1": {
     "phase": "3. Preparación Mental para la 'Potencia'",
@@ -380,9 +380,9 @@
     "easier": "Simplemente relájate escuchando música, o realiza alguna actividad recreativa desestresante sin pensar en el entrenamiento de mañana.",
     "harder": "Vean juntos algún video en internet sobre el test 'Sit to stand en adultos mayores' para inspirarse visualmente sobre cómo se ejecutan los levantamientos veloces.",
     "image": "",
-    "trimp": 2,
+    "trimp": 1,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 1
   },
   "ed1acf003ee3e93688543f459e2c3a51": {
     "phase": "1. Activación Dinámica Rápida",
@@ -396,25 +396,25 @@
     "phase": "1. Circuito de Potencia Corto",
     "details": "10 Step-ups (subir escalón) explosivos por pierna. 15 Elevaciones de pantorrilla explosivas. 8 Levantamientos Samurái rápidos. Hazlo 2 veces.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 10,
+    "trimpEasier": 6,
+    "trimpHarder": 14
   },
   "2c2e32512e0a23ea795a71ac7eaffab1": {
     "phase": "2. Sincronización Nutricional Inmediata",
     "details": "Familiar: Proveer el suplemento o snack alto en proteína inmediatamente al finalizar el último levantamiento.",
     "image": "",
-    "trimp": 2,
+    "trimp": 1,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 1
   },
   "e30951e270497f18ccb9bedcbf24c8de": {
     "phase": "2. Marcha con Intercepción de Globo (Cognicise)",
     "details": "Marcha en el lugar levantando rodillas. El familiar le lanzará suavemente un globo desde diferentes ángulos. El adulto mayor debe devolverlo sin dejar de marchar.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 5,
+    "trimpEasier": 3,
+    "trimpHarder": 7
   },
   "6b0bf03ddf7765746b6c83a04ec2e7b9": {
     "phase": "1. Activación de Core",
@@ -428,113 +428,113 @@
     "phase": "2. Step-ups de Potencia",
     "details": "Apoyado en el barandal. Sube al escalón empujando explosivamente con la pierna líder. Baja controladamente en 3 segundos. Haz 10 con la derecha y luego 10 con la izquierda.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 7,
+    "trimpEasier": 4,
+    "trimpHarder": 10
   },
   "bebeabcbd4e4111cc7f44df04ee8bdb4": {
     "phase": "2. Reacción Cognitiva Rápida",
     "details": "De pie. Si el familiar dice 'ROJO', el adulto mayor debe hacer media sentadilla. Si dice 'VERDE', debe ponerse de puntillas. Haz 15 llamados de forma aleatoria.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 3,
+    "trimpEasier": 2,
+    "trimpHarder": 5
   },
   "832dbcafa69e3998593be1589b182b8e": {
     "phase": "3. Circuito Corto Final",
     "details": "Terminar con 8 levantamientos Samurái de potencia (rápido arriba, lento abajo). Ingerir proteína al terminar.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 8,
+    "trimpEasier": 5,
+    "trimpHarder": 11
   },
   "5c14e45b31fa39efc656f9ec7a4c6336": {
     "phase": "1. Revisión Semanal (15 min)",
     "details": "Siéntense a revisar: ¿Cómo se sintió la inclusión de ejercicios más explosivos? ¿Hubo dolor o solo fatiga muscular sana? Ajustar cargas de ser necesario.",
     "image": "",
-    "trimp": 2,
+    "trimp": 1,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 1
   },
   "dd73319b7d698529b1f40917a2b50c25": {
     "phase": "2. Caminata Interválica (Micro-HIIT)",
     "details": "Caminen 20 minutos. Cada 4 minutos de caminata normal, introduzcan 1 minuto de caminata 'con prisa' (un paso más largo y rápido). Repetir el ciclo 4 veces.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 7,
+    "trimpEasier": 4,
+    "trimpHarder": 10
   },
   "9446360395b62c6679a91ebd73c58ca0": {
     "phase": "3. Ventana Nutricional",
     "details": "Al regresar a casa, consumir un snack alto en proteínas (ej. queso, jamón de pavo, almendras o batido) para proteger la masa muscular.",
     "image": "",
-    "trimp": 2,
+    "trimp": 1,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 1
   },
   "bcbc636a464f1d36736b76169b0c440d": {
     "phase": "1. Respiración Parasimpática",
     "details": "Sentado o acostado, inhala por la nariz en 4 segundos, mantén el aire 2 segundos, y exhala por la boca muy lentamente en 6 segundos. Hazlo 10 veces.",
     "image": "",
-    "trimp": 2,
+    "trimp": 1,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 2
   },
   "668b13b2598b144809b02c37d977e2d5": {
     "phase": "1. Activación Multidireccional",
     "details": "Balanceos de pierna hacia adelante, y luego hacia los lados (abriendo y cerrando la pierna como un péndulo). 10 veces por pierna con apoyo firme.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 3,
+    "trimpEasier": 2,
+    "trimpHarder": 5
   },
   "94eba80ace67d5530a0a73c5d16baee7": {
     "phase": "2. Pasos Laterales de Potencia",
     "details": "Da un paso rápido y amplio hacia la derecha, junta el pie izquierdo lentamente. Haz 10 pasos a la derecha y luego 10 pasos rápidos hacia la izquierda. (3 series).",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 5,
+    "trimpEasier": 3,
+    "trimpHarder": 8
   },
   "e1d22ea0270802412e0b8b6267445609": {
     "phase": "1. Marcha HEPOP Nivel 2",
     "details": "Marcha en el sitio. Cuenta: '1, 2, 3, [Palmada], 5, 6, 7, [Palmada]...'. Llega hasta el 40. Repite 3 veces.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 4,
+    "trimpEasier": 2,
+    "trimpHarder": 6
   },
   "08b9bf2ed267a827cfe17edfe35fbb10": {
     "phase": "2. Step-ups (Escalón) con Tarea Verbal",
     "details": "Sube el escalón rápidamente. Al pisar arriba, di el nombre de un color. Baja lento. 10 veces por pierna (20 colores diferentes).",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 5,
+    "trimpEasier": 3,
+    "trimpHarder": 8
   },
   "b7479561815ea31dcff8eefe358342d7": {
     "phase": "1. Circuito Anabólico Rápido",
     "details": "2 vueltas sin descanso: 10 Pasos laterales rápidos por lado -> 8 Levantamientos Samurái explosivos -> 15 Pantorrillas rápidas.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 10,
+    "trimpEasier": 6,
+    "trimpHarder": 14
   },
   "c7b83e15caec157f89b37f68c4bd15bc": {
     "phase": "2. Sincronización Nutricional Inmediata",
     "details": "Consumir al menos 20-25 gramos de proteína de alta calidad inmediatamente después de terminar la última repetición.",
     "image": "",
-    "trimp": 2,
+    "trimp": 1,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 1
   },
   "05d33bba2ecc17de9090c03efce045de": {
     "phase": "3. Recuperación Activa",
     "details": "Mientras se asimila la comida, realizar giros suaves de cuello y estiramiento de pecho.",
     "image": "",
-    "trimp": 2,
+    "trimp": 1,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 2
   },
   "700790ac3b0245965340586edf276cb8": {
     "phase": "1. Activación de Core (Bracing)",
@@ -556,33 +556,33 @@
     "phase": "2. Juego de Agilidad Visual",
     "details": "De pie. Si el familiar levanta el objeto AZUL, el adulto mayor da un paso lateral rápido a la izquierda. Si levanta el ROJO, paso lateral rápido a la derecha. Haz 20 estímulos aleatorios.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 4,
+    "trimpEasier": 2,
+    "trimpHarder": 6
   },
   "ab8d6affa48f161bbcf6454aee80350e": {
     "phase": "1. Revisión Semanal y Ajustes",
     "details": "Charla de 10 minutos. ¿Cómo se sintió el juego de reacción visual? Reconocer la capacidad del cuerpo para adaptarse a estímulos nuevos.",
     "image": "",
-    "trimp": 2,
+    "trimp": 1,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 1
   },
   "54208157fdb1303a772fbb86937158c7": {
     "phase": "2. Caminata Interválica Nivel 2",
     "details": "25 minutos totales. Alternar: 3 minutos de caminata a ritmo normal seguidos de 2 minutos de caminata rápida (casi con prisa). Repetir 5 ciclos.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 8,
+    "trimpEasier": 5,
+    "trimpHarder": 11
   },
   "97d6e10eb0900b478b8b0bc777d5a94e": {
     "phase": "3. Nutrición Post-Cardio",
     "details": "Al regresar, asegurar una ingesta adecuada de proteínas y abundantes líquidos para reponer pérdidas por sudor.",
     "image": "",
-    "trimp": 2,
+    "trimp": 1,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 1
   },
   "6e085512e9146b5ebee1411ad4c6b6f4": {
     "phase": "3. Auditoría de Proteínas",
@@ -676,9 +676,9 @@
     "phase": "2. Caminata Interválica Nivel 3 (Micro-HIIT)",
     "details": "Caminata de 30 minutos totales. Ciclos de: 2 minutos a ritmo normal, seguidos de 2 minutos a ritmo MUY RÁPIDO (casi a punto de trotar, pero caminando seguro). Repetir hasta completar el tiempo.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 9,
+    "trimpEasier": 6,
+    "trimpHarder": 12
   },
   "584917570bd73e3c6ce49b2eef231a0d": {
     "phase": "1. Reposo Total Activo",
@@ -716,9 +716,9 @@
     "phase": "2. Caminata Social (Kashiwa)",
     "details": "Caminata continua de 25-30 minutos en un parque o zona peatonal. El ritmo debe ser lo suficientemente rápido para sentir que el corazón trabaja, pero permitiendo mantener una conversación sin ahogarse (Prueba del habla).",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 5,
+    "trimpEasier": 3,
+    "trimpHarder": 7
   },
   "17e5ef5bf41be8711b29b244be6f865a": {
     "phase": "1. Caminata Matutina (10 min)",
@@ -772,33 +772,33 @@
     "phase": "2. Caminata Interválica (Micro-HIIT Nivel 3)",
     "details": "30 minutos en total. Inicia con 5 min de paso normal. Luego alterna: 1 minuto de caminata MUY RÁPIDA (con braceo intenso) seguido de 3 minutos de caminata lenta de recuperación. Repite el intervalo 5 veces. Termina con 5 min lentos.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 9,
+    "trimpEasier": 5,
+    "trimpHarder": 12
   },
   "4f94ea66024e79f2a16dc016e6c57a58": {
     "phase": "3. Hidratación y Proteína",
     "details": "Al regresar, asegurar al menos 2 vasos de agua y una pequeña fuente de proteína para evitar la degradación muscular tras el esfuerzo aeróbico.",
     "image": "",
-    "trimp": 2,
+    "trimp": 1,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 1
   },
   "60330d63fe090561699e14f7bbd62e10": {
     "phase": "1. Caminata Continua Moderada",
     "details": "Caminata de 30 minutos a un paso constante y agradable, sin intervalos de velocidad.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 5,
+    "trimpEasier": 3,
+    "trimpHarder": 7
   },
   "6bb466aee1e150f8413a50fc8b794dd2": {
     "phase": "2. La Misión (Watch and Walk)",
     "details": "Caminar hacia el objetivo establecido (mínimo 15 minutos de ida y 15 de vuelta). Si hay escaleras o aceras irregulares en el camino, usarlas para practicar la propiocepción.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 6,
+    "trimpEasier": 3,
+    "trimpHarder": 8
   },
   "311184551a3ad06bbc6849153347d6b9": {
     "phase": "1. Reposo Aeróbico",
@@ -892,25 +892,25 @@
     "phase": "1. Caminata Continua",
     "details": "Inicien una caminata a paso normal-rápido durante 25 a 30 minutos por el vecindario o parque.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 6,
+    "trimpEasier": 3,
+    "trimpHarder": 8
   },
   "c73e2bdef15fb691eb5cc9da1105231c": {
     "phase": "2. Búsqueda Activa (Cognicise Ecológico)",
     "details": "Mientras caminan, el adulto mayor debe escanear el entorno buscando los objetos de su lista mental. Cuando vea uno, debe señalarlo y decirlo en voz alta sin perder el ritmo de sus pasos.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 6,
+    "trimpEasier": 3,
+    "trimpHarder": 8
   },
   "a5b2402d9dab17c5915bcb7dc4e3fd84": {
     "phase": "2. Micro-HIIT Nivel 4",
     "details": "Alterna: 2 MINUTOS de caminata MUY RÁPIDA (braceo activo, paso largo) seguidos de 3 MINUTOS de caminata lenta de recuperación. Repite este ciclo 4 veces en total.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 10,
+    "trimpEasier": 6,
+    "trimpHarder": 13
   },
   "55e4f0a949235b2501fdf70aeb7a847f": {
     "phase": "3. Hidratación Profunda",
@@ -932,9 +932,9 @@
     "phase": "2. Caminata Social de Cierre",
     "details": "Salgan a caminar durante 25 a 30 minutos a paso conversacional. Reflexionen sobre cómo se sentía caminar estas distancias hace 8 semanas comparado con hoy.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 6,
+    "trimpEasier": 3,
+    "trimpHarder": 8
   },
   "4cb426c3ecb0ce46321ac63c57474599": {
     "phase": "3. Flexibilidad Compartida",
@@ -988,9 +988,9 @@
     "phase": "2. Micro-HIIT Nivel 5",
     "details": "Ciclo de intervalos: 3 MINUTOS de caminata RÁPIDA (braceo intenso) seguidos de 3 MINUTOS de recuperación lenta. Repite el ciclo 4 veces totales. Termina con 5 minutos lentos.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 11,
+    "trimpEasier": 7,
+    "trimpHarder": 14
   },
   "3639a8cf41652da31be7609969037d6a": {
     "phase": "3. Retracciones y Respiración",
@@ -1052,9 +1052,9 @@
     "phase": "2. Cognicise en Terreno Irregular",
     "details": "Caminar sobre pasto o tierra durante 10-15 minutos. Aplicar la Tarea Dual: contar hacia atrás, o decir nombres de ciudades que empiecen con diferentes letras.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 5,
+    "trimpEasier": 3,
+    "trimpHarder": 7
   },
   "a2ab59dc31497f899d1cad9216bd5359": {
     "phase": "1. Preparación y Core",
@@ -1068,9 +1068,9 @@
     "phase": "2. Caminata de Fondo Aeróbico",
     "details": "Caminata continua e ininterrumpida de 40 a 45 minutos. Mantener una postura impecable (hombros atrás, pecho abierto) y respiración nasal preferentemente.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 10,
+    "trimpEasier": 6,
+    "trimpHarder": 14
   },
   "89ad9bcdcb958f37da70e7049c6dd8ea": {
     "phase": "3. Recuperación Hídrica Inmediata",
@@ -1108,9 +1108,9 @@
     "phase": "2. Micro-HIIT Nivel 6",
     "details": "Alterna: 2 MINUTOS de caminata MUY RÁPIDA (máximo braceo) seguidos de 2 MINUTOS de recuperación lenta. Al igualar el tiempo de esfuerzo y recuperación, el reto es mayor. Repite 5 veces totales.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 12,
+    "trimpEasier": 8,
+    "trimpHarder": 16
   },
   "123566990f09f70f63476b6dc1beae39": {
     "phase": "3. Retorno Venoso Acostado",
@@ -1172,17 +1172,17 @@
     "phase": "2. Caminata de Fondo Sostenida",
     "details": "Caminata continua de 45 a 50 minutos. Evitar pausas. Mantener la postura erguida: el hilo invisible que tira de la coronilla hacia el cielo.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 11,
+    "trimpEasier": 7,
+    "trimpHarder": 15
   },
   "3f3ed0d1750c7a4cd8d92b9cfbc19ec5": {
     "phase": "1. Caminata Social Sincronizada",
     "details": "Caminata de 30 minutos en grupo. Intenten mantener un ritmo unificado. La conversación debe fluir libremente. Si hay risas, el objetivo se está cumpliendo.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 5,
+    "trimpEasier": 3,
+    "trimpHarder": 7
   },
   "2ec2c96c41ed00cf786450e47139a2a7": {
     "phase": "2. Retracciones Posturales en Marcha",
@@ -1236,9 +1236,9 @@
     "phase": "2. Caminata de Fondo (Cúspide)",
     "details": "Caminata continua de 45 a 50 minutos. Los primeros y últimos 5 minutos son lentos, pero los 40 minutos centrales deben ser a un ritmo constante, vigoroso y decidido.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 12,
+    "trimpEasier": 7,
+    "trimpHarder": 16
   },
   "7a97dcc5350c63d9dc889e16d4690ac1": {
     "phase": "1. Marcha Vigorosa Continua",
@@ -1324,17 +1324,17 @@
     "phase": "2. Prueba de Potencia de Piernas",
     "details": "Cronometrar cuánto tarda el adulto mayor en levantarse y sentarse 5 veces de una silla con los brazos cruzados. ¡Compara este tiempo con el del Día 0!",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 4,
+    "trimpEasier": 3,
+    "trimpHarder": 5
   },
   "2597c61c3d8bd2f32cec71ee449f9b46": {
     "phase": "3. Riesgo de Caídas (Test TUG)",
     "details": "Cronometrar: Sentado, dar la señal de inicio, levantarse, caminar 3 metros, dar la vuelta, regresar y sentarse. Un tiempo menor a 12 segundos indica una movilidad excelente e independencia total.",
     "image": "",
-    "trimp": 2,
-    "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimp": 3,
+    "trimpEasier": 2,
+    "trimpHarder": 4
   },
   "b36db93d82f11bc75ffaa6a5f5b15ffd": {
     "phase": "1. Análisis de Resultados y Reconocimiento",

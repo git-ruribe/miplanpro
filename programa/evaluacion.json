@@ -6,9 +6,9 @@
     "easier": "Si no tienen equipo de medición, realiza simplemente un cuestionario verbal sobre cómo se ha sentido físicamente en los últimos 7 días.",
     "harder": "Incluye la medición de la saturación de oxígeno con un oxímetro y anota la frecuencia cardíaca en reposo para tener un registro más completo.",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 1,
+    "trimpEasier": 1,
+    "trimpHarder": 1
   },
   "a35f1cbc049e13ab518e609c423a9f33": {
     "phase": "2. Valoración Funcional (SPPB - Vivifrail)",
@@ -17,9 +17,9 @@
     "easier": "Permite que el adulto mayor mantenga una mano ligeramente apoyada en la silla durante las tres posturas para brindarle seguridad psicológica y física.",
     "harder": "Pide al adulto mayor que cruce los brazos sobre el pecho durante las pruebas para evitar usar los brazos como contrapeso.",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 3,
+    "trimpEasier": 2,
+    "trimpHarder": 4
   },
   "d6afc8f2cb18bbc1156a4e7ceb1738cc": {
     "phase": "1. Evaluación y Coaching Retrospectivo",
@@ -28,16 +28,16 @@
     "easier": "Tengan una charla casual y positiva de 5 minutos mientras toman una bebida caliente, sin necesidad de sacar papeleo médico.",
     "harder": "Anoten en un diario personal o en un pizarrón en casa los 3 nuevos objetivos o 'superpoderes' que desean alcanzar en la Fase 2.",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 1,
+    "trimpEasier": 1,
+    "trimpHarder": 1
   },
   "4bc23e97ef89b8aaad852151699f1e4e": {
     "phase": "1. Evaluación Funcional (SPPB - Batería Corta)",
     "details": "1) Prueba de Equilibrio: Pies juntos, semi-tándem y tándem completo (medir si logra los 10 segundos). 2) Velocidad de marcha: Cronometrar 4 metros a paso normal.",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 3,
+    "trimpEasier": 2,
+    "trimpHarder": 4
   }
 }

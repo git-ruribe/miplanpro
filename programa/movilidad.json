@@ -6,9 +6,9 @@
     "easier": "Realiza todos los movimientos articulares sentado en una silla para evitar fatiga temprana o mareos.",
     "harder": "Realiza los balanceos de pierna sin sostenerte de la pared, manteniendo las manos en la cintura para comenzar a activar el equilibrio dinámico.",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 3,
+    "trimpEasier": 1,
+    "trimpHarder": 5
   },
   "88fbde7494af23661900bcdb6d88edf3": {
     "phase": "1. Movilidad Dinámica",
@@ -17,9 +17,9 @@
     "easier": "Haz los giros de cuello sentado. Si hay mareo, reduce el rango de movimiento a la mitad.",
     "harder": "Añade balanceos de pierna laterales (abriendo y cerrando la pierna como una tijera) cruzando por delante de la pierna de apoyo.",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 3,
+    "trimpEasier": 1,
+    "trimpHarder": 5
   },
   "e7d3b0995a6978d9fe842a3e181c9423": {
     "phase": "1. Movilidad Articular Dinámica",
@@ -28,9 +28,9 @@
     "easier": "Hacer todos los ejercicios articulares sentado en una silla, enfocándose en estirar las piernas y mover el tren superior de forma controlada.",
     "harder": "Balancear la pierna sin apoyarse en absoluto de la pared, usando los brazos y el abdomen para mantener el equilibrio.",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 3,
+    "trimpEasier": 1,
+    "trimpHarder": 5
   },
   "4b93cd32bce10f680fe50f428fb68d99": {
     "phase": "1. Calentamiento y Marcha",
@@ -39,9 +39,9 @@
     "easier": "Realiza la marcha vigorosa sentado en una silla, enfocándote en subir las rodillas y mover los brazos con energía sin riesgo de caída.",
     "harder": "Eleva las rodillas más alto (acercándolas a la altura de la cadera) y aumenta la velocidad del braceo simulando una marcha rápida.",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 4,
+    "trimpEasier": 2,
+    "trimpHarder": 6
   },
   "61a9023e12522e9d8071eec81a40ac66": {
     "phase": "1. Movilidad y Estiramiento Pectoral Suave",
@@ -50,9 +50,9 @@
     "easier": "Apoya las manos en el marco abierto de una puerta en lugar de una esquina, y avanza el pecho muy poco hacia adelante.",
     "harder": "Sube los codos unos centímetros más arriba de la línea de los hombros en la esquina para estirar las fibras inferiores del pectoral.",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 2,
+    "trimpEasier": 1,
+    "trimpHarder": 3
   },
   "bb0637634dd3f04c0d1d27fe98cb172b": {
     "phase": "1. Movilidad y Activación",
@@ -61,9 +61,9 @@
     "easier": "Sustituye la marcha rápida y los balanceos cruzados por movimientos estáticos sentado en una silla, elevando rodillas y estirando piernas al frente.",
     "harder": "Durante la marcha, intenta que al subir la rodilla derecha la toques con tu mano izquierda, y al subir la izquierda la toques con la mano derecha (marcha cruzada).",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 4,
+    "trimpEasier": 2,
+    "trimpHarder": 6
   },
   "d65b4c30bcfae8a5fb5c172b8e67b5b5": {
     "phase": "3. Estiramiento de Gemelos",
@@ -72,9 +72,9 @@
     "easier": "Siéntate en el borde de una silla, estira una pierna al frente tocando el suelo con el talón y levanta la punta del zapato hacia el techo jalando suavemente.",
     "harder": "Estando en la posición de estiramiento en la pared, dobla ligeramente la rodilla de la pierna trasera SIN despegar el talón del piso para estirar el músculo sóleo profundo.",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 2,
+    "trimpEasier": 1,
+    "trimpHarder": 3
   },
   "4f9d15baa19092c815b2a10c0600af25": {
     "phase": "1. Movilidad Articular Dinámica",
@@ -83,20 +83,20 @@
     "easier": "Realiza los círculos de brazos sentado en una silla, y los balanceos de pierna sosteniéndote con ambas manos del respaldo de una silla pesada.",
     "harder": "Haz los balanceos de pierna sin apoyarte de ninguna superficie (trabajando el equilibrio puro) y combínalos moviendo el brazo contrario al mismo tiempo.",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 3,
+    "trimpEasier": 1,
+    "trimpHarder": 5
   },
   "888640b90ea7656234a9c2c085bc8275": {
     "phase": "1. Movilidad y Calentamiento de Tobillos",
     "details": "Sentado, levanta un pie del suelo y dibuja las letras del alfabeto en el aire con la punta de tu zapato. Repite con el otro pie.",
     "instructions": "1. Siéntate cómodamente con la espalda recta. 2. Extiende la pierna derecha un poco hacia adelante, separando el pie del suelo. 3. Movimiendo ÚNICAMENTE tu tobillo (no la rodilla ni la cadera), imagina que la punta de tu zapato es un lápiz e intenta dibujar en el aire las letras del abecedario de la A a la Z. 4. Repite todo con el tobillo izquierdo.",
     "easier": "Dibuja el alfabeto solo de la A a la M, o en su lugar haz 15 círculos amplios con el tobillo hacia la derecha y 15 hacia la izquierda.",
-    "harder": "Dibuja el alfabeto manteniendo la pierna totalmente estirada y paralela al suelo, lo que exigirá una contracción fuerte del músculo cuádriceps (muslo).",
+    "harder": "Dibuja el alfabeto manteniendo la pierna totalmente estirada y paralela al suelo para activar el cuádriceps. Solo si no hay molestia al extender la rodilla; si duele, vuelve a la posición normal del Azul.",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 2,
+    "trimpEasier": 1,
+    "trimpHarder": 4
   },
   "979d175dde66c49b110ab9203d2f51d0": {
     "phase": "1. Calentamiento Articular",
@@ -105,9 +105,9 @@
     "easier": "Reduce el calentamiento a 3 minutos, haciendo los giros de torso sentado y una marcha más lenta casi sin despegar los pies del piso.",
     "harder": "Acompaña la marcha moviéndote por toda la sala (no en un solo sitio) y braceando como si caminaras rápido hacia un destino.",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 4,
+    "trimpEasier": 2,
+    "trimpHarder": 6
   },
   "4710ea49ec0981c67f1eab21f359f05f": {
     "phase": "3. Estiramiento de Regreso a la Calma",
@@ -116,9 +116,9 @@
     "easier": "Si no te da confianza apoyarte en la pared, siéntate al borde de la silla, estira una pierna recta tocando el piso con el talón y levanta la punta del zapato hacia ti jalando suavemente.",
     "harder": "Haz el estiramiento en la pared, y luego dobla ligeramente la rodilla de la pierna de atrás sin despegar el talón para estirar el músculo sóleo.",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 2,
+    "trimpEasier": 1,
+    "trimpHarder": 3
   },
   "709473c748fb520494ae0e30da78067e": {
     "phase": "1. Movilidad y Activación",
@@ -127,9 +127,9 @@
     "easier": "Realiza la marcha sentado en una silla elevando las rodillas alternadamente. Cambia el estiramiento de esquina por estiramiento en el marco de una puerta (menos exigente).",
     "harder": "Durante la marcha, eleva las rodillas por encima de la altura de la cadera (marcha alta) y acompáñala con círculos de brazos simultáneos.",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 4,
+    "trimpEasier": 2,
+    "trimpHarder": 6
   },
   "97bdb6680ebcd28616f53428be4e24da": {
     "phase": "1. Calentamiento Visual-Vestibular",
@@ -138,9 +138,9 @@
     "easier": "Gira la cabeza de manera muy lenta. Detente inmediatamente si sientes mareo o náuseas leves.",
     "harder": "Mueve la cabeza de arriba a abajo (como asintiendo diciendo 'sí') rápidamente mientras mantienes la mirada clavada en el pulgar.",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 3,
+    "trimpEasier": 2,
+    "trimpHarder": 5
   },
   "fc9f7d91ed5360655397a66aad75db0a": {
     "phase": "1. Movilidad y Preparación",
@@ -149,9 +149,9 @@
     "easier": "Realiza la rutina de movilidad sentado cómodamente, estirando las piernas alternadamente al frente y moviendo el torso.",
     "harder": "Realiza una marcha rápida y cruza tus brazos frente a tu cuerpo alternando con movimientos amplios.",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 4,
+    "trimpEasier": 2,
+    "trimpHarder": 6
   },
   "58195fd2df5c458a3db1f797a6e7a1ba": {
     "phase": "3. Flexibilidad y Estiramiento Estático",
@@ -160,9 +160,9 @@
     "easier": "Siéntate en una silla, extiende una pierna hacia adelante con el talón en el suelo e inclina tu cuerpo levemente hacia la punta del pie para estirar de forma suave.",
     "harder": "Aumenta el tiempo de cada estiramiento de 20 segundos a 40 segundos por grupo muscular, exigiendo una mayor relajación fascial profunda.",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 2,
+    "trimpEasier": 1,
+    "trimpHarder": 4
   },
   "f3b61d9c711fc9a91dffa097cf38ab48": {
     "phase": "3. Estiramiento y Digestión",
@@ -192,9 +192,9 @@
     "phase": "2. Estiramientos Estáticos y Flexibilidad",
     "details": "Mantén estiramientos de pantorrilla (20 seg), estiramiento de pecho en la pared (20 seg), y suave tracción de cuello hacia los lados (sin dolor).",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 2,
+    "trimpEasier": 1,
+    "trimpHarder": 3
   },
   "1fb9689c08080e8c73f21b6544ac4b4a": {
     "phase": "1. Marcha Vigorosa de Calentamiento",
@@ -208,9 +208,9 @@
     "phase": "2. Estiramientos Parasimpáticos",
     "details": "Sentado. Estira la pierna al frente y alcanza suavemente hacia la punta (sin forzar, estirando la parte posterior de la pierna). 30 segundos por pierna.",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 2,
+    "trimpEasier": 1,
+    "trimpHarder": 3
   },
   "ee3a20c0aad1fe7a0da6e24ff582326b": {
     "phase": "1. Movilidad y Activación Articular",
@@ -224,9 +224,9 @@
     "phase": "3. Estiramientos de Recuperación",
     "details": "Al finalizar la caminata, estiramientos mantenidos (30 seg) de pantorrillas y cuádriceps (apoyándose de un árbol o pared).",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 2,
+    "trimpEasier": 1,
+    "trimpHarder": 3
   },
   "7db520c366104bda0194ce2ac9114ad1": {
     "phase": "1. Calentamiento Articular",
@@ -240,112 +240,112 @@
     "phase": "2. Estiramiento de Gemelos y Sóleo",
     "details": "Apoyado en la pared. Una pierna atrás recta (talón en el suelo) para estirar el gemelo superior. Luego flexiona un poco la rodilla de atrás (sin despegar el talón) para estirar el sóleo. Mantén 30 segundos cada postura.",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 2,
+    "trimpEasier": 1,
+    "trimpHarder": 3
   },
   "14888d8cdc3a02717febbde94f04bb76": {
     "phase": "3. Estiramiento de Cuádriceps (Adaptado)",
     "details": "De pie, fuertemente agarrado a una silla. Dobla la rodilla derecha llevando el talón hacia el glúteo. Si no alcanzas con la mano, apoya el empeine sobre una silla detrás de ti. 30 seg por pierna.",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 2,
+    "trimpEasier": 1,
+    "trimpHarder": 3
   },
   "dd93c2e61185b472613366d1f9ad64d2": {
     "phase": "1. Movilidad Dinámica en Casa",
     "details": "5 minutos de balanceos de brazos, rotaciones de tronco y elevaciones de rodillas suaves antes de salir.",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 3,
+    "trimpEasier": 2,
+    "trimpHarder": 4
   },
   "67ba96f3c74885b11327a464fc60b336": {
     "phase": "3. Estiramiento de Pantorrillas Obligatorio",
     "details": "Al regresar a casa, es vital estirar los gemelos apoyándose contra la pared durante 30 segundos por pierna, ya que las subidas los tensan mucho.",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 2,
+    "trimpEasier": 1,
+    "trimpHarder": 3
   },
   "43198d70a692a1796421d2207fff04f3": {
     "phase": "1. Calentamiento Extendido",
     "details": "10 minutos de caminata a ritmo muy relajado y cómodo, preparando los pulmones y articulaciones.",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 3,
+    "trimpEasier": 2,
+    "trimpHarder": 4
   },
   "dc4dfa04deafe6e0b2e3ede4218bc24a": {
     "phase": "1. Calentamiento (Aproximación)",
     "details": "Camina durante 10 minutos a un paso muy cómodo y relajado.",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 3,
+    "trimpEasier": 2,
+    "trimpHarder": 4
   },
   "71371caef35b387d714b2a736c888295": {
     "phase": "1. Encuentro y Movilidad",
     "details": "Reunirse con el invitado. Hacer juntos 5 minutos de movilidad suave (giros de hombros, balanceos) enseñándole al invitado por qué es importante.",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 2,
+    "trimpEasier": 1,
+    "trimpHarder": 3
   },
   "3e9c462d1fbe9142552685d38ff70d13": {
     "phase": "3. Estiramiento de Cuádriceps",
     "details": "Al terminar, apoyarse en un árbol y estirar la parte frontal de los muslos (cuádriceps) llevando el talón hacia el glúteo suavemente.",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 2,
+    "trimpEasier": 1,
+    "trimpHarder": 3
   },
   "a48527bef905e0e877092c2cd4da5017": {
     "phase": "1. Movilidad Libre (Lubricación)",
     "details": "En algún momento del día, de forma voluntaria, hacer rotaciones muy suaves de rodillas, caderas y tobillos solo para 'engrasar' las articulaciones.",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 1,
+    "trimpEasier": 1,
+    "trimpHarder": 2
   },
   "42380ec38dc93c14b63796ec2810feb5": {
     "phase": "1. Caminata de Calentamiento",
     "details": "Caminata de 10 minutos a paso conversacional hasta llegar a un parque o plaza que tenga bancas seguras.",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 3,
+    "trimpEasier": 2,
+    "trimpHarder": 4
   },
   "51836a53963a1c19109dfcb684faa276": {
     "phase": "1. Calentamiento Progresivo",
     "details": "10 minutos de caminata suave, haciendo respiraciones profundas (inhalar por la nariz, exhalar por la boca de forma audible).",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 3,
+    "trimpEasier": 2,
+    "trimpHarder": 4
   },
   "de5729cc48382185cbf4d3adf12f97b1": {
     "phase": "3. Estiramiento Posterior",
     "details": "Al regresar, apoyar las manos en la pared y estirar intensamente las pantorrillas (30 a 40 segundos por pierna) para evitar que los músculos se acorten por el volumen.",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 2,
+    "trimpEasier": 1,
+    "trimpHarder": 3
   },
   "7ef610a03e7d11e177cc31e59521e544": {
     "phase": "3. Estiramiento Recompensante",
     "details": "Al regresar, realizar estiramientos estáticos profundos (30 a 40 segundos) de pantorrillas y pecho apoyándose en la pared.",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 2,
+    "trimpEasier": 1,
+    "trimpHarder": 3
   },
   "4d12756c7330e2cfb9f2dc993c402846": {
     "phase": "1. Bracing y Calentamiento",
     "details": "5 contracciones de abdomen (bracing) profundo y 10 estocadas muy cortas para calentar rodillas y glúteos.",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 3,
+    "trimpEasier": 2,
+    "trimpHarder": 4
   }
 }
