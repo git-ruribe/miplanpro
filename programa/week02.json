@@ -1,261 +1,114 @@
 [
-    {
-        "id": 8,
-        "week": 2,
-        "day": "Día 8",
-        "title": "Progresión del Equilibrio y Ley de Wolff",
-        "quote": "Tus huesos son tan fuertes como las demandas que les impones. Hoy le pedimos a tu cuerpo un poco más de estabilidad.",
-        "scienceTitle": "La Ciencia del Día: La Ley de Wolff y la Osteogénesis",
-        "science": "La Ley de Wolff establece que los huesos de una persona sana se adaptarán a las cargas bajo las cuales se colocan. Al introducir una ligera inestabilidad (como girar la cabeza mientras caminas en tándem), no solo entrenamos el nervio vestibular del oído, sino que los micromovimientos de compensación generan tensión ósea, estimulando a los osteoblastos a crear hueso más denso.",
-        "adultRole": "Hoy haremos el mismo camino en el pasillo, pero añadiremos un reto. Tu atención debe estar en no perder el centro de gravedad. Si te sientes inestable, apóyate de la pared sin dudarlo.",
-        "familyRole": "Máxima alerta hoy. Al introducir giros de cabeza en el ejercicio de equilibrio, el riesgo de tropiezo aumenta temporalmente. Camina a su lado (a no más de un brazo de distancia) listo para ofrecer soporte.",
-        "routine": [
-            {
-                "phase": "1. Movilidad Articular Dinámica",
-                "details": "Balanceos de pierna (10x pierna), círculos de hombros, y suaves rotaciones de torso. Inhala profundo y exhala en cada movimiento.",
-                "instructions": "1. De pie apoyado en la pared, balancea tu pierna derecha adelante y atrás 10 veces. Repite con la izquierda. 2. Realiza 10 círculos amplios con tus hombros hacia atrás. 3. Con manos en la cintura, gira tu torso suavemente a la izquierda y a la derecha 5 veces por lado.",
-                "easier": "Hacer todos los ejercicios articulares sentado en una silla, enfocándose en estirar las piernas y mover el tren superior de forma controlada.",
-                "harder": "Balancear la pierna sin apoyarse en absoluto de la pared, usando los brazos y el abdomen para mantener el equilibrio.",
-                "image": ""
-            },
-            {
-                "phase": "2. Tándem con Rotación Cervical (LiFE Progresión)",
-                "details": "Al cruzar el pasillo en tándem (talón-punta), gira lentamente la cabeza para mirar a la derecha, da dos pasos, y luego a la izquierda. Familiar: Acompañamiento estricto.",
-                "instructions": "1. Inicia tu caminata de talón tocando la punta en el pasillo. 2. Después de dar dos pasos, gira lentamente la cabeza para mirar a la pared de tu derecha. 3. Da otros dos pasos y gira la cabeza para mirar a la pared de tu izquierda. 4. El familiar debe caminar a medio metro de distancia listo para sujetarte.",
-                "easier": "Detente completamente antes de girar la cabeza. No gires la cabeza mientras estés en movimiento.",
-                "harder": "Gira la cabeza hacia arriba (mirando al techo) y hacia abajo (mirando al suelo) mientras caminas en tándem, lo cual reta mucho más al oído interno.",
-                "image": ""
-            },
-            {
-                "phase": "3. Samurái Rei-ho (10 repeticiones)",
-                "details": "Divide las 10 repeticiones a lo largo del día. Mantén la regla de oro: 5 segundos para bajar, 5 para subir.",
-                "instructions": "1. A lo largo del día, siéntate al borde de tu silla con brazos cruzados. 2. Levántate contando mentalmente hasta 5. 3. Vuelve a sentarte muy lentamente contando hasta 5, controlando que tus glúteos no 'caigan' bruscamente a la silla. 4. Completa 10 en total en el día.",
-                "easier": "Usa una silla ligeramente más alta o apoya las manos levemente en tus muslos durante el momento más difícil de la subida.",
-                "harder": "Haz las 10 repeticiones de forma continua en una sola sesión, sin descansar entre cada levantamiento.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 9,
-        "week": 2,
-        "day": "Día 9",
-        "title": "Aceleración Concéntrica Inicial",
-        "quote": "Para atrapar una caída, los músculos no solo deben ser fuertes, deben ser rápidos.",
-        "scienceTitle": "La Ciencia del Día: Fibras de Contracción Rápida (Tipo II)",
-        "science": "A medida que envejecemos, perdemos primero las fibras musculares Tipo II (las explosivas), lo que retrasa nuestro 'reflejo de rescate' al tropezar. Hoy comenzaremos a modificar el tiempo de tus ejercicios. Subirás un poco más rápido (fase concéntrica) para despertar estas fibras, pero seguirás bajando lento (fase excéntrica) para proteger las articulaciones.",
-        "adultRole": "Hoy el reto es la velocidad de subida. Cuando te levantes de la silla, intenta hacerlo con energía y decisión (sin saltar). Al sentarte, sigue tomando tus 5 segundos completos.",
-        "familyRole": "Observa la técnica de levantamiento. Anima a que el impulso hacia arriba sea 'como un cohete despegando', pero vigila que no pierda la postura de la espalda.",
-        "routine": [
-            {
-                "phase": "1. Calentamiento y Marcha",
-                "details": "3 minutos de marcha en el sitio elevando las rodillas. Acompaña con braceo activo.",
-                "instructions": "1. Ponte de pie en un área libre de obstáculos. 2. Empieza a marchar en tu mismo lugar levantando las rodillas a una altura cómoda. 3. Mueve los brazos vigorosamente, coordinando brazo contrario a la rodilla que sube. 4. Mantén este ritmo durante 3 minutos seguidos.",
-                "easier": "Realiza la marcha vigorosa sentado en una silla, enfocándote en subir las rodillas y mover los brazos con energía sin riesgo de caída.",
-                "harder": "Eleva las rodillas más alto (acercándolas a la altura de la cadera) y aumenta la velocidad del braceo simulando una marcha rápida.",
-                "image": ""
-            },
-            {
-                "phase": "2. Rei-ho Modificado (Potencia Suave)",
-                "details": "Levantarse de la silla: Sube en 2 segundos (rápido y explosivo, exhalando fuerte). Pausa un segundo de pie. Baja en 5 segundos (lento y controlado). 8 repeticiones.",
-                "instructions": "1. Siéntate en la silla, brazos cruzados. 2. Inhala y, al exhalar fuertemente, impúlsate hacia arriba lo más rápido posible, logrando ponerte de pie en 1 o 2 segundos. 3. Quédate totalmente derecho por 1 segundo. 4. Baja a sentarte tomando tus 5 segundos reglamentarios. 5. Repite 8 veces.",
-                "easier": "Permite el uso de los reposabrazos para darte ese primer empuje rápido hacia arriba, facilitando la aceleración inicial.",
-                "harder": "Sostén un objeto ligero (como un libro grueso o una botella de agua pequeña) abrazado contra tu pecho mientras te levantas rápido y bajas lento.",
-                "image": ""
-            },
-            {
-                "phase": "3. Hábito LiFE: Pantorrillas",
-                "details": "Mientras lavas los platos, 15 elevaciones de pantorrillas. Sube rápido a las puntillas, baja lento.",
-                "instructions": "1. Apoyado frente a tu lavabo, impúlsate hacia arriba quedando de puntillas de forma rápida (en 1 segundo). Exhala fuerte. 2. Baja los talones hacia el suelo lentamente (en 3 a 4 segundos). 3. Repite 15 veces continuas.",
-                "easier": "Sube a una velocidad normal y realiza solo de 8 a 10 repeticiones si sientes fatiga excesiva o ardor muscular.",
-                "harder": "Realiza el movimiento sobre una sola pierna a la vez, manteniendo la pierna contraria doblada hacia atrás en el aire.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 10,
-        "week": 2,
-        "day": "Día 10",
-        "title": "Fuerza Postural y Retracción",
-        "quote": "Una postura erguida no solo proyecta salud, permite que tus pulmones se llenen de vida.",
-        "scienceTitle": "La Ciencia del Día: Cifosis y Capacidad Pulmonar",
-        "science": "La tendencia a encorvarse hacia adelante (cifosis torácica) comprime la caja torácica, reduciendo la captación de oxígeno hasta en un 30%. Al fortalecer los músculos romboides y trapecios en la espalda alta, 'abrimos' el pecho, mejorando inmediatamente la saturación de oxígeno en el cerebro y reduciendo la fatiga general.",
-        "adultRole": "Concéntrate en tu espalda. Imagina que quieres sostener un lápiz entre tus omóplatos (paletas de la espalda). Respira profundo abriendo el pecho.",
-        "familyRole": "Toca suavemente la parte alta de la espalda del adulto mayor entre los omóplatos durante el ejercicio para darle retroalimentación táctil de qué músculos debe apretar.",
-        "routine": [
-            {
-                "phase": "1. Movilidad y Estiramiento Pectoral Suave",
-                "details": "De pie en una esquina de la habitación, apoya las manos en las paredes y echa el pecho ligeramente hacia adelante para estirar el pecho (15 segundos).",
-                "instructions": "1. Busca una esquina despejada en tu casa. 2. Levanta los brazos y apoya un antebrazo en cada pared, manteniendo los codos a la altura de tus hombros. 3. Da un pasito hacia la esquina, dejando que tu pecho se abra y estire. 4. Mantén la postura 15 segundos respirando profundamente.",
-                "easier": "Apoya las manos en el marco abierto de una puerta en lugar de una esquina, y avanza el pecho muy poco hacia adelante.",
-                "harder": "Sube los codos unos centímetros más arriba de la línea de los hombros en la esquina para estirar las fibras inferiores del pectoral.",
-                "image": ""
-            },
-            {
-                "phase": "2. Retracciones Escapulares Activas",
-                "details": "Sentado o de pie. Dobla los codos a 90 grados a los lados. Aprieta los omóplatos hacia atrás y junta como si quisieras aplastar una nuez. Mantén 3 segundos. Repite 12 veces.",
-                "instructions": "1. Colócate con la espalda recta. 2. Pega los codos a tus costillas doblados a 90 grados (como si llevaras dos bandejas). 3. Lleva los hombros y codos hacia atrás fuertemente, sintiendo cómo se juntan los omóplatos en tu espalda. 4. Mantén esa contracción fuerte por 3 segundos y relaja al frente.",
-                "easier": "Realiza el movimiento de juntar y relajar los omóplatos de manera fluida, sin mantener la contracción de los 3 segundos.",
-                "harder": "Sostén una banda elástica ligera o una toalla pequeña muy tensa frente a ti y llévala hacia tu pecho mientras juntas los omóplatos con fuerza.",
-                "image": ""
-            },
-            {
-                "phase": "3. Mantenimiento LiFE",
-                "details": "Continúa con tus caminatas en tándem por el pasillo y el Rei-ho (sentarse y levantarse) de potencia suave.",
-                "instructions": "1. Mantén la regla incidental: al pasar por el pasillo camina tocando talón-punta. 2. Cada vez que te levantes de tu silla hoy, hazlo recordando la instrucción de ayer: subir rápido como un cohete, bajar muy lento.",
-                "easier": "Si te duelen las rodillas, ignora el 'subir rápido' hoy y vuelve al ritmo relajado de 5 segundos para subir y 5 para bajar.",
-                "harder": "Mientras caminas en tándem por el pasillo, incorpora voluntariamente giros lentos de cabeza hacia los lados.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 11,
-        "week": 2,
-        "day": "Día 11",
-        "title": "Introducción a la Tarea Dual (Cognicise)",
-        "quote": "Un cuerpo fuerte necesita un cerebro ágil. Hoy comenzamos a blindar tu mente contra las distracciones.",
-        "scienceTitle": "La Ciencia del Día: Interferencia Cognitivo-Motora",
-        "science": "Los estudios (como Cognicise de Japón) demuestran que las caídas en la calle ocurren no por falta de fuerza, sino porque el cerebro se distrae (ej. al hablar mientras se cruza la calle). Al obligar al cerebro a procesar una tarea matemática simple mientras ejecuta un movimiento de equilibrio, forzamos la creación de redes neuronales resilientes a la distracción.",
-        "adultRole": "Te sentirás un poco torpe hoy, ¡y eso es excelente! Significa que el ejercicio está funcionando. No te frustres si pierdes el hilo al contar, simplemente retómalo.",
-        "familyRole": "Tú eres el director del juego hoy. Harás las preguntas o llevarás el conteo. Tu tono debe ser divertido y de apoyo, nunca de examen o regaño.",
-        "routine": [
-            {
-                "phase": "1. Marcha y Cuenta (Cognicise Básico)",
-                "details": "Marcha en tu lugar (levantando rodillas). Mientras lo haces, cuenta en voz alta hacia atrás restando de 3 en 3, empezando desde el 50 (50, 47, 44...). Hazlo por 2 minutos.",
-                "instructions": "1. Ponte de pie e inicia una marcha en tu propio lugar, braceando naturalmente. 2. El familiar dice 'Cincuenta'. 3. Tú debes seguir marchando mientras dices en voz alta '47, 44, 41...'. 4. Si te equivocas, ríanse, no te detengas, y sigue desde el último número que recuerdes. Mantén la marcha 2 minutos.",
-                "easier": "Si restar de 3 en 3 te paraliza o te hace parar de marchar, cambia el reto mental a restar de 1 en 1, o de 2 en 2 desde el 20.",
-                "harder": "Si cometes un error en la resta matemática, debes dar un aplauso fuerte antes de corregir el número, sin dejar de marchar.",
-                "image": ""
-            },
-            {
-                "phase": "2. Tándem con Nombres",
-                "details": "Cruza el pasillo en tándem. Por cada paso que des, debes decir en voz alta el nombre de un animal o una fruta. Familiar: vigila de cerca.",
-                "instructions": "1. Sitúate al inicio del pasillo. El familiar se coloca a un costado. 2. Da el primer paso tocando talón-punta y di en voz alta 'Perro'. 3. Da el segundo paso y di 'Manzana'. 4. Continúa caminando y nombrando cosas de estas dos categorías sin repetir ninguna palabra hasta llegar al final del pasillo.",
-                "easier": "En lugar de alternar categorías o ser estricto, di en cada paso cualquier palabra libre que empiece con la letra 'A' o una vocal.",
-                "harder": "Aumenta la dificultad mental: nombra países o ciudades por cada paso, o alterna obligatoriamente (ej. un animal, luego una ciudad, un animal, una ciudad).",
-                "image": ""
-            },
-            {
-                "phase": "3. Elevación de Pantorrillas",
-                "details": "15 repeticiones apoyado en el fregadero. Sube rápido, baja lento. Exhala al subir.",
-                "instructions": "1. En tu lugar habitual para este hábito LiFE, apóyate firmemente. 2. Empújate hacia arriba muy rápido (potencia). 3. Sopla el aire fuerte al subir. 4. Baja lentamente en 3 segundos. Completa 15 repeticiones ininterrumpidas.",
-                "easier": "Sube a un ritmo normal y tranquilo, completando solo 10 repeticiones si tus pantorrillas se sienten muy fatigadas de días anteriores.",
-                "harder": "Al llegar a la posición máxima de puntillas, suelta sutilmente las manos del apoyo durante 1 o 2 segundos intentando no caer, y luego apóyate para bajar lento.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 12,
-        "week": 2,
-        "day": "Día 12",
-        "title": "Integración Cardiovascular y Escalones",
-        "quote": "La escalera solía ser un obstáculo; a partir de hoy, es tu máquina de entrenamiento personal.",
-        "scienceTitle": "La Ciencia del Día: Propiocepción y Cadenas Cinéticas",
-        "science": "Subir un escalón activa toda la cadena cinética inferior (glúteos, cuádriceps, gemelos) de forma unilateral. Esto mejora la propiocepción (la capacidad del cuerpo para saber dónde están sus partes en el espacio), lo que es fundamental para subir aceras o esquivar obstáculos en la calle.",
-        "adultRole": "Si sientes molestias en las rodillas, reduce la altura del escalón o no subas por completo. El empuje debe venir de tu talón, no de las puntas de los pies.",
-        "familyRole": "Asegura la zona. Usa el escalón más bajo de una escalera firme con barandal. Colócate detrás y ligeramente de lado del adulto mayor para asistir si hay debilidad.",
-        "routine": [
-            {
-                "phase": "1. Movilidad y Activación",
-                "details": "5 minutos de balanceos de pierna y marcha rápida en el sitio.",
-                "instructions": "1. Haz 10 balanceos de cada pierna hacia adelante y atrás. 2. Haz 10 balanceos abriendo y cruzando la pierna por delante de ti. 3. Termina con 2 minutos de marcha rápida en tu sitio, moviendo vigorosamente los brazos.",
-                "easier": "Sustituye la marcha rápida y los balanceos cruzados por movimientos estáticos sentado en una silla, elevando rodillas y estirando piernas al frente.",
-                "harder": "Durante la marcha, intenta que al subir la rodilla derecha la toques con tu mano izquierda, y al subir la izquierda la toques con la mano derecha (marcha cruzada).",
-                "image": ""
-            },
-            {
-                "phase": "2. Step-ups (Subidas al escalón)",
-                "details": "Frente al primer escalón de la escalera (agarrado del barandal). Sube el pie derecho, luego el izquierdo. Baja el derecho, baja el izquierdo. Hazlo 10 veces empezando con el pie derecho, luego 10 veces empezando con el izquierdo.",
-                "instructions": "1. Párate frente a la escalera, sostenido firmemente del barandal. 2. Coloca el pie derecho completo en el escalón y empuja hacia arriba, subiendo el pie izquierdo para juntarlos. 3. Baja controladamente primero el pie derecho al piso, y luego el izquierdo. 4. Repite 10 veces liderando con el derecho, luego invierte y lidera 10 veces con el izquierdo.",
-                "easier": "Si el escalón es muy alto, utiliza un cajón más bajo, un step de aeróbic pequeño o un bloque grueso muy firme y seguro que reduzca la altura de la zancada.",
-                "harder": "Inicia la subida empujando de forma explosiva (rápida), pero sigue bajando del escalón hacia atrás con mucho control y lentitud.",
-                "image": ""
-            },
-            {
-                "phase": "3. Tarea Dual (Sit-to-stand)",
-                "details": "Realiza 5 levantamientos Rei-ho de la silla. Mientras bajas lentamente (5 segundos), deleltrea tu nombre o el de tu familiar de atrás hacia adelante.",
-                "instructions": "1. Sentado en tu silla con brazos cruzados. 2. Levántate normalmente. 3. Mientras inicias el descenso lento de 5 segundos, deletrea en voz alta una palabra familiar al revés (ej. P-A-B-L-O se dice O-L-B-A-P). 4. Debes terminar de deletrear justo cuando tus glúteos toquen la silla.",
-                "easier": "Deletrea la palabra de manera normal (de izquierda a derecha) si invertir las letras es demasiado frustrante y te impide hacer el ejercicio físico.",
-                "harder": "Resta números (ej. desde el 30, restando 3) en cada descenso. En el primer descenso di '30', en el segundo descenso di '27', y así sucesivamente.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 13,
-        "week": 2,
-        "day": "Día 13",
-        "title": "Coaching Semanal y Caminata Continua",
-        "quote": "La constancia se construye revisando el camino recorrido. Estás a punto de completar 14 días de éxito.",
-        "scienceTitle": "La Ciencia del Día: El Efecto Pigmalión Clínico",
-        "science": "En psicología y medicina, el Efecto Pigmalión demuestra que las altas expectativas y el refuerzo positivo por parte del cuidador o entrenador mejoran directamente el rendimiento físico del paciente. Al revisar los logros hoy, estamos programando tu cerebro para el éxito a largo plazo.",
-        "adultRole": "Hoy el entrenamiento principal es cardiovascular. Ponte tus zapatos más cómodos. Observa cómo puedes caminar más tiempo o más rápido que en el Día 0 sin fatigarte tanto.",
-        "familyRole": "Día de revisión. Pregunta: ¿Sientes más fuertes tus piernas? ¿El tándem es más fácil? Refuerza positivamente cada pequeño avance. Luego, salgan a caminar.",
-        "routine": [
-            {
-                "phase": "1. Sesión de Coaching (15 min)",
-                "details": "Revisen las evaluaciones de la semana. Celebren haber introducido la 'Tarea Dual' (Cognicise). Ajusten los horarios si es necesario para la próxima semana.",
-                "instructions": "1. Siéntense en un lugar tranquilo antes de la caminata. 2. El familiar debe preguntar explícitamente sobre el juego de restas (Cognicise). ¿Fue interesante? ¿Muy retador? 3. Discutan y ajusten los horarios de caminata de la próxima semana a la hora que tengan más energía.",
-                "easier": "Realicen una charla corta e informal de 5 minutos mientras se cambian los zapatos para salir a caminar.",
-                "harder": "Familiar: anota en un cuaderno un registro formal de cuáles ejercicios se ven dominados y cuáles aún cuestan trabajo para tener un diario de la progresión.",
-                "image": ""
-            },
-            {
-                "phase": "2. Caminata Continua (NEPA Expandido)",
-                "details": "Caminata ininterrumpida de 20 a 30 minutos al aire libre. Traten de mantener un ritmo donde la respiración esté acelerada pero aún puedan mantener una conversación.",
-                "instructions": "1. Salgan de casa hacia un parque o zona peatonal. 2. Empiecen a caminar sin interrupciones durante 20 a 30 minutos. 3. Concéntrate en tu postura: mirada al frente (no al suelo) y hombros relajados hacia atrás. 4. La meta es sudar ligeramente o sentir que entras en calor sin llegar al agotamiento extremo.",
-                "easier": "Camina solamente 15 minutos en total, o divide la caminata en dos bloques de 10 minutos (uno en la mañana y otro por la tarde).",
-                "harder": "Acelera el paso deliberadamente durante la caminata, intentando que tu ritmo de respiración sea profundo y te cueste un poco más de trabajo hablar fluidamente.",
-                "image": ""
-            },
-            {
-                "phase": "3. Estiramiento de Gemelos",
-                "details": "Al regresar a casa, apoyar manos en la pared, dejar una pierna atrás estirada y empujar el talón contra el suelo durante 20 segundos. Esto previene calambres nocturnos.",
-                "instructions": "1. Al entrar a casa, colócate frente a una pared a un brazo de distancia. 2. Apoya ambas manos y da un paso amplio hacia atrás con tu pierna derecha, manteniendo el talón firme en el piso y la rodilla derecha recta. 3. Flexiona un poco tu rodilla izquierda hacia adelante. 4. Siente cómo se estira la pantorrilla derecha y mantén 20 segundos sin rebotar. Cambia de lado.",
-                "easier": "Siéntate en el borde de una silla, estira una pierna al frente tocando el suelo con el talón y levanta la punta del zapato hacia el techo jalando suavemente.",
-                "harder": "Estando en la posición de estiramiento en la pared, dobla ligeramente la rodilla de la pierna trasera SIN despegar el talón del piso para estirar el músculo sóleo profundo.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 14,
-        "week": 2,
-        "day": "Día 14",
-        "title": "Regeneración y Recarga Proteica",
-        "quote": "El músculo se fatiga en el gimnasio, pero se fortalece en el comedor y en la cama.",
-        "scienceTitle": "La Ciencia del Día: Sarcopenia y Leucina",
-        "science": "El ejercicio estimula la necesidad de crear músculo, pero sin los 'ladrillos' adecuados, no se puede construir. El aminoácido Leucina (presente en huevo, lácteos, pollo) es el gatillo que enciende la síntesis de proteínas. Hoy el enfoque es 100% nutricional para consolidar el trabajo de las últimas dos semanas.",
-        "adultRole": "Día libre de ejercicios de fuerza. Tu única misión física es mantener tus hábitos LiFE (pasillo en tándem) de forma natural y alimentarte adecuadamente.",
-        "familyRole": "Evalúa la dieta. ¿Están alcanzando de 1.2 a 1.5 gramos de proteína por kilo de peso? Prepara o planifica comidas que aseguren al menos 25-30 gramos de proteína por porción.",
-        "routine": [
-            {
-                "phase": "1. Descanso Activo",
-                "details": "Mantén las actividades incidentales (LiFE) de forma relajada. Si lo deseas, puedes hacer 5 minutos de movilidad articular muy suave.",
-                "instructions": "1. Hoy no hay sesión estructurada de levantamientos ni de escalones. 2. Tu único objetivo físico es caminar por tu pasillo tocando talón-punta de manera incidental si pasas por ahí. 3. Mueve el cuello y hombros lentamente si te sientes algo tieso.",
-                "easier": "Permanece en reposo pasivo si tienes un cansancio muscular marcado, sentándote en un sillón cómodo a descansar las piernas.",
-                "harder": "Realiza una caminata recreativa, muy relajada y a paso lento, de unos 10 a 15 minutos en exteriores, solo por el placer de tomar el sol y estirar las piernas.",
-                "image": ""
-            },
-            {
-                "phase": "2. Auditoría Nutricional",
-                "details": "Familiar y adulto mayor: Revisen que en el desayuno, comida y cena haya una fuente importante de proteína magra. Consideren suplementación si hay déficit de apetito (solo bajo recomendación médica).",
-                "instructions": "1. Familiar: Revisa conscientemente los platos del día de hoy. 2. El desayuno ideal debe incluir huevos, queso o yogur griego. 3. La comida debe tener una porción del tamaño de la palma de la mano de carne magra, pollo o pescado. 4. Eviten pasar todo el día consumiendo solo pan o carbohidratos simples sin añadir un bloque de proteínas.",
-                "easier": "Enfocarse únicamente en que la comida principal (almuerzo) cumpla de manera abundante con los requerimientos de proteína.",
-                "harder": "Anotar o usar una aplicación de celular para contabilizar los gramos exactos de proteína consumidos durante el día, apuntando a superar los 80g o 90g totales dependiendo del peso del adulto.",
-                "image": ""
-            },
-            {
-                "phase": "3. Visualización",
-                "details": "Siéntete orgulloso. Has transformado tu entorno doméstico en un centro de prevención de caídas. Prepárate para la Semana 3.",
-                "instructions": "1. Dedica 3 a 5 minutos sentado cómodamente con los ojos cerrados. 2. Repasa mentalmente la primera semana (cuando te costaba levantarte de la silla) y compárala con hoy. 3. Visualízate la siguiente semana sintiéndote seguro, estable y controlando tu cuerpo por completo.",
-                "easier": "Tómate 2 minutos antes de dormir únicamente para hacer respiraciones profundas diafragmáticas y relajar el cuerpo para el descanso nocturno.",
-                "harder": "Acompaña la visualización mental con un 'escaneo corporal', donde llevas tu atención y relajas voluntariamente tus músculos empezando por los dedos de los pies hasta la coronilla.",
-                "image": ""
-            }
-        ]
-    }
+  {
+    "id": 8,
+    "week": 2,
+    "day": "Día 8",
+    "title": "Progresión del Equilibrio y Ley de Wolff",
+    "quote": "Tus huesos son tan fuertes como las demandas que les impones. Hoy le pedimos a tu cuerpo un poco más de estabilidad.",
+    "scienceTitle": "La Ciencia del Día: La Ley de Wolff y la Osteogénesis",
+    "science": "La Ley de Wolff establece que los huesos de una persona sana se adaptarán a las cargas bajo las cuales se colocan. Al introducir una ligera inestabilidad (como girar la cabeza mientras caminas en tándem), no solo entrenamos el nervio vestibular del oído, sino que los micromovimientos de compensación generan tensión ósea, estimulando a los osteoblastos a crear hueso más denso.",
+    "adultRole": "Hoy haremos el mismo camino en el pasillo, pero añadiremos un reto. Tu atención debe estar en no perder el centro de gravedad. Si te sientes inestable, apóyate de la pared sin dudarlo.",
+    "familyRole": "Máxima alerta hoy. Al introducir giros de cabeza en el ejercicio de equilibrio, el riesgo de tropiezo aumenta temporalmente. Camina a su lado (a no más de un brazo de distancia) listo para ofrecer soporte.",
+    "routine": [
+      "e7d3b0995a6978d9fe842a3e181c9423",
+      "4cdc779c24f1bf608e15bf95a3a4db73",
+      "58907f718a1422ef81b28b9548965c24"
+    ]
+  },
+  {
+    "id": 9,
+    "week": 2,
+    "day": "Día 9",
+    "title": "Aceleración Concéntrica Inicial",
+    "quote": "Para atrapar una caída, los músculos no solo deben ser fuertes, deben ser rápidos.",
+    "scienceTitle": "La Ciencia del Día: Fibras de Contracción Rápida (Tipo II)",
+    "science": "A medida que envejecemos, perdemos primero las fibras musculares Tipo II (las explosivas), lo que retrasa nuestro 'reflejo de rescate' al tropezar. Hoy comenzaremos a modificar el tiempo de tus ejercicios. Subirás un poco más rápido (fase concéntrica) para despertar estas fibras, pero seguirás bajando lento (fase excéntrica) para proteger las articulaciones.",
+    "adultRole": "Hoy el reto es la velocidad de subida. Cuando te levantes de la silla, intenta hacerlo con energía y decisión (sin saltar). Al sentarte, sigue tomando tus 5 segundos completos.",
+    "familyRole": "Observa la técnica de levantamiento. Anima a que el impulso hacia arriba sea 'como un cohete despegando', pero vigila que no pierda la postura de la espalda.",
+    "routine": [
+      "4b93cd32bce10f680fe50f428fb68d99",
+      "63671febfc878824d5f5d6afeb558c12",
+      "59ba5595bad47d1b3c8ea61559c7cdbb"
+    ]
+  },
+  {
+    "id": 10,
+    "week": 2,
+    "day": "Día 10",
+    "title": "Fuerza Postural y Retracción",
+    "quote": "Una postura erguida no solo proyecta salud, permite que tus pulmones se llenen de vida.",
+    "scienceTitle": "La Ciencia del Día: Cifosis y Capacidad Pulmonar",
+    "science": "La tendencia a encorvarse hacia adelante (cifosis torácica) comprime la caja torácica, reduciendo la captación de oxígeno hasta en un 30%. Al fortalecer los músculos romboides y trapecios en la espalda alta, 'abrimos' el pecho, mejorando inmediatamente la saturación de oxígeno en el cerebro y reduciendo la fatiga general.",
+    "adultRole": "Concéntrate en tu espalda. Imagina que quieres sostener un lápiz entre tus omóplatos (paletas de la espalda). Respira profundo abriendo el pecho.",
+    "familyRole": "Toca suavemente la parte alta de la espalda del adulto mayor entre los omóplatos durante el ejercicio para darle retroalimentación táctil de qué músculos debe apretar.",
+    "routine": [
+      "61a9023e12522e9d8071eec81a40ac66",
+      "32cc18eded32354dda7eb19d3858f685",
+      "93a84b7fdb311d3a3362c18bd137716c"
+    ]
+  },
+  {
+    "id": 11,
+    "week": 2,
+    "day": "Día 11",
+    "title": "Introducción a la Tarea Dual (Cognicise)",
+    "quote": "Un cuerpo fuerte necesita un cerebro ágil. Hoy comenzamos a blindar tu mente contra las distracciones.",
+    "scienceTitle": "La Ciencia del Día: Interferencia Cognitivo-Motora",
+    "science": "Los estudios (como Cognicise de Japón) demuestran que las caídas en la calle ocurren no por falta de fuerza, sino porque el cerebro se distrae (ej. al hablar mientras se cruza la calle). Al obligar al cerebro a procesar una tarea matemática simple mientras ejecuta un movimiento de equilibrio, forzamos la creación de redes neuronales resilientes a la distracción.",
+    "adultRole": "Te sentirás un poco torpe hoy, ¡y eso es excelente! Significa que el ejercicio está funcionando. No te frustres si pierdes el hilo al contar, simplemente retómalo.",
+    "familyRole": "Tú eres el director del juego hoy. Harás las preguntas o llevarás el conteo. Tu tono debe ser divertido y de apoyo, nunca de examen o regaño.",
+    "routine": [
+      "84759057795a929f36379df0769c0064",
+      "dbabf3458f8b9de556212e0834b66526",
+      "6b2ad1022c9f6e27bcb08481d17783cd"
+    ]
+  },
+  {
+    "id": 12,
+    "week": 2,
+    "day": "Día 12",
+    "title": "Integración Cardiovascular y Escalones",
+    "quote": "La escalera solía ser un obstáculo; a partir de hoy, es tu máquina de entrenamiento personal.",
+    "scienceTitle": "La Ciencia del Día: Propiocepción y Cadenas Cinéticas",
+    "science": "Subir un escalón activa toda la cadena cinética inferior (glúteos, cuádriceps, gemelos) de forma unilateral. Esto mejora la propiocepción (la capacidad del cuerpo para saber dónde están sus partes en el espacio), lo que es fundamental para subir aceras o esquivar obstáculos en la calle.",
+    "adultRole": "Si sientes molestias en las rodillas, reduce la altura del escalón o no subas por completo. El empuje debe venir de tu talón, no de las puntas de los pies.",
+    "familyRole": "Asegura la zona. Usa el escalón más bajo de una escalera firme con barandal. Colócate detrás y ligeramente de lado del adulto mayor para asistir si hay debilidad.",
+    "routine": [
+      "bb0637634dd3f04c0d1d27fe98cb172b",
+      "e92bac83c48490857842a4c9d833b878",
+      "6f87bbacc235a4cbeeaa0e48a795555b"
+    ]
+  },
+  {
+    "id": 13,
+    "week": 2,
+    "day": "Día 13",
+    "title": "Coaching Semanal y Caminata Continua",
+    "quote": "La constancia se construye revisando el camino recorrido. Estás a punto de completar 14 días de éxito.",
+    "scienceTitle": "La Ciencia del Día: El Efecto Pigmalión Clínico",
+    "science": "En psicología y medicina, el Efecto Pigmalión demuestra que las altas expectativas y el refuerzo positivo por parte del cuidador o entrenador mejoran directamente el rendimiento físico del paciente. Al revisar los logros hoy, estamos programando tu cerebro para el éxito a largo plazo.",
+    "adultRole": "Hoy el entrenamiento principal es cardiovascular. Ponte tus zapatos más cómodos. Observa cómo puedes caminar más tiempo o más rápido que en el Día 0 sin fatigarte tanto.",
+    "familyRole": "Día de revisión. Pregunta: ¿Sientes más fuertes tus piernas? ¿El tándem es más fácil? Refuerza positivamente cada pequeño avance. Luego, salgan a caminar.",
+    "routine": [
+      "86424b26d77d717b89580dd766ca7661",
+      "9baa1fea0fb082b06c7b4eeb0910bf4b",
+      "d65b4c30bcfae8a5fb5c172b8e67b5b5"
+    ]
+  },
+  {
+    "id": 14,
+    "week": 2,
+    "day": "Día 14",
+    "title": "Regeneración y Recarga Proteica",
+    "quote": "El músculo se fatiga en el gimnasio, pero se fortalece en el comedor y en la cama.",
+    "scienceTitle": "La Ciencia del Día: Sarcopenia y Leucina",
+    "science": "El ejercicio estimula la necesidad de crear músculo, pero sin los 'ladrillos' adecuados, no se puede construir. El aminoácido Leucina (presente en huevo, lácteos, pollo) es el gatillo que enciende la síntesis de proteínas. Hoy el enfoque es 100% nutricional para consolidar el trabajo de las últimas dos semanas.",
+    "adultRole": "Día libre de ejercicios de fuerza. Tu única misión física es mantener tus hábitos LiFE (pasillo en tándem) de forma natural y alimentarte adecuadamente.",
+    "familyRole": "Evalúa la dieta. ¿Están alcanzando de 1.2 a 1.5 gramos de proteína por kilo de peso? Prepara o planifica comidas que aseguren al menos 25-30 gramos de proteína por porción.",
+    "routine": [
+      "650ba1c34cf953a4b9050c2feea38e38",
+      "28343c6138340587719b43d8e57afcaf",
+      "1ac19c2b308c0d946a0e7a3fa1aa40d0"
+    ]
+  }
 ]

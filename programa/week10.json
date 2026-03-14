@@ -1,198 +1,114 @@
 [
-    {
-        "id": 64,
-        "week": 10,
-        "day": "Día 64",
-        "title": "Navegación Activa y Función Ejecutiva",
-        "quote": "El cerebro es como un músculo: si le das el mapa resuelto, se debilita. Hoy tú eres el capitán.",
-        "scienceTitle": "La Ciencia del Día: El Hipocampo y el 'Wayfinding'",
-        "science": "Delegar siempre la ruta de caminata a otra persona o al GPS apaga el hipocampo (el centro de la memoria espacial). La navegación activa ('wayfinding') requiere planificación, toma de decisiones y memoria de trabajo. Forzar al cerebro a tomar decisiones de ruta mientras se camina es una de las defensas más fuertes contra el deterioro cognitivo leve.",
-        "adultRole": "Hoy tú estás a cargo. Antes de salir, decide a dónde irán y por qué calles. Durante la caminata, tú guiarás a tu familiar. Si hay que cruzar la calle, tú tomas la decisión de cuándo es seguro hacerlo.",
-        "familyRole": "Hoy eres un 'turista' en la caminata. Deja que tu familiar tome el control de la ruta. Solo interviene si hay un riesgo real de seguridad. Valida sus decisiones de dirección.",
-        "routine": [
-            {
-                "phase": "1. Activación Articular",
-                "details": "Balanceos de pierna y giros de torso durante 3 minutos antes de salir por la puerta.",
-                "image": ""
-            },
-            {
-                "phase": "2. Caminata de Liderazgo (Wayfinding)",
-                "details": "Caminata de 25-30 minutos liderada por el adulto mayor. El ritmo debe ser de moderado a rápido (Prueba del habla: poder conversar pero con ligera dificultad).",
-                "image": ""
-            },
-            {
-                "phase": "3. Integración LiFE",
-                "details": "Al regresar, realiza 15 elevaciones de pantorrilla mientras te lavas las manos o guardas las cosas.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 65,
-        "week": 10,
-        "day": "Día 65",
-        "title": "Micro-HIIT Nivel 5 y Tensión Endotelial",
-        "quote": "Un corazón exigido hoy es un corazón relajado mañana. Elevemos el ritmo.",
-        "scienceTitle": "La Ciencia del Día: Estrés Transmural y Vasodilatación",
-        "science": "Aumentar los intervalos rápidos en la caminata genera 'Shear Stress' (fricción de la sangre contra las paredes de las arterias). Este estrés mecánico es el estímulo principal para que el cuerpo libere Óxido Nítrico, un vasodilatador natural que mantiene las arterias elásticas y la presión arterial bajo control.",
-        "adultRole": "Hoy los intervalos de velocidad serán un poco más largos. Camina con postura erguida, mirada al frente y usa el braceo como motor para impulsar tus piernas cuando vayas rápido.",
-        "familyRole": "Controlarás el cronómetro meticulosamente. Asegúrate de que los periodos de recuperación (caminata lenta) se respeten al 100% para que el corazón pueda bajar sus pulsaciones de forma segura.",
-        "routine": [
-            {
-                "phase": "1. Calentamiento (Aproximación)",
-                "details": "Camina durante 10 minutos a un paso muy cómodo y relajado.",
-                "image": ""
-            },
-            {
-                "phase": "2. Micro-HIIT Nivel 5",
-                "details": "Ciclo de intervalos: 3 MINUTOS de caminata RÁPIDA (braceo intenso) seguidos de 3 MINUTOS de recuperación lenta. Repite el ciclo 4 veces totales. Termina con 5 minutos lentos.",
-                "image": ""
-            },
-            {
-                "phase": "3. Retracciones y Respiración",
-                "details": "Al terminar, siéntate y haz 10 retracciones escapulares (juntar los omóplatos) acompañadas de respiraciones profundas.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 66,
-        "week": 10,
-        "day": "Día 66",
-        "title": "MED: Conservación de Potencia Pura",
-        "quote": "La fuerza es tu escudo, la velocidad tu espada. Hoy afilamos ambas en solo 15 minutos.",
-        "scienceTitle": "La Ciencia del Día: Reclutamiento de Fibras Tipo IIb",
-        "science": "Para mantener las fibras musculares súper-rápidas (Tipo IIb), que son las primeras en intervenir para evitar una caída libre, no necesitamos pesas pesadas, necesitamos INTENCIÓN de velocidad. La Dosis Mínima Efectiva semanal se basa en la explosividad total del movimiento concéntrico.",
-        "adultRole": "Hoy te quedas en casa. En este circuito corto, cada vez que subas de la silla o subas el escalón, quiero que lo hagas con la máxima explosividad posible, como si quisieras saltar (pero sin despegar los pies).",
-        "familyRole": "Supervisa estrictamente la seguridad. Explosividad no significa descontrol. El impulso hacia arriba es rápido, pero la bajada a la silla debe seguir siendo en 3-4 segundos.",
-        "routine": [
-            {
-                "phase": "1. Activación Neural",
-                "details": "De pie, da golpecitos rápidos con las puntas de los pies en el suelo durante 10 segundos, 3 veces. (Simulando un tambor rápido).",
-                "image": ""
-            },
-            {
-                "phase": "2. Circuito Explosivo (3 Rondas)",
-                "details": "Sin descanso: 10 Pasos laterales rápidos por lado -> 10 Step-ups (escalón) explosivos por pierna -> 8 Levantamientos Samurái a máxima velocidad. Descansa 2 minutos entre rondas.",
-                "image": ""
-            },
-            {
-                "phase": "3. Nutrición Inmediata",
-                "details": "Consumir una fuente rica en proteína (20-25g) dentro de los siguientes 30 minutos para consolidar el mantenimiento muscular.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 67,
-        "week": 10,
-        "day": "Día 67",
-        "title": "Arquitectura Social: El Grupo de Pares",
-        "quote": "Un hábito compartido es un hábito inquebrantable. Suma a alguien a tu equipo.",
-        "scienceTitle": "La Ciencia del Día: El Efecto de Contagio Social",
-        "science": "La investigación del Proyecto Kashiwa revela que los hábitos de salud son contagiosos. Incorporar a 'pares' (amigos o vecinos de edad similar) a la rutina de caminata no solo mejora el estado de ánimo, sino que crea un sentido de 'responsabilidad mutua' (accountability) que blinda la adherencia al programa para cuando el familiar de apoyo no esté disponible.",
-        "adultRole": "Hoy la caminata tendrá invitados. Invita a un amigo, vecino o familiar lejano a caminar con ustedes. Muestra con orgullo tu ritmo y resistencia.",
-        "familyRole": "Facilita la interacción social. Ayuda a coordinar con un vecino o amigo del adulto mayor para que los acompañe. Durante la caminata, camina un poco más atrás y deja que ellos conversen y lideren el paso.",
-        "routine": [
-            {
-                "phase": "1. Encuentro y Movilidad",
-                "details": "Reunirse con el invitado. Hacer juntos 5 minutos de movilidad suave (giros de hombros, balanceos) enseñándole al invitado por qué es importante.",
-                "image": ""
-            },
-            {
-                "phase": "2. Caminata de Pares",
-                "details": "Caminata continua de 30 minutos a paso conversacional. El objetivo principal es la interacción social activa mientras se acumula volumen aeróbico.",
-                "image": ""
-            },
-            {
-                "phase": "3. Integración en Casa",
-                "details": "Al despedir al invitado y volver a casa, realizar 15 elevaciones de pantorrilla en el lavabo.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 68,
-        "week": 10,
-        "day": "Día 68",
-        "title": "Propiocepción Ecológica y Cognicise",
-        "quote": "Entrena tu cuerpo para lo inesperado, y lo inesperado dejará de ser una amenaza.",
-        "scienceTitle": "La Ciencia del Día: Tarea Dual en Terreno Irregular",
-        "science": "Combinar una carga cognitiva (matemáticas o memoria) mientras se camina sobre una superficie irregular (pasto o tierra) es el pináculo de la prevención de caídas. Fuerza al sistema somatosensorial de los tobillos a enviar señales de corrección al cerebro en tiempo real, mientras la corteza prefrontal está distraída.",
-        "adultRole": "Hoy buscaremos caminar sobre pasto o un sendero seguro de tierra. Mientras caminas, tu familiar te pondrá un reto mental. Concéntrate en no perder el ritmo.",
-        "familyRole": "Busca un parque seguro con césped plano. Mientras caminan sobre el césped, pídele que reste de 4 en 4 desde el 60. Si se detiene para pensar, recuérdale seguir moviendo los pies.",
-        "routine": [
-            {
-                "phase": "1. Caminata en Asfalto (10 min)",
-                "details": "Caminata normal de calentamiento hasta llegar a la zona del parque o terreno ecológico.",
-                "image": ""
-            },
-            {
-                "phase": "2. Cognicise en Terreno Irregular",
-                "details": "Caminar sobre pasto o tierra durante 10-15 minutos. Aplicar la Tarea Dual: contar hacia atrás, o decir nombres de ciudades que empiecen con diferentes letras.",
-                "image": ""
-            },
-            {
-                "phase": "3. Estiramiento de Cuádriceps",
-                "details": "Al terminar, apoyarse en un árbol y estirar la parte frontal de los muslos (cuádriceps) llevando el talón hacia el glúteo suavemente.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 69,
-        "week": 10,
-        "day": "Día 69",
-        "title": "Fondo Aeróbico y Mitocondriogénesis",
-        "quote": "La resistencia no se construye en un día, se construye un paso a la vez, manteniendo la marcha cuando otros se detendrían.",
-        "scienceTitle": "La Ciencia del Día: Zona 2 y Densidad Mitocondrial",
-        "science": "Caminar de forma prolongada y continua en la 'Zona 2' aeróbica (donde puedes hablar, pero preferirías no hacerlo constantemente) estimula la 'mitocondriogénesis': la creación de nuevas mitocondrias en las células musculares. Esto retrasa drásticamente la fatiga sistémica y mejora la sensibilidad a la insulina a lo largo del día.",
-        "adultRole": "Hoy es el día de la 'Caminata Larga'. No habrá intervalos rápidos ni juegos mentales. Solo un ritmo constante, fluido y sostenido durante más tiempo que antes.",
-        "familyRole": "Prepara agua para el camino. Lleva un ritmo constante que sea retador pero sostenible. Si ves signos de fatiga extrema o palidez, haz una pausa. Celebra el logro de resistencia.",
-        "routine": [
-            {
-                "phase": "1. Preparación y Core",
-                "details": "5 maniobras de bracing (tensar el abdomen) y balanceos de pierna ligeros antes de iniciar.",
-                "image": ""
-            },
-            {
-                "phase": "2. Caminata de Fondo Aeróbico",
-                "details": "Caminata continua e ininterrumpida de 40 a 45 minutos. Mantener una postura impecable (hombros atrás, pecho abierto) y respiración nasal preferentemente.",
-                "image": ""
-            },
-            {
-                "phase": "3. Recuperación Hídrica Inmediata",
-                "details": "Al regresar, tomar asiento, rehidratarse gradualmente y realizar estiramientos estáticos de gemelos.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 70,
-        "week": 10,
-        "day": "Día 70",
-        "title": "Regeneración y Lubricación Articular",
-        "quote": "Tu cuerpo ha trabajado como una máquina perfecta durante 70 días. Hoy, honramos ese esfuerzo con descanso.",
-        "scienceTitle": "La Ciencia del Día: Líquido Sinovial y Reposo",
-        "science": "El ejercicio de ayer fue el de mayor volumen hasta la fecha. Hoy las articulaciones de carga (rodillas, caderas) necesitan reabsorber nutrientes y distribuir el líquido sinovial. El descanso activo (movimientos muy ligeros sin impacto) asegura que este lubricante natural mantenga los cartílagos sanos y sin fricción excesiva.",
-        "adultRole": "Misión de hoy: descanso absoluto de rutinas estructuradas. Si sientes rigidez muscular, muévete despacio por la casa, pero no hagas ejercicio formal.",
-        "familyRole": "Día de revisión. Cumplen 70 días de programa ininterrumpido. Asegura que la alimentación de hoy sea antiinflamatoria (vegetales, omega-3, buena proteína) para sanar los tejidos.",
-        "routine": [
-            {
-                "phase": "1. Movilidad Libre (Lubricación)",
-                "details": "En algún momento del día, de forma voluntaria, hacer rotaciones muy suaves de rodillas, caderas y tobillos solo para 'engrasar' las articulaciones.",
-                "image": ""
-            },
-            {
-                "phase": "2. Auditoría Nutricional Antiinflamatoria",
-                "details": "Asegurar un menú rico en antioxidantes y proteínas para reparar las fibras tras la caminata larga de ayer.",
-                "image": ""
-            },
-            {
-                "phase": "3. Reflexión de 70 Días",
-                "details": "Sentarse juntos y reconocer el increíble avance en resistencia, fuerza de piernas y agilidad mental desde el Día 0.",
-                "image": ""
-            }
-        ]
-    }
+  {
+    "id": 64,
+    "week": 10,
+    "day": "Día 64",
+    "title": "Navegación Activa y Función Ejecutiva",
+    "quote": "El cerebro es como un músculo: si le das el mapa resuelto, se debilita. Hoy tú eres el capitán.",
+    "scienceTitle": "La Ciencia del Día: El Hipocampo y el 'Wayfinding'",
+    "science": "Delegar siempre la ruta de caminata a otra persona o al GPS apaga el hipocampo (el centro de la memoria espacial). La navegación activa ('wayfinding') requiere planificación, toma de decisiones y memoria de trabajo. Forzar al cerebro a tomar decisiones de ruta mientras se camina es una de las defensas más fuertes contra el deterioro cognitivo leve.",
+    "adultRole": "Hoy tú estás a cargo. Antes de salir, decide a dónde irán y por qué calles. Durante la caminata, tú guiarás a tu familiar. Si hay que cruzar la calle, tú tomas la decisión de cuándo es seguro hacerlo.",
+    "familyRole": "Hoy eres un 'turista' en la caminata. Deja que tu familiar tome el control de la ruta. Solo interviene si hay un riesgo real de seguridad. Valida sus decisiones de dirección.",
+    "routine": [
+      "dbd8340b6b60713426177430813903ac",
+      "a9e39db21996d5e2f2e42959ec973986",
+      "d252b195608a4f151f5fef5a7705d6ef"
+    ]
+  },
+  {
+    "id": 65,
+    "week": 10,
+    "day": "Día 65",
+    "title": "Micro-HIIT Nivel 5 y Tensión Endotelial",
+    "quote": "Un corazón exigido hoy es un corazón relajado mañana. Elevemos el ritmo.",
+    "scienceTitle": "La Ciencia del Día: Estrés Transmural y Vasodilatación",
+    "science": "Aumentar los intervalos rápidos en la caminata genera 'Shear Stress' (fricción de la sangre contra las paredes de las arterias). Este estrés mecánico es el estímulo principal para que el cuerpo libere Óxido Nítrico, un vasodilatador natural que mantiene las arterias elásticas y la presión arterial bajo control.",
+    "adultRole": "Hoy los intervalos de velocidad serán un poco más largos. Camina con postura erguida, mirada al frente y usa el braceo como motor para impulsar tus piernas cuando vayas rápido.",
+    "familyRole": "Controlarás el cronómetro meticulosamente. Asegúrate de que los periodos de recuperación (caminata lenta) se respeten al 100% para que el corazón pueda bajar sus pulsaciones de forma segura.",
+    "routine": [
+      "dc4dfa04deafe6e0b2e3ede4218bc24a",
+      "85a9a6363412b812a5abe6c67967d65c",
+      "3639a8cf41652da31be7609969037d6a"
+    ]
+  },
+  {
+    "id": 66,
+    "week": 10,
+    "day": "Día 66",
+    "title": "MED: Conservación de Potencia Pura",
+    "quote": "La fuerza es tu escudo, la velocidad tu espada. Hoy afilamos ambas en solo 15 minutos.",
+    "scienceTitle": "La Ciencia del Día: Reclutamiento de Fibras Tipo IIb",
+    "science": "Para mantener las fibras musculares súper-rápidas (Tipo IIb), que son las primeras en intervenir para evitar una caída libre, no necesitamos pesas pesadas, necesitamos INTENCIÓN de velocidad. La Dosis Mínima Efectiva semanal se basa en la explosividad total del movimiento concéntrico.",
+    "adultRole": "Hoy te quedas en casa. En este circuito corto, cada vez que subas de la silla o subas el escalón, quiero que lo hagas con la máxima explosividad posible, como si quisieras saltar (pero sin despegar los pies).",
+    "familyRole": "Supervisa estrictamente la seguridad. Explosividad no significa descontrol. El impulso hacia arriba es rápido, pero la bajada a la silla debe seguir siendo en 3-4 segundos.",
+    "routine": [
+      "e3ffbfa63eee747e078afba0aacf08c7",
+      "6b6db92b417bf5fd9b8d693624c11776",
+      "d0d486f89a3d324fc431e16a1719a47f"
+    ]
+  },
+  {
+    "id": 67,
+    "week": 10,
+    "day": "Día 67",
+    "title": "Arquitectura Social: El Grupo de Pares",
+    "quote": "Un hábito compartido es un hábito inquebrantable. Suma a alguien a tu equipo.",
+    "scienceTitle": "La Ciencia del Día: El Efecto de Contagio Social",
+    "science": "La investigación del Proyecto Kashiwa revela que los hábitos de salud son contagiosos. Incorporar a 'pares' (amigos o vecinos de edad similar) a la rutina de caminata no solo mejora el estado de ánimo, sino que crea un sentido de 'responsabilidad mutua' (accountability) que blinda la adherencia al programa para cuando el familiar de apoyo no esté disponible.",
+    "adultRole": "Hoy la caminata tendrá invitados. Invita a un amigo, vecino o familiar lejano a caminar con ustedes. Muestra con orgullo tu ritmo y resistencia.",
+    "familyRole": "Facilita la interacción social. Ayuda a coordinar con un vecino o amigo del adulto mayor para que los acompañe. Durante la caminata, camina un poco más atrás y deja que ellos conversen y lideren el paso.",
+    "routine": [
+      "71371caef35b387d714b2a736c888295",
+      "449def500a393c4c829905209a34d976",
+      "597c620c9526bf21a75727dfa34a8dd7"
+    ]
+  },
+  {
+    "id": 68,
+    "week": 10,
+    "day": "Día 68",
+    "title": "Propiocepción Ecológica y Cognicise",
+    "quote": "Entrena tu cuerpo para lo inesperado, y lo inesperado dejará de ser una amenaza.",
+    "scienceTitle": "La Ciencia del Día: Tarea Dual en Terreno Irregular",
+    "science": "Combinar una carga cognitiva (matemáticas o memoria) mientras se camina sobre una superficie irregular (pasto o tierra) es el pináculo de la prevención de caídas. Fuerza al sistema somatosensorial de los tobillos a enviar señales de corrección al cerebro en tiempo real, mientras la corteza prefrontal está distraída.",
+    "adultRole": "Hoy buscaremos caminar sobre pasto o un sendero seguro de tierra. Mientras caminas, tu familiar te pondrá un reto mental. Concéntrate en no perder el ritmo.",
+    "familyRole": "Busca un parque seguro con césped plano. Mientras caminan sobre el césped, pídele que reste de 4 en 4 desde el 60. Si se detiene para pensar, recuérdale seguir moviendo los pies.",
+    "routine": [
+      "cd775d0ba2a173176e3f807c513c7dca",
+      "3a86e096bfa9f49a045ca5800f8f67ac",
+      "3e9c462d1fbe9142552685d38ff70d13"
+    ]
+  },
+  {
+    "id": 69,
+    "week": 10,
+    "day": "Día 69",
+    "title": "Fondo Aeróbico y Mitocondriogénesis",
+    "quote": "La resistencia no se construye en un día, se construye un paso a la vez, manteniendo la marcha cuando otros se detendrían.",
+    "scienceTitle": "La Ciencia del Día: Zona 2 y Densidad Mitocondrial",
+    "science": "Caminar de forma prolongada y continua en la 'Zona 2' aeróbica (donde puedes hablar, pero preferirías no hacerlo constantemente) estimula la 'mitocondriogénesis': la creación de nuevas mitocondrias en las células musculares. Esto retrasa drásticamente la fatiga sistémica y mejora la sensibilidad a la insulina a lo largo del día.",
+    "adultRole": "Hoy es el día de la 'Caminata Larga'. No habrá intervalos rápidos ni juegos mentales. Solo un ritmo constante, fluido y sostenido durante más tiempo que antes.",
+    "familyRole": "Prepara agua para el camino. Lleva un ritmo constante que sea retador pero sostenible. Si ves signos de fatiga extrema o palidez, haz una pausa. Celebra el logro de resistencia.",
+    "routine": [
+      "a2ab59dc31497f899d1cad9216bd5359",
+      "efb3951968c3d8698941c08b23e6c7b2",
+      "89ad9bcdcb958f37da70e7049c6dd8ea"
+    ]
+  },
+  {
+    "id": 70,
+    "week": 10,
+    "day": "Día 70",
+    "title": "Regeneración y Lubricación Articular",
+    "quote": "Tu cuerpo ha trabajado como una máquina perfecta durante 70 días. Hoy, honramos ese esfuerzo con descanso.",
+    "scienceTitle": "La Ciencia del Día: Líquido Sinovial y Reposo",
+    "science": "El ejercicio de ayer fue el de mayor volumen hasta la fecha. Hoy las articulaciones de carga (rodillas, caderas) necesitan reabsorber nutrientes y distribuir el líquido sinovial. El descanso activo (movimientos muy ligeros sin impacto) asegura que este lubricante natural mantenga los cartílagos sanos y sin fricción excesiva.",
+    "adultRole": "Misión de hoy: descanso absoluto de rutinas estructuradas. Si sientes rigidez muscular, muévete despacio por la casa, pero no hagas ejercicio formal.",
+    "familyRole": "Día de revisión. Cumplen 70 días de programa ininterrumpido. Asegura que la alimentación de hoy sea antiinflamatoria (vegetales, omega-3, buena proteína) para sanar los tejidos.",
+    "routine": [
+      "a48527bef905e0e877092c2cd4da5017",
+      "02819cc2db0dd34a4680796a79ed2901",
+      "644272bf08798821d2b4988de5d86870"
+    ]
+  }
 ]

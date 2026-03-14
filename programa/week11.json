@@ -1,198 +1,114 @@
 [
-    {
-        "id": 71,
-        "week": 11,
-        "day": "Día 71",
-        "title": "El Entorno como Gimnasio",
-        "quote": "El mundo entero está diseñado para mantenerte fuerte, solo necesitas aprender a usarlo.",
-        "scienceTitle": "La Ciencia del Día: Variabilidad Motora y Mobiliario Urbano",
-        "science": "Realizar ejercicios siempre en la misma silla de casa vuelve al cuerpo muy eficiente, pero el mundo real es impredecible. Al utilizar el mobiliario urbano (una banca del parque, un pequeño bordillo) introducimos 'variabilidad motora'. El cerebro debe recalcular la altura, la textura y el equilibrio, fortaleciendo la neuroplasticidad espacial.",
-        "adultRole": "Hoy saldremos al parque o a la calle. Utilizaremos las bancas para hacer nuestros levantamientos. Siente cómo cambia la altura y el soporte comparado con tu silla de casa.",
-        "familyRole": "Busca un parque seguro. Asegúrate de que las bancas que usen estén secas y firmes. Sé el 'spotter' (cuidador) ubicándote cerca en caso de que la altura diferente lo desequilibre al inicio.",
-        "routine": [
-            {
-                "phase": "1. Caminata de Calentamiento",
-                "details": "Caminata de 10 minutos a paso conversacional hasta llegar a un parque o plaza que tenga bancas seguras.",
-                "image": ""
-            },
-            {
-                "phase": "2. Samurái Urbano (Banca de Parque)",
-                "details": "En una banca firme: 8 levantamientos rápidos. Al bajar, hazlo en 3 segundos. Presta mucha atención porque la altura de la banca puede ser diferente a la de tu silla habitual.",
-                "image": ""
-            },
-            {
-                "phase": "3. Step-ups de Bordillo",
-                "details": "Busca un bordillo (banqueta) bajo y seguro, preferiblemente apoyado de un poste o de la mano del familiar. Sube y baja 10 veces por pierna para activar la propiocepción en exteriores.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 72,
-        "week": 11,
-        "day": "Día 72",
-        "title": "Micro-HIIT Nivel 6 y Reserva Cardíaca",
-        "quote": "Ese latido fuerte que sientes no es fatiga, es la vida bombeando con más fuerza que nunca.",
-        "scienceTitle": "La Ciencia del Día: Frecuencia Cardíaca de Reserva",
-        "science": "La Frecuencia Cardíaca de Reserva es la diferencia entre tu pulso en reposo y tu pulso máximo. Con la edad y el sedentarismo, este 'colchón de energía' se encoge. Al exigirle al corazón ráfagas controladas y frecuentes de velocidad, ampliamos esta reserva, dándote la capacidad de subir escaleras o apresurar el paso sin sentir que te falta el aire.",
-        "adultRole": "Hoy el corazón va a latir con alegría. Camina con una postura muy erguida para permitir que tus pulmones se expandan al máximo durante los intervalos de velocidad.",
-        "familyRole": "Marcarás los tiempos. Este es el nivel más alto de Micro-HIIT del programa. Vigila el color de su piel y su respiración. Si el esfuerzo es excesivo, reduce la velocidad del intervalo rápido.",
-        "routine": [
-            {
-                "phase": "1. Calentamiento Progresivo",
-                "details": "10 minutos de caminata suave, haciendo respiraciones profundas (inhalar por la nariz, exhalar por la boca de forma audible).",
-                "image": ""
-            },
-            {
-                "phase": "2. Micro-HIIT Nivel 6",
-                "details": "Alterna: 2 MINUTOS de caminata MUY RÁPIDA (máximo braceo) seguidos de 2 MINUTOS de recuperación lenta. Al igualar el tiempo de esfuerzo y recuperación, el reto es mayor. Repite 5 veces totales.",
-                "image": ""
-            },
-            {
-                "phase": "3. Retorno Venoso Acostado",
-                "details": "Al regresar a casa, recuéstate en el sofá o en la cama y eleva las piernas (apoyadas en cojines) durante 5 minutos para facilitar el retorno de la sangre al corazón.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 73,
-        "week": 11,
-        "day": "Día 73",
-        "title": "MED: Potencia Unilateral Intensa",
-        "quote": "A veces para avanzar con fuerza, debes confiar todo tu peso en un solo paso.",
-        "scienceTitle": "La Ciencia del Día: El Déficit Bilateral",
-        "science": "El 'déficit bilateral' es un fenómeno neurológico: la fuerza combinada de ambas piernas juntas es menor que la suma de la fuerza de cada pierna trabajando por separado. Trabajar una sola pierna a la vez (unilateral) envía un impulso nervioso más potente y concentrado, logrando mantener la masa muscular (MED) en mucho menos tiempo.",
-        "adultRole": "Hoy es día de mantenimiento de potencia en casa. Nos concentraremos mucho en subir los escalones. El empuje debe ser como el de un pistón rápido y potente.",
-        "familyRole": "Supervisa estrictamente el ejercicio del escalón. La rodilla de apoyo no debe temblar. Si duele, que el adulto mayor no empuje tan fuerte, pero que mantenga la intención de velocidad.",
-        "routine": [
-            {
-                "phase": "1. Activación de Core y Tobillos",
-                "details": "De pie, realiza 5 contracciones de abdomen (bracing) y 15 elevaciones de pantorrilla rápidas y explosivas apoyado en el fregadero.",
-                "image": ""
-            },
-            {
-                "phase": "2. Step-ups (Escalón) de Máxima RFD",
-                "details": "En el primer escalón de la escalera y agarrado del barandal. Pisa y empuja tu cuerpo hacia arriba LO MÁS RÁPIDO POSIBLE. Baja en 3 segundos. Haz 12 repeticiones completas con la derecha, descansa, y haz 12 con la izquierda.",
-                "image": ""
-            },
-            {
-                "phase": "3. Ventana Anabólica Express",
-                "details": "Consumir una fuente de proteína rica en Leucina (ej. un batido pequeño, un trozo de queso o pechuga de pollo) dentro de los primeros 15 minutos tras el esfuerzo.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 74,
-        "week": 11,
-        "day": "Día 74",
-        "title": "Cognicise Ecológico: El Supermercado",
-        "quote": "Entrena tu mente en el caos y caminarás por la vida con total serenidad.",
-        "scienceTitle": "La Ciencia del Día: Tarea Dual Ecológica de Evasión",
-        "science": "Los pasillos de un supermercado son el entorno perfecto de 'Interferencia Cognitivo-Motora'. Buscar un producto específico (memoria de trabajo visual) mientras el cuerpo esquiva carritos, cambia de dirección y calcula el espacio de las demás personas, entrena los reflejos de evasión y la priorización postural mejor que cualquier ejercicio en un consultorio.",
-        "adultRole": "Tu tarea hoy no es solo caminar, es buscar. El supermercado será nuestro circuito. Concéntrate en la lista de compras, pero recuerda que no chocar es tu prioridad número uno.",
-        "familyRole": "Asigna pequeñas misiones. 'Ve al pasillo 4 y tráeme una lata de frijoles negros'. Deja que el adulto mayor camine solo (tú a un par de metros detrás), tome decisiones de ruta y navegue el espacio.",
-        "routine": [
-            {
-                "phase": "1. Planificación (Función Ejecutiva)",
-                "details": "Antes de salir, el adulto mayor debe memorizar al menos 3 a 5 artículos de la lista de compras que él será el encargado de buscar.",
-                "image": ""
-            },
-            {
-                "phase": "2. Navegación en el Caos (Supermercado)",
-                "details": "Caminata activa dentro del supermercado por 20 a 30 minutos. El adulto mayor empuja un carrito ligero (apoyo extra) mientras busca los productos, calcula esquinas y evita a otras personas.",
-                "image": ""
-            },
-            {
-                "phase": "3. Tándem Incidental de Regreso",
-                "details": "Al llegar a casa con las compras (carga asimétrica ligera), caminar en tándem por el pasillo para guardar las cosas en la despensa.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 75,
-        "week": 11,
-        "day": "Día 75",
-        "title": "Fondo Aeróbico y Flexibilidad Metabólica",
-        "quote": "La resistencia es la paciencia transformada en energía física.",
-        "scienceTitle": "La Ciencia del Día: Zona 2 y Oxidación de Grasas",
-        "science": "La caminata sostenida e ininterrumpida de más de 40 minutos en Zona 2 entrena al cuerpo para tener 'flexibilidad metabólica': la capacidad de utilizar la grasa almacenada como combustible principal (oxidación lipídica), protegiendo las valiosas reservas de glucógeno y mejorando los marcadores de colesterol.",
-        "adultRole": "Hoy nos enfocaremos en la resistencia a largo plazo. Tu paso debe ser constante, como un metrónomo. Disfruta del paisaje y mantén una respiración calmada por la nariz siempre que sea posible.",
-        "familyRole": "Caminen en una zona que permita largos trayectos sin tener que detenerse por semáforos constantemente. Lleva agua y asegura que el ritmo sea sostenible (Prueba del habla fácil).",
-        "routine": [
-            {
-                "phase": "1. Activación Suave",
-                "details": "5 minutos de rotaciones articulares (cuello, hombros, caderas) para soltar la tensión antes de arrancar.",
-                "image": ""
-            },
-            {
-                "phase": "2. Caminata de Fondo Sostenida",
-                "details": "Caminata continua de 45 a 50 minutos. Evitar pausas. Mantener la postura erguida: el hilo invisible que tira de la coronilla hacia el cielo.",
-                "image": ""
-            },
-            {
-                "phase": "3. Estiramiento Posterior",
-                "details": "Al regresar, apoyar las manos en la pared y estirar intensamente las pantorrillas (30 a 40 segundos por pierna) para evitar que los músculos se acorten por el volumen.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 76,
-        "week": 11,
-        "day": "Día 76",
-        "title": "Sincronía Social y Endorfinas (Kashiwa)",
-        "quote": "El paso más ligero no es el que se da con más fuerza, sino el que se da en buena compañía.",
-        "scienceTitle": "La Ciencia del Día: Endorfinas y Sincronía Grupal",
-        "science": "Caminar en grupo sincroniza no solo los pasos, sino la respiración y el estado de ánimo. El 'efecto de sincronía social' amplifica la liberación de endorfinas (las hormonas de la felicidad) y oxitocina, creando un refuerzo neurológico positivo muy potente que blinda la adherencia al programa frente a episodios de pereza o depresión.",
-        "adultRole": "Hoy volveremos a invitar a alguien a caminar. Trata de acompasar tu ritmo con el de tu compañero. La meta es socializar, reír y disfrutar el movimiento compartido.",
-        "familyRole": "Facilita nuevamente la Arquitectura Social. Organiza una cita para caminar con un vecino, un amigo del adulto mayor o varios familiares. Hagan que sea un evento agradable.",
-        "routine": [
-            {
-                "phase": "1. Caminata Social Sincronizada",
-                "details": "Caminata de 30 minutos en grupo. Intenten mantener un ritmo unificado. La conversación debe fluir libremente. Si hay risas, el objetivo se está cumpliendo.",
-                "image": ""
-            },
-            {
-                "phase": "2. Retracciones Posturales en Marcha",
-                "details": "A mitad de la caminata, recordar al grupo hacer 10 retracciones escapulares (juntar los omóplatos hacia atrás) para evitar que los hombros se encorven hacia adelante.",
-                "image": ""
-            },
-            {
-                "phase": "3. Rehidratación Compartida",
-                "details": "Terminar la caminata tomando un té, agua fresca o un café saludable juntos, reforzando el vínculo social asociado al ejercicio.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 77,
-        "week": 11,
-        "day": "Día 77",
-        "title": "Interocepción y Escaneo Corporal",
-        "quote": "El sabio sabe escuchar los susurros de su cuerpo antes de que se conviertan en gritos.",
-        "scienceTitle": "La Ciencia del Día: La Red Interoceptiva",
-        "science": "La interocepción es la capacidad del cerebro para percibir las señales internas del cuerpo (latidos, tensión muscular, digestión). Un día de reposo consciente con escaneo corporal mejora esta conexión mente-músculo, permitiéndote identificar rigideces sutiles antes de que se conviertan en lesiones, mientras el tejido conectivo se repara por completo.",
-        "adultRole": "Día de absoluto descanso físico. Hoy harás un ejercicio mental: cierra los ojos y recorre tu cuerpo desde los pies hasta la cabeza, notando qué áreas se sienten cansadas o tensas.",
-        "familyRole": "Semana 11 completada con éxito. Asegura que el día sea tranquilo. Revisa si hay quejas de dolor articular para ajustar el volumen la próxima semana. Prepara alimentos ricos en nutrientes regenerativos.",
-        "routine": [
-            {
-                "phase": "1. Ejercicio de Interocepción (Escaneo Corporal)",
-                "details": "Acostado o sentado cómodamente. Cierra los ojos. Enfoca tu atención 10 segundos en tus pies, luego pantorrillas, rodillas, muslos, cadera, y sube hasta el cuello. Solo siente, no juzgues.",
-                "image": ""
-            },
-            {
-                "phase": "2. Masaje o Liberación Suave",
-                "details": "Si en el escaneo detectaste rigidez (ej. en las pantorrillas), masajea suavemente la zona con las manos o aplica una compresa tibia para relajar la fascia.",
-                "image": ""
-            },
-            {
-                "phase": "3. Nutrición Reparadora Continua",
-                "details": "Mantener una ingesta adecuada de proteínas y verduras ricas en fibra para apoyar el sistema digestivo y la reparación celular silenciosa del fin de semana.",
-                "image": ""
-            }
-        ]
-    }
+  {
+    "id": 71,
+    "week": 11,
+    "day": "Día 71",
+    "title": "El Entorno como Gimnasio",
+    "quote": "El mundo entero está diseñado para mantenerte fuerte, solo necesitas aprender a usarlo.",
+    "scienceTitle": "La Ciencia del Día: Variabilidad Motora y Mobiliario Urbano",
+    "science": "Realizar ejercicios siempre en la misma silla de casa vuelve al cuerpo muy eficiente, pero el mundo real es impredecible. Al utilizar el mobiliario urbano (una banca del parque, un pequeño bordillo) introducimos 'variabilidad motora'. El cerebro debe recalcular la altura, la textura y el equilibrio, fortaleciendo la neuroplasticidad espacial.",
+    "adultRole": "Hoy saldremos al parque o a la calle. Utilizaremos las bancas para hacer nuestros levantamientos. Siente cómo cambia la altura y el soporte comparado con tu silla de casa.",
+    "familyRole": "Busca un parque seguro. Asegúrate de que las bancas que usen estén secas y firmes. Sé el 'spotter' (cuidador) ubicándote cerca en caso de que la altura diferente lo desequilibre al inicio.",
+    "routine": [
+      "42380ec38dc93c14b63796ec2810feb5",
+      "b161ef1cb0ad0d16e0ebad8742e473c7",
+      "0d3357198790caa943974ff5d9b6349f"
+    ]
+  },
+  {
+    "id": 72,
+    "week": 11,
+    "day": "Día 72",
+    "title": "Micro-HIIT Nivel 6 y Reserva Cardíaca",
+    "quote": "Ese latido fuerte que sientes no es fatiga, es la vida bombeando con más fuerza que nunca.",
+    "scienceTitle": "La Ciencia del Día: Frecuencia Cardíaca de Reserva",
+    "science": "La Frecuencia Cardíaca de Reserva es la diferencia entre tu pulso en reposo y tu pulso máximo. Con la edad y el sedentarismo, este 'colchón de energía' se encoge. Al exigirle al corazón ráfagas controladas y frecuentes de velocidad, ampliamos esta reserva, dándote la capacidad de subir escaleras o apresurar el paso sin sentir que te falta el aire.",
+    "adultRole": "Hoy el corazón va a latir con alegría. Camina con una postura muy erguida para permitir que tus pulmones se expandan al máximo durante los intervalos de velocidad.",
+    "familyRole": "Marcarás los tiempos. Este es el nivel más alto de Micro-HIIT del programa. Vigila el color de su piel y su respiración. Si el esfuerzo es excesivo, reduce la velocidad del intervalo rápido.",
+    "routine": [
+      "51836a53963a1c19109dfcb684faa276",
+      "2df320bf75ab59445ba556a4e5852a63",
+      "123566990f09f70f63476b6dc1beae39"
+    ]
+  },
+  {
+    "id": 73,
+    "week": 11,
+    "day": "Día 73",
+    "title": "MED: Potencia Unilateral Intensa",
+    "quote": "A veces para avanzar con fuerza, debes confiar todo tu peso en un solo paso.",
+    "scienceTitle": "La Ciencia del Día: El Déficit Bilateral",
+    "science": "El 'déficit bilateral' es un fenómeno neurológico: la fuerza combinada de ambas piernas juntas es menor que la suma de la fuerza de cada pierna trabajando por separado. Trabajar una sola pierna a la vez (unilateral) envía un impulso nervioso más potente y concentrado, logrando mantener la masa muscular (MED) en mucho menos tiempo.",
+    "adultRole": "Hoy es día de mantenimiento de potencia en casa. Nos concentraremos mucho en subir los escalones. El empuje debe ser como el de un pistón rápido y potente.",
+    "familyRole": "Supervisa estrictamente el ejercicio del escalón. La rodilla de apoyo no debe temblar. Si duele, que el adulto mayor no empuje tan fuerte, pero que mantenga la intención de velocidad.",
+    "routine": [
+      "0e9238dbfd6fd367c112a1e9ae09b995",
+      "873ccfafcfc33b99aa269c177fc1390c",
+      "52c2bcc4e98ae1a65f7332df7bb00061"
+    ]
+  },
+  {
+    "id": 74,
+    "week": 11,
+    "day": "Día 74",
+    "title": "Cognicise Ecológico: El Supermercado",
+    "quote": "Entrena tu mente en el caos y caminarás por la vida con total serenidad.",
+    "scienceTitle": "La Ciencia del Día: Tarea Dual Ecológica de Evasión",
+    "science": "Los pasillos de un supermercado son el entorno perfecto de 'Interferencia Cognitivo-Motora'. Buscar un producto específico (memoria de trabajo visual) mientras el cuerpo esquiva carritos, cambia de dirección y calcula el espacio de las demás personas, entrena los reflejos de evasión y la priorización postural mejor que cualquier ejercicio en un consultorio.",
+    "adultRole": "Tu tarea hoy no es solo caminar, es buscar. El supermercado será nuestro circuito. Concéntrate en la lista de compras, pero recuerda que no chocar es tu prioridad número uno.",
+    "familyRole": "Asigna pequeñas misiones. 'Ve al pasillo 4 y tráeme una lata de frijoles negros'. Deja que el adulto mayor camine solo (tú a un par de metros detrás), tome decisiones de ruta y navegue el espacio.",
+    "routine": [
+      "a8c504ae693f78884f343941a518a8ce",
+      "47497621a16fc2b10983f5983a1c5508",
+      "daab5efba582ac504a90648b7f156730"
+    ]
+  },
+  {
+    "id": 75,
+    "week": 11,
+    "day": "Día 75",
+    "title": "Fondo Aeróbico y Flexibilidad Metabólica",
+    "quote": "La resistencia es la paciencia transformada en energía física.",
+    "scienceTitle": "La Ciencia del Día: Zona 2 y Oxidación de Grasas",
+    "science": "La caminata sostenida e ininterrumpida de más de 40 minutos en Zona 2 entrena al cuerpo para tener 'flexibilidad metabólica': la capacidad de utilizar la grasa almacenada como combustible principal (oxidación lipídica), protegiendo las valiosas reservas de glucógeno y mejorando los marcadores de colesterol.",
+    "adultRole": "Hoy nos enfocaremos en la resistencia a largo plazo. Tu paso debe ser constante, como un metrónomo. Disfruta del paisaje y mantén una respiración calmada por la nariz siempre que sea posible.",
+    "familyRole": "Caminen en una zona que permita largos trayectos sin tener que detenerse por semáforos constantemente. Lleva agua y asegura que el ritmo sea sostenible (Prueba del habla fácil).",
+    "routine": [
+      "66595516869fc0390cc9813d1de5aa7a",
+      "4b232f7df371c181d26d9d61e357b22e",
+      "de5729cc48382185cbf4d3adf12f97b1"
+    ]
+  },
+  {
+    "id": 76,
+    "week": 11,
+    "day": "Día 76",
+    "title": "Sincronía Social y Endorfinas (Kashiwa)",
+    "quote": "El paso más ligero no es el que se da con más fuerza, sino el que se da en buena compañía.",
+    "scienceTitle": "La Ciencia del Día: Endorfinas y Sincronía Grupal",
+    "science": "Caminar en grupo sincroniza no solo los pasos, sino la respiración y el estado de ánimo. El 'efecto de sincronía social' amplifica la liberación de endorfinas (las hormonas de la felicidad) y oxitocina, creando un refuerzo neurológico positivo muy potente que blinda la adherencia al programa frente a episodios de pereza o depresión.",
+    "adultRole": "Hoy volveremos a invitar a alguien a caminar. Trata de acompasar tu ritmo con el de tu compañero. La meta es socializar, reír y disfrutar el movimiento compartido.",
+    "familyRole": "Facilita nuevamente la Arquitectura Social. Organiza una cita para caminar con un vecino, un amigo del adulto mayor o varios familiares. Hagan que sea un evento agradable.",
+    "routine": [
+      "3f3ed0d1750c7a4cd8d92b9cfbc19ec5",
+      "2ec2c96c41ed00cf786450e47139a2a7",
+      "9b65ffd7503836b72c43aa862ee70c0d"
+    ]
+  },
+  {
+    "id": 77,
+    "week": 11,
+    "day": "Día 77",
+    "title": "Interocepción y Escaneo Corporal",
+    "quote": "El sabio sabe escuchar los susurros de su cuerpo antes de que se conviertan en gritos.",
+    "scienceTitle": "La Ciencia del Día: La Red Interoceptiva",
+    "science": "La interocepción es la capacidad del cerebro para percibir las señales internas del cuerpo (latidos, tensión muscular, digestión). Un día de reposo consciente con escaneo corporal mejora esta conexión mente-músculo, permitiéndote identificar rigideces sutiles antes de que se conviertan en lesiones, mientras el tejido conectivo se repara por completo.",
+    "adultRole": "Día de absoluto descanso físico. Hoy harás un ejercicio mental: cierra los ojos y recorre tu cuerpo desde los pies hasta la cabeza, notando qué áreas se sienten cansadas o tensas.",
+    "familyRole": "Semana 11 completada con éxito. Asegura que el día sea tranquilo. Revisa si hay quejas de dolor articular para ajustar el volumen la próxima semana. Prepara alimentos ricos en nutrientes regenerativos.",
+    "routine": [
+      "814f8368c0d36d906ca7dd9e5d03e74a",
+      "3699353ed652e72a06b84d735d6f5828",
+      "32cbea203310981024c28b3cf4e2931a"
+    ]
+  }
 ]

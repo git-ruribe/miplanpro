@@ -1,261 +1,114 @@
 [
-    {
-        "id": 22,
-        "week": 4,
-        "day": "Día 22",
-        "title": "Maestría Biomecánica y Preparación",
-        "quote": "La excelencia no es un acto, sino un hábito. Hoy perfeccionamos lo que hemos construido.",
-        "scienceTitle": "La Ciencia del Día: Preparación del Tendón Rotuliano",
-        "science": "Antes de introducir ejercicios de potencia o velocidad (como haremos en la Semana 5), los tendones deben estar preparados para absorber impactos. Mantener la fase excéntrica lenta (los 5 segundos de bajada en la silla) engrosa el tendón rotuliano, creando un 'amortiguador' natural que protegerá tus rodillas en el futuro.",
-        "adultRole": "Hoy el enfoque es 100% en la calidad del movimiento, no en la cantidad. Al sentarte, hazlo tan lento y controlado que casi no se escuche cuando toques la silla.",
-        "familyRole": "Sé un observador crítico pero amable. Fíjate específicamente en las rodillas del adulto mayor al momento de levantarse o sentarse: no deben temblar ni juntarse (valgo de rodilla).",
-        "routine": [
-            {
-                "phase": "1. Movilidad y Activación",
-                "details": "5 minutos de marcha en el lugar levantando las rodillas. Rotaciones de hombros y estiramiento pectoral suave en la esquina de la pared.",
-                "instructions": "1. Inicia marchando en tu propio lugar, levantando las rodillas a un ritmo constante durante 3 minutos. 2. Haz 15 rotaciones de hombros hacia atrás. 3. Ve a una esquina, apoya los antebrazos en las paredes y adelanta ligeramente el pecho para estirar los pectorales durante 20 segundos.",
-                "easier": "Realiza la marcha sentado en una silla elevando las rodillas alternadamente. Cambia el estiramiento de esquina por estiramiento en el marco de una puerta (menos exigente).",
-                "harder": "Durante la marcha, eleva las rodillas por encima de la altura de la cadera (marcha alta) y acompáñala con círculos de brazos simultáneos.",
-                "image": ""
-            },
-            {
-                "phase": "2. Maestría Samurái Rei-ho",
-                "details": "10 repeticiones distribuidas en el día. Conteo estricto: Sube en 2 segundos exhalando, baja en 5 segundos completos inhalando. Brazos cruzados sobre el pecho.",
-                "instructions": "1. Siéntate al borde de la silla con la espalda recta y brazos cruzados. 2. Inhala profundo y sube en 2 segundos exhalando fuertemente. 3. Vuelve a sentarte muy, muy lentamente, contando 5 segundos en tu mente antes de que tus glúteos descansen en la silla. 4. Completa 10 repeticiones a tu propio ritmo a lo largo del día.",
-                "easier": "Baja en 3 o 4 segundos si notas que en el segundo 5 tus piernas tiemblan demasiado o te dejas caer de golpe. Usa una silla ligeramente más alta.",
-                "harder": "Haz las 10 repeticiones seguidas en una sola sesión, asegurándote de no relajar el abdomen en ningún momento.",
-                "image": ""
-            },
-            {
-                "phase": "3. LiFE Incidental (Pantorrillas)",
-                "details": "Al lavarte los dientes o fregar los platos, haz 20 elevaciones de pantorrilla. Sube rápido y baja lento.",
-                "instructions": "1. Apóyate frente a tu lavabo. 2. Empuja explosivamente hacia arriba hasta quedar de puntillas (1 segundo). 3. Baja controladamente (3 segundos). 4. Repítelo 20 veces mientras realizas tu tarea de higiene diaria.",
-                "easier": "Sube a una velocidad normal y realiza solo 10 o 12 repeticiones si 20 genera ardor excesivo en la zona de las pantorrillas.",
-                "harder": "Realiza las elevaciones a una sola pierna: 10 repeticiones con la pierna derecha y 10 con la izquierda, manteniendo la pierna libre en el aire.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 23,
-        "week": 4,
-        "day": "Día 23",
-        "title": "Cognicise Fluido y Agilidad Mental",
-        "quote": "Para mantener el cerebro joven, dale problemas nuevos que resolver. Hoy rompemos el piloto automático.",
-        "scienceTitle": "La Ciencia del Día: Novedad y Reserva Cognitiva",
-        "science": "La neuroplasticidad exige novedad. Si siempre restas de 3 en 3, el cerebro se adapta y el ejercicio pierde eficacia protectora contra el Alzheimer. Al cambiar abruptamente las reglas matemáticas mientras te mueves, forzamos a la corteza prefrontal a recalibrar la atención dividida en tiempo real.",
-        "adultRole": "Hoy cambiamos las reglas del juego. Va a ser difícil y quizás frustrante, pero recuerda que el esfuerzo mental es exactamente lo que construye defensas contra las caídas por distracción.",
-        "familyRole": "Tú diriges la tarea dual hoy. Si la resta de 7 en 7 es muy compleja, bájala a restas de 4 en 4, pero no dejes que use la misma secuencia de la semana pasada.",
-        "routine": [
-            {
-                "phase": "1. Marcha con Reto Matemático (Cognicise)",
-                "details": "Marcha en el lugar. Cuenta hacia atrás restando de 7 en 7, empezando desde el 70 (70, 63, 56...). Hazlo por 2 minutos.",
-                "instructions": "1. Ponte de pie e inicia la marcha levantando rodillas y braceando. 2. El familiar dice 'Setenta'. 3. Tú, sin dejar de marchar, debes decir 'Sesenta y tres', luego 'Cincuenta y seis', y así sucesivamente. 4. Si te atoras, no te detengas físicamente; ríe, pide ayuda con el número y continúa.",
-                "easier": "Cambia la resta a restas de 2 en 2 desde el 50, o de 5 en 5 desde el 100, para disminuir la frustración cognitiva.",
-                "harder": "Resta de 7 en 7 empezando desde el 100 y, cada vez que digas un número impar, da una palmada al aire sin detener el paso.",
-                "image": ""
-            },
-            {
-                "phase": "2. Tándem con Tarea Verbal",
-                "details": "Cruza el pasillo caminando talón-punta. Por cada paso, di una palabra que empiece con la letra 'M'. Al regresar, usa la letra 'P'.",
-                "instructions": "1. Colócate al inicio de tu pasillo. 2. Da un paso en tándem y di 'Mesa'. 3. Da otro paso y di 'Manzana'. Sigue caminando diciendo solo palabras con 'M' hasta llegar al final. 4. Gira, y en el trayecto de regreso haz lo mismo pero con la letra 'P' (Pato, Puerta, etc.).",
-                "easier": "Di cualquier palabra, color o animal en cada paso sin importar la letra con la que empiece.",
-                "harder": "Alterna las letras en cada paso: un paso dices una palabra con 'M', el siguiente paso una con 'P', luego 'M', luego 'P'.",
-                "image": ""
-            },
-            {
-                "phase": "3. Mantenimiento de Fuerza",
-                "details": "5 Step-ups (subir el primer escalón) por cada pierna, enfocándote en empujar desde el talón.",
-                "instructions": "1. Sitúate frente al escalón más bajo de una escalera apoyado en el barandal. 2. Sube el pie derecho y empuja fuerte hacia arriba usando tu talón, no la punta del pie. 3. Sube la pierna izquierda, y luego baja de forma alternada. 4. Haz 5 subidas completas iniciando con la derecha, y 5 con la izquierda.",
-                "easier": "Sostente fuertemente del barandal con ambas manos y sube muy lentamente sin importar la velocidad de empuje.",
-                "harder": "Sube de forma explosiva soltando el aire fuerte, y baja controladamente en 4 segundos sin aferrarte excesivamente al barandal.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 24,
-        "week": 4,
-        "day": "Día 24",
-        "title": "Core Dinámico y Cargas Asimétricas",
-        "quote": "El equilibrio no es quedarse quieto, es saber cómo moverse sin caerse.",
-        "scienceTitle": "La Ciencia del Día: Estabilización Dinámica del Tronco",
-        "science": "Caminar con un peso en un solo lado del cuerpo (carga asimétrica) simula escenarios de la vida real, como llevar las compras. Esto obliga a los músculos oblicuos (laterales del abdomen) y al cuadrado lumbar a contraerse dinámicamente para mantener la columna recta, previniendo los micro-espasmos en la espalda baja.",
-        "adultRole": "Hoy el reto es mantener tus hombros perfectamente nivelados, como si equilibraras un vaso de agua en la cabeza, mientras sostienes peso en una sola mano.",
-        "familyRole": "Proporciona una carga segura (una botella de agua de 1 litro o un paquete de arroz). Camina de frente o al lado de tu familiar para vigilar que no se incline hacia el peso.",
-        "routine": [
-            {
-                "phase": "1. Activación de Core (Bracing)",
-                "details": "Sentado o de pie, tensa el abdomen como si fueras a toser (bracing). Mantén la tensión 5 segundos respirando normal. Repite 5 veces.",
-                "instructions": "1. Coloca las manos a los costados de tu abdomen. 2. Tose una vez para sentir cómo el músculo empuja hacia afuera. 3. Ahora, recrea esa tensión abdominal voluntariamente empujando hacia afuera sin contener la respiración. 4. Mantén el abdomen duro 5 segundos. Relaja. Repite 5 veces.",
-                "easier": "Haz el ejercicio sentado en una silla cómoda y enfócate simplemente en hacer respiraciones profundas diafragmáticas.",
-                "harder": "Haz la maniobra de bracing mientras marchas en tu lugar, manteniendo el abdomen duro y tenso durante 15 segundos continuos.",
-                "image": ""
-            },
-            {
-                "phase": "2. Caminata Tándem Asimétrica",
-                "details": "Camina en tándem por el pasillo sosteniendo tu carga en la mano derecha. Da la vuelta, cambia la carga a la mano izquierda y regresa. (3 vueltas).",
-                "instructions": "1. Toma la botella de agua (o peso designado) solo con la mano derecha, dejando el brazo colgando relajado al costado. 2. Camina en tándem por el pasillo cuidando que tu hombro derecho no caiga por el peso. 3. Al llegar al final, pasa la botella a la mano izquierda, gira y camina de regreso. 4. Completa 3 recorridos completos de ida y vuelta.",
-                "easier": "Usa una carga muy ligera (ej. el control remoto del televisor) o camina en semi-tándem (dejando algo de espacio entre los pies).",
-                "harder": "Usa una botella de 2 litros y, a la mitad del pasillo, detente y mantén el equilibrio sobre un solo pie durante 3 segundos antes de seguir.",
-                "image": ""
-            },
-            {
-                "phase": "3. Levantamientos Samurái",
-                "details": "8 repeticiones a lo largo del día manteniendo la regla de oro: subir rápido exhalando, bajar lento controlando la postura.",
-                "instructions": "1. Desde el borde de la silla y con los brazos cruzados. 2. Activa el bracing (abdomen duro), inhala y sube disparado hacia arriba en 1 a 2 segundos soltando el aire. 3. Toma 5 segundos lentos para bajar. 4. Repite 8 veces en tus momentos libres del día.",
-                "easier": "Ayúdate apoyando las manos sobre tus muslos justo en el momento de despegar de la silla.",
-                "harder": "Baja lentamente y, justo cuando sientas que tus glúteos rozan la tela de la silla, pausa 2 segundos en el aire antes de dejar caer tu peso por completo.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 25,
-        "week": 4,
-        "day": "Día 25",
-        "title": "Desafío Vestibular y Reflejo Ocular",
-        "quote": "Tus ojos y tus pies deben ser mejores amigos. Hoy les enseñamos a trabajar juntos bajo presión.",
-        "scienceTitle": "La Ciencia del Día: El Reflejo Vestíbulo-Ocular (VOR)",
-        "science": "El reflejo vestíbulo-ocular permite mantener la mirada fija en un objeto mientras la cabeza se mueve. Al debilitarse, nos mareamos al girar rápido o al caminar en lugares con mucho estímulo visual (como un supermercado). Estimular el VOR reduce el riesgo de caídas en exteriores.",
-        "adultRole": "Hoy haremos movimientos de cabeza mientras caminas. Si sientes un ligero mareo, detente, respira profundo y mira un punto fijo hasta que pase. Es normal al principio.",
-        "familyRole": "Atención máxima hoy. Colócate a medio metro de distancia. Mientras el adulto mayor camina, llámalo por su nombre o dile 'mira aquí' para forzarlo a girar la cabeza hacia ti rápidamente.",
-        "routine": [
-            {
-                "phase": "1. Calentamiento Visual-Vestibular",
-                "details": "Sentado, estira tu brazo al frente con el pulgar hacia arriba. Sin dejar de mirar tu pulgar, gira la cabeza de lado a lado rápidamente 10 veces.",
-                "instructions": "1. Siéntate con la espalda recta. 2. Estira el brazo derecho al frente y levanta el dedo pulgar a la altura de tus ojos. 3. Fija tu mirada estrictamente en la uña del pulgar. 4. Sin dejar de mirar el pulgar, gira tu cabeza de izquierda a derecha (como diciendo 'no') a una velocidad moderada-rápida 10 veces continuas.",
-                "easier": "Gira la cabeza de manera muy lenta. Detente inmediatamente si sientes mareo o náuseas leves.",
-                "harder": "Mueve la cabeza de arriba a abajo (como asintiendo diciendo 'sí') rápidamente mientras mantienes la mirada clavada en el pulgar.",
-                "image": ""
-            },
-            {
-                "phase": "2. Marcha con Rotación Rápida",
-                "details": "Marcha en tu sitio (levantando rodillas). El familiar indicará '¡Izquierda!' o '¡Derecha!'. Debes girar la cabeza rápidamente hacia ese lado sin dejar de marchar.",
-                "instructions": "1. Ponte de pie y comienza a marchar en tu lugar a buen ritmo. 2. El familiar, que estará frente a ti de forma segura, gritará de forma impredecible '¡Derecha!' o '¡Izquierda!'. 3. Inmediatamente gira tu cabeza hacia el lado indicado (solo la cabeza, el cuerpo sigue al frente) sin dejar de marchar los pies. 4. Vuelve la mirada al frente y espera la siguiente indicación. Haz esto por 2 minutos.",
-                "easier": "Macha muy lento. Cuando el familiar dé la instrucción, puedes detener tus pies un microsegundo, girar la cabeza, y retomar la marcha.",
-                "harder": "El familiar también puede gritar '¡Arriba!' (mirar al techo) o '¡Abajo!' (mirar al piso), requiriendo procesar más direcciones rápidamente.",
-                "image": ""
-            },
-            {
-                "phase": "3. LiFE Incidental Continuo",
-                "details": "Pantorrillas en el lavabo (15 reps) y caminar siempre en tándem en los pasillos angostos.",
-                "instructions": "1. Visita tu lavabo o apoyo de preferencia y haz 15 elevaciones de pantorrilla rápidas. 2. El resto del día, no pases por el pasillo principal de tu casa sin ejecutar la caminata en tándem.",
-                "easier": "Realiza solo 10 elevaciones de pantorrilla y practica el tándem en el pasillo solo una vez por la mañana.",
-                "harder": "Realiza las elevaciones de pantorrilla sosteniéndote del lavabo pero manteniendo los ojos cerrados para exigir más propiocepción.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 26,
-        "week": 4,
-        "day": "Día 26",
-        "title": "Cúspide Metabólica de la Fase 1",
-        "quote": "Has llegado a la cima de la montaña de la adaptación. Mira hacia atrás y observa lo fuerte que te has vuelto.",
-        "scienceTitle": "La Ciencia del Día: Resistencia Mitocondrial",
-        "science": "Las mitocondrias son las 'baterías' de tus células. Al realizar un circuito ininterrumpido que involucra todo el cuerpo, forzamos la creación de nuevas mitocondrias. Esto significa más energía para el día a día y menos fatiga general, combatiendo directamente la debilidad geriátrica.",
-        "adultRole": "Hoy es tu prueba de fuego de la Fase 1. Uniremos todo en un circuito fluido. Mantén una respiración rítmica y confía en el proceso.",
-        "familyRole": "Prepara agua y asegura el área. Serás el 'coach' motivacional. Anota el tiempo que tardan en completar el circuito, servirá como línea base para el futuro.",
-        "routine": [
-            {
-                "phase": "1. Movilidad y Preparación",
-                "details": "5 minutos de balanceos articulares, giros de torso y marcha suave.",
-                "instructions": "1. Haz círculos lentos con hombros, rodillas (suavemente) y tobillos. 2. Apoyado, realiza 10 balanceos de cada pierna adelante y atrás. 3. Marcha en tu propio lugar por 2 minutos respirando profundo, inflando el pecho.",
-                "easier": "Realiza la rutina de movilidad sentado cómodamente, estirando las piernas alternadamente al frente y moviendo el torso.",
-                "harder": "Realiza una marcha rápida y cruza tus brazos frente a tu cuerpo alternando con movimientos amplios.",
-                "image": ""
-            },
-            {
-                "phase": "2. El Gran Circuito LiFE (3 Rondas)",
-                "details": "Sin descanso entre estaciones: 20 Elevaciones de pantorrilla -> 1 Vuelta de pasillo en tándem -> 10 Step-ups por pierna -> 8 Levantamientos Samurái. Descansa 2 minutos. Repite hasta lograr 3 rondas totales.",
-                "instructions": "1. Ve al lavabo y haz 20 pantorrillas. 2. Inmediatamente camina tu pasillo ida y vuelta en tándem. 3. Ve a las escaleras y sube/baja 10 veces por cada pierna. 4. Ve a tu silla y levántate 8 veces (rápido arriba, lento abajo). 5. ¡Eso es una ronda! Siéntate a descansar 2 minutos y repite hasta completar 3 rondas.",
-                "easier": "Haz solamente 2 rondas en lugar de 3, y descansa 3 minutos completos (o lo que necesites) sentado entre cada ronda.",
-                "harder": "Reduce el tiempo de descanso al final de cada ronda a solo 1 minuto, obligando a tu corazón y pulmones a recuperar el aliento mucho más rápido.",
-                "image": ""
-            },
-            {
-                "phase": "3. Regreso a la Calma",
-                "details": "Caminata lenta por la casa durante 2 minutos, inhalando profundamente por la nariz y exhalando largo por la boca.",
-                "instructions": "1. Al terminar la última ronda, no te sientes de inmediato. 2. Camina muy lentamente por la sala o comedor. 3. Inhala por la nariz inflando el estómago y sopla el aire por la boca largamente durante unos 2 a 3 minutos hasta que tu corazón se calme.",
-                "easier": "Siéntate inmediatamente a hacer respiración diafragmática si sientes mareos o fatiga excesiva de piernas.",
-                "harder": "Al terminar la caminata lenta de recuperación, añade 3 estiramientos profundos de pantorrillas y cuádriceps sosteniendo cada postura 30 segundos.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 27,
-        "week": 4,
-        "day": "Día 27",
-        "title": "Graduación de Fase y Arquitectura Social",
-        "quote": "Celebra cada pequeña victoria, pues son los ladrillos con los que construyes un futuro independiente.",
-        "scienceTitle": "La Ciencia del Día: Dopamina y Consolidación del Hábito",
-        "science": "El reconocimiento social y la celebración genuina de un logro liberan dopamina en el cerebro. Este neurotransmisor no solo causa pleasure, sino que consolida neurológicamente la ruta del hábito, asegurando que el ejercicio deje de ser un esfuerzo consciente y se convierta en una necesidad biológica adquirida.",
-        "adultRole": "Siéntete profundamente orgulloso. Piensa en cómo te sentías el Día 0 al hacer el test de la silla y compáralo con el circuito que lograste ayer.",
-        "familyRole": "Hoy es un día de celebración genuina. Organiza un café especial, inviten a otro familiar y hablen explícitamente sobre el progreso físico y emocional que han logrado en estas 4 semanas.",
-        "routine": [
-            {
-                "phase": "1. Evaluación y Coaching Retrospectivo",
-                "details": "Siéntense juntos. Revisen los resultados del test TUG y SPPB del Día 0. Reconozcan el compromiso mantenido durante 28 días.",
-                "instructions": "1. Saca la hoja donde anotaron los tiempos del Día 0. 2. Platiquen sobre qué ejercicio les parecía imposible hace un mes y cómo lo dominan ahora. 3. Reconozcan la disciplina del adulto mayor y el esfuerzo del familiar por apoyarlo.",
-                "easier": "Tengan una charla casual y positiva de 5 minutos mientras toman una bebida caliente, sin necesidad de sacar papeleo médico.",
-                "harder": "Anoten en un diario personal o en un pizarrón en casa los 3 nuevos objetivos o 'superpoderes' que desean alcanzar en la Fase 2.",
-                "image": ""
-            },
-            {
-                "phase": "2. Caminata de Celebración (30 minutos)",
-                "details": "Salgan a caminar por un entorno agradable (parque, zona peatonal). Disfruten del aire libre, caminen a buen ritmo y mantengan una plática positiva.",
-                "instructions": "1. Vístanse cómodos y elijan una ruta bonita o su parque favorito. 2. Caminen juntos por 30 minutos a un paso constante pero conversacional. 3. Fomenten la plática, compartan anécdotas o simplemente disfruten del entorno sin preocuparse por la técnica de cada paso.",
-                "easier": "Caminen solo 15 a 20 minutos a un ritmo de paseo (muy relajado), o vayan a un centro comercial llano y seguro.",
-                "harder": "Aceleren el paso deliberadamente durante los últimos 5 minutos de la caminata para sentir cómo el corazón bombea con fuerza y salud antes de llegar a casa.",
-                "image": ""
-            },
-            {
-                "phase": "3. Flexibilidad y Estiramiento Estático",
-                "details": "Al regresar, realiza estiramientos mantenidos de gemelos, cuádriceps (suavemente) y pecho. Mantén cada postura 20 segundos sin rebotar.",
-                "instructions": "1. Estiramiento de pantorrilla: Apoyado en pared, pierna atrás recta, talón al suelo (20 seg por lado). 2. Estiramiento de pecho: En marco de puerta, brazos arriba y adelanta un paso el cuerpo (20 seg). 3. No hagas 'rebotes', solo mantén la tensión estática y respira profundo.",
-                "easier": "Siéntate en una silla, extiende una pierna hacia adelante con el talón en el suelo e inclina tu cuerpo levemente hacia la punta del pie para estirar de forma suave.",
-                "harder": "Aumenta el tiempo de cada estiramiento de 20 segundos a 40 segundos por grupo muscular, exigiendo una mayor relajación fascial profunda.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 28,
-        "week": 4,
-        "day": "Día 28",
-        "title": "Descanso Estratégico y Transición",
-        "quote": "Para saltar más alto, a veces necesitas retroceder un paso. Descansa, que mañana iniciamos una nueva etapa.",
-        "scienceTitle": "La Ciencia del Día: Supercompensación y Transición de Fase",
-        "science": "El principio de supercompensación dicta que tras un periodo continuo de estrés físico (4 semanas), el cuerpo necesita un descanso profundo para regenerar los sistemas energéticos y construir más músculo del que tenía originalmente. Este descanso nos prepara fisiológicamente para la Fase 2: 'Entrenamiento de Potencia'.",
-        "adultRole": "Tu única obligación física de hoy es descansar completamente. Permite que tus músculos, tendones y tu mente se recuperen para el siguiente nivel.",
-        "familyRole": "Revisión logística para la Semana 5. Hablaremos de potenciar la nutrición y aumentar un poco la intensidad. Planifica la lista de compras asegurando mucha proteína y alimentos antiinflamatorios (omega 3, vegetales oscuros).",
-        "routine": [
-            {
-                "phase": "1. Reposo Total Activo",
-                "details": "Evita los ejercicios estructurados. Mantén únicamente tus hábitos LiFE más básicos si te nacen de forma natural.",
-                "instructions": "1. No hagas circuitos, escalones ni caminatas largas forzadas. 2. Deja que tu cuerpo dicte el ritmo del día. 3. Si tienes que caminar por el pasillo y naturalmente quieres hacer unos pasos en tándem, hazlo, pero no por obligación.",
-                "easier": "Opta por un descanso pasivo absoluto. Pasa tiempo leyendo, viendo televisión, conversando o en un pasatiempo sentado.",
-                "harder": "Realiza un 'paseo libre' de 10 minutos (ej. salir a la tienda de la esquina o pasear a la mascota) solo para mantener la movilidad sin que se considere 'entrenamiento'.",
-                "image": ""
-            },
-            {
-                "phase": "2. Auditoría Nutricional y Suplementación",
-                "details": "Familiar: Revisar que hoy se cumpla la cuota de proteína (1.2 - 1.5g por kg de peso). Si el médico lo aprobó, preparar batidos de proteína para la fase que viene.",
-                "instructions": "1. Revisen la lista del supermercado y aseguren tener pollo, huevos, pescado, yogur griego o legumbres en casa. 2. Preparen la mentalidad para la 'Sinergia Anabólica' que viene la próxima semana, donde comerán proteína inmediatamente después del ejercicio.",
-                "easier": "Enfóquense solamente en que cada comida principal (desayuno, comida y cena) contenga al menos un buen alimento proteico visible en el plato.",
-                "harder": "Midan o registren la ingesta proteica exacta del día en un diario nutricional o aplicación móvil para asegurar matemáticamente que se cumple la meta de gramos por kilo.",
-                "image": ""
-            },
-            {
-                "phase": "3. Preparación Mental para la 'Potencia'",
-                "details": "La próxima semana iniciaremos el modelo Harvard de potencia (movimientos explosivos). Visualiza tu cuerpo reaccionando más rápido que nunca.",
-                "instructions": "1. Toma 2 minutos y reflexiona sobre la diferencia entre 'fuerza' (levantar peso) y 'potencia' (hacerlo rápido). 2. Acepta que a partir de mañana te pediremos que seas veloz y explosivo al ponerte de pie. Tu cuerpo ya está listo para esto.",
-                "easier": "Simplemente relájate escuchando música, o realiza alguna actividad recreativa desestresante sin pensar en el entrenamiento de mañana.",
-                "harder": "Vean juntos algún video en internet sobre el test 'Sit to stand en adultos mayores' para inspirarse visualmente sobre cómo se ejecutan los levantamientos veloces.",
-                "image": ""
-            }
-        ]
-    }
+  {
+    "id": 22,
+    "week": 4,
+    "day": "Día 22",
+    "title": "Maestría Biomecánica y Preparación",
+    "quote": "La excelencia no es un acto, sino un hábito. Hoy perfeccionamos lo que hemos construido.",
+    "scienceTitle": "La Ciencia del Día: Preparación del Tendón Rotuliano",
+    "science": "Antes de introducir ejercicios de potencia o velocidad (como haremos en la Semana 5), los tendones deben estar preparados para absorber impactos. Mantener la fase excéntrica lenta (los 5 segundos de bajada en la silla) engrosa el tendón rotuliano, creando un 'amortiguador' natural que protegerá tus rodillas en el futuro.",
+    "adultRole": "Hoy el enfoque es 100% en la calidad del movimiento, no en la cantidad. Al sentarte, hazlo tan lento y controlado que casi no se escuche cuando toques la silla.",
+    "familyRole": "Sé un observador crítico pero amable. Fíjate específicamente en las rodillas del adulto mayor al momento de levantarse o sentarse: no deben temblar ni juntarse (valgo de rodilla).",
+    "routine": [
+      "709473c748fb520494ae0e30da78067e",
+      "4296aa02bb52f88caaa2594cba43cb98",
+      "451b7105627388ae76ec5c74eeb0b562"
+    ]
+  },
+  {
+    "id": 23,
+    "week": 4,
+    "day": "Día 23",
+    "title": "Cognicise Fluido y Agilidad Mental",
+    "quote": "Para mantener el cerebro joven, dale problemas nuevos que resolver. Hoy rompemos el piloto automático.",
+    "scienceTitle": "La Ciencia del Día: Novedad y Reserva Cognitiva",
+    "science": "La neuroplasticidad exige novedad. Si siempre restas de 3 en 3, el cerebro se adapta y el ejercicio pierde eficacia protectora contra el Alzheimer. Al cambiar abruptamente las reglas matemáticas mientras te mueves, forzamos a la corteza prefrontal a recalibrar la atención dividida en tiempo real.",
+    "adultRole": "Hoy cambiamos las reglas del juego. Va a ser difícil y quizás frustrante, pero recuerda que el esfuerzo mental es exactamente lo que construye defensas contra las caídas por distracción.",
+    "familyRole": "Tú diriges la tarea dual hoy. Si la resta de 7 en 7 es muy compleja, bájala a restas de 4 en 4, pero no dejes que use la misma secuencia de la semana pasada.",
+    "routine": [
+      "4db383f045b636cea089c4fbf913d068",
+      "176266842691d2c77ef0f6734e23e78f",
+      "1f4c7338412e147ea73ae5beddfb415c"
+    ]
+  },
+  {
+    "id": 24,
+    "week": 4,
+    "day": "Día 24",
+    "title": "Core Dinámico y Cargas Asimétricas",
+    "quote": "El equilibrio no es quedarse quieto, es saber cómo moverse sin caerse.",
+    "scienceTitle": "La Ciencia del Día: Estabilización Dinámica del Tronco",
+    "science": "Caminar con un peso en un solo lado del cuerpo (carga asimétrica) simula escenarios de la vida real, como llevar las compras. Esto obliga a los músculos oblicuos (laterales del abdomen) y al cuadrado lumbar a contraerse dinámicamente para mantener la columna recta, previniendo los micro-espasmos en la espalda baja.",
+    "adultRole": "Hoy el reto es mantener tus hombros perfectamente nivelados, como si equilibraras un vaso de agua en la cabeza, mientras sostienes peso en una sola mano.",
+    "familyRole": "Proporciona una carga segura (una botella de agua de 1 litro o un paquete de arroz). Camina de frente o al lado de tu familiar para vigilar que no se incline hacia el peso.",
+    "routine": [
+      "e9b5f3ad412550dbdf34f512368d8b9d",
+      "b0e19510fa6da81eca7fd0629f7c4394",
+      "65773f297505bd3bab6a79175b45a361"
+    ]
+  },
+  {
+    "id": 25,
+    "week": 4,
+    "day": "Día 25",
+    "title": "Desafío Vestibular y Reflejo Ocular",
+    "quote": "Tus ojos y tus pies deben ser mejores amigos. Hoy les enseñamos a trabajar juntos bajo presión.",
+    "scienceTitle": "La Ciencia del Día: El Reflejo Vestíbulo-Ocular (VOR)",
+    "science": "El reflejo vestíbulo-ocular permite mantener la mirada fija en un objeto mientras la cabeza se mueve. Al debilitarse, nos mareamos al girar rápido o al caminar en lugares con mucho estímulo visual (como un supermercado). Estimular el VOR reduce el riesgo de caídas en exteriores.",
+    "adultRole": "Hoy haremos movimientos de cabeza mientras caminas. Si sientes un ligero mareo, detente, respira profundo y mira un punto fijo hasta que pase. Es normal al principio.",
+    "familyRole": "Atención máxima hoy. Colócate a medio metro de distancia. Mientras el adulto mayor camina, llámalo por su nombre o dile 'mira aquí' para forzarlo a girar la cabeza hacia ti rápidamente.",
+    "routine": [
+      "97bdb6680ebcd28616f53428be4e24da",
+      "522de2c4c3d23be50ab460a0c7c0607b",
+      "8649ac9c2530df3f9e43443725f38adf"
+    ]
+  },
+  {
+    "id": 26,
+    "week": 4,
+    "day": "Día 26",
+    "title": "Cúspide Metabólica de la Fase 1",
+    "quote": "Has llegado a la cima de la montaña de la adaptación. Mira hacia atrás y observa lo fuerte que te has vuelto.",
+    "scienceTitle": "La Ciencia del Día: Resistencia Mitocondrial",
+    "science": "Las mitocondrias son las 'baterías' de tus células. Al realizar un circuito ininterrumpido que involucra todo el cuerpo, forzamos la creación de nuevas mitocondrias. Esto significa más energía para el día a día y menos fatiga general, combatiendo directamente la debilidad geriátrica.",
+    "adultRole": "Hoy es tu prueba de fuego de la Fase 1. Uniremos todo en un circuito fluido. Mantén una respiración rítmica y confía en el proceso.",
+    "familyRole": "Prepara agua y asegura el área. Serás el 'coach' motivacional. Anota el tiempo que tardan en completar el circuito, servirá como línea base para el futuro.",
+    "routine": [
+      "fc9f7d91ed5360655397a66aad75db0a",
+      "d1714244ca8862ccceea7e56b14b8524",
+      "d3138841a7413f1424412ebaa16537d3"
+    ]
+  },
+  {
+    "id": 27,
+    "week": 4,
+    "day": "Día 27",
+    "title": "Graduación de Fase y Arquitectura Social",
+    "quote": "Celebra cada pequeña victoria, pues son los ladrillos con los que construyes un futuro independiente.",
+    "scienceTitle": "La Ciencia del Día: Dopamina y Consolidación del Hábito",
+    "science": "El reconocimiento social y la celebración genuina de un logro liberan dopamina en el cerebro. Este neurotransmisor no solo causa pleasure, sino que consolida neurológicamente la ruta del hábito, asegurando que el ejercicio deje de ser un esfuerzo consciente y se convierta en una necesidad biológica adquirida.",
+    "adultRole": "Siéntete profundamente orgulloso. Piensa en cómo te sentías el Día 0 al hacer el test de la silla y compáralo con el circuito que lograste ayer.",
+    "familyRole": "Hoy es un día de celebración genuina. Organiza un café especial, inviten a otro familiar y hablen explícitamente sobre el progreso físico y emocional que han logrado en estas 4 semanas.",
+    "routine": [
+      "d6afc8f2cb18bbc1156a4e7ceb1738cc",
+      "d5d256580c7865339af68e31df9b81a8",
+      "58195fd2df5c458a3db1f797a6e7a1ba"
+    ]
+  },
+  {
+    "id": 28,
+    "week": 4,
+    "day": "Día 28",
+    "title": "Descanso Estratégico y Transición",
+    "quote": "Para saltar más alto, a veces necesitas retroceder un paso. Descansa, que mañana iniciamos una nueva etapa.",
+    "scienceTitle": "La Ciencia del Día: Supercompensación y Transición de Fase",
+    "science": "El principio de supercompensación dicta que tras un periodo continuo de estrés físico (4 semanas), el cuerpo necesita un descanso profundo para regenerar los sistemas energéticos y construir más músculo del que tenía originalmente. Este descanso nos prepara fisiológicamente para la Fase 2: 'Entrenamiento de Potencia'.",
+    "adultRole": "Tu única obligación física de hoy es descansar completamente. Permite que tus músculos, tendones y tu mente se recuperen para el siguiente nivel.",
+    "familyRole": "Revisión logística para la Semana 5. Hablaremos de potenciar la nutrición y aumentar un poco la intensidad. Planifica la lista de compras asegurando mucha proteína y alimentos antiinflamatorios (omega 3, vegetales oscuros).",
+    "routine": [
+      "0131303df01f4b67a7d2a33002c4f4ad",
+      "ee088c770beb504b8a19ff0ac8e3ba5a",
+      "21c20404221d94cef0817fa8f043e6e1"
+    ]
+  }
 ]

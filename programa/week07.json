@@ -1,198 +1,114 @@
 [
-    {
-        "id": 43,
-        "week": 7,
-        "day": "Día 43",
-        "title": "Tasa de Desarrollo de Fuerza (RFD)",
-        "quote": "La fuerza bruta te sostiene, pero la fuerza rápida te salva. Hoy despertamos tus reflejos más veloces.",
-        "scienceTitle": "La Ciencia del Día: RFD (Rate of Force Development)",
-        "science": "La Tasa de Desarrollo de Fuerza (RFD) es la capacidad de generar fuerza en los primeros 200 milisegundos de un movimiento. En la geriatría moderna, la RFD es un predictor de caídas mucho más preciso que la fuerza máxima. Hoy nos enfocamos en que el impulso inicial de tus movimientos sea tan rápido como un relámpago.",
-        "adultRole": "Hoy la intención lo es todo. Al levantarte de la silla o al dar un paso lateral, el primer instante del movimiento debe ser explosivo. Siéntete ligero.",
-        "familyRole": "Tu enfoque hoy es observar la 'chispa' inicial. Anima a tu familiar a 'despegar' de la silla con energía en el primer segundo, cuidando siempre que la bajada siga siendo muy lenta.",
-        "routine": [
-            {
-                "phase": "1. Activación de Fibras Rápidas",
-                "details": "De pie con apoyo. Da golpecitos rápidos con las puntas de los pies en el suelo (como si el suelo quemara) durante 10 segundos. Descansa y repite 3 veces.",
-                "image": ""
-            },
-            {
-                "phase": "2. Rei-ho de Máxima RFD",
-                "details": "8 Levantamientos de silla. Concéntrate exclusivamente en que el primer impulso para despegar los glúteos de la silla sea lo más rápido posible. Baja en 4 segundos.",
-                "image": ""
-            },
-            {
-                "phase": "3. Incrustación LiFE (Pantorrillas Explosivas)",
-                "details": "Al lavar los platos, haz 15 elevaciones de pantorrilla subiendo en menos de 1 segundo a la posición de puntillas.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 44,
-        "week": 7,
-        "day": "Día 44",
-        "title": "Cognicise de Interferencia Categórica",
-        "quote": "Un cerebro que busca respuestas mientras el cuerpo se mueve es un cerebro invencible ante los tropiezos.",
-        "scienceTitle": "La Ciencia del Día: Sobrecarga de la Memoria de Trabajo",
-        "science": "El protocolo HEPOP demuestra que combinar el equilibrio con la recuperación léxica (buscar palabras específicas en la memoria) satura la memoria de trabajo temporalmente. Esto fuerza al cerebelo a automatizar completamente el equilibrio, permitiendo que camines seguro incluso cuando estás profundamente distraído.",
-        "adultRole": "Tu cerebro intentará detener tus pies para poder pensar en las palabras. ¡No lo permitas! Mantén el ritmo de la marcha aunque te tardes en decir la palabra.",
-        "familyRole": "Asignarás categorías. Por ejemplo: 'Países', 'Cosas que hay en una cocina', 'Nombres de mujer'. Si ves que se detiene para pensar, recuérdale: '¡Sigue marchando!'.",
-        "routine": [
-            {
-                "phase": "1. Marcha y Categorías (Cognicise)",
-                "details": "Marcha en el sitio elevando rodillas. El familiar dirá una categoría (ej. 'Frutas'). Por cada 3 pasos que des, debes decir un elemento de esa categoría sin repetir. Hazlo por 3 minutos.",
-                "image": ""
-            },
-            {
-                "phase": "2. Tándem con Deletreo",
-                "details": "Camina en tándem por el pasillo. Mientras lo haces, el familiar te dirá palabras cortas de 4 letras (ej. M-E-S-A) y debes deletrearlas de atrás hacia adelante (A-S-E-M).",
-                "image": ""
-            },
-            {
-                "phase": "3. Pasos Laterales",
-                "details": "10 pasos laterales rápidos a la derecha y 10 a la izquierda para mantener la fuerza del glúteo medio.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 45,
-        "week": 7,
-        "day": "Día 45",
-        "title": "Fuerza Anti-Rotacional y Core Dinámico",
-        "quote": "La estabilidad no es estar rígido como una piedra, es ser flexible como el bambú pero firme en la raíz.",
-        "scienceTitle": "La Ciencia del Día: El Core Anti-Rotacional",
-        "science": "Cuando tropezamos y giramos el cuerpo bruscamente para intentar agarrarnos de algo, a menudo sufrimos tirones en la espalda baja. Entrenar el abdomen de forma 'anti-rotacional' enseña a los músculos oblicuos a frenar fuerzas de giro inesperadas, protegiendo los discos de la columna.",
-        "adultRole": "Hoy usaremos el peso de forma diferente. Sentirás que la botella de agua quiere girar tu cuerpo; tu trabajo con el abdomen es no dejar que eso pase. Mantente viendo al frente.",
-        "familyRole": "Supervisa la postura. La línea de los hombros del adulto mayor debe mantenerse paralela a la pared que tenga enfrente, sin torcerse cuando mueva el peso.",
-        "routine": [
-            {
-                "phase": "1. Bracing con Resistencia",
-                "details": "De pie, tensa el abdomen (bracing). Sostén una botella de agua de 1L o 1.5L con ambas manos al frente (brazos estirados). Mueve la botella lentamente hacia la derecha y luego a la izquierda sin girar el torso. 10 veces.",
-                "image": ""
-            },
-            {
-                "phase": "2. Step-ups (Escalón) de Potencia",
-                "details": "Apoyado en el barandal. Sube al escalón empujando explosivamente. 12 veces por pierna. Sube rápido, baja controlando.",
-                "image": ""
-            },
-            {
-                "phase": "3. Samurái con Carga Ligera",
-                "details": "Haz 8 levantamientos de la silla abrazando la botella de agua contra tu pecho. Sube explosivo, baja lento.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 46,
-        "week": 7,
-        "day": "Día 46",
-        "title": "Agilidad Reactiva: El Reloj",
-        "quote": "La verdadera agilidad es saber hacia dónde ir antes de que el pie toque el suelo.",
-        "scienceTitle": "La Ciencia del Día: Mapeo Espacial y Propiocepción Dinámica",
-        "science": "El ejercicio 'Clock Face Drill' entrena el sistema nervioso para calcular distancias y ángulos en fracciones de segundo. Esto mejora drásticamente el 'paso de recuperación' necesario para evitar caerse si alguien nos empuja accidentalmente en una multitud.",
-        "adultRole": "Imagina que estás de pie en el centro de un reloj gigante. Las 12 están frente a ti, las 3 a tu derecha, las 9 a tu izquierda, y las 6 detrás. Reacciona rápido a la hora que te digan.",
-        "familyRole": "Tú eres quien da la hora. Grita una hora y el adulto mayor debe dar un paso rápido hacia esa dirección y volver al centro. Empieza fácil (12, 3, 9) y luego añade diagonales (2, 10, 4).",
-        "routine": [
-            {
-                "phase": "1. Movilidad y Activación Articular",
-                "details": "Balanceos de pierna en cruz (adelante, atrás, lado, lado). Giros de cadera amplios.",
-                "image": ""
-            },
-            {
-                "phase": "2. El Reloj de Agilidad (Clock Drill)",
-                "details": "De pie en el centro. El familiar grita una hora. Da un paso largo (estocada superficial) hacia esa 'hora', toca con la punta del pie y regresa rápido al centro. Hazlo 20 veces.",
-                "image": ""
-            },
-            {
-                "phase": "3. Tándem Libre Continúo",
-                "details": "Aplica el Método LiFE: todo el día de hoy, los pasillos de tu casa deben caminarse exclusivamente en tándem.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 47,
-        "week": 7,
-        "day": "Día 47",
-        "title": "Cúspide Anabólica de la Fase 2",
-        "quote": "Has forjado un motor V8 dentro de ti. Hoy lo ponemos a prueba y le damos el mejor combustible.",
-        "scienceTitle": "La Ciencia del Día: Tensión Mecánica y Leucina",
-        "science": "Hoy combinaremos todos los estímulos de potencia de la Fase 2 en un solo circuito continuo. Esto maximiza la tensión mecánica en las fibras musculares. Consumir proteínas ricas en Leucina inmediatamente después actúa como la 'llave' que enciende la maquinaria de reparación muscular en su punto de máxima receptividad.",
-        "adultRole": "Este es el entrenamiento más desafiante de fuerza. Mantén la respiración rítmica, la técnica impecable (subir rápido, bajar lento) y no olvides consumir tu proteína al final.",
-        "familyRole": "Ten listo el batido de proteína o comida (ej. huevos o yogur griego) ANTES de empezar. Serás el cronometrador y animador del circuito.",
-        "routine": [
-            {
-                "phase": "1. El Gran Circuito de Potencia (3 Rondas)",
-                "details": "Realiza sin descanso: 10 Pasos del 'Reloj' (combinados) -> 12 Step-ups rápidos por pierna -> 8 Levantamientos Samurái abrazando un peso -> 20 Pantorrillas rápidas. Descansa 2 min entre rondas.",
-                "image": ""
-            },
-            {
-                "phase": "2. Nutrición Inmediata (Estudio OPEN)",
-                "details": "En los primeros 15 minutos post-circuito, consumir 25-30 gramos de proteína para asegurar la hipertrofia geriátrica funcional.",
-                "image": ""
-            },
-            {
-                "phase": "3. Respiración Diafragmática de Cierre",
-                "details": "Sentado, con manos en el abdomen. 2 minutos de respiraciones profundas (inhalar inflando la barriga, exhalar desinflando).",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 48,
-        "week": 7,
-        "day": "Día 48",
-        "title": "Coaching y Consolidación Aeróbica",
-        "quote": "Tus pulmones y tu corazón son la red de transporte que nutre tu fuerza. Mantenlos fuertes y limpios.",
-        "scienceTitle": "La Ciencia del Día: Capacidad Aeróbica (VO2 Max) en Geriatría",
-        "science": "Aunque el VO2 Max disminuye con la edad, el entrenamiento de intervalos (micro-HIIT) puede ralentizar e incluso revertir este declive en adultos mayores. Un corazón fuerte disminuye la percepción de esfuerzo en tareas diarias, haciéndote sentir que tienes más energía para disfrutar tu día.",
-        "adultRole": "Nuestra caminata de hoy será energética. Usa los brazos al caminar. Sentirás calor y respirarás más rápido; es la prueba de que tu capacidad aeróbica está mejorando.",
-        "familyRole": "Sesión de coaching para reflexionar sobre la Fase 2 que termina mañana. ¿Ha notado una respuesta muscular más rápida? En la caminata, maneja los intervalos para que sean seguros pero desafiantes.",
-        "routine": [
-            {
-                "phase": "1. Reflexión de Fase 2 (15 min)",
-                "details": "Discutir los avances en potencia y velocidad de reacción. Reconocer la disciplina para mantener la ventana anabólica (proteínas) tras cada sesión intensa.",
-                "image": ""
-            },
-            {
-                "phase": "2. Caminata Interválica Nivel 3 (Micro-HIIT)",
-                "details": "Caminata de 30 minutos totales. Ciclos de: 2 minutos a ritmo normal, seguidos de 2 minutos a ritmo MUY RÁPIDO (casi a punto de trotar, pero caminando seguro). Repetir hasta completar el tiempo.",
-                "image": ""
-            },
-            {
-                "phase": "3. Estiramientos de Recuperación",
-                "details": "Al finalizar la caminata, estiramientos mantenidos (30 seg) de pantorrillas y cuádriceps (apoyándose de un árbol o pared).",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 49,
-        "week": 7,
-        "day": "Día 49",
-        "title": "Supercompensación y Cierre de Fase 2",
-        "quote": "La obra maestra toma tiempo, y el pincel necesita reposar para dar el trazo final. Hoy descansas, mañana conquistas.",
-        "scienceTitle": "La Ciencia del Día: Alostasis y Transición Cardiovascular",
-        "science": "La alostasis es la forma en que el cuerpo mantiene la estabilidad a través del cambio. Tras 3 semanas de entrenamiento de potencia (Fase 2), tu sistema neuromuscular requiere un 'reseteo' completo. Este día de reposo sella las adaptaciones de fuerza, preparándote para la Fase 3, donde consolidaremos el sistema cardiovascular y la arquitectura social.",
-        "adultRole": "Felicidades. Has terminado la fase más intensa a nivel muscular. Tu única tarea hoy es mantenerte bien hidratado y visualizar el inicio de tu última etapa.",
-        "familyRole": "Día de revisión logística. Asegura que la dieta general esté consolidada. Preparen la mentalidad para la Fase 3, donde buscaremos integrar el ejercicio con entornos sociales (Proyecto Kashiwa).",
-        "routine": [
-            {
-                "phase": "1. Reposo Total Activo",
-                "details": "Evitar cualquier rutina de fuerza o caminatas largas. Mantener únicamente los paseos recreativos cortos si son deseados.",
-                "image": ""
-            },
-            {
-                "phase": "2. Mantenimiento Nutricional y Fascial",
-                "details": "Mantener ingesta de proteínas (huevos, pescado) y alta hidratación para asegurar que la fascia (tejido muscular) se recupere adecuadamente.",
-                "image": ""
-            },
-            {
-                "phase": "3. Cierre y Celebración de la Fase 2",
-                "details": "Familiar y adulto mayor: Chocar esos cinco. Han resucitado el 'Reflejo de Rescate' y mejorado la velocidad muscular. Listos para iniciar la Fase 3.",
-                "image": ""
-            }
-        ]
-    }
+  {
+    "id": 43,
+    "week": 7,
+    "day": "Día 43",
+    "title": "Tasa de Desarrollo de Fuerza (RFD)",
+    "quote": "La fuerza bruta te sostiene, pero la fuerza rápida te salva. Hoy despertamos tus reflejos más veloces.",
+    "scienceTitle": "La Ciencia del Día: RFD (Rate of Force Development)",
+    "science": "La Tasa de Desarrollo de Fuerza (RFD) es la capacidad de generar fuerza en los primeros 200 milisegundos de un movimiento. En la geriatría moderna, la RFD es un predictor de caídas mucho más preciso que la fuerza máxima. Hoy nos enfocamos en que el impulso inicial de tus movimientos sea tan rápido como un relámpago.",
+    "adultRole": "Hoy la intención lo es todo. Al levantarte de la silla o al dar un paso lateral, el primer instante del movimiento debe ser explosivo. Siéntete ligero.",
+    "familyRole": "Tu enfoque hoy es observar la 'chispa' inicial. Anima a tu familiar a 'despegar' de la silla con energía en el primer segundo, cuidando siempre que la bajada siga siendo muy lenta.",
+    "routine": [
+      "f35e72712d0e6714ca95c7d368adfd02",
+      "1f88d4959f070a91326a83265b92823b",
+      "47f63d980d8165e639bc2f092577815f"
+    ]
+  },
+  {
+    "id": 44,
+    "week": 7,
+    "day": "Día 44",
+    "title": "Cognicise de Interferencia Categórica",
+    "quote": "Un cerebro que busca respuestas mientras el cuerpo se mueve es un cerebro invencible ante los tropiezos.",
+    "scienceTitle": "La Ciencia del Día: Sobrecarga de la Memoria de Trabajo",
+    "science": "El protocolo HEPOP demuestra que combinar el equilibrio con la recuperación léxica (buscar palabras específicas en la memoria) satura la memoria de trabajo temporalmente. Esto fuerza al cerebelo a automatizar completamente el equilibrio, permitiendo que camines seguro incluso cuando estás profundamente distraído.",
+    "adultRole": "Tu cerebro intentará detener tus pies para poder pensar en las palabras. ¡No lo permitas! Mantén el ritmo de la marcha aunque te tardes en decir la palabra.",
+    "familyRole": "Asignarás categorías. Por ejemplo: 'Países', 'Cosas que hay en una cocina', 'Nombres de mujer'. Si ves que se detiene para pensar, recuérdale: '¡Sigue marchando!'.",
+    "routine": [
+      "54f420c60a032755872283d7d6ef95bd",
+      "79b8d71b6010c0167322f4b6721e7500",
+      "47031a5c0082ddc2d19adfa30b7af5d6"
+    ]
+  },
+  {
+    "id": 45,
+    "week": 7,
+    "day": "Día 45",
+    "title": "Fuerza Anti-Rotacional y Core Dinámico",
+    "quote": "La estabilidad no es estar rígido como una piedra, es ser flexible como el bambú pero firme en la raíz.",
+    "scienceTitle": "La Ciencia del Día: El Core Anti-Rotacional",
+    "science": "Cuando tropezamos y giramos el cuerpo bruscamente para intentar agarrarnos de algo, a menudo sufrimos tirones en la espalda baja. Entrenar el abdomen de forma 'anti-rotacional' enseña a los músculos oblicuos a frenar fuerzas de giro inesperadas, protegiendo los discos de la columna.",
+    "adultRole": "Hoy usaremos el peso de forma diferente. Sentirás que la botella de agua quiere girar tu cuerpo; tu trabajo con el abdomen es no dejar que eso pase. Mantente viendo al frente.",
+    "familyRole": "Supervisa la postura. La línea de los hombros del adulto mayor debe mantenerse paralela a la pared que tenga enfrente, sin torcerse cuando mueva el peso.",
+    "routine": [
+      "dd6f66de010aaa2fc5e11d5d35510ebe",
+      "5b4c6830ed673661e3d8920f4a15efdd",
+      "f9aa79b4de006b7c1b10bc9973d02cf2"
+    ]
+  },
+  {
+    "id": 46,
+    "week": 7,
+    "day": "Día 46",
+    "title": "Agilidad Reactiva: El Reloj",
+    "quote": "La verdadera agilidad es saber hacia dónde ir antes de que el pie toque el suelo.",
+    "scienceTitle": "La Ciencia del Día: Mapeo Espacial y Propiocepción Dinámica",
+    "science": "El ejercicio 'Clock Face Drill' entrena el sistema nervioso para calcular distancias y ángulos en fracciones de segundo. Esto mejora drásticamente el 'paso de recuperación' necesario para evitar caerse si alguien nos empuja accidentalmente en una multitud.",
+    "adultRole": "Imagina que estás de pie en el centro de un reloj gigante. Las 12 están frente a ti, las 3 a tu derecha, las 9 a tu izquierda, y las 6 detrás. Reacciona rápido a la hora que te digan.",
+    "familyRole": "Tú eres quien da la hora. Grita una hora y el adulto mayor debe dar un paso rápido hacia esa dirección y volver al centro. Empieza fácil (12, 3, 9) y luego añade diagonales (2, 10, 4).",
+    "routine": [
+      "ee3a20c0aad1fe7a0da6e24ff582326b",
+      "4c883e2fafa15d1a4706893f4b47c763",
+      "d57c86d7915f074013110312ef98403f"
+    ]
+  },
+  {
+    "id": 47,
+    "week": 7,
+    "day": "Día 47",
+    "title": "Cúspide Anabólica de la Fase 2",
+    "quote": "Has forjado un motor V8 dentro de ti. Hoy lo ponemos a prueba y le damos el mejor combustible.",
+    "scienceTitle": "La Ciencia del Día: Tensión Mecánica y Leucina",
+    "science": "Hoy combinaremos todos los estímulos de potencia de la Fase 2 en un solo circuito continuo. Esto maximiza la tensión mecánica en las fibras musculares. Consumir proteínas ricas en Leucina inmediatamente después actúa como la 'llave' que enciende la maquinaria de reparación muscular en su punto de máxima receptividad.",
+    "adultRole": "Este es el entrenamiento más desafiante de fuerza. Mantén la respiración rítmica, la técnica impecable (subir rápido, bajar lento) y no olvides consumir tu proteína al final.",
+    "familyRole": "Ten listo el batido de proteína o comida (ej. huevos o yogur griego) ANTES de empezar. Serás el cronometrador y animador del circuito.",
+    "routine": [
+      "c04c518ac87165c54e94eb5cc4c356ad",
+      "8d840597b5401fe381e9c60d125b5446",
+      "e6d9568dd23d02a3c7fcb080dddf0d89"
+    ]
+  },
+  {
+    "id": 48,
+    "week": 7,
+    "day": "Día 48",
+    "title": "Coaching y Consolidación Aeróbica",
+    "quote": "Tus pulmones y tu corazón son la red de transporte que nutre tu fuerza. Mantenlos fuertes y limpios.",
+    "scienceTitle": "La Ciencia del Día: Capacidad Aeróbica (VO2 Max) en Geriatría",
+    "science": "Aunque el VO2 Max disminuye con la edad, el entrenamiento de intervalos (micro-HIIT) puede ralentizar e incluso revertir este declive en adultos mayores. Un corazón fuerte disminuye la percepción de esfuerzo en tareas diarias, haciéndote sentir que tienes más energía para disfrutar tu día.",
+    "adultRole": "Nuestra caminata de hoy será energética. Usa los brazos al caminar. Sentirás calor y respirarás más rápido; es la prueba de que tu capacidad aeróbica está mejorando.",
+    "familyRole": "Sesión de coaching para reflexionar sobre la Fase 2 que termina mañana. ¿Ha notado una respuesta muscular más rápida? En la caminata, maneja los intervalos para que sean seguros pero desafiantes.",
+    "routine": [
+      "224503646a187f939ca49baffd3d1a65",
+      "61fc88904d1be337118e7ac4e2c371fb",
+      "9d86db35998c1fdf43fb91d00d83f0d0"
+    ]
+  },
+  {
+    "id": 49,
+    "week": 7,
+    "day": "Día 49",
+    "title": "Supercompensación y Cierre de Fase 2",
+    "quote": "La obra maestra toma tiempo, y el pincel necesita reposar para dar el trazo final. Hoy descansas, mañana conquistas.",
+    "scienceTitle": "La Ciencia del Día: Alostasis y Transición Cardiovascular",
+    "science": "La alostasis es la forma en que el cuerpo mantiene la estabilidad a través del cambio. Tras 3 semanas de entrenamiento de potencia (Fase 2), tu sistema neuromuscular requiere un 'reseteo' completo. Este día de reposo sella las adaptaciones de fuerza, preparándote para la Fase 3, donde consolidaremos el sistema cardiovascular y la arquitectura social.",
+    "adultRole": "Felicidades. Has terminado la fase más intensa a nivel muscular. Tu única tarea hoy es mantenerte bien hidratado y visualizar el inicio de tu última etapa.",
+    "familyRole": "Día de revisión logística. Asegura que la dieta general esté consolidada. Preparen la mentalidad para la Fase 3, donde buscaremos integrar el ejercicio con entornos sociales (Proyecto Kashiwa).",
+    "routine": [
+      "584917570bd73e3c6ce49b2eef231a0d",
+      "ee9694dae2dba12fcb10b4b1abae6449",
+      "035ea33e351cb6164b2d0a37007b53cb"
+    ]
+  }
 ]

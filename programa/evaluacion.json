@@ -1,0 +1,31 @@
+{
+  "86cdefc05fbd3103afe18de818a1fc4f": {
+    "phase": "1. Evaluación Médica (Red Flags)",
+    "details": "Familiar: Verifica que no haya habido infarto reciente (3-6 meses), presión controlada.",
+    "instructions": "Siéntate con tu familiar. Revisa su historial médico reciente. Tomen la presión arterial si tienen monitor en casa. Pregunta si ha sentido mareos intensos, dolor de pecho o falta de aire inusual en la última semana.",
+    "easier": "Si no tienen equipo de medición, realiza simplemente un cuestionario verbal sobre cómo se ha sentido físicamente en los últimos 7 días.",
+    "harder": "Incluye la medición de la saturación de oxígeno con un oxímetro y anota la frecuencia cardíaca en reposo para tener un registro más completo.",
+    "image": ""
+  },
+  "a35f1cbc049e13ab518e609c423a9f33": {
+    "phase": "2. Valoración Funcional (SPPB - Vivifrail)",
+    "details": "Prueba de Equilibrio: Intenta mantenerte 10 segundos con los pies juntos, semi-tándem y tándem completo.",
+    "instructions": "1. Párate junto a una silla firme o mesa. 2. Junta ambos pies y mantén el equilibrio 10 segundos. 3. Adelanta un pie de modo que el lado de tu talón toque el dedo gordo del otro pie (semi-tándem) por 10 segundos. 4. Coloca el talón de un pie tocando la punta del otro pie (tándem completo) por 10 segundos.",
+    "easier": "Permite que el adulto mayor mantenga una mano ligeramente apoyada en la silla durante las tres posturas para brindarle seguridad psicológica y física.",
+    "harder": "Pide al adulto mayor que cruce los brazos sobre el pecho durante las pruebas para evitar usar los brazos como contrapeso.",
+    "image": ""
+  },
+  "d6afc8f2cb18bbc1156a4e7ceb1738cc": {
+    "phase": "1. Evaluación y Coaching Retrospectivo",
+    "details": "Siéntense juntos. Revisen los resultados del test TUG y SPPB del Día 0. Reconozcan el compromiso mantenido durante 28 días.",
+    "instructions": "1. Saca la hoja donde anotaron los tiempos del Día 0. 2. Platiquen sobre qué ejercicio les parecía imposible hace un mes y cómo lo dominan ahora. 3. Reconozcan la disciplina del adulto mayor y el esfuerzo del familiar por apoyarlo.",
+    "easier": "Tengan una charla casual y positiva de 5 minutos mientras toman una bebida caliente, sin necesidad de sacar papeleo médico.",
+    "harder": "Anoten en un diario personal o en un pizarrón en casa los 3 nuevos objetivos o 'superpoderes' que desean alcanzar en la Fase 2.",
+    "image": ""
+  },
+  "4bc23e97ef89b8aaad852151699f1e4e": {
+    "phase": "1. Evaluación Funcional (SPPB - Batería Corta)",
+    "details": "1) Prueba de Equilibrio: Pies juntos, semi-tándem y tándem completo (medir si logra los 10 segundos). 2) Velocidad de marcha: Cronometrar 4 metros a paso normal.",
+    "image": ""
+  }
+}

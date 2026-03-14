@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Ejercicios | miplan.pro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="css/editor.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1 style="font-size: 1.5rem;">miplan<span>.pro</span> Editor</h1>
+        </div>
+        <div class="header-actions">
+            <button id="export-btn" class="btn btn-accent">
+                <i class="ph ph-file-arrow-up"></i> Exportar JSON
+            </button>
+        </div>
+    </header>
+
+    <div class="editor-layout">
+        <aside class="sidebar">
+            <div class="form-group">
+                <label for="group-select">Grupo de Ejercicios</label>
+                <select id="group-select" class="group-selector">
+                    <option value="" disabled selected>Selecciona un grupo...</option>
+                    <option value="fuerza">Fuerza</option>
+                    <option value="equilibrio">Equilibrio</option>
+                    <option value="movilidad">Movilidad</option>
+                    <option value="evaluacion">Evaluación</option>
+                    <option value="life">Hábitos (LiFE)</option>
+                    <option value="otros">Otros / Coaching</option>
+                </select>
+            </div>
+
+            <input type="text" id="exercise-search" class="search-box" placeholder="Buscar ejercicio...">
+            
+            <ul id="exercise-list" class="exercise-list">
+                <!-- Injected via JS -->
+            </ul>
+        </aside>
+
+        <main class="main-content" id="editor-main">
+            <div id="no-selection" class="empty-state">
+                <i class="ph ph-note-pencil"></i>
+                <p>Selecciona un grupo y un ejercicio para comenzar a editar.</p>
+            </div>
+
+            <div id="editor-form" class="form-card" style="display: none;">
+                <h2 id="form-title" style="margin-bottom: 1.5rem; color: var(--secondary);">Editar Ejercicio</h2>
+                
+                <div class="form-group">
+                    <label>Título / Fase</label>
+                    <input type="text" id="field-phase" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label>Detalles / Descripción</label>
+                    <textarea id="field-details" class="form-control"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Instrucciones</label>
+                    <textarea id="field-instructions" class="form-control" placeholder="1. Paso uno..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Versión más fácil (Easier)</label>
+                    <textarea id="field-easier" class="form-control"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Versión más difícil (Harder)</label>
+                    <textarea id="field-harder" class="form-control"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Imagen (Placeholder/Path)</label>
+                    <input type="text" id="field-image" class="form-control">
+                </div>
+
+                <div class="form-actions">
+                    <span id="save-status" style="margin-right: auto; color: var(--accent); font-size: 0.9rem; font-weight: 500; display: none;">
+                        <i class="ph ph-check-circle"></i> Cambios guardados en memoria
+                    </span>
+                    <button id="discard-btn" class="btn btn-secondary" style="background: #f1f5f9; color: var(--text-main);">Reiniciar</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/editor.js"></script>
+</body>
+</html>

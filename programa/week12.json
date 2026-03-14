@@ -1,198 +1,114 @@
 [
-    {
-        "id": 78,
-        "week": 12,
-        "day": "Día 78",
-        "title": "Cúspide Aeróbica y Capilarización",
-        "quote": "No te detengas cuando estés cansado, detente cuando hayas terminado. La línea de meta está cerca.",
-        "scienceTitle": "La Ciencia del Día: Angiogénesis y Capilarización Muscular",
-        "science": "Después de semanas de trabajo aeróbico y micro-HIIT, tu cuerpo ha comenzado un proceso llamado 'angiogénesis': la creación de nuevos vasos capilares alrededor de tus músculos. Esto significa que ahora la sangre oxigenada fluye más eficientemente hacia tus piernas, permitiéndote caminar distancias que hace tres meses parecían imposibles sin sentir fatiga.",
-        "adultRole": "Hoy haremos nuestra última caminata larga de 'esfuerzo' antes de las evaluaciones finales. Disfruta de la ligereza de tus piernas. Respira profundamente y siente el motor que has construido.",
-        "familyRole": "Acompaña a tu familiar en esta caminata de fondo. Celebren mentalmente el camino recorrido. Monitorea el ritmo, asegurando que sea un reto cardiovascular pero manteniendo una plática fluida.",
-        "routine": [
-            {
-                "phase": "1. Activación Dinámica Total",
-                "details": "5 minutos de rotaciones articulares completas: tobillos, rodillas, caderas, hombros y cuello. Preparando el cuerpo para el fondo aeróbico.",
-                "image": ""
-            },
-            {
-                "phase": "2. Caminata de Fondo (Cúspide)",
-                "details": "Caminata continua de 45 a 50 minutos. Los primeros y últimos 5 minutos son lentos, pero los 40 minutos centrales deben ser a un ritmo constante, vigoroso y decidido.",
-                "image": ""
-            },
-            {
-                "phase": "3. Estiramiento Recompensante",
-                "details": "Al regresar, realizar estiramientos estáticos profundos (30 a 40 segundos) de pantorrillas y pecho apoyándose en la pared.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 79,
-        "week": 12,
-        "day": "Día 79",
-        "title": "Cognicise Maestro: El Reto Dual Final",
-        "quote": "El cuerpo hace lo que la mente manda. Hoy demostramos que ambos están más afilados que nunca.",
-        "scienceTitle": "La Ciencia del Día: Reserva Cognitiva y Automatización",
-        "science": "El objetivo final del protocolo HEPOP es la 'automatización del equilibrio'. Al llevar la tarea matemática y verbal a su nivel más alto de dificultad mientras nos movemos rápido, comprobamos que el cerebelo ya no necesita de la atención consciente para evitar tropezar. Has construido una 'reserva cognitiva' que te protege en situaciones de estrés urbano.",
-        "adultRole": "Hoy pondremos a prueba tu concentración. Marcharás rápido mientras tu cerebro hace cálculos complejos. Si te equivocas en el número, ¡no pares de marchar! El movimiento es lo principal.",
-        "familyRole": "Tú serás el director del juego. Exige velocidad en la marcha (paso rápido en el lugar) y pon tareas matemáticas cruzadas. Mantén un ambiente de juego y reto positivo.",
-        "routine": [
-            {
-                "phase": "1. Marcha Vigorosa Continua",
-                "details": "Empieza a marchar en tu lugar levantando bien las rodillas y usando los brazos. No te detengas durante los próximos 5 minutos.",
-                "image": ""
-            },
-            {
-                "phase": "2. Reto Dual Maestro (Cognicise)",
-                "details": "Mientras marchas: 1) Resta de 3 en 3 desde el 100. 2) Cuando llegues al 70, cambia y deletrea el nombre de 3 de tus familiares al revés. 3) Termina nombrando 5 países que empiecen con 'C'.",
-                "image": ""
-            },
-            {
-                "phase": "3. Integración LiFE Rápida",
-                "details": "Dirígete al lavabo caminando en tándem y realiza 15 elevaciones de pantorrilla a máxima velocidad.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 80,
-        "week": 12,
-        "day": "Día 80",
-        "title": "Potencia Funcional Definitiva (MED)",
-        "quote": "La fuerza no proviene de la capacidad física, sino de una voluntad indomable entrenada día a día.",
-        "scienceTitle": "La Ciencia del Día: Sincronización de Unidades Motoras",
-        "science": "Al inicio del programa, tus músculos temblaban al levantarse porque las fibras musculares 'disparaban' a destiempo. Tras 12 semanas, tu sistema nervioso ha logrado la 'sincronización de unidades motoras': ahora todas las fibras se contraen al unísono. Esto produce la potencia explosiva, el verdadero seguro contra caídas.",
-        "adultRole": "Este es nuestro último circuito de fuerza del programa formal. Quiero que cada levantamiento que hagas hoy sea un testimonio de la fuerza que has recuperado. Máxima explosividad hacia arriba.",
-        "familyRole": "Asegura el área. Observa la diferencia entre este día y el Día 0. Anímalo a que los levantamientos de la silla y el escalón sean rápidos, seguros y llenos de energía.",
-        "routine": [
-            {
-                "phase": "1. Bracing y Calentamiento",
-                "details": "5 contracciones de abdomen (bracing) profundo y 10 estocadas muy cortas para calentar rodillas y glúteos.",
-                "image": ""
-            },
-            {
-                "phase": "2. Circuito Definitivo de Potencia (3 Rondas)",
-                "details": "Realiza sin pausa: 12 Step-ups rápidos por pierna -> 10 Pasos laterales explosivos por lado -> 8 Levantamientos Samurái a máxima velocidad de despegue. Descanso de 90 segundos entre rondas.",
-                "image": ""
-            },
-            {
-                "phase": "3. Nutrición de Victoria",
-                "details": "Consumir una fuente alta en proteínas (ej. batido, atún, pechuga) inmediatamente al terminar para cerrar tu última ventana anabólica formal.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 81,
-        "week": 12,
-        "day": "Día 81",
-        "title": "Kashiwa y el Relevo (Mentoring Comunitario)",
-        "quote": "El mejor líder no es el que crea seguidores, sino el que crea más líderes.",
-        "scienceTitle": "La Ciencia del Día: Identidad de Rol en Gerontología",
-        "science": "El éxito supremo del Proyecto Kashiwa fue transformar a los 'pacientes' en 'promotores de salud' en sus comunidades. Al asumir el rol de enseñar a otros, se genera un cambio en la identidad psicosocial. Ya no eres alguien 'que necesita ejercicio', eres 'alguien que inspira a otros a ser fuertes'.",
-        "adultRole": "Hoy no solo caminarás. Tu misión es inspirar. Saldrás a caminar con alguien (un amigo, vecino o familiar) que necesite empezar a moverse, y le explicarás los beneficios de lo que has hecho.",
-        "familyRole": "Organiza esta 'caminata de relevo'. Inviten a un amigo del adulto mayor que lleve una vida sedentaria. Deja que tu familiar tome la batuta, le enseñe a marchar y lo anime a mejorar su salud.",
-        "routine": [
-            {
-                "phase": "1. El Encuentro y la Demostración",
-                "details": "Reúnete con tu invitado. Muéstrale cómo te levantas de la silla sin usar las manos (técnica Samurái) y explícale que él también puede lograrlo.",
-                "image": ""
-            },
-            {
-                "phase": "2. Caminata de Liderazgo Comunitario",
-                "details": "Caminata de 30 minutos a paso conversacional. El adulto mayor debe marcar el ritmo y compartir anécdotas de cómo superar el cansancio inicial de las primeras semanas.",
-                "image": ""
-            },
-            {
-                "phase": "3. Regreso y Compromiso",
-                "details": "Al terminar, invita a esa persona a unirse a caminatas futuras, consolidando el tejido social y tu propio hábito para los años venideros.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 82,
-        "week": 12,
-        "day": "Día 82",
-        "title": "Alostasis y Preparación Final",
-        "quote": "El silencio antes de la ovación. Hoy tu cuerpo asimila todo el trabajo de los últimos tres meses.",
-        "scienceTitle": "La Ciencia del Día: Consolidación de la Memoria Motora",
-        "science": "La memoria motora (los nuevos reflejos rápidos y el equilibrio automático) no se guarda en el cerebro mientras hacemos el ejercicio, sino durante los periodos de inactividad que le siguen. Este día de reposo permite que el hipocampo y la corteza motora 'graben en piedra' todas las ganancias neurológicas antes de la prueba final.",
-        "adultRole": "Mañana será un día emocionante: repetiremos las pruebas del Día 0. Por lo tanto, hoy tu única misión es descansar, hidratarte perfectamente y dormir bien.",
-        "familyRole": "Día de logística. Imprime o ten a la mano los resultados que anotaron en el Día 0. Asegura que el adulto mayor tenga una cena nutritiva, ligera y que descanse adecuadamente.",
-        "routine": [
-            {
-                "phase": "1. Reposo Somatosensorial",
-                "details": "Día de inactividad física planificada. Evitar largas caminatas o esfuerzos de fuerza. Limitarse a las actividades normales de la casa.",
-                "image": ""
-            },
-            {
-                "phase": "2. Visualización Positiva",
-                "details": "Por la tarde, cierra los ojos durante 5 minutos y visualiza lo fácil que será levantarte de la silla mañana o caminar la distancia de la prueba.",
-                "image": ""
-            },
-            {
-                "phase": "3. Hidratación y Nutrición",
-                "details": "Asegurar el consumo de al menos 1.5 a 2 litros de agua para garantizar que los músculos y articulaciones estén perfectamente lubricados para la evaluación.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 83,
-        "week": 12,
-        "day": "Día 83",
-        "title": "La Re-Evaluación Clínica (El Nuevo Día 0)",
-        "quote": "No puedes saber lo lejos que has llegado hasta que miras el punto desde donde partiste.",
-        "scienceTitle": "La Ciencia del Día: Biomarcadores Funcionales de Envejecimiento",
-        "science": "Las pruebas SPPB y TUG no son solo ejercicios; son biomarcadores internacionalmente validados de tu edad biológica funcional. Un aumento en la velocidad de la marcha o en la capacidad de levantarse de la silla se correlaciona directamente con años adicionales de vida independiente, menor riesgo de hospitalización y mayor supervivencia global.",
-        "adultRole": "Hoy haremos exactamente las mismas pruebas que el Día 0. Da tu mejor esfuerzo, pero mantén la calma. Vas a sorprenderte de lo que tu cuerpo es capaz de hacer ahora.",
-        "familyRole": "Toma tu cronómetro y la hoja de resultados del Día 0. Serás el evaluador clínico. Crea un ambiente seguro y profesional, y anota los tiempos con precisión.",
-        "routine": [
-            {
-                "phase": "1. Evaluación Funcional (SPPB - Batería Corta)",
-                "details": "1) Prueba de Equilibrio: Pies juntos, semi-tándem y tándem completo (medir si logra los 10 segundos). 2) Velocidad de marcha: Cronometrar 4 metros a paso normal.",
-                "image": ""
-            },
-            {
-                "phase": "2. Prueba de Potencia de Piernas",
-                "details": "Cronometrar cuánto tarda el adulto mayor en levantarse y sentarse 5 veces de una silla con los brazos cruzados. ¡Compara este tiempo con el del Día 0!",
-                "image": ""
-            },
-            {
-                "phase": "3. Riesgo de Caídas (Test TUG)",
-                "details": "Cronometrar: Sentado, dar la señal de inicio, levantarse, caminar 3 metros, dar la vuelta, regresar y sentarse. Un tiempo menor a 12 segundos indica una movilidad excelente e independencia total.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 84,
-        "week": 12,
-        "day": "Día 84",
-        "title": "Graduación y el Hábito de por Vida",
-        "quote": "Esto no es el final de un programa médico, es el primer día del resto de tu vida activa y libre.",
-        "scienceTitle": "La Ciencia del Día: Epigenética y Longevidad",
-        "science": "En estas 12 semanas no solo cambiaste tus músculos, cambiaste la expresión de tus genes (epigenética). Has activado vías de longevidad que suprimen la inflamación y retrasan el envejecimiento celular. El objetivo ahora es mantener este 'estado de salud' perpetuamente, haciendo que el Método LiFE, las caminatas y la nutrición sean tan naturales como respirar.",
-        "adultRole": "¡Felicidades! Te has graduado del programa. Has recuperado tu autonomía. Tu misión ahora es no dejar que este motor se apague. Mantén las caminatas sociales, los levantamientos rápidos (Samurái) y tu hidratación.",
-        "familyRole": "Es momento de celebrar el éxito absoluto. Analicen juntos los números de ayer. Han disminuido el riesgo de caídas y la fragilidad dramáticamente. Establezcan un 'Plan de Mantenimiento' sencillo y permanente.",
-        "routine": [
-            {
-                "phase": "1. Análisis de Resultados y Reconocimiento",
-                "details": "Siéntense a ver la mejora entre el Día 0 y el Día 83. Celebren la disminución del tiempo en el TUG test y la mejora en el equilibrio. Reconozcan el esfuerzo y la disciplina.",
-                "image": ""
-            },
-            {
-                "phase": "2. Pacto de Mantenimiento (LiFE Constante)",
-                "details": "Hagan un pacto: Los ejercicios ya no tienen un 'horario', ahora son parte de la vida. Siempre se caminará en tándem por los pasillos, siempre se subirá rápido de las sillas y se caminará con amigos.",
-                "image": ""
-            },
-            {
-                "phase": "3. Caminata Libre de Celebración",
-                "details": "Salgan a dar un paseo sin cronómetros, sin reglas, solo por el puro placer de moverse con un cuerpo fuerte, ágil y seguro de sí mismo.",
-                "image": ""
-            }
-        ]
-    }
+  {
+    "id": 78,
+    "week": 12,
+    "day": "Día 78",
+    "title": "Cúspide Aeróbica y Capilarización",
+    "quote": "No te detengas cuando estés cansado, detente cuando hayas terminado. La línea de meta está cerca.",
+    "scienceTitle": "La Ciencia del Día: Angiogénesis y Capilarización Muscular",
+    "science": "Después de semanas de trabajo aeróbico y micro-HIIT, tu cuerpo ha comenzado un proceso llamado 'angiogénesis': la creación de nuevos vasos capilares alrededor de tus músculos. Esto significa que ahora la sangre oxigenada fluye más eficientemente hacia tus piernas, permitiéndote caminar distancias que hace tres meses parecían imposibles sin sentir fatiga.",
+    "adultRole": "Hoy haremos nuestra última caminata larga de 'esfuerzo' antes de las evaluaciones finales. Disfruta de la ligereza de tus piernas. Respira profundamente y siente el motor que has construido.",
+    "familyRole": "Acompaña a tu familiar en esta caminata de fondo. Celebren mentalmente el camino recorrido. Monitorea el ritmo, asegurando que sea un reto cardiovascular pero manteniendo una plática fluida.",
+    "routine": [
+      "58191e78e8a0081969612b0f6e835474",
+      "2c16357ffded4f4e3e68043351acfd02",
+      "7ef610a03e7d11e177cc31e59521e544"
+    ]
+  },
+  {
+    "id": 79,
+    "week": 12,
+    "day": "Día 79",
+    "title": "Cognicise Maestro: El Reto Dual Final",
+    "quote": "El cuerpo hace lo que la mente manda. Hoy demostramos que ambos están más afilados que nunca.",
+    "scienceTitle": "La Ciencia del Día: Reserva Cognitiva y Automatización",
+    "science": "El objetivo final del protocolo HEPOP es la 'automatización del equilibrio'. Al llevar la tarea matemática y verbal a su nivel más alto de dificultad mientras nos movemos rápido, comprobamos que el cerebelo ya no necesita de la atención consciente para evitar tropezar. Has construido una 'reserva cognitiva' que te protege en situaciones de estrés urbano.",
+    "adultRole": "Hoy pondremos a prueba tu concentración. Marcharás rápido mientras tu cerebro hace cálculos complejos. Si te equivocas en el número, ¡no pares de marchar! El movimiento es lo principal.",
+    "familyRole": "Tú serás el director del juego. Exige velocidad en la marcha (paso rápido en el lugar) y pon tareas matemáticas cruzadas. Mantén un ambiente de juego y reto positivo.",
+    "routine": [
+      "7a97dcc5350c63d9dc889e16d4690ac1",
+      "376c540669850ce30975ad49049203bc",
+      "9cc93ddadce850794f2444982f5f7829"
+    ]
+  },
+  {
+    "id": 80,
+    "week": 12,
+    "day": "Día 80",
+    "title": "Potencia Funcional Definitiva (MED)",
+    "quote": "La fuerza no proviene de la capacidad física, sino de una voluntad indomable entrenada día a día.",
+    "scienceTitle": "La Ciencia del Día: Sincronización de Unidades Motoras",
+    "science": "Al inicio del programa, tus músculos temblaban al levantarse porque las fibras musculares 'disparaban' a destiempo. Tras 12 semanas, tu sistema nervioso ha logrado la 'sincronización de unidades motoras': ahora todas las fibras se contraen al unísono. Esto produce la potencia explosiva, el verdadero seguro contra caídas.",
+    "adultRole": "Este es nuestro último circuito de fuerza del programa formal. Quiero que cada levantamiento que hagas hoy sea un testimonio de la fuerza que has recuperado. Máxima explosividad hacia arriba.",
+    "familyRole": "Asegura el área. Observa la diferencia entre este día y el Día 0. Anímalo a que los levantamientos de la silla y el escalón sean rápidos, seguros y llenos de energía.",
+    "routine": [
+      "4d12756c7330e2cfb9f2dc993c402846",
+      "9dede15e195223ef40b2bbeaeb5de21b",
+      "2408ad3c1de09ccd61ce4944ca6d62f6"
+    ]
+  },
+  {
+    "id": 81,
+    "week": 12,
+    "day": "Día 81",
+    "title": "Kashiwa y el Relevo (Mentoring Comunitario)",
+    "quote": "El mejor líder no es el que crea seguidores, sino el que crea más líderes.",
+    "scienceTitle": "La Ciencia del Día: Identidad de Rol en Gerontología",
+    "science": "El éxito supremo del Proyecto Kashiwa fue transformar a los 'pacientes' en 'promotores de salud' en sus comunidades. Al asumir el rol de enseñar a otros, se genera un cambio en la identidad psicosocial. Ya no eres alguien 'que necesita ejercicio', eres 'alguien que inspira a otros a ser fuertes'.",
+    "adultRole": "Hoy no solo caminarás. Tu misión es inspirar. Saldrás a caminar con alguien (un amigo, vecino o familiar) que necesite empezar a moverse, y le explicarás los beneficios de lo que has hecho.",
+    "familyRole": "Organiza esta 'caminata de relevo'. Inviten a un amigo del adulto mayor que lleve una vida sedentaria. Deja que tu familiar tome la batuta, le enseñe a marchar y lo anime a mejorar su salud.",
+    "routine": [
+      "97889cf6b0f76dd23296ff93727f29f5",
+      "08f58b8e06c50648940db0a288806ce6",
+      "9af8a8c7608fa2881b2d66c9e9332f1d"
+    ]
+  },
+  {
+    "id": 82,
+    "week": 12,
+    "day": "Día 82",
+    "title": "Alostasis y Preparación Final",
+    "quote": "El silencio antes de la ovación. Hoy tu cuerpo asimila todo el trabajo de los últimos tres meses.",
+    "scienceTitle": "La Ciencia del Día: Consolidación de la Memoria Motora",
+    "science": "La memoria motora (los nuevos reflejos rápidos y el equilibrio automático) no se guarda en el cerebro mientras hacemos el ejercicio, sino durante los periodos de inactividad que le siguen. Este día de reposo permite que el hipocampo y la corteza motora 'graben en piedra' todas las ganancias neurológicas antes de la prueba final.",
+    "adultRole": "Mañana será un día emocionante: repetiremos las pruebas del Día 0. Por lo tanto, hoy tu única misión es descansar, hidratarte perfectamente y dormir bien.",
+    "familyRole": "Día de logística. Imprime o ten a la mano los resultados que anotaron en el Día 0. Asegura que el adulto mayor tenga una cena nutritiva, ligera y que descanse adecuadamente.",
+    "routine": [
+      "3bf0d35005575c86e33cfc07720ebf3d",
+      "c4f790788b5bb84817ae1fab5188da2c",
+      "d105c409b1b6db97ee97bff748b0c986"
+    ]
+  },
+  {
+    "id": 83,
+    "week": 12,
+    "day": "Día 83",
+    "title": "La Re-Evaluación Clínica (El Nuevo Día 0)",
+    "quote": "No puedes saber lo lejos que has llegado hasta que miras el punto desde donde partiste.",
+    "scienceTitle": "La Ciencia del Día: Biomarcadores Funcionales de Envejecimiento",
+    "science": "Las pruebas SPPB y TUG no son solo ejercicios; son biomarcadores internacionalmente validados de tu edad biológica funcional. Un aumento en la velocidad de la marcha o en la capacidad de levantarse de la silla se correlaciona directamente con años adicionales de vida independiente, menor riesgo de hospitalización y mayor supervivencia global.",
+    "adultRole": "Hoy haremos exactamente las mismas pruebas que el Día 0. Da tu mejor esfuerzo, pero mantén la calma. Vas a sorprenderte de lo que tu cuerpo es capaz de hacer ahora.",
+    "familyRole": "Toma tu cronómetro y la hoja de resultados del Día 0. Serás el evaluador clínico. Crea un ambiente seguro y profesional, y anota los tiempos con precisión.",
+    "routine": [
+      "4bc23e97ef89b8aaad852151699f1e4e",
+      "d12d724ac472b27f8ad0a25ba0617a0d",
+      "2597c61c3d8bd2f32cec71ee449f9b46"
+    ]
+  },
+  {
+    "id": 84,
+    "week": 12,
+    "day": "Día 84",
+    "title": "Graduación y el Hábito de por Vida",
+    "quote": "Esto no es el final de un programa médico, es el primer día del resto de tu vida activa y libre.",
+    "scienceTitle": "La Ciencia del Día: Epigenética y Longevidad",
+    "science": "En estas 12 semanas no solo cambiaste tus músculos, cambiaste la expresión de tus genes (epigenética). Has activado vías de longevidad que suprimen la inflamación y retrasan el envejecimiento celular. El objetivo ahora es mantener este 'estado de salud' perpetuamente, haciendo que el Método LiFE, las caminatas y la nutrición sean tan naturales como respirar.",
+    "adultRole": "¡Felicidades! Te has graduado del programa. Has recuperado tu autonomía. Tu misión ahora es no dejar que este motor se apague. Mantén las caminatas sociales, los levantamientos rápidos (Samurái) y tu hidratación.",
+    "familyRole": "Es momento de celebrar el éxito absoluto. Analicen juntos los números de ayer. Han disminuido el riesgo de caídas y la fragilidad dramáticamente. Establezcan un 'Plan de Mantenimiento' sencillo y permanente.",
+    "routine": [
+      "b36db93d82f11bc75ffaa6a5f5b15ffd",
+      "0751de6291da4c9bc661d2e319027648",
+      "c95cf28f2543dc0f0f4dae49591b3d4f"
+    ]
+  }
 ]

@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const state = {
         phases: [],
         weeksData: {}, // Map of week number to array of day data
+        exercisesLibrary: {}, // Map of exercise ID (hash) to detailed object
         currentDayId: 0,
         evaluations: {}, // Map of dayId to answers object {q1, q2, q3}
         expandedPhases: { 1: true },
@@ -38,6 +39,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const phasesRes = await fetch('programa/phases.json');
             state.phases = await phasesRes.json();
             
+            // Fetch all exercise libraries concurrently
+            await fetchExerciseLibraries();
+            
             // Try to load as many weeks as possible to build the sidebar
             // Since we know files are named week01.json, week02.json, etc.
             await fetchAvailableWeeks();
@@ -56,6 +60,23 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error("Error inicializando app:", error);
             els.sidebarNav.innerHTML = `<div style="padding:1rem; color:red; text-align:center;">Error cargando el programa. Verifica la consola.</div>`;
         }
+    }
+
+    // Helper to fetch all exercise group JSONs
+    async function fetchExerciseLibraries() {
+        const groups = ['fuerza', 'equilibrio', 'movilidad', 'evaluacion', 'life', 'otros'];
+        const fetchPromises = groups.map(group => 
+            fetch(`programa/${group}.json`)
+                .then(res => res.ok ? res.json() : {})
+                .then(data => {
+                    // Merge into state.exercisesLibrary
+                    Object.assign(state.exercisesLibrary, data);
+                })
+                .catch(err => {
+                    console.warn(`Could not load group ${group}:`, err);
+                })
+        );
+        await Promise.all(fetchPromises);
     }
 
     // Helper to fetch weeks (brute-force approach up to 12 weeks since it's a static site)
@@ -228,7 +249,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Routine
         let routineHtml = '';
-        dayData.routine.forEach((step, index) => {
+        dayData.routine.forEach((exerciseId, index) => {
+            const step = state.exercisesLibrary[exerciseId];
+            if (!step) {
+                console.error(`Exercise ID ${exerciseId} not found in library.`);
+                return;
+            }
             
             let extraInfoHtml = '';
             
@@ -340,4 +366,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Launch
     init();
+
 });

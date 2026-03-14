@@ -1,258 +1,125 @@
 [
-    {
-        "id": 0,
-        "week": 1,
-        "day": "Día 0",
-        "title": "El Cribado y la Arquitectura Clínica",
-        "quote": "El primer paso no te lleva a donde quieres ir, pero te saca de donde estás. Hoy construimos los cimientos de tu independencia.",
-        "scienceTitle": "La Ciencia del Día: ¿Por qué medir antes de actuar?",
-        "science": "Antes de iniciar cualquier movimiento, la ciencia médica exige establecer una 'línea base'. Esto previene lesiones y permite que la dosis de ejercicio sea exacta. Herramientas validadas como el algoritmo Vivifrail (batería SPPB) y el test TUG (Time Up and Go) nos ayudan a clasificar el estado funcional real.",
-        "adultRole": "Tu objetivo hoy es participar en las pruebas sin forzarte más allá de tu límite. Si sientes dolor, mareo o falta de aire, detente de inmediato.",
-        "familyRole": "Tu rol es el de un 'entrenador clínico' hoy. Debes tomar el tiempo, observar la postura y anotar los resultados con precisión.",
-        "routine": [
-            {
-                "phase": "1. Evaluación Médica (Red Flags)",
-                "details": "Familiar: Verifica que no haya habido infarto reciente (3-6 meses), presión controlada.",
-                "instructions": "Siéntate con tu familiar. Revisa su historial médico reciente. Tomen la presión arterial si tienen monitor en casa. Pregunta si ha sentido mareos intensos, dolor de pecho o falta de aire inusual en la última semana.",
-                "easier": "Si no tienen equipo de medición, realiza simplemente un cuestionario verbal sobre cómo se ha sentido físicamente en los últimos 7 días.",
-                "harder": "Incluye la medición de la saturación de oxígeno con un oxímetro y anota la frecuencia cardíaca en reposo para tener un registro más completo.",
-                "image": ""
-            },
-            {
-                "phase": "2. Valoración Funcional (SPPB - Vivifrail)",
-                "details": "Prueba de Equilibrio: Intenta mantenerte 10 segundos con los pies juntos, semi-tándem y tándem completo.",
-                "instructions": "1. Párate junto a una silla firme o mesa. 2. Junta ambos pies y mantén el equilibrio 10 segundos. 3. Adelanta un pie de modo que el lado de tu talón toque el dedo gordo del otro pie (semi-tándem) por 10 segundos. 4. Coloca el talón de un pie tocando la punta del otro pie (tándem completo) por 10 segundos.",
-                "easier": "Permite que el adulto mayor mantenga una mano ligeramente apoyada en la silla durante las tres posturas para brindarle seguridad psicológica y física.",
-                "harder": "Pide al adulto mayor que cruce los brazos sobre el pecho durante las pruebas para evitar usar los brazos como contrapeso.",
-                "image": ""
-            },
-            {
-                "phase": "3. Prueba de Levantarse de la Silla",
-                "details": "Adulto Mayor: Cruza los brazos sobre el pecho e intenta levantarte y sentarte 5 veces rápido.",
-                "instructions": "1. Siéntate en una silla de altura estándar y firme. 2. Cruza los brazos sobre tu pecho. 3. A la señal del familiar, levántate completamente y vuelve a sentarte 5 veces lo más rápido y seguro posible. 4. El familiar debe cronometrar el tiempo exacto desde la señal de inicio hasta que se sienta por quinta vez.",
-                "easier": "Si no puede levantarse con los brazos cruzados, permítele usar las manos apoyadas en sus muslos o en los reposabrazos para impulsarse.",
-                "harder": "Realiza la prueba utilizando una silla ligeramente más baja (asegurándote de que no haya dolor de rodillas) para aumentar el rango de movimiento exigido.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 1,
-        "week": 1,
-        "day": "Día 1",
-        "title": "Inicio de Cimentación y Método LiFE",
-        "quote": "El movimiento es la medicina que nadie te puede comprar, solo tú la puedes tomar.",
-        "scienceTitle": "La Ciencia del Día: Higiene Biomecánica y Adherencia",
-        "science": "La Clínica Mayo prohíbe los estiramientos estáticos 'en frío' porque los tendones no lubricados son propensos a micro-desgarros. Aplicando el Método LiFE, incrustamos movimientos en tu rutina diaria (Incrustación Espacial).",
-        "adultRole": "Concéntrate en tu respiración. Nunca contengas el aire. Inhala antes de hacer el esfuerzo y exhala fuertemente.",
-        "familyRole": "Implementa el abordaje HKU (7 pasos): Educa sobre el beneficio y provee aliento verbal constante.",
-        "routine": [
-            {
-                "phase": "1. Movilidad Articular Dinámica",
-                "details": "Realiza balanceos suaves de pierna hacia adelante y atrás. Haz círculos lentos con los hombros.",
-                "instructions": "1. De pie junto a una pared, apoya una mano para mantener el equilibrio. 2. Balancea una pierna suavemente hacia adelante y hacia atrás como un péndulo, 10 veces. Repite con la otra pierna. 3. Mantén la espalda recta y haz 10 círculos amplios y lentos con ambos hombros hacia atrás.",
-                "easier": "Realiza todos los movimientos articulares sentado en una silla para evitar fatiga temprana o mareos.",
-                "harder": "Realiza los balanceos de pierna sin sostenerte de la pared, manteniendo las manos en la cintura para comenzar a activar el equilibrio dinámico.",
-                "image": ""
-            },
-            {
-                "phase": "2. Técnica Samurái Rei-ho",
-                "details": "Toma 5 segundos para bajar de forma controlada y 5 segundos para subir. No uses los brazos.",
-                "instructions": "1. Siéntate cerca del borde de una silla firme. 2. Cruza los brazos sobre tu pecho. 3. Inhala, inclínate ligeramente hacia adelante y exhala mientras te pones de pie contando lentamente hasta 5. 4. Inhala mientras te vuelves a sentar de forma muy controlada, contando nuevamente hasta 5 antes de que tus glúteos toquen la silla.",
-                "easier": "Apoya las manos en los muslos para ayudarte a subir, o coloca un cojín firme en la silla para que la altura de inicio sea mayor.",
-                "harder": "Al momento de bajar hacia la silla, haz una pausa completa de 2 segundos justo a la mitad del recorrido antes de terminar de sentarte.",
-                "image": ""
-            },
-            {
-                "phase": "3. El Pasillo en Tándem",
-                "details": "Cada vez que pases por el pasillo principal, caminarás en 'tándem' (talón tocando punta).",
-                "instructions": "1. Identifica un pasillo estrecho o un tramo de pared largo en tu casa. 2. Camina colocando el talón de un pie exactamente por delante de la punta del otro pie. 3. Da pasos lentos manteniendo la mirada al frente, no mires al suelo continuamente. 4. Repite esto de forma natural cada vez que transites por ahí.",
-                "easier": "No juntes completamente el talón y la punta (deja un espacio de un par de centímetros) o desliza tu mano ligeramente sobre la pared mientras caminas.",
-                "harder": "Al llegar al final del pasillo, camina en tándem de reversa (hacia atrás) con mucho cuidado, asegurando que el espacio esté despejado.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 2,
-        "week": 1,
-        "day": "Día 2",
-        "title": "Expansión del Hábito Incidental",
-        "quote": "La constancia no está en hacer cosas extraordinarias, sino en hacer cosas ordinarias extraordinariamente bien.",
-        "scienceTitle": "La Ciencia del Día: Actividad Física No Ligada al Ejercicio (NEPA)",
-        "science": "El concepto NEPA demuestra que los periodos cortos y frecuentes de carga muscular son tan efectivos como una sesión de gimnasio, estimulando la síntesis de proteínas sin fatiga central.",
-        "adultRole": "Presta atención a la fuerza en tus piernas y recuerda hacer los ejercicios junto a tus actividades diarias.",
-        "familyRole": "Coloca un 'post-it' en el lavabo o fregadero para recordarle el ejercicio incidental.",
-        "routine": [
-            {
-                "phase": "1. Movilidad Dinámica",
-                "details": "Balanceos suaves de pierna, giros lentos de cuello.",
-                "instructions": "1. Apoyado en una superficie firme, realiza 10 balanceos de cada pierna adelante y atrás. 2. Ponte de pie con la espalda derecha. 3. Gira lentamente la cabeza de lado a lado como si dijeras 'no', manteniendo cada lado 2 segundos (5 veces por lado).",
-                "easier": "Haz los giros de cuello sentado. Si hay mareo, reduce el rango de movimiento a la mitad.",
-                "harder": "Añade balanceos de pierna laterales (abriendo y cerrando la pierna como una tijera) cruzando por delante de la pierna de apoyo.",
-                "image": ""
-            },
-            {
-                "phase": "2. Pantorrillas de Acero",
-                "details": "Mientras lavas los platos o te lavas los dientes, ponte de puntillas (10-15 repeticiones).",
-                "instructions": "1. Colócate frente al lavabo o fregadero y apoya tus manos suavemente. 2. Empuja tu cuerpo hacia arriba levantando los talones del suelo hasta quedar de puntillas. 3. Sostén la posición alta por un segundo y baja muy lentamente controlando el peso.",
-                "easier": "Sube solo a la mitad del rango de movimiento o apóyate con fuerza utilizando ambas manos.",
-                "harder": "Realiza el ejercicio sobre una sola pierna a la vez, manteniendo el otro pie suspendido en el aire detrás de ti.",
-                "image": ""
-            },
-            {
-                "phase": "3. Mantenimiento Samurái y Tándem",
-                "details": "Continúa las transiciones lentas de silla y caminata en el pasillo.",
-                "instructions": "1. A lo largo del día, realiza 5 levantamientos Rei-ho de 5 segundos de bajada y 5 de subida. 2. Transita el pasillo de tu casa en postura tándem al menos 3 veces durante tus actividades rutinarias.",
-                "easier": "Divide los levantamientos: haz 2 por la mañana y 3 por la tarde.",
-                "harder": "Realiza los 5 levantamientos Rei-ho seguidos sin descansar y cruzando completamente los brazos.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 3,
-        "week": 1,
-        "day": "Día 3",
-        "title": "Fuerza Base y Oxigenación",
-        "quote": "No importa lo lento que vayas, siempre y cuando no te detengas.",
-        "scienceTitle": "La Ciencia del Día: Prevención de la Maniobra de Valsalva",
-        "science": "La Maniobra de Valsalva ocurre cuando contenemos la respiración durante un esfuerzo. Al obligarte a exhalar durante la fase de empuje, protegemos tu corazón.",
-        "adultRole": "Quiero escuchar tu respiración. Sopla el aire como si apagaras una vela al hacer fuerza.",
-        "familyRole": "Sé el 'guardián del aire'. Si ves que aprieta los labios al levantarse, recuérdale respirar.",
-        "routine": [
-            {
-                "phase": "1. Práctica de Respiración Activa",
-                "details": "Antes de los ejercicios, realiza 5 respiraciones profundas diafragmáticas.",
-                "instructions": "1. Siéntate con la espalda recta y los pies planos en el suelo. 2. Coloca una mano sobre tu estómago. 3. Inhala lentamente por la nariz, sintiendo cómo tu estómago empuja tu mano hacia afuera. 4. Exhala por la boca suave y prolongadamente, sintiendo cómo tu estómago se desinfla.",
-                "easier": "Realiza la práctica respiratoria acostado boca arriba en la cama, donde es más fácil sentir el movimiento del diafragma.",
-                "harder": "Inhala contando hasta 4 segundos, sostén el aire durante 2 segundos y exhala muy lentamente contando hasta 6 segundos.",
-                "image": ""
-            },
-            {
-                "phase": "2. Rei-ho (Consciencia Respiratoria)",
-                "details": "5 repeticiones de levantarse y sentarse exhalando fuertemente en el esfuerzo.",
-                "instructions": "1. Inicia en la silla. Toma aire profundamente por la nariz inflando el estómago. 2. A medida que comienzas a despegarte de la silla, empieza a soplar el aire por la boca como si apagaras una vela a un metro de distancia. 3. Sigue exhalando hasta que estés completamente de pie. 4. Inhala al bajar.",
-                "easier": "Permite el apoyo de las manos en los muslos, concentrándose exclusivamente en la mecánica de soplar aire sin interrumpir el flujo.",
-                "harder": "Exhala el aire frunciendo mucho los labios (como si silbaras o soplaras a través de un popote) para crear mayor presión abdominal estabilizadora.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 4,
-        "week": 1,
-        "day": "Día 4",
-        "title": "Consolidación Neurológica",
-        "quote": "La repetición es la madre de la habilidad. Tus nervios están creando nuevas autopistas.",
-        "scienceTitle": "La Ciencia del Día: Neuroplasticidad y Mielinización",
-        "science": "Al repetir movimientos precisos, el cerebro recubre las vías nerviosas con mielina, haciendo que la señal viaje más rápido.",
-        "adultRole": "Es normal sentir fatiga leve. Haz los ejercicios con la mayor precisión posible.",
-        "familyRole": "Observa la progresión y hazle notar sus pequeños avances.",
-        "routine": [
-            {
-                "phase": "1. Circuito LiFE Continuo",
-                "details": "15 pantorrillas en el lavabo, caminar en tándem por pasillo, 5 levantamientos Samurái.",
-                "instructions": "1. Ve al lavabo y haz 15 elevaciones de pantorrilla controladas. 2. Inmediatamente date la vuelta y camina por el pasillo hacia una silla en paso tándem (talón-punta). 3. Al llegar a la silla, realiza 5 levantamientos Rei-ho de 5 segundos cada fase. Ejecuta todo de forma fluida.",
-                "easier": "Toma un minuto de descanso completo sentado en la silla entre cada una de las tres estaciones del circuito.",
-                "harder": "Realiza el circuito completo dos veces seguidas sin sentarte a descansar entre las rondas.",
-                "image": ""
-            },
-            {
-                "phase": "2. Desafío de Postura",
-                "details": "Imagina un hilo invisible que tira de tu coronilla hacia el techo.",
-                "instructions": "1. Ya sea sentado o de pie, alinea tus orejas con tus hombros. 2. Gira los hombros suavemente hacia arriba, hacia atrás y déjalos caer. 3. Imagina que un hilo jala del centro de tu cabeza alargando tu cuello. 4. Mantén esta posición consciente durante 1 minuto completo.",
-                "easier": "Haz el ejercicio sentado contra una pared, intentando que la parte posterior de tu cabeza y tus omóplatos toquen la pared.",
-                "harder": "Mantén la postura perfecta mientras sostienes un vaso de agua lleno casi hasta el borde caminando por la habitación.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 5,
-        "week": 1,
-        "day": "Día 5",
-        "title": "Preparación para el Fin de Semana",
-        "quote": "La confianza viene de la preparación. Has completado tu primera semana activa.",
-        "scienceTitle": "La Ciencia del Día: Adaptación del Tejido Conectivo",
-        "science": "Los movimientos lentos de esta semana han engrosado tus tendones, preparándolos para resistir mayores fuerzas sin inflamarse.",
-        "adultRole": "Ejecuta hoy tu rutina con total confianza y fluidez.",
-        "familyRole": "Prepara el terreno para la sesión de Coaching de mañana.",
-        "routine": [
-            {
-                "phase": "1. Samurái Rei-ho (Perfeccionamiento)",
-                "details": "8 repeticiones. Vigilar que las rodillas no se metan hacia adentro.",
-                "instructions": "1. Colócate frente a un espejo si es posible. 2. Siéntate y levántate en 5 segundos por fase. 3. Vigila tus rodillas críticamente: deben apuntar en la misma dirección que las puntas de tus pies y nunca juntarse formando una 'X' mientras haces fuerza.",
-                "easier": "Coloca una almohada o bloque entre las rodillas; el objetivo será apretar el objeto para recordarte dónde están las rodillas, o haz solo 4 repeticiones.",
-                "harder": "Coloca una banda elástica ligera por encima de tus rodillas para forzar a los músculos glúteos a mantener las piernas separadas durante el levantamiento.",
-                "image": ""
-            },
-            {
-                "phase": "2. Mantenimiento Hábitos LiFE",
-                "details": "Pantorrillas y Tándem en sus lugares designados.",
-                "instructions": "1. A lo largo de la mañana o la tarde, no olvides realizar al menos 10 elevaciones de pantorrilla mientras estés de pie estático (ej. cocinando o cepillando dientes). 2. Usa tus pasillos designados en casa para caminar talón-punta.",
-                "easier": "Espacia los ejercicios a lo largo del día sin un horario fijo, realizando solo 3 o 4 repeticiones a la vez.",
-                "harder": "Aumenta el volumen a 20 elevaciones de pantorrilla por sesión incidental.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 6,
-        "week": 1,
-        "day": "Día 6",
-        "title": "Sesión de Coaching y Arquitectura Social",
-        "quote": "El apoyo que damos y recibimos es el cimiento de los hábitos de por vida.",
-        "scienceTitle": "La Ciencia del Día: Validación Social",
-        "science": "Cuando el ejercicio se convierte en un acto social, se codifica en el cerebro como un hábito identitario, no médico.",
-        "adultRole": "Muestra a tu familiar cómo dominas la técnica de levantarte.",
-        "familyRole": "Felicítalo por completar la semana. Planifiquen juntos la Semana 2.",
-        "routine": [
-            {
-                "phase": "1. Reunión de Planificación",
-                "details": "Revisar evaluaciones y reafirmar compromiso.",
-                "instructions": "1. Preparen un café o té y siéntense juntos. 2. Revisen verbalmente cómo se ha sentido el cuerpo en la Semana 1. ¿Hay agujetas (dolor muscular)? ¿Hay más energía? 3. Lean juntos el plan para la Semana 2 y establezcan expectativas.",
-                "easier": "Hagan la plática de manera informal y relajada durante el desayuno o la comida, sin estructura formal.",
-                "harder": "Creen un 'Diario de Logros' físico donde el adulto mayor o el familiar anote un pequeño párrafo sobre qué mejoró respecto al Día 0.",
-                "image": ""
-            },
-            {
-                "phase": "2. Caminata Social",
-                "details": "Caminar juntos durante 15-20 minutos fomentando la plática.",
-                "instructions": "1. Salgan de casa hacia un entorno agradable (parque, calle tranquila). 2. Caminen a un paso que sea continuo pero que les permita conversar sin sentir falta de aire. 3. Mantengan una postura erguida, moviendo libremente los brazos.",
-                "easier": "Caminen por 10 minutos solamente o háganlo dentro de un lugar cerrado, seguro y plano como un centro comercial.",
-                "harder": "Caminen por un parque que tenga terrenos con ligeras pendientes (subidas y bajadas muy suaves) para empezar a estimular el sistema cardiovascular.",
-                "image": ""
-            }
-        ]
-    },
-    {
-        "id": 7,
-        "week": 1,
-        "day": "Día 7",
-        "title": "Descanso, Nutrición y Regeneración",
-        "quote": "El descanso le da a tu cuerpo el tiempo para construirse más fuerte que ayer.",
-        "scienceTitle": "La Ciencia del Día: Sinergia Anabólica",
-        "science": "Asegurar una ingesta adecuada de proteínas es vital hoy para reparar las microfibras musculares.",
-        "adultRole": "Comer bien y descansar. Mantente hidratado.",
-        "familyRole": "Revisa la despensa y asegura fuentes de proteína de alta calidad.",
-        "routine": [
-            {
-                "phase": "1. Descanso Activo (Libre)",
-                "details": "Estiramientos suaves o caminata recreativa.",
-                "instructions": "1. Evita rutinas formales de levantamientos o fuerza. 2. Si sientes el cuerpo rígido, haz 5 minutos de movimientos articulares (círculos de hombros, giros de cuello). 3. Relájate mental y físicamente.",
-                "easier": "Mantén reposo total absoluto si el cuerpo presenta fatiga significativa o dolor muscular retardado (agujetas).",
-                "harder": "Realiza una caminata recreativa muy ligera de 10-15 minutos a un ritmo donde el esfuerzo sea mínimo, solo para hacer circular la sangre.",
-                "image": ""
-            },
-            {
-                "phase": "2. Chequeo Nutricional",
-                "details": "Asegurar aporte de proteínas (25-30g por comida).",
-                "instructions": "1. Revisen juntos el menú del día. 2. Asegúrense de que el desayuno, comida y cena contengan porciones adecuadas de pollo, pescado, huevo, queso, tofu o legumbres. 3. Beban al menos 6-8 vasos de agua.",
-                "easier": "Si no hay mucho apetito, usen complementos como leche, yogur griego o suplementos proteicos recetados médicamente.",
-                "harder": "Elaboren juntos la planificación del menú completo (Meal Prep) de la Semana 2 priorizando ingredientes frescos, vegetales oscuros y fuentes de omega-3.",
-                "image": ""
-            }
-        ]
-    }
+  {
+    "id": 0,
+    "week": 1,
+    "day": "Día 0",
+    "title": "El Cribado y la Arquitectura Clínica",
+    "quote": "El primer paso no te lleva a donde quieres ir, pero te saca de donde estás. Hoy construimos los cimientos de tu independencia.",
+    "scienceTitle": "La Ciencia del Día: ¿Por qué medir antes de actuar?",
+    "science": "Antes de iniciar cualquier movimiento, la ciencia médica exige establecer una 'línea base'. Esto previene lesiones y permite que la dosis de ejercicio sea exacta. Herramientas validadas como el algoritmo Vivifrail (batería SPPB) y el test TUG (Time Up and Go) nos ayudan a clasificar el estado funcional real.",
+    "adultRole": "Tu objetivo hoy es participar en las pruebas sin forzarte más allá de tu límite. Si sientes dolor, mareo o falta de aire, detente de inmediato.",
+    "familyRole": "Tu rol es el de un 'entrenador clínico' hoy. Debes tomar el tiempo, observar la postura y anotar los resultados con precisión.",
+    "routine": [
+      "86cdefc05fbd3103afe18de818a1fc4f",
+      "a35f1cbc049e13ab518e609c423a9f33",
+      "be8a0ce547e4a8d19aa3f930d8c462fb"
+    ]
+  },
+  {
+    "id": 1,
+    "week": 1,
+    "day": "Día 1",
+    "title": "Inicio de Cimentación y Método LiFE",
+    "quote": "El movimiento es la medicina que nadie te puede comprar, solo tú la puedes tomar.",
+    "scienceTitle": "La Ciencia del Día: Higiene Biomecánica y Adherencia",
+    "science": "La Clínica Mayo prohíbe los estiramientos estáticos 'en frío' porque los tendones no lubricados son propensos a micro-desgarros. Aplicando el Método LiFE, incrustamos movimientos en tu rutina diaria (Incrustación Espacial).",
+    "adultRole": "Concéntrate en tu respiración. Nunca contengas el aire. Inhala antes de hacer el esfuerzo y exhala fuertemente.",
+    "familyRole": "Implementa el abordaje HKU (7 pasos): Educa sobre el beneficio y provee aliento verbal constante.",
+    "routine": [
+      "d7a36ecbead1fa95c78c2173f600ac6a",
+      "5de4189b9c3d68f96cf5425c76b47a3b",
+      "8ce910e41bd62960623458690c88c1eb"
+    ]
+  },
+  {
+    "id": 2,
+    "week": 1,
+    "day": "Día 2",
+    "title": "Expansión del Hábito Incidental",
+    "quote": "La constancia no está en hacer cosas extraordinarias, sino en hacer cosas ordinarias extraordinariamente bien.",
+    "scienceTitle": "La Ciencia del Día: Actividad Física No Ligada al Ejercicio (NEPA)",
+    "science": "El concepto NEPA demuestra que los periodos cortos y frecuentes de carga muscular son tan efectivos como una sesión de gimnasio, estimulando la síntesis de proteínas sin fatiga central.",
+    "adultRole": "Presta atención a la fuerza en tus piernas y recuerda hacer los ejercicios junto a tus actividades diarias.",
+    "familyRole": "Coloca un 'post-it' en el lavabo o fregadero para recordarle el ejercicio incidental.",
+    "routine": [
+      "88fbde7494af23661900bcdb6d88edf3",
+      "e33e27932fcecf9eb4d1e48caf723e6a",
+      "9a2d3ed8df0192666355ae103c8f3543"
+    ]
+  },
+  {
+    "id": 3,
+    "week": 1,
+    "day": "Día 3",
+    "title": "Fuerza Base y Oxigenación",
+    "quote": "No importa lo lento que vayas, siempre y cuando no te detengas.",
+    "scienceTitle": "La Ciencia del Día: Prevención de la Maniobra de Valsalva",
+    "science": "La Maniobra de Valsalva ocurre cuando contenemos la respiración durante un esfuerzo. Al obligarte a exhalar durante la fase de empuje, protegemos tu corazón.",
+    "adultRole": "Quiero escuchar tu respiración. Sopla el aire como si apagaras una vela al hacer fuerza.",
+    "familyRole": "Sé el 'guardián del aire'. Si ves que aprieta los labios al levantarse, recuérdale respirar.",
+    "routine": [
+      "ecf89e711f363ec0ba365df7136ee904",
+      "05ccc1d5cff3f69d14564b8a95adcd07"
+    ]
+  },
+  {
+    "id": 4,
+    "week": 1,
+    "day": "Día 4",
+    "title": "Consolidación Neurológica",
+    "quote": "La repetición es la madre de la habilidad. Tus nervios están creando nuevas autopistas.",
+    "scienceTitle": "La Ciencia del Día: Neuroplasticidad y Mielinización",
+    "science": "Al repetir movimientos precisos, el cerebro recubre las vías nerviosas con mielina, haciendo que la señal viaje más rápido.",
+    "adultRole": "Es normal sentir fatiga leve. Haz los ejercicios con la mayor precisión posible.",
+    "familyRole": "Observa la progresión y hazle notar sus pequeños avances.",
+    "routine": [
+      "68fee034657c2de3fa46f1d36ac858e7",
+      "f51c9745bac4eb286609ac5ca1b43614"
+    ]
+  },
+  {
+    "id": 5,
+    "week": 1,
+    "day": "Día 5",
+    "title": "Preparación para el Fin de Semana",
+    "quote": "La confianza viene de la preparación. Has completado tu primera semana activa.",
+    "scienceTitle": "La Ciencia del Día: Adaptación del Tejido Conectivo",
+    "science": "Los movimientos lentos de esta semana han engrosado tus tendones, preparándolos para resistir mayores fuerzas sin inflamarse.",
+    "adultRole": "Ejecuta hoy tu rutina con total confianza y fluidez.",
+    "familyRole": "Prepara el terreno para la sesión de Coaching de mañana.",
+    "routine": [
+      "b932ce03645d9956712250ffeef9ad76",
+      "6a4bc8d8b6154d6f4e665decb4991229"
+    ]
+  },
+  {
+    "id": 6,
+    "week": 1,
+    "day": "Día 6",
+    "title": "Sesión de Coaching y Arquitectura Social",
+    "quote": "El apoyo que damos y recibimos es el cimiento de los hábitos de por vida.",
+    "scienceTitle": "La Ciencia del Día: Validación Social",
+    "science": "Cuando el ejercicio se convierte en un acto social, se codifica en el cerebro como un hábito identitario, no médico.",
+    "adultRole": "Muestra a tu familiar cómo dominas la técnica de levantarte.",
+    "familyRole": "Felicítalo por completar la semana. Planifiquen juntos la Semana 2.",
+    "routine": [
+      "107550157cd06bf87a83681f0eedb463",
+      "bb0f44edd399db9a108a292dbe8b0412"
+    ]
+  },
+  {
+    "id": 7,
+    "week": 1,
+    "day": "Día 7",
+    "title": "Descanso, Nutrición y Regeneración",
+    "quote": "El descanso le da a tu cuerpo el tiempo para construirse más fuerte que ayer.",
+    "scienceTitle": "La Ciencia del Día: Sinergia Anabólica",
+    "science": "Asegurar una ingesta adecuada de proteínas es vital hoy para reparar las microfibras musculares.",
+    "adultRole": "Comer bien y descansar. Mantente hidratado.",
+    "familyRole": "Revisa la despensa y asegura fuentes de proteína de alta calidad.",
+    "routine": [
+      "e5df82dcb4518c3c1ab7f108a7466c6f",
+      "295c496715707150bfa8a87a82cd85e5"
+    ]
+  }
 ]
