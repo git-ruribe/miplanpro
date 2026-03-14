@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
         currentGroup: '',
         currentExerciseId: '',
         groupsData: {}, // groupName -> { hash -> data }
-        filteredList: []
+        filteredList: [],
+        currentExerciseBackup: null
     };
 
     // DOM Elements
@@ -23,7 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
         fieldInstructions: document.getElementById('field-instructions'),
         fieldEasier: document.getElementById('field-easier'),
         fieldHarder: document.getElementById('field-harder'),
-        fieldImage: document.getElementById('field-image')
+        fieldImage: document.getElementById('field-image'),
+        fieldTrimp: document.getElementById('field-trimp'),
+        fieldTrimpEasier: document.getElementById('field-trimp-easier'),
+        fieldTrimpHarder: document.getElementById('field-trimp-harder')
     };
 
     // Event Listeners
@@ -57,13 +61,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     els.discardBtn.addEventListener('click', () => {
-        if (state.currentExerciseId) {
-            populateForm(state.groupsData[state.currentGroup][state.currentExerciseId]);
+        if (state.currentExerciseId && state.currentExerciseBackup) {
+            // Restore from backup
+            state.groupsData[state.currentGroup][state.currentExerciseId] = JSON.parse(JSON.stringify(state.currentExerciseBackup));
+            const ex = state.groupsData[state.currentGroup][state.currentExerciseId];
+            populateForm(ex);
+            updateExerciseList();
+            els.saveStatus.style.display = 'none';
         }
     });
 
     // Auto-save typing listeners
-    const fields = ['fieldPhase', 'fieldDetails', 'fieldInstructions', 'fieldEasier', 'fieldHarder', 'fieldImage'];
+    const fields = [
+        'fieldPhase', 'fieldDetails', 'fieldInstructions', 
+        'fieldEasier', 'fieldHarder', 'fieldImage',
+        'fieldTrimp', 'fieldTrimpEasier', 'fieldTrimpHarder'
+    ];
     fields.forEach(fieldKey => {
         els[fieldKey].addEventListener('input', () => {
             saveToState();
@@ -115,6 +128,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function selectExercise(id) {
         state.currentExerciseId = id;
         const ex = state.groupsData[state.currentGroup][id];
+        // Create a backup for the "Reiniciar" functionality
+        state.currentExerciseBackup = JSON.parse(JSON.stringify(ex));
         populateForm(ex);
         showEditor(true);
         
@@ -131,6 +146,9 @@ document.addEventListener('DOMContentLoaded', () => {
         els.fieldEasier.value = ex.easier || '';
         els.fieldHarder.value = ex.harder || '';
         els.fieldImage.value = ex.image || '';
+        els.fieldTrimp.value = ex.trimp || 0;
+        els.fieldTrimpEasier.value = ex.trimpEasier || 0;
+        els.fieldTrimpHarder.value = ex.trimpHarder || 0;
         els.saveStatus.style.display = 'none';
     }
 
@@ -144,6 +162,9 @@ document.addEventListener('DOMContentLoaded', () => {
         ex.easier = els.fieldEasier.value;
         ex.harder = els.fieldHarder.value;
         ex.image = els.fieldImage.value;
+        ex.trimp = parseInt(els.fieldTrimp.value) || 0;
+        ex.trimpEasier = parseInt(els.fieldTrimpEasier.value) || 0;
+        ex.trimpHarder = parseInt(els.fieldTrimpHarder.value) || 0;
 
         els.saveStatus.style.display = 'inline-block';
         

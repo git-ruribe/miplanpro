@@ -5,7 +5,10 @@
     "instructions": "1. Ve al lavabo y haz 15 elevaciones de pantorrilla controladas. 2. Inmediatamente date la vuelta y camina por el pasillo hacia una silla en paso tándem (talón-punta). 3. Al llegar a la silla, realiza 5 levantamientos Rei-ho de 5 segundos cada fase. Ejecuta todo de forma fluida.",
     "easier": "Toma un minuto de descanso completo sentado en la silla entre cada una de las tres estaciones del circuito.",
     "harder": "Realiza el circuito completo dos veces seguidas sin sentarte a descansar entre las rondas.",
-    "image": ""
+    "image": "",
+    "trimp": 3,
+    "trimpEasier": 2,
+    "trimpHarder": 5
   },
   "6a4bc8d8b6154d6f4e665decb4991229": {
     "phase": "2. Mantenimiento Hábitos LiFE",
@@ -13,7 +16,10 @@
     "instructions": "1. A lo largo de la mañana o la tarde, no olvides realizar al menos 10 elevaciones de pantorrilla mientras estés de pie estático (ej. cocinando o cepillando dientes). 2. Usa tus pasillos designados en casa para caminar talón-punta.",
     "easier": "Espacia los ejercicios a lo largo del día sin un horario fijo, realizando solo 3 o 4 repeticiones a la vez.",
     "harder": "Aumenta el volumen a 20 elevaciones de pantorrilla por sesión incidental.",
-    "image": ""
+    "image": "",
+    "trimp": 3,
+    "trimpEasier": 2,
+    "trimpHarder": 5
   },
   "59ba5595bad47d1b3c8ea61559c7cdbb": {
     "phase": "3. Hábito LiFE: Pantorrillas",
@@ -21,7 +27,10 @@
     "instructions": "1. Apoyado frente a tu lavabo, impúlsate hacia arriba quedando de puntillas de forma rápida (en 1 segundo). Exhala fuerte. 2. Baja los talones hacia el suelo lentamente (en 3 a 4 segundos). 3. Repite 15 veces continuas.",
     "easier": "Sube a una velocidad normal y realiza solo de 8 a 10 repeticiones si sientes fatiga excesiva o ardor muscular.",
     "harder": "Realiza el movimiento sobre una sola pierna a la vez, manteniendo la pierna contraria doblada hacia atrás en el aire.",
-    "image": ""
+    "image": "",
+    "trimp": 3,
+    "trimpEasier": 2,
+    "trimpHarder": 5
   },
   "93a84b7fdb311d3a3362c18bd137716c": {
     "phase": "3. Mantenimiento LiFE",
@@ -29,7 +38,10 @@
     "instructions": "1. Mantén la regla incidental: al pasar por el pasillo camina tocando talón-punta. 2. Cada vez que te levantes de tu silla hoy, hazlo recordando la instrucción de ayer: subir rápido como un cohete, bajar muy lento.",
     "easier": "Si te duelen las rodillas, ignora el 'subir rápido' hoy y vuelve al ritmo relajado de 5 segundos para subir y 5 para bajar.",
     "harder": "Mientras caminas en tándem por el pasillo, incorpora voluntariamente giros lentos de cabeza hacia los lados.",
-    "image": ""
+    "image": "",
+    "trimp": 3,
+    "trimpEasier": 2,
+    "trimpHarder": 5
   },
   "228bb4867c88b089f3310d05df4090e1": {
     "phase": "3. Mantenimiento LiFE",
@@ -37,7 +49,10 @@
     "instructions": "1. Define tu 'zona de tándem' (el pasillo). 2. A lo largo del día, sin horario fijo, cada vez que vayas a la habitación o a la cocina caminando por ese pasillo, hazlo tocando el talón con la punta de tus pies.",
     "easier": "Camina dejando 5 centímetros de separación entre tu talón y la punta de tu otro pie (semi-tándem), apoyando una mano en la pared si hay fatiga.",
     "harder": "Al caminar por tu pasillo en tándem, gira la cabeza lenta y continuamente de derecha a izquierda como si escanearas las paredes.",
-    "image": ""
+    "image": "",
+    "trimp": 3,
+    "trimpEasier": 2,
+    "trimpHarder": 5
   },
   "ee94d234a29f9e03b539d0864689ab28": {
     "phase": "1. Descanso Activo y LiFE Natural",
@@ -45,7 +60,10 @@
     "instructions": "1. Prohibido hacer sentadillas o levantar objetos pesados hoy. 2. Permite que las fibras musculares sanen solas. 3. Si vas de la sala a la cocina, intenta hacer tus pasos en tándem como pasatiempo. 4. Cada hora que estés viendo TV o leyendo, levántate a dar una vuelta de un minuto por la casa.",
     "easier": "Si existe mucho dolor muscular (agujetas), permanece en descanso total, recostado con las piernas ligeramente elevadas sobre un cojín.",
     "harder": "Haz una rutina de estiramientos en el piso de unos 10 a 15 minutos enfocada en estirar cuádriceps, glúteos y espalda baja.",
-    "image": ""
+    "image": "",
+    "trimp": 3,
+    "trimpEasier": 2,
+    "trimpHarder": 5
   },
   "451b7105627388ae76ec5c74eeb0b562": {
     "phase": "3. LiFE Incidental (Pantorrillas)",
@@ -53,7 +71,10 @@
     "instructions": "1. Apóyate frente a tu lavabo. 2. Empuja explosivamente hacia arriba hasta quedar de puntillas (1 segundo). 3. Baja controladamente (3 segundos). 4. Repítelo 20 veces mientras realizas tu tarea de higiene diaria.",
     "easier": "Sube a una velocidad normal y realiza solo 10 o 12 repeticiones si 20 genera ardor excesivo en la zona de las pantorrillas.",
     "harder": "Realiza las elevaciones a una sola pierna: 10 repeticiones con la pierna derecha y 10 con la izquierda, manteniendo la pierna libre en el aire.",
-    "image": ""
+    "image": "",
+    "trimp": 3,
+    "trimpEasier": 2,
+    "trimpHarder": 5
   },
   "8649ac9c2530df3f9e43443725f38adf": {
     "phase": "3. LiFE Incidental Continuo",
@@ -61,7 +82,10 @@
     "instructions": "1. Visita tu lavabo o apoyo de preferencia y haz 15 elevaciones de pantorrilla rápidas. 2. El resto del día, no pases por el pasillo principal de tu casa sin ejecutar la caminata en tándem.",
     "easier": "Realiza solo 10 elevaciones de pantorrilla y practica el tándem en el pasillo solo una vez por la mañana.",
     "harder": "Realiza las elevaciones de pantorrilla sosteniéndote del lavabo pero manteniendo los ojos cerrados para exigir más propiocepción.",
-    "image": ""
+    "image": "",
+    "trimp": 3,
+    "trimpEasier": 2,
+    "trimpHarder": 5
   },
   "d1714244ca8862ccceea7e56b14b8524": {
     "phase": "2. El Gran Circuito LiFE (3 Rondas)",
@@ -69,46 +93,73 @@
     "instructions": "1. Ve al lavabo y haz 20 pantorrillas. 2. Inmediatamente camina tu pasillo ida y vuelta en tándem. 3. Ve a las escaleras y sube/baja 10 veces por cada pierna. 4. Ve a tu silla y levántate 8 veces (rápido arriba, lento abajo). 5. ¡Eso es una ronda! Siéntate a descansar 2 minutos y repite hasta completar 3 rondas.",
     "easier": "Haz solamente 2 rondas en lugar de 3, y descansa 3 minutos completos (o lo que necesites) sentado entre cada ronda.",
     "harder": "Reduce el tiempo de descanso al final de cada ronda a solo 1 minuto, obligando a tu corazón y pulmones a recuperar el aliento mucho más rápido.",
-    "image": ""
+    "image": "",
+    "trimp": 3,
+    "trimpEasier": 2,
+    "trimpHarder": 5
   },
   "3a8268a9f0ebbe3718780afa22b2d059": {
     "phase": "3. Auditoría de Hábitos y Nutrición",
     "details": "Familiar: Revisa el plan de ingesta proteica para la Semana 6. Celebren haber superado con éxito la introducción al Entrenamiento de Potencia.",
-    "image": ""
+    "image": "",
+    "trimp": 3,
+    "trimpEasier": 2,
+    "trimpHarder": 5
   },
   "0736f9b5dbea17eaf6d713e70e130327": {
     "phase": "3. Incrustación LiFE",
     "details": "Caminata en tándem por el pasillo y pantorrillas rápidas al lavarse las manos.",
-    "image": ""
+    "image": "",
+    "trimp": 3,
+    "trimpEasier": 2,
+    "trimpHarder": 5
   },
   "47f63d980d8165e639bc2f092577815f": {
     "phase": "3. Incrustación LiFE (Pantorrillas Explosivas)",
     "details": "Al lavar los platos, haz 15 elevaciones de pantorrilla subiendo en menos de 1 segundo a la posición de puntillas.",
-    "image": ""
+    "image": "",
+    "trimp": 3,
+    "trimpEasier": 2,
+    "trimpHarder": 5
   },
   "0da1d66d81ba047b630e0fad02e35a23": {
     "phase": "3. Integración LiFE",
     "details": "Al cruzar pasillos o zonas estrechas seguras en el camino, dar algunos pasos en tándem de forma natural.",
-    "image": ""
+    "image": "",
+    "trimp": 3,
+    "trimpEasier": 2,
+    "trimpHarder": 5
   },
   "55c3f896cd3edb73e3ee41ccb0702b79": {
     "phase": "3. LiFE de Retorno",
     "details": "Al regresar y entrar a casa, aplicar el Método LiFE: caminar el pasillo de entrada obligatoriamente en tándem (talón-punta).",
-    "image": ""
+    "image": "",
+    "trimp": 3,
+    "trimpEasier": 2,
+    "trimpHarder": 5
   },
   "d252b195608a4f151f5fef5a7705d6ef": {
     "phase": "3. Integración LiFE",
     "details": "Al regresar, realiza 15 elevaciones de pantorrilla mientras te lavas las manos o guardas las cosas.",
-    "image": ""
+    "image": "",
+    "trimp": 3,
+    "trimpEasier": 2,
+    "trimpHarder": 5
   },
   "9cc93ddadce850794f2444982f5f7829": {
     "phase": "3. Integración LiFE Rápida",
     "details": "Dirígete al lavabo caminando en tándem y realiza 15 elevaciones de pantorrilla a máxima velocidad.",
-    "image": ""
+    "image": "",
+    "trimp": 3,
+    "trimpEasier": 2,
+    "trimpHarder": 5
   },
   "0751de6291da4c9bc661d2e319027648": {
     "phase": "2. Pacto de Mantenimiento (LiFE Constante)",
     "details": "Hagan un pacto: Los ejercicios ya no tienen un 'horario', ahora son parte de la vida. Siempre se caminará en tándem por los pasillos, siempre se subirá rápido de las sillas y se caminará con amigos.",
-    "image": ""
+    "image": "",
+    "trimp": 3,
+    "trimpEasier": 2,
+    "trimpHarder": 5
   }
 }

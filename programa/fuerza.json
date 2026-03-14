@@ -5,7 +5,10 @@
     "instructions": "1. Siéntate en una silla de altura estándar y firme. 2. Cruza los brazos sobre tu pecho. 3. A la señal del familiar, levántate completamente y vuelve a sentarte 5 veces lo más rápido y seguro posible. 4. El familiar debe cronometrar el tiempo exacto desde la señal de inicio hasta que se sienta por quinta vez.",
     "easier": "Si no puede levantarse con los brazos cruzados, permítele usar las manos apoyadas en sus muslos o en los reposabrazos para impulsarse.",
     "harder": "Realiza la prueba utilizando una silla ligeramente más baja (asegurándote de que no haya dolor de rodillas) para aumentar el rango de movimiento exigido.",
-    "image": ""
+    "image": "",
+    "trimp": 10,
+    "trimpEasier": 7,
+    "trimpHarder": 14
   },
   "5de4189b9c3d68f96cf5425c76b47a3b": {
     "phase": "2. Técnica Samurái Rei-ho",
@@ -13,7 +16,10 @@
     "instructions": "1. Siéntate cerca del borde de una silla firme. 2. Cruza los brazos sobre tu pecho. 3. Inhala, inclínate ligeramente hacia adelante y exhala mientras te pones de pie contando lentamente hasta 5. 4. Inhala mientras te vuelves a sentar de forma muy controlada, contando nuevamente hasta 5 antes de que tus glúteos toquen la silla.",
     "easier": "Apoya las manos en los muslos para ayudarte a subir, o coloca un cojín firme en la silla para que la altura de inicio sea mayor.",
     "harder": "Al momento de bajar hacia la silla, haz una pausa completa de 2 segundos justo a la mitad del recorrido antes de terminar de sentarte.",
-    "image": ""
+    "image": "",
+    "trimp": 10,
+    "trimpEasier": 7,
+    "trimpHarder": 14
   },
   "05ccc1d5cff3f69d14564b8a95adcd07": {
     "phase": "2. Rei-ho (Consciencia Respiratoria)",
@@ -21,7 +27,10 @@
     "instructions": "1. Inicia en la silla. Toma aire profundamente por la nariz inflando el estómago. 2. A medida que comienzas a despegarte de la silla, empieza a soplar el aire por la boca como si apagaras una vela a un metro de distancia. 3. Sigue exhalando hasta que estés completamente de pie. 4. Inhala al bajar.",
     "easier": "Permite el apoyo de las manos en los muslos, concentrándose exclusivamente en la mecánica de soplar aire sin interrumpir el flujo.",
     "harder": "Exhala el aire frunciendo mucho los labios (como si silbaras o soplaras a través de un popote) para crear mayor presión abdominal estabilizadora.",
-    "image": ""
+    "image": "",
+    "trimp": 10,
+    "trimpEasier": 7,
+    "trimpHarder": 14
   },
   "b932ce03645d9956712250ffeef9ad76": {
     "phase": "1. Samurái Rei-ho (Perfeccionamiento)",
@@ -29,7 +38,10 @@
     "instructions": "1. Colócate frente a un espejo si es posible. 2. Siéntate y levántate en 5 segundos por fase. 3. Vigila tus rodillas críticamente: deben apuntar en la misma dirección que las puntas de tus pies y nunca juntarse formando una 'X' mientras haces fuerza.",
     "easier": "Coloca una almohada o bloque entre las rodillas; el objetivo será apretar el objeto para recordarte dónde están las rodillas, o haz solo 4 repeticiones.",
     "harder": "Coloca una banda elástica ligera por encima de tus rodillas para forzar a los músculos glúteos a mantener las piernas separadas durante el levantamiento.",
-    "image": ""
+    "image": "",
+    "trimp": 10,
+    "trimpEasier": 7,
+    "trimpHarder": 14
   },
   "58907f718a1422ef81b28b9548965c24": {
     "phase": "3. Samurái Rei-ho (10 repeticiones)",
@@ -37,7 +49,10 @@
     "instructions": "1. A lo largo del día, siéntate al borde de tu silla con brazos cruzados. 2. Levántate contando mentalmente hasta 5. 3. Vuelve a sentarte muy lentamente contando hasta 5, controlando que tus glúteos no 'caigan' bruscamente a la silla. 4. Completa 10 en total en el día.",
     "easier": "Usa una silla ligeramente más alta o apoya las manos levemente en tus muslos durante el momento más difícil de la subida.",
     "harder": "Haz las 10 repeticiones de forma continua en una sola sesión, sin descansar entre cada levantamiento.",
-    "image": ""
+    "image": "",
+    "trimp": 10,
+    "trimpEasier": 7,
+    "trimpHarder": 14
   },
   "63671febfc878824d5f5d6afeb558c12": {
     "phase": "2. Rei-ho Modificado (Potencia Suave)",
@@ -45,7 +60,10 @@
     "instructions": "1. Siéntate en la silla, brazos cruzados. 2. Inhala y, al exhalar fuertemente, impúlsate hacia arriba lo más rápido posible, logrando ponerte de pie en 1 o 2 segundos. 3. Quédate totalmente derecho por 1 segundo. 4. Baja a sentarte tomando tus 5 segundos reglamentarios. 5. Repite 8 veces.",
     "easier": "Permite el uso de los reposabrazos para darte ese primer empuje rápido hacia arriba, facilitando la aceleración inicial.",
     "harder": "Sostén un objeto ligero (como un libro grueso o una botella de agua pequeña) abrazado contra tu pecho mientras te levantas rápido y bajas lento.",
-    "image": ""
+    "image": "",
+    "trimp": 10,
+    "trimpEasier": 7,
+    "trimpHarder": 14
   },
   "c19d648e5007af4479d0225ec612cdef": {
     "phase": "3. Samurái Rei-ho (10 repeticiones)",
@@ -53,7 +71,10 @@
     "instructions": "1. Siéntate al borde de la silla con los brazos cruzados. 2. Tensa un poco el abdomen e impúlsate hacia arriba en solo 1 o 2 segundos soltando el aire. 3. Vuelve a sentarte muy lentamente, tomando 5 segundos para que tus glúteos toquen el asiento. 4. Haz un total de 10 repeticiones a lo largo de tu día (puedes hacer 5 en la mañana y 5 en la tarde).",
     "easier": "Realiza solo 5 repeticiones totales en el día. Si subir rápido te cansa demasiado, hazlo al ritmo normal, pero mantén la bajada súper lenta.",
     "harder": "Realiza las 10 repeticiones de una sola vez, sin descansar, sosteniendo tu 'carga asimétrica' (botella) abrazada fuertemente contra tu pecho.",
-    "image": ""
+    "image": "",
+    "trimp": 10,
+    "trimpEasier": 7,
+    "trimpHarder": 14
   },
   "d6d9613373d8fe45fdf34215b06f2bf5": {
     "phase": "2. Rei-ho con Estabilidad Central",
@@ -61,7 +82,10 @@
     "instructions": "1. Prepárate en el borde de la silla, brazos cruzados. 2. Tensa tu abdomen firmemente (haz el 'bracing'). 3. Con el abdomen duro, levántate rápido (1-2 segundos) mientras exhalas el aire por la boca. 4. Baja a la silla tomando tus 5 segundos completos y relajando el abdomen al sentarte. Haz 8 repeticiones en el día.",
     "easier": "Olvídate de subir rápido. Sube a un ritmo normal (4 a 5 segundos) concentrando toda tu energía solo en mantener la barriga tensa y protegida.",
     "harder": "Haz las 8 repeticiones seguidas sin descanso, y no relajes el abdomen (bracing) ni siquiera en el momento de tocar la silla.",
-    "image": ""
+    "image": "",
+    "trimp": 10,
+    "trimpEasier": 7,
+    "trimpHarder": 14
   },
   "4296aa02bb52f88caaa2594cba43cb98": {
     "phase": "2. Maestría Samurái Rei-ho",
@@ -69,7 +93,10 @@
     "instructions": "1. Siéntate al borde de la silla con la espalda recta y brazos cruzados. 2. Inhala profundo y sube en 2 segundos exhalando fuertemente. 3. Vuelve a sentarte muy, muy lentamente, contando 5 segundos en tu mente antes de que tus glúteos descansen en la silla. 4. Completa 10 repeticiones a tu propio ritmo a lo largo del día.",
     "easier": "Baja en 3 o 4 segundos si notas que en el segundo 5 tus piernas tiemblan demasiado o te dejas caer de golpe. Usa una silla ligeramente más alta.",
     "harder": "Haz las 10 repeticiones seguidas en una sola sesión, asegurándote de no relajar el abdomen en ningún momento.",
-    "image": ""
+    "image": "",
+    "trimp": 10,
+    "trimpEasier": 7,
+    "trimpHarder": 14
   },
   "1f4c7338412e147ea73ae5beddfb415c": {
     "phase": "3. Mantenimiento de Fuerza",
@@ -77,7 +104,10 @@
     "instructions": "1. Sitúate frente al escalón más bajo de una escalera apoyado en el barandal. 2. Sube el pie derecho y empuja fuerte hacia arriba usando tu talón, no la punta del pie. 3. Sube la pierna izquierda, y luego baja de forma alternada. 4. Haz 5 subidas completas iniciando con la derecha, y 5 con la izquierda.",
     "easier": "Sostente fuertemente del barandal con ambas manos y sube muy lentamente sin importar la velocidad de empuje.",
     "harder": "Sube de forma explosiva soltando el aire fuerte, y baja controladamente en 4 segundos sin aferrarte excesivamente al barandal.",
-    "image": ""
+    "image": "",
+    "trimp": 10,
+    "trimpEasier": 7,
+    "trimpHarder": 14
   },
   "65773f297505bd3bab6a79175b45a361": {
     "phase": "3. Levantamientos Samurái",
@@ -85,46 +115,73 @@
     "instructions": "1. Desde el borde de la silla y con los brazos cruzados. 2. Activa el bracing (abdomen duro), inhala y sube disparado hacia arriba en 1 a 2 segundos soltando el aire. 3. Toma 5 segundos lentos para bajar. 4. Repite 8 veces en tus momentos libres del día.",
     "easier": "Ayúdate apoyando las manos sobre tus muslos justo en el momento de despegar de la silla.",
     "harder": "Baja lentamente y, justo cuando sientas que tus glúteos rozan la tela de la silla, pausa 2 segundos en el aire antes de dejar caer tu peso por completo.",
-    "image": ""
+    "image": "",
+    "trimp": 10,
+    "trimpEasier": 7,
+    "trimpHarder": 14
   },
   "175f09a56ef8112aa36620429c486410": {
     "phase": "2. Rei-ho de Potencia (Sit-to-stand)",
     "details": "Sentado en la silla. Exhala y ponte de pie de forma EXPLOSIVA (1 segundo). Pausa arriba 1 segundo. Siéntate muy lentamente en 3 segundos. Repite 8 veces.",
-    "image": ""
+    "image": "",
+    "trimp": 10,
+    "trimpEasier": 7,
+    "trimpHarder": 14
   },
   "8314485ab7456340e6a7bedc857479ae": {
     "phase": "3. Potencia Samurái y Nombres",
     "details": "Haz 8 levantamientos rápidos de la silla. Por cada vez que te pongas de pie, debes decir un país de Europa. No repitas.",
-    "image": ""
+    "image": "",
+    "trimp": 10,
+    "trimpEasier": 7,
+    "trimpHarder": 14
   },
   "dfc30efdc31b3a4e06bcdc2985c8895b": {
     "phase": "3. Rei-ho Samurái Explosivo",
     "details": "8 Levantamientos de silla. Sube como un cohete (1 segundo), baja controlando tu peso (3 segundos).",
-    "image": ""
+    "image": "",
+    "trimp": 10,
+    "trimpEasier": 7,
+    "trimpHarder": 14
   },
   "dcd3f39cf87e984bb569db2bafb4ba41": {
     "phase": "3. Samurái de Potencia Final",
     "details": "8 Levantamientos rápidos de silla para consolidar las fibras Tipo II.",
-    "image": ""
+    "image": "",
+    "trimp": 10,
+    "trimpEasier": 7,
+    "trimpHarder": 14
   },
   "1f88d4959f070a91326a83265b92823b": {
     "phase": "2. Rei-ho de Máxima RFD",
     "details": "8 Levantamientos de silla. Concéntrate exclusivamente en que el primer impulso para despegar los glúteos de la silla sea lo más rápido posible. Baja en 4 segundos.",
-    "image": ""
+    "image": "",
+    "trimp": 10,
+    "trimpEasier": 7,
+    "trimpHarder": 14
   },
   "f9aa79b4de006b7c1b10bc9973d02cf2": {
     "phase": "3. Samurái con Carga Ligera",
     "details": "Haz 8 levantamientos de la silla abrazando la botella de agua contra tu pecho. Sube explosivo, baja lento.",
-    "image": ""
+    "image": "",
+    "trimp": 10,
+    "trimpEasier": 7,
+    "trimpHarder": 14
   },
   "5cabb192479a414118387a2a1420fe5e": {
     "phase": "3. Mantenimiento Samurái",
     "details": "Al regresar a casa, realiza 5 levantamientos Rei-ho de la silla de forma rápida (potencia) para no perder la adaptación de la Fase 2.",
-    "image": ""
+    "image": "",
+    "trimp": 10,
+    "trimpEasier": 7,
+    "trimpHarder": 14
   },
   "b161ef1cb0ad0d16e0ebad8742e473c7": {
     "phase": "2. Samurái Urbano (Banca de Parque)",
     "details": "En una banca firme: 8 levantamientos rápidos. Al bajar, hazlo en 3 segundos. Presta mucha atención porque la altura de la banca puede ser diferente a la de tu silla habitual.",
-    "image": ""
+    "image": "",
+    "trimp": 10,
+    "trimpEasier": 7,
+    "trimpHarder": 14
   }
 }
