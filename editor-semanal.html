@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor Semanal | miplan.pro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="css/editor-semanal.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1 style="font-size: 1.5rem;">miplan<span>.pro</span> Semanal</h1>
+        </div>
+        <div class="header-actions">
+            <a href="editor.html" class="btn btn-secondary" style="text-decoration: none;">
+                <i class="ph ph-barbell"></i> Editor Biblioteca
+            </a>
+            <button id="export-btn" class="btn btn-accent">
+                <i class="ph ph-file-arrow-up"></i> Exportar JSON
+            </button>
+        </div>
+    </header>
+
+    <div class="editor-layout">
+        <aside class="sidebar">
+            <div class="form-group">
+                <label for="week-select">Seleccionar Semana</label>
+                <select id="week-select" class="form-control">
+                    <!-- Range 1-12 -->
+                    <option value="01">Semana 1</option>
+                    <option value="02">Semana 2</option>
+                    <option value="03">Semana 3</option>
+                    <option value="04">Semana 4</option>
+                    <option value="05">Semana 5</option>
+                    <option value="06">Semana 6</option>
+                    <option value="07">Semana 7</option>
+                    <option value="08">Semana 8</option>
+                    <option value="09">Semana 9</option>
+                    <option value="10">Semana 10</option>
+                    <option value="11">Semana 11</option>
+                    <option value="12">Semana 12</option>
+                </select>
+            </div>
+            
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2rem;">
+                Este editor permite modificar la planeación de cada día y los ejercicios asignados.
+            </p>
+        </aside>
+
+        <main class="main-content" id="days-container">
+            <!-- Days 0 to 7 will be injected here -->
+            <div style="text-align: center; padding: 4rem; color: var(--text-muted);">
+                <i class="ph ph-spinner ph-spin" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                <p>Cargando datos de la semana...</p>
+            </div>
+        </main>
+    </div>
+
+    <!-- Exercise Picker Modal -->
+    <div id="picker-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Agregar Ejercicio</h3>
+                <button id="close-picker" class="btn-icon"><i class="ph ph-x"></i></button>
+            </div>
+            <div class="picker-search">
+                <input type="text" id="picker-search-input" class="form-control" placeholder="Buscar por título o descripción...">
+            </div>
+            <ul id="picker-list" class="picker-list">
+                <!-- Injected via JS -->
+            </ul>
+        </div>
+    </div>
+
+    <div id="save-fab" class="save-fab" style="display: none; background: white; border: 1px solid var(--border); align-items: center; gap: 1rem; padding: 0 1rem;">
+        <span style="color: var(--accent); font-weight: 600; font-size: 0.9rem;">
+            <i class="ph ph-check-circle"></i> Cambios en memoria
+        </span>
+        <button id="discard-btn" class="btn btn-secondary" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">Reiniciar</button>
+    </div>
+
+    <script src="js/editor-semanal.js"></script>
+</body>
+</html>
