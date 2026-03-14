@@ -1,0 +1,261 @@
+[
+    {
+        "id": 15,
+        "week": 3,
+        "day": "Día 15",
+        "title": "Sobrecarga Incidental y Cadenas Asimétricas",
+        "quote": "La fuerza verdadera es la que puedes usar en tu vida diaria. Hoy convertimos las tareas comunes en tu entrenamiento.",
+        "scienceTitle": "La Ciencia del Día: Carga Asimétrica y Estabilidad del Core",
+        "science": "En la vida real, rara vez cargamos pesos perfectamente equilibrados. Llevar la bolsa del supermercado en una sola mano obliga a los músculos estabilizadores del tronco (core) a contraerse para evitar que la columna se doble. Al introducir una 'carga asimétrica' ligera y segura en tus caminatas en tándem, activamos estos estabilizadores profundos que protegen tu espalda baja.",
+        "adultRole": "Hoy caminarás sosteniendo un objeto ligero en una sola mano (por ejemplo, un libro o una botella pequeña de agua). Concéntrate en mantener tu cuerpo completamente derecho, sin inclinarte hacia el lado del peso.",
+        "familyRole": "Proporciona el objeto ligero (no más de 1 kg para empezar). Camina junto al adulto mayor y observa sus hombros: deben mantenerse nivelados. Si se inclina, recuérdale suavemente 'hombros rectos'.",
+        "routine": [
+            {
+                "phase": "1. Movilidad Articular Dinámica",
+                "details": "Balanceos de pierna hacia adelante y atrás (10x pierna). Círculos amplios con los brazos como si nadaras (hacia adelante y hacia atrás).",
+                "instructions": "1. De pie junto a una pared, apóyate ligeramente con una mano. 2. Balancea tu pierna derecha libremente adelante y atrás 10 veces, luego cambia a la izquierda. 3. Suelta la pared (o usa ambas manos si tu equilibrio lo permite) y dibuja círculos grandes hacia adelante con ambos brazos, como si nadaras estilo crol (10 veces). 4. Repite el movimiento de brazos hacia atrás.",
+                "easier": "Realiza los círculos de brazos sentado en una silla, y los balanceos de pierna sosteniéndote con ambas manos del respaldo de una silla pesada.",
+                "harder": "Haz los balanceos de pierna sin apoyarte de ninguna superficie (trabajando el equilibrio puro) y combínalos moviendo el brazo contrario al mismo tiempo.",
+                "image": ""
+            },
+            {
+                "phase": "2. Tándem con Carga Asimétrica",
+                "details": "Camina por el pasillo en tándem sosteniendo un libro en la mano derecha. Al regresar, sostén el libro en la mano izquierda. Mantén la mirada al frente.",
+                "instructions": "1. Toma un objeto ligero (un libro, una botella de agua de 500ml) en tu mano derecha. 2. Camina por tu pasillo colocando el talón justo delante de la punta del otro pie (tándem). 3. Concéntrate en mantener la espalda recta; no dejes que el peso tire de tu hombro hacia abajo. 4. Al llegar al final, cambia el objeto a tu mano izquierda, da la vuelta y regresa.",
+                "easier": "Usa un objeto extremadamente ligero (como un vaso de plástico vacío o una toalla pequeña) o camina con los pies un poco separados (semi-tándem).",
+                "harder": "Utiliza una botella de agua de 1 litro a 1.5 litros en una sola mano. A mayor peso, el abdomen (core) tiene que trabajar más para mantenerte recto.",
+                "image": ""
+            },
+            {
+                "phase": "3. Samurái Rei-ho (10 repeticiones)",
+                "details": "Continúa con la cadencia de potencia: Sube rápido (2 segundos), baja lento (5 segundos). Distribuye las repeticiones en el día.",
+                "instructions": "1. Siéntate al borde de la silla con los brazos cruzados. 2. Tensa un poco el abdomen e impúlsate hacia arriba en solo 1 o 2 segundos soltando el aire. 3. Vuelve a sentarte muy lentamente, tomando 5 segundos para que tus glúteos toquen el asiento. 4. Haz un total de 10 repeticiones a lo largo de tu día (puedes hacer 5 en la mañana y 5 en la tarde).",
+                "easier": "Realiza solo 5 repeticiones totales en el día. Si subir rápido te cansa demasiado, hazlo al ritmo normal, pero mantén la bajada súper lenta.",
+                "harder": "Realiza las 10 repeticiones de una sola vez, sin descansar, sosteniendo tu 'carga asimétrica' (botella) abrazada fuertemente contra tu pecho.",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "week": 3,
+        "day": "Día 16",
+        "title": "Cognicise Avanzado: Ritmo y Matemáticas",
+        "quote": "Cuando el cuerpo y la mente bailan al mismo ritmo, las caídas desaparecen del escenario.",
+        "scienceTitle": "La Ciencia del Día: Protocolo HEPOP y Reserva Cognitiva",
+        "science": "Según el Home Exercise Program for Older People (HEPOP) de Japón, realizar una tarea motora rítmica mientras se resuelve una regla matemática estimula intensamente el lóbulo frontal. Al marchar y aplaudir solo en múltiplos de un número, forzamos la 'inhibición motora' (saber cuándo NO aplaudir), una habilidad neurológica clave para reaccionar ante tropiezos inesperados.",
+        "adultRole": "Hoy el reto es divertido y mental. Marcharás contando en voz alta. Cada vez que llegues a un múltiplo de 3 (3, 6, 9, 12...), debes dar una palmada en lugar de decir el número.",
+        "familyRole": "Haz el ejercicio junto a tu familiar. Es normal equivocarse y reírse. Si resulta muy difícil, háganlo sentados primero y luego intenten de pie.",
+        "routine": [
+            {
+                "phase": "1. Marcha con Palmadas (Cognicise HEPOP)",
+                "details": "Marcha en el sitio elevando rodillas. Cuenta los pasos en voz alta: '1, 2, [Palmada], 4, 5, [Palmada], 7...'. Llega hasta el 30 y repite 3 veces.",
+                "instructions": "1. Ponte de pie en un área despejada e inicia una marcha en tu lugar (subiendo y bajando rodillas). 2. Cuenta cada paso en voz alta: 'Uno, dos...'. 3. Al llegar a un número múltiplo de 3 (tres, seis, nueve...), da una fuerte palmada y omite decir el número. (Ej. 'Uno, dos, *clap*, cuatro, cinco, *clap*...'). 4. Sigue marchando hasta llegar a 30. Descansa 1 minuto y repítelo 3 veces en total.",
+                "easier": "Hagan el ejercicio sentados en la silla levantando los pies alternadamente. Si la tabla del 3 confunde demasiado, háganlo con la tabla del 5 (aplaudir en el 5, 10, 15).",
+                "harder": "Cuenten hacia atrás desde el 30 (30, 29, 28...) y aplaudan en los números que sean pares o múltiplos de 3.",
+                "image": ""
+            },
+            {
+                "phase": "2. Elevación de Pantorrillas (Ritmo Rápido)",
+                "details": "Apoyado en el lavabo, haz 15 elevaciones subiendo rápidamente y bajando en 3 segundos. Exhala al subir.",
+                "instructions": "1. Ve a tu lavabo o fregadero de apoyo usual. 2. Empuja el piso con las puntas de tus pies lo más rápido que puedas hasta quedar de puntillas (1 segundo). Exhala fuerte. 3. Baja controlando tu peso en 3 segundos completos. 4. Repite esto 15 veces seguidas sin descansar en el suelo.",
+                "easier": "Haz solo 10 repeticiones. Si el impulso rápido molesta la planta del pie, sube a una velocidad normal de 2 segundos.",
+                "harder": "Realiza las elevaciones sobre una sola pierna: dobla una pierna hacia atrás en el aire y haz 10 repeticiones con la derecha, luego 10 con la izquierda.",
+                "image": ""
+            },
+            {
+                "phase": "3. Mantenimiento LiFE",
+                "details": "Caminata en tándem libre por el pasillo cada vez que pases por él durante el día.",
+                "instructions": "1. Define tu 'zona de tándem' (el pasillo). 2. A lo largo del día, sin horario fijo, cada vez que vayas a la habitación o a la cocina caminando por ese pasillo, hazlo tocando el talón con la punta de tus pies.",
+                "easier": "Camina dejando 5 centímetros de separación entre tu talón y la punta de tu otro pie (semi-tándem), apoyando una mano en la pared si hay fatiga.",
+                "harder": "Al caminar por tu pasillo en tándem, gira la cabeza lenta y continuamente de derecha a izquierda como si escanearas las paredes.",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "week": 3,
+        "day": "Día 17",
+        "title": "Despertar Propioceptivo Sensorial",
+        "quote": "A veces, para ver de qué eres verdaderamente capaz, necesitas cerrar los ojos y confiar en tus raíces.",
+        "scienceTitle": "La Ciencia del Día: Dependencia Visual y Sistema Somatosensorial",
+        "science": "El equilibrio depende de 3 sistemas: la vista, el oído interno (vestibular) y los sensores en las articulaciones (propiocepción). Con la edad, nos volvemos 'visualmente dependientes'. Al cerrar los ojos de forma segura por unos segundos, obligamos a los tobillos y al oído interno a trabajar el doble, recalibrando nuestro GPS corporal interno.",
+        "adultRole": "Hoy practicaremos el equilibrio sin usar la vista. Es fundamental que NUNCA sueltes tu apoyo (silla o pared) mientras tengas los ojos cerrados. Siente cómo trabajan los músculos de tus pies.",
+        "familyRole": "Colócate muy cerca hoy. El adulto mayor estará sostenido de una silla firme, pero quitar el estímulo visual puede causar un ligero balanceo. Tu presencia da seguridad psicológica.",
+        "routine": [
+            {
+                "phase": "1. Movilidad y Calentamiento de Tobillos",
+                "details": "Sentado, levanta un pie del suelo y dibuja las letras del alfabeto en el aire con la punta de tu zapato. Repite con el otro pie.",
+                "instructions": "1. Siéntate cómodamente con la espalda recta. 2. Extiende la pierna derecha un poco hacia adelante, separando el pie del suelo. 3. Movimiendo ÚNICAMENTE tu tobillo (no la rodilla ni la cadera), imagina que la punta de tu zapato es un lápiz e intenta dibujar en el aire las letras del abecedario de la A a la Z. 4. Repite todo con el tobillo izquierdo.",
+                "easier": "Dibuja el alfabeto solo de la A a la M, o en su lugar haz 15 círculos amplios con el tobillo hacia la derecha y 15 hacia la izquierda.",
+                "harder": "Dibuja el alfabeto manteniendo la pierna totalmente estirada y paralela al suelo, lo que exigirá una contracción fuerte del músculo cuádriceps (muslo).",
+                "image": ""
+            },
+            {
+                "phase": "2. Equilibrio Somatosensorial (Ojos Cerrados)",
+                "details": "De pie, agarrado FIRMEMENTE del respaldo de una silla sólida. Pies juntos. Cierra los ojos y mantén la posición 10 segundos. Siente cómo tu peso se ajusta en la planta de los pies. Repite 3 veces. Familiar: vigila de cerca.",
+                "instructions": "1. Ponte de pie detrás de una silla pesada, de una mesa o en el fregadero. Familiar colócate muy cerca de lado. 2. Agárrate fuerte con AMBAS manos. 3. Junta tus pies por completo. 4. Cierra los ojos. Mantén la concentración en cómo los músculos de la planta de tu pie trabajan para mantenerte centrado. 5. Cuenta hasta 10, abre los ojos y respira. Repite 3 veces.",
+                "easier": "Mantén los pies separados a la anchura de tus hombros (base amplia) antes de cerrar los ojos para tener una plataforma más estable.",
+                "harder": "Con los pies totalmente juntos y los ojos cerrados, intenta soltar una mano del apoyo (quedando sostenido de una sola mano). ¡Nunca sueltes ambas manos con los ojos cerrados!",
+                "image": ""
+            },
+            {
+                "phase": "3. Step-ups (Escalones)",
+                "details": "Con los ojos ABIERTOS y apoyado del barandal, sube y baja el primer escalón 10 veces por cada pierna.",
+                "instructions": "1. Ojos bien abiertos. Ve al primer escalón de tu casa o usa un bloque firme. Sostente del barandal. 2. Sube el pie derecho y empuja hacia arriba; sube el izquierdo. 3. Baja el derecho, luego el izquierdo. 4. Haz este ciclo 10 veces liderando con el pie derecho, y luego 10 veces liderando con el pie izquierdo.",
+                "easier": "Sube y baja el escalón siempre liderando con tu pierna más fuerte, y realiza solo 6 u 8 repeticiones si tus rodillas se sienten tensas.",
+                "harder": "Sube impulsándote fuerte y rápido, y al estar arriba en el escalón, levanta la otra rodilla hacia tu pecho antes de volver a bajarla (como simulando dar otro paso).",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "week": 3,
+        "day": "Día 18",
+        "title": "Presión Intraabdominal y Estabilidad Central",
+        "quote": "Tu abdomen es el puente entre la fuerza de tus piernas y la postura de tus hombros. Hoy fortalecemos ese puente.",
+        "scienceTitle": "La Ciencia del Día: El 'Bracing' del Core",
+        "science": "El 'bracing' (co-contracción de los músculos abdominales) crea un cilindro rígido de presión alrededor de la columna lumbar. A diferencia de 'sumir la barriga', el bracing consiste en tensar el abdomen como si fueras a recibir un pequeño empujón, sin aguantar la respiración. Esto estabiliza la pelvis al levantarnos de una silla o recoger algo del suelo.",
+        "adultRole": "Hoy quiero que notes tu abdomen al levantarte. Ténselo ligeramente, como si quisieras ponerlo duro, pero sigue exhalando el aire (soplando) mientras te pones de pie.",
+        "familyRole": "Recuérdale la analogía: 'Imagina que vas a toser, nota cómo se tensa la barriga. Mantén esa ligera tensión mientras te levantas, pero no dejes de soplar el aire'.",
+        "routine": [
+            {
+                "phase": "1. Práctica de 'Bracing' Sentado",
+                "details": "Sentado en la silla, pon las manos en tu cintura. Tose suavemente para sentir cómo los músculos saltan hacia afuera. Ahora, intenta recrear esa tensión muscular empujando tus dedos hacia afuera con tu abdomen. Mantén 5 segundos respirando normal. (5 veces).",
+                "instructions": "1. Siéntate con la espalda recta y pon tus manos abrazando tus costados/cintura. 2. Tose un par de veces para sentir la activación muscular. 3. Ahora, sin toser, aprieta la barriga intentando empujar tus propias manos hacia afuera (como inflando un neumático duro). 4. Mantén la tensión del abdomen por 5 segundos mientras respiras fluido. Relaja. Repite 5 veces.",
+                "easier": "Enfócate simplemente en respirar profundo inflando el abdomen al inhalar y desinflándolo muy lentamente al exhalar sin preocuparte de 'tensar' con tanta fuerza.",
+                "harder": "Realiza la práctica del 'Bracing' de pie y mantén la tensión durante 10 segundos continuos mientras marchas en tu mismo lugar.",
+                "image": ""
+            },
+            {
+                "phase": "2. Rei-ho con Estabilidad Central",
+                "details": "Al hacer los 8 levantamientos de hoy (2 seg. para subir, 5 seg. para bajar), activa el 'bracing' (tensa el abdomen) justo antes de despegar de la silla. Exhala al subir.",
+                "instructions": "1. Prepárate en el borde de la silla, brazos cruzados. 2. Tensa tu abdomen firmemente (haz el 'bracing'). 3. Con el abdomen duro, levántate rápido (1-2 segundos) mientras exhalas el aire por la boca. 4. Baja a la silla tomando tus 5 segundos completos y relajando el abdomen al sentarte. Haz 8 repeticiones en el día.",
+                "easier": "Olvídate de subir rápido. Sube a un ritmo normal (4 a 5 segundos) concentrando toda tu energía solo en mantener la barriga tensa y protegida.",
+                "harder": "Haz las 8 repeticiones seguidas sin descanso, y no relajes el abdomen (bracing) ni siquiera en el momento de tocar la silla.",
+                "image": ""
+            },
+            {
+                "phase": "3. Tándem con Rotación Cervical",
+                "details": "Cruza el pasillo en tándem girando la cabeza lentamente a derecha e izquierda. Usa la pared si pierdes estabilidad.",
+                "instructions": "1. Inicia la caminata talón-punta en el pasillo. 2. Da dos pasos. 3. Gira la cabeza lentamente hacia la derecha, luego hacia la izquierda sin detener tu marcha. 4. Si el giro de cabeza te hace tambalear, extiende tus brazos a los lados o roza la pared con tus dedos.",
+                "easier": "Detente por completo en seco, gira la cabeza a ambos lados, vuelve la mirada al frente y continúa tus pasos de tándem.",
+                "harder": "Gira la cabeza hacia arriba (mirando al techo) y hacia abajo (mirando al piso) mientras caminas en tándem sin detenerte.",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "week": 3,
+        "day": "Día 19",
+        "title": "Fluidez y Circuito Metabólico LiFE",
+        "quote": "No dejamos de movernos porque envejecemos, envejecemos porque dejamos de movernos. Mantén el motor encendido.",
+        "scienceTitle": "La Ciencia del Día: El Gasto Cardíaco y el Retorno Venoso",
+        "science": "Al encadenar varios ejercicios seguidos sin descanso prolongado, aumentamos suavemente la frecuencia cardíaca. Las contracciones musculares de las piernas, especialmente las pantorrillas (nuestro 'segundo corazón'), bombean la sangre de vuelta hacia el tórax, mejorando la circulación periférica y la salud vascular sin necesidad de correr.",
+        "adultRole": "Hoy uniremos todo lo aprendido en un circuito continuo. Sentirás que tu corazón late un poco más rápido y que tu respiración se acelera. Eso es excelente. Si no puedes hablar fluidamente, baja el ritmo.",
+        "familyRole": "Serás el cronometrador y animador. Supervisa que la técnica no se deteriore por la fatiga. Si notas que la rodilla tiembla mucho al levantarse, sugiere una pausa.",
+        "routine": [
+            {
+                "phase": "1. Calentamiento Articular",
+                "details": "5 minutos de marcha en el sitio, balanceos de piernas y giros de torso.",
+                "instructions": "1. Ponte de pie y marcha en tu sitio levantando las rodillas a ritmo moderado durante 2 minutos. 2. Apoyado, balancea cada pierna adelante y atrás 10 veces. 3. Con manos en la cintura, gira tu torso (hombros y pecho) de izquierda a derecha de forma suave unas 10 veces.",
+                "easier": "Reduce el calentamiento a 3 minutos, haciendo los giros de torso sentado y una marcha más lenta casi sin despegar los pies del piso.",
+                "harder": "Acompaña la marcha moviéndote por toda la sala (no en un solo sitio) y braceando como si caminaras rápido hacia un destino.",
+                "image": ""
+            },
+            {
+                "phase": "2. Circuito Metabólico Continuo (2 Rondas)",
+                "details": "Realiza en orden y sin descanso largo: 15 Elevaciones de pantorrilla -> Caminata en tándem ida y vuelta (aprox. 10 metros en total) -> 8 Step-ups (subir escalón) por pierna -> 5 Levantamientos Samurái de la silla. Descansa 2 minutos y repite una vez más.",
+                "instructions": "1. Empieza en el lavabo con 15 pantorrillas rápidas. 2. Date la vuelta y camina por el pasillo en tándem ida y vuelta. 3. Ve directo a las escaleras y sube/baja 8 veces con cada pierna. 4. Ve a tu silla y levántate 5 veces explosivamente con bajada en 5 segundos. 5. Siéntate a descansar 2 minutos completos y repite todo el bloque.",
+                "easier": "Tómate 45 segundos de descanso sentado entre CADA ejercicio, en lugar de encadenarlos todos de golpe.",
+                "harder": "Añade una Tercera Ronda al circuito y reduce el tiempo de descanso al final de cada vuelta a solo 1 minuto.",
+                "image": ""
+            },
+            {
+                "phase": "3. Estiramiento de Regreso a la Calma",
+                "details": "Apoya las manos en la pared y estira ambas pantorrillas durante 20 segundos cada una. Respira profundamente.",
+                "instructions": "1. Frente a la pared, apoya tus manos. 2. Lleva la pierna derecha un gran paso hacia atrás. 3. Mantén la rodilla trasera recta y el talón fuertemente pegado al piso. 4. Dobla un poco la rodilla de adelante y acerca tu pecho a la pared hasta sentir el estiramiento. Mantén 20 segundos, respira y cambia de pierna.",
+                "easier": "Si no te da confianza apoyarte en la pared, siéntate al borde de la silla, estira una pierna recta tocando el piso con el talón y levanta la punta del zapato hacia ti jalando suavemente.",
+                "harder": "Haz el estiramiento en la pared, y luego dobla ligeramente la rodilla de la pierna de atrás sin despegar el talón para estirar el músculo sóleo.",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "week": 3,
+        "day": "Día 20",
+        "title": "Coaching Semanal y Superación de Terrenos",
+        "quote": "La confianza no es la ausencia de miedo a caer, es la certeza de que tu cuerpo sabe cómo sostenerte.",
+        "scienceTitle": "La Ciencia del Día: Autoeficacia y Entornos Ecológicos",
+        "science": "La 'Autoeficacia' (concepto de Bandura) es la creencia en nuestra propia capacidad para tener éxito. El miedo a caer (kinesiofobia) a menudo causa más caídas que la propia debilidad física. Caminar sobre diferentes texturas (terrenos ecológicos) le demuestra a tu cerebro que tus tobillos ya son lo suficientemente fuertes para adaptarse a superficies irregulares.",
+        "adultRole": "Hoy saldremos a caminar fuera de casa. Presta atención a cómo tus pies y tobillos se adaptan a diferentes texturas (pasto, concreto, tierra). Confía en la fuerza que has construido estas 3 semanas.",
+        "familyRole": "En la sesión de coaching, revisen los avances desde el Día 0. ¿Recuerdas cuánto te costaba levantarte de la silla? Miren lo fácil que es ahora. Luego, guíalo a caminar en un parque con terrenos ligeramente variados.",
+        "routine": [
+            {
+                "phase": "1. Sesión de Coaching (15 min)",
+                "details": "Revisar las evaluaciones de la Semana 3. Felicitar por el logro del circuito continuo de ayer y la mejora en la estabilidad del core.",
+                "instructions": "1. Familiar: Sirve una bebida y siéntate frente a frente. 2. Pregúntale a tu familiar cómo sintió la resistencia de su corazón al hacer todos los ejercicios seguidos ayer. 3. Celebren que el equilibrio y la fuerza ya no se sienten como una carga. 4. Planifiquen salir a caminar en los próximos 10 minutos.",
+                "easier": "No estructures una reunión. Únicamente elogia el buen trabajo que hizo ayer mientras le ayudas a ponerse un calzado cómodo para la caminata.",
+                "harder": "Anoten en un cuaderno cuáles han sido los 2 ejercicios en los que sienten que han mejorado de forma más dramática desde el día 1.",
+                "image": ""
+            },
+            {
+                "phase": "2. Caminata Ecológica (20-30 min)",
+                "details": "Caminar al aire libre. Intentar caminar 2 minutos sobre césped (pasto) seguro y sin hoyos, y luego volver al pavimento. Familiar: mantente atento en el cambio de terreno.",
+                "instructions": "1. Diríjanse a un parque cercano. 2. Empiecen caminando por los caminos asfaltados o de concreto. 3. Busquen una zona de césped plana y sin obstáculos obvios. Caminen sobre el pasto durante unos 2 minutos. 4. Observa cómo tus pies tienen que 'leer' el terreno irregular. 5. Vuelvan al camino pavimentado y alternen este cambio de texturas unas 3 veces en la caminata.",
+                "easier": "Eviten el pasto por completo si genera demasiada ansiedad o si llovió, y caminen 15 a 20 minutos solo en superficies completamente planas y conocidas.",
+                "harder": "Caminen sobre pasto un poco más alto, caminos de tierra suelta o zonas con adoquines irregulares (siempre seguros) para forzar los reflejos de corrección del tobillo.",
+                "image": ""
+            },
+            {
+                "phase": "3. Retracciones Escapulares",
+                "details": "Al caminar, recuerda de vez en cuando apretar los omóplatos hacia atrás para mantener el pecho abierto y la postura erguida.",
+                "instructions": "1. Durante la caminata, el familiar debe decir '¡Abre el pecho!' un par de veces. 2. En ese momento, lleva los hombros ligeramente hacia atrás juntando las escápulas. 3. Mantén esa postura orgullosa y erguida por lo menos 1 minuto antes de relajar.",
+                "easier": "Haz las correcciones de postura únicamente cuando te detengas en un semáforo o si decides sentarte a descansar en una banca del parque.",
+                "harder": "Mantén los omóplatos apretados hacia atrás y el pecho proyectado hacia adelante durante intervalos completos de 3 a 5 minutos mientras aceleras el paso en la caminata.",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "week": 3,
+        "day": "Día 21",
+        "title": "Regeneración, Hidratación y Fascia",
+        "quote": "Como un árbol en primavera, tu cuerpo necesita agua para que cada rama sea flexible y resistente.",
+        "scienceTitle": "La Ciencia del Día: Deslizamiento Fascial e Hidratación",
+        "science": "La fascia es el tejido conectivo que envuelve todos los músculos del cuerpo (como la telilla blanca del pollo crudo). Para que los músculos se deslicen suavemente y no duelan, la fascia necesita estar altamente hidratada. Con la edad, el reflejo de la sed disminuye, provocando deshidratación silenciosa que se manifiesta como rigidez muscular generalizada.",
+        "adultRole": "Hoy el ejercicio es darte un respiro físico y concentrarte en beber suficiente agua. Si la orina es muy amarilla, necesitas más líquidos. El cuerpo bien hidratado es menos propenso a lesiones y contracturas.",
+        "familyRole": "Auditoría de hidratación. Asegúrate de que el adulto mayor consuma al menos de 1.5 a 2 litros de agua (o infusiones/caldos sin azúcar excesiva) a lo largo del día. Ofrece vasos pequeños frecuentemente en lugar de forzar grandes cantidades a la vez.",
+        "routine": [
+            {
+                "phase": "1. Descanso Activo y LiFE Natural",
+                "details": "Día libre de rutina formal de fuerza. Mantén la caminata en tándem solo si te sientes con ganas. Evita largos periodos sentado (levántate al menos cada hora).",
+                "instructions": "1. Prohibido hacer sentadillas o levantar objetos pesados hoy. 2. Permite que las fibras musculares sanen solas. 3. Si vas de la sala a la cocina, intenta hacer tus pasos en tándem como pasatiempo. 4. Cada hora que estés viendo TV o leyendo, levántate a dar una vuelta de un minuto por la casa.",
+                "easier": "Si existe mucho dolor muscular (agujetas), permanece en descanso total, recostado con las piernas ligeramente elevadas sobre un cojín.",
+                "harder": "Haz una rutina de estiramientos en el piso de unos 10 a 15 minutos enfocada en estirar cuádriceps, glúteos y espalda baja.",
+                "image": ""
+            },
+            {
+                "phase": "2. Control de Hidratación y Nutrición",
+                "details": "Familiar: Sirve un vaso de agua extra con las comidas. Asegura que las ingestas principales mantengan el estándar de proteína magra (pollo, pescado, huevos, lentejas).",
+                "instructions": "1. Preparen una jarra de agua (puede ser de jamaica o limón natural sin mucha azúcar) y colóquenla a la vista. 2. Beban un vaso pequeño cada hora y media. 3. Aseguren que el almuerzo y la cena contengan un buen trozo de carne magra, pescado o legumbres para tener los aminoácidos listos para la reparación.",
+                "easier": "Si beber agua pura cuesta trabajo, sumen líquidos a través de sopas, caldos desgrasados, tés de manzanilla o comiendo gelatinas.",
+                "harder": "Aseguren que la fuente de proteínas de hoy esté enfocada en el pescado o agreguen semillas de chía/linaza para sumar ácidos grasos Omega-3 antiinflamatorios.",
+                "image": ""
+            },
+            {
+                "phase": "3. Cierre de Fase",
+                "details": "Reflexionen: Han completado la fase de 'Cimentación Psicológica y Biomecánica'. El cuerpo ya está preparado para entrar al mes 2 (Semana 4 y 5 en adelante) con una base de acero.",
+                "instructions": "1. Terminen el día reconociendo que han sobrevivido y prosperado en los primeros 21 días. 2. Su cerebro ya está adaptando el hábito. 3. Visualicen que las próximas semanas empezaremos a ser un poco más rápidos e introduciremos juegos y retos más dinámicos.",
+                "easier": "Descansen la mente y no hablen del programa; simplemente disfruten de una película o actividad recreativa en casa.",
+                "harder": "Revisen la planificación de la Semana 4 juntos, preparen la ropa cómoda que usarán y asignen un horario fijo y estricto para los entrenamientos del mes que viene.",
+                "image": ""
+            }
+        ]
+    }
+]

@@ -1,0 +1,198 @@
+[
+    {
+        "id": 29,
+        "week": 5,
+        "day": "Día 29",
+        "title": "El Reflejo de Rescate (Modelo Harvard)",
+        "quote": "La velocidad a la que te levantas hoy es la velocidad a la que evitarás una caída mañana.",
+        "scienceTitle": "La Ciencia del Día: Potencia vs Fuerza",
+        "science": "La fuerza es cuánto peso puedes mover; la potencia es qué tan rápido puedes moverlo. Las fibras musculares Tipo II (rápidas) se pierden más rápido con la edad, lo que retrasa el paso rápido necesario para no caerse tras un tropiezo ('reflejo de rescate'). Hoy, basándonos en protocolos de Harvard, introducimos movimientos explosivos hacia arriba.",
+        "adultRole": "Hoy cambiamos el ritmo. Al levantarte de la silla o ponerte de puntillas, quiero que lo hagas con la mayor velocidad posible (sin saltar), como si tuvieras un resorte. Pero la bajada sigue siendo lenta.",
+        "familyRole": "Supervisa la fase explosiva. Asegúrate de que, en su afán de ser rápido, el adulto mayor no empuje con los brazos ni encorve la espalda. La rapidez debe venir exclusivamente de las piernas.",
+        "routine": [
+            {
+                "phase": "1. Activación Dinámica Rápida",
+                "details": "Marcha en el lugar elevando rodillas a ritmo rápido durante 3 minutos. Rotaciones de hombros y giros de torso.",
+                "image": ""
+            },
+            {
+                "phase": "2. Rei-ho de Potencia (Sit-to-stand)",
+                "details": "Sentado en la silla. Exhala y ponte de pie de forma EXPLOSIVA (1 segundo). Pausa arriba 1 segundo. Siéntate muy lentamente en 3 segundos. Repite 8 veces.",
+                "image": ""
+            },
+            {
+                "phase": "3. Tándem con Carga y Velocidad",
+                "details": "Cruza el pasillo caminando talón-punta sosteniendo un objeto ligero (1kg). Intenta hacerlo un poco más fluido que la semana pasada sin perder el equilibrio.",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "id": 30,
+        "week": 5,
+        "day": "Día 30",
+        "title": "Sinergia Hiper-Anabólica (Estudio OPEN)",
+        "quote": "El ejercicio es la chispa, pero la nutrición es la leña. Hoy encendemos el fuego muscular.",
+        "scienceTitle": "La Ciencia del Día: La Ventana Anabólica Post-Esfuerzo",
+        "science": "El Estudio OPEN demostró que la sincronización es clave. Ingerir una fuente rica en proteínas y leucina inmediatamente después de un estímulo mecánico (en la primera hora) maximiza la síntesis de masa muscular en adultos mayores, revirtiendo la dependencia más eficientemente que el ejercicio o la dieta por separado.",
+        "adultRole": "Tu entrenamiento hoy no termina cuando dejas de moverte. Termina en el momento en que consumes tu batido o comida rica en proteínas después del esfuerzo.",
+        "familyRole": "La logística es tuya hoy. Ten preparado un batido de proteína (suero de leche si está médicamente aprobado), 2 huevos duros, o un yogur griego alto en proteína para entregárselo al adulto mayor máximo 30 minutos después de terminar.",
+        "routine": [
+            {
+                "phase": "1. Circuito de Potencia Corto",
+                "details": "10 Step-ups (subir escalón) explosivos por pierna. 15 Elevaciones de pantorrilla explosivas. 8 Levantamientos Samurái rápidos. Hazlo 2 veces.",
+                "image": ""
+            },
+            {
+                "phase": "2. Sincronización Nutricional Inmediata",
+                "details": "Familiar: Proveer el suplemento o snack alto en proteína inmediatamente al finalizar el último levantamiento.",
+                "image": ""
+            },
+            {
+                "phase": "3. Estiramiento y Digestión",
+                "details": "Sentarse a consumir la proteína mientras se realizan estiramientos suaves de cuello y brazos.",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "id": 31,
+        "week": 5,
+        "day": "Día 31",
+        "title": "Interferencia Cognitivo-Motora Avanzada",
+        "quote": "Un paso en falso en la calle ocurre cuando tu mente viaja a otro lado. Hoy entrenamos tu atención dividida.",
+        "scienceTitle": "La Ciencia del Día: Priorización Postural en Tarea Dual",
+        "science": "Cuando a un adulto mayor se le pide hablar y caminar sobre un obstáculo, el cerebro a menudo prioriza la tarea verbal (seguir hablando) y descuida el pie, causando caídas. Al entrenar tareas complejas, 'reprogramamos' el cerebro para la 'priorización postural': si la mente se satura, el cuerpo debe priorizar automáticamente el equilibrio.",
+        "adultRole": "Hoy jugaremos con un globo mientras te mueves. Si sientes que vas a perder el equilibrio, DEJA CAER el globo y apóyate. Tu cuerpo debe ser siempre la prioridad número uno.",
+        "familyRole": "Necesitarás un globo inflado (o una pelota muy ligera). Tu labor es pasarle el globo de forma impredecible mientras el adulto mayor realiza la marcha, forzando reflejos manuales y visuales.",
+        "routine": [
+            {
+                "phase": "1. Calentamiento VOR (Reflejo Ocular)",
+                "details": "Gira la cabeza izquierda a derecha rápidamente 10 veces mientras mantienes la mirada fija en un punto al frente.",
+                "image": ""
+            },
+            {
+                "phase": "2. Marcha con Intercepción de Globo (Cognicise)",
+                "details": "Marcha en el lugar levantando rodillas. El familiar le lanzará suavemente un globo desde diferentes ángulos. El adulto mayor debe devolverlo sin dejar de marchar.",
+                "image": ""
+            },
+            {
+                "phase": "3. Potencia Samurái y Nombres",
+                "details": "Haz 8 levantamientos rápidos de la silla. Por cada vez que te pongas de pie, debes decir un país de Europa. No repitas.",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "id": 32,
+        "week": 5,
+        "day": "Día 32",
+        "title": "Sobrecarga Asimétrica y Escaleras",
+        "quote": "La vida rara vez es plana y simétrica. Prepararemos tu cuerpo para el mundo real, un escalón a la vez.",
+        "scienceTitle": "La Ciencia del Día: Reclutamiento de Unidades Motoras",
+        "science": "Al realizar un ejercicio explosivo en una sola pierna (como subir un escalón rápidamente), el sistema nervioso se ve obligado a reclutar 'unidades motoras de alto umbral', que son paquetes de fibras musculares que normalmente no se usan en caminatas lentas. Esto previene la atrofia selectiva de las piernas.",
+        "adultRole": "Hoy nos enfocamos en las escaleras. El empuje para subir debe ser potente, viniendo desde tu talón. Si tu rodilla duele, hazlo más lento, pero si no hay dolor, intenta subir con decisión.",
+        "familyRole": "Ubícate un escalón por debajo o detrás de tu familiar. Vigila que al subir el pie al escalón, su rodilla no se meta hacia adentro (alineación).",
+        "routine": [
+            {
+                "phase": "1. Activación de Core",
+                "details": "Sentado, haz la maniobra de 'bracing' (tensar abdomen). 5 contracciones de 5 segundos.",
+                "image": ""
+            },
+            {
+                "phase": "2. Step-ups de Potencia",
+                "details": "Apoyado en el barandal. Sube al escalón empujando explosivamente con la pierna líder. Baja controladamente en 3 segundos. Haz 10 con la derecha y luego 10 con la izquierda.",
+                "image": ""
+            },
+            {
+                "phase": "3. Tándem con Doble Carga",
+                "details": "Camina en tándem por el pasillo llevando una botella de agua en CADA mano. Mantén los hombros rectos y la mirada al frente.",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "id": 33,
+        "week": 5,
+        "day": "Día 33",
+        "title": "Velocidad de Reacción Sensorial",
+        "quote": "Un cuerpo que reacciona a tiempo es un cuerpo que se mantiene de pie. Afinando los sensores.",
+        "scienceTitle": "La Ciencia del Día: Tiempo de Reacción Complejo",
+        "science": "El tiempo de reacción simple es responder a una sola señal. El tiempo de reacción 'complejo' (decidir entre dos opciones basadas en una señal) disminuye drásticamente con la edad. Entrenar esto mejora la capacidad de decidir instantáneamente dónde poner el pie si encontramos un pozo u obstáculo en la acera.",
+        "adultRole": "Hoy haremos un juego de reacción. Tienes que procesar lo que tu familiar dice y hacer el movimiento contrario o el asignado rápidamente. Concéntrate.",
+        "familyRole": "Serás el director del juego. Tu instrucción visual o auditiva forzará al adulto mayor a procesar y moverse en fracciones de segundo.",
+        "routine": [
+            {
+                "phase": "1. Movilidad y Marcha",
+                "details": "5 minutos de marcha. Elevaciones de pantorrillas continuas para calentar tobillos.",
+                "image": ""
+            },
+            {
+                "phase": "2. Reacción Cognitiva Rápida",
+                "details": "De pie. Si el familiar dice 'ROJO', el adulto mayor debe hacer media sentadilla. Si dice 'VERDE', debe ponerse de puntillas. Haz 15 llamados de forma aleatoria.",
+                "image": ""
+            },
+            {
+                "phase": "3. Circuito Corto Final",
+                "details": "Terminar con 8 levantamientos Samurái de potencia (rápido arriba, lento abajo). Ingerir proteína al terminar.",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "id": 34,
+        "week": 5,
+        "day": "Día 34",
+        "title": "Coaching, Evaluación y Caminata Interválica",
+        "quote": "No te midas por dónde empezaste, sino por hasta dónde eres capaz de llegar ahora.",
+        "scienceTitle": "La Ciencia del Día: HIIT Adaptado a Geriatría",
+        "science": "El Entrenamiento de Intervalos de Alta Intensidad (HIIT) se ha adaptado exitosamente a adultos mayores. Alternar periodos cortos de caminata más rápida con caminata normal entrena al corazón para recuperarse de esfuerzos súbitos, reduciendo la fatiga cardíaca y mejorando la presión arterial sistémica.",
+        "adultRole": "Durante nuestra caminata de hoy, jugaremos con la velocidad. Por unos segundos caminaremos como si lleváramos prisa, y luego descansaremos caminando normal. Escucha tu corazón.",
+        "familyRole": "Revisaremos los avances de la primera semana de Fase 2. Luego, durante la caminata, tú marcarás los intervalos de velocidad de forma segura.",
+        "routine": [
+            {
+                "phase": "1. Revisión Semanal (15 min)",
+                "details": "Siéntense a revisar: ¿Cómo se sintió la inclusión de ejercicios más explosivos? ¿Hubo dolor o solo fatiga muscular sana? Ajustar cargas de ser necesario.",
+                "image": ""
+            },
+            {
+                "phase": "2. Caminata Interválica (Micro-HIIT)",
+                "details": "Caminen 20 minutos. Cada 4 minutos de caminata normal, introduzcan 1 minuto de caminata 'con prisa' (un paso más largo y rápido). Repetir el ciclo 4 veces.",
+                "image": ""
+            },
+            {
+                "phase": "3. Ventana Nutricional",
+                "details": "Al regresar a casa, consumir un snack alto en proteínas (ej. queso, jamón de pavo, almendras o batido) para proteger la masa muscular.",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "id": 35,
+        "week": 5,
+        "day": "Día 35",
+        "title": "Regeneración, Estiramiento y Oxigenación",
+        "quote": "Los músculos se construyen en el descanso. Has encendido el motor, ahora déjalo enfriar.",
+        "scienceTitle": "La Ciencia del Día: Tono Simpático vs Parasimpático",
+        "science": "El entrenamiento de potencia activa fuertemente el sistema nervioso Simpático (lucha o huida). Para recuperarse y crecer, el cuerpo debe cambiar al sistema Parasimpático (descanso y digestión). La respiración profunda, el estiramiento y el reposo son los 'interruptores' neurológicos de esta recuperación vital.",
+        "adultRole": "Hoy está prohibido hacer ejercicios explosivos. Dedica el día a estirar, respirar profundo y relajarte. Has completado una de las semanas más exigentes del programa.",
+        "familyRole": "Asegura un día libre de estrés para tu familiar. Prepara comidas densas en nutrientes, vigila la hidratación y fomenten actividades de recreación pasiva.",
+        "routine": [
+            {
+                "phase": "1. Respiración Parasimpática",
+                "details": "Sentado o acostado, inhala por la nariz en 4 segundos, mantén el aire 2 segundos, y exhala por la boca muy lentamente en 6 segundos. Hazlo 10 veces.",
+                "image": ""
+            },
+            {
+                "phase": "2. Estiramientos Estáticos y Flexibilidad",
+                "details": "Mantén estiramientos de pantorrilla (20 seg), estiramiento de pecho en la pared (20 seg), y suave tracción de cuello hacia los lados (sin dolor).",
+                "image": ""
+            },
+            {
+                "phase": "3. Auditoría de Hábitos y Nutrición",
+                "details": "Familiar: Revisa el plan de ingesta proteica para la Semana 6. Celebren haber superado con éxito la introducción al Entrenamiento de Potencia.",
+                "image": ""
+            }
+        ]
+    }
+]

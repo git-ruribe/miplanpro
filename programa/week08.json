@@ -1,0 +1,198 @@
+[
+    {
+        "id": 50,
+        "week": 8,
+        "day": "Día 50",
+        "title": "Inicio de Fase 3 y Proyecto Kashiwa",
+        "quote": "El ejercicio te da años de vida, pero compartirlo con otros le da vida a esos años.",
+        "scienceTitle": "La Ciencia del Día: Arquitectura Social del Ejercicio",
+        "science": "El estudio de la cohorte de Kashiwa en Japón demostró que el ejercicio solitario tiene una alta tasa de abandono. Sin embargo, cuando la actividad física se entrelaza con la interacción social (como caminar con vecinos o familiares), se codifica en el cerebro como una 'actividad de pertenencia'. Esto reduce el aislamiento, combate la depresión y garantiza la adherencia a largo plazo.",
+        "adultRole": "Hoy el entrenamiento es una cita social. Tu objetivo es disfrutar la compañía de tu familiar mientras caminan. Mantén una postura erguida y respira el aire fresco.",
+        "familyRole": "Hoy dejas de ser el 'entrenador clínico' y te conviertes en el 'compañero de ruta'. Fomenta una plática agradable durante la caminata, recordando anécdotas positivas o planeando el futuro.",
+        "routine": [
+            {
+                "phase": "1. Activación Dinámica",
+                "details": "Antes de salir: 5 minutos de balanceos de piernas, giros de torso y estiramiento suave de pecho apoyado en la pared.",
+                "image": ""
+            },
+            {
+                "phase": "2. Caminata Social (Kashiwa)",
+                "details": "Caminata continua de 25-30 minutos en un parque o zona peatonal. El ritmo debe ser lo suficientemente rápido para sentir que el corazón trabaja, pero permitiendo mantener una conversación sin ahogarse (Prueba del habla).",
+                "image": ""
+            },
+            {
+                "phase": "3. Mantenimiento Samurái",
+                "details": "Al regresar a casa, realiza 5 levantamientos Rei-ho de la silla de forma rápida (potencia) para no perder la adaptación de la Fase 2.",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "id": 51,
+        "week": 8,
+        "day": "Día 51",
+        "title": "Microdosificación Aeróbica",
+        "quote": "No tienes que subir la montaña de un solo salto; dar muchos pasos pequeños te llevará a la misma cima.",
+        "scienceTitle": "La Ciencia del Día: Acumulación de Volumen Cardiovascular",
+        "science": "Para alcanzar la meta de 150 a 300 minutos de cardio semanal que protege el corazón y el cerebro, no es necesario hacer sesiones de una hora seguida. La 'microdosificación' (hacer 3 caminatas de 10 minutos al día) ha demostrado tener los mismos beneficios en la presión arterial y la sensibilidad a la insulina que una sola sesión larga.",
+        "adultRole": "Hoy dividiremos el esfuerzo. Saldrás a caminar en tres momentos diferentes del día. Piensa en estas micro-caminatas como 'pausas activas' para refrescar tu cuerpo y mente.",
+        "familyRole": "Ayuda a estructurar el día. Planifiquen una caminata corta después del desayuno, una después de la comida y una antes de que oscurezca. Acompáñalo en al menos una de ellas.",
+        "routine": [
+            {
+                "phase": "1. Caminata Matutina (10 min)",
+                "details": "Caminata a paso ligero después del desayuno. Enfocarse en balancear los brazos naturalmente.",
+                "image": ""
+            },
+            {
+                "phase": "2. Caminata Vespertina con Cognicise (10 min)",
+                "details": "Caminata por la tarde. Mientras caminan, jueguen a nombrar todo lo que vean de un color específico (ej. 'Nombra todo lo verde').",
+                "image": ""
+            },
+            {
+                "phase": "3. Caminata de Cierre (10 min)",
+                "details": "Caminata relajada al atardecer. Al regresar, hacer 15 elevaciones de pantorrilla para ayudar al retorno venoso.",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "id": 52,
+        "week": 8,
+        "day": "Día 52",
+        "title": "Mantenimiento de Potencia y Cognicise",
+        "quote": "Lo que no se usa, se pierde. Hoy le recordamos a tus músculos lo fuertes y rápidos que son.",
+        "scienceTitle": "La Ciencia del Día: Dosis Mínima Efectiva (MED)",
+        "science": "Una vez que hemos construido fuerza y potencia (Fase 2), no necesitamos entrenarlas con la misma intensidad agotadora todos los días para mantenerlas. La 'Dosis Mínima Efectiva' indica que unos pocos estímulos explosivos a la semana son suficientes para conservar las fibras musculares rápidas mientras nos enfocamos en el corazón.",
+        "adultRole": "Hoy nos quedamos en casa para hacer un circuito corto. Recuerda la regla de oro: subir explosivamente y bajar con control. Siente el poder en tus piernas.",
+        "familyRole": "Supervisa la técnica. Aunque el volumen de fuerza disminuya en esta fase, la calidad del movimiento debe ser impecable. Anima la velocidad de reacción.",
+        "routine": [
+            {
+                "phase": "1. Activación de Core (Bracing)",
+                "details": "5 contracciones de abdomen de 5 segundos cada una. Tensa como si fueras a toser.",
+                "image": ""
+            },
+            {
+                "phase": "2. Circuito de Mantenimiento Corto",
+                "details": "Realiza 3 rondas de: 8 Step-ups rápidos por pierna -> 8 Levantamientos Samurái de potencia -> Caminata en tándem ida y vuelta por el pasillo.",
+                "image": ""
+            },
+            {
+                "phase": "3. Cognicise Estático",
+                "details": "De pie, con pies juntos (equilibrio). Cuenta hacia atrás desde 100 de 3 en 3. Si pierdes el equilibrio, da un paso para apoyarte y retoma el conteo.",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "id": 53,
+        "week": 8,
+        "day": "Día 53",
+        "title": "HIIT Adaptado y Salud Endotelial",
+        "quote": "Desafía a tu corazón de forma segura y él te recompensará con energía inagotable.",
+        "scienceTitle": "La Ciencia del Día: Función Endotelial y Micro-Intervalos",
+        "science": "El endotelio es la capa interna de los vasos sanguíneos. Con la edad, pierde la capacidad de dilatarse correctamente (rigidez arterial). Los intervalos de intensidad variable (acelerar y frenar el paso) obligan al endotelio a expandirse y contraerse rápidamente, mejorando la circulación y reduciendo la presión arterial a largo plazo.",
+        "adultRole": "Hoy jugaremos con la velocidad en la caminata. Durante los intervalos rápidos, debes sentir que tu respiración se agita y que no podrías cantar una canción, pero sí hablar frases cortas.",
+        "familyRole": "Lleva un cronómetro o reloj. Serás el encargado de marcar cuándo acelerar el paso y cuándo recuperar. Evita zonas con pendientes muy pronunciadas hoy.",
+        "routine": [
+            {
+                "phase": "1. Calentamiento Articular",
+                "details": "5 minutos de marcha en el sitio, rotaciones de tobillo y estiramiento dinámico de brazos.",
+                "image": ""
+            },
+            {
+                "phase": "2. Caminata Interválica (Micro-HIIT Nivel 3)",
+                "details": "30 minutos en total. Inicia con 5 min de paso normal. Luego alterna: 1 minuto de caminata MUY RÁPIDA (con braceo intenso) seguido de 3 minutos de caminata lenta de recuperación. Repite el intervalo 5 veces. Termina con 5 min lentos.",
+                "image": ""
+            },
+            {
+                "phase": "3. Hidratación y Proteína",
+                "details": "Al regresar, asegurar al menos 2 vasos de agua y una pequeña fuente de proteína para evitar la degradación muscular tras el esfuerzo aeróbico.",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "id": 54,
+        "week": 8,
+        "day": "Día 54",
+        "title": "Flexibilidad Post-Aeróbica",
+        "quote": "Un músculo fuerte pero rígido es como un roble en la tormenta; un músculo flexible es como el bambú, nunca se quiebra.",
+        "scienceTitle": "La Ciencia del Día: Elastina, Colágeno y Estiramientos Estáticos",
+        "science": "Ahora que estamos acumulando mucho volumen de caminata, los músculos de las piernas tienden a acortarse y ponerse tensos. Mientras que la Clínica Mayo prohíbe estirar en frío, realizar estiramientos estáticos y sostenidos DESPUÉS de caminar permite reestructurar las fibras de colágeno, previniendo calambres nocturnos y fascitis plantar.",
+        "adultRole": "Hoy dedicaremos más tiempo a relajar y estirar las piernas después de una buena caminata. Nunca debes sentir dolor agudo al estirar, solo una tensión agradable.",
+        "familyRole": "Acompaña a tu familiar en la caminata de ritmo moderado. Al regresar, ayúdalo a posicionarse correctamente para los estiramientos apoyados en la pared.",
+        "routine": [
+            {
+                "phase": "1. Caminata Continua Moderada",
+                "details": "Caminata de 30 minutos a un paso constante y agradable, sin intervalos de velocidad.",
+                "image": ""
+            },
+            {
+                "phase": "2. Estiramiento de Gemelos y Sóleo",
+                "details": "Apoyado en la pared. Una pierna atrás recta (talón en el suelo) para estirar el gemelo superior. Luego flexiona un poco la rodilla de atrás (sin despegar el talón) para estirar el sóleo. Mantén 30 segundos cada postura.",
+                "image": ""
+            },
+            {
+                "phase": "3. Estiramiento de Cuádriceps (Adaptado)",
+                "details": "De pie, fuertemente agarrado a una silla. Dobla la rodilla derecha llevando el talón hacia el glúteo. Si no alcanzas con la mano, apoya el empeine sobre una silla detrás de ti. 30 seg por pierna.",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "id": 55,
+        "week": 8,
+        "day": "Día 55",
+        "title": "Caminata con Propósito (Watch and Walk)",
+        "quote": "Caminar para hacer ejercicio es bueno; caminar porque tienes una misión es extraordinario.",
+        "scienceTitle": "La Ciencia del Día: Ejercicio con Propósito Comunitario",
+        "science": "Los programas japoneses introdujeron el concepto de 'Watch and Walk' (Vigilar y Caminar). Hacer que el adulto mayor camine con el propósito de hacer un recado, vigilar a los niños que van a la escuela o acompañar a un vecino, transforma la percepción cerebral de 'esfuerzo médico' a 'contribución social vital', elevando la autoestima.",
+        "adultRole": "Hoy no saldremos a caminar 'por hacer ejercicio'. Saldremos a cumplir una misión. Caminarás hacia un objetivo específico, prestando atención a tu entorno.",
+        "familyRole": "Asigna un propósito real a la caminata de hoy: Ir caminando a la panadería, acompañar a un nieto al parque cercano, o visitar a un vecino a unas cuantas calles de distancia.",
+        "routine": [
+            {
+                "phase": "1. Movilidad Dinámica en Casa",
+                "details": "5 minutos de balanceos de brazos, rotaciones de tronco y elevaciones de rodillas suaves antes de salir.",
+                "image": ""
+            },
+            {
+                "phase": "2. La Misión (Watch and Walk)",
+                "details": "Caminar hacia el objetivo establecido (mínimo 15 minutos de ida y 15 de vuelta). Si hay escaleras o aceras irregulares en el camino, usarlas para practicar la propiocepción.",
+                "image": ""
+            },
+            {
+                "phase": "3. Integración LiFE",
+                "details": "Al cruzar pasillos o zonas estrechas seguras en el camino, dar algunos pasos en tándem de forma natural.",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "id": 56,
+        "week": 8,
+        "day": "Día 56",
+        "title": "Recuperación, Hidratación y Vínculo Familiar",
+        "quote": "El cuerpo sana cuando se siente seguro y amado. El descanso de hoy es la fuerza de mañana.",
+        "scienceTitle": "La Ciencia del Día: Apoyo Psicosocial y Reducción del Cortisol",
+        "science": "Al finalizar la primera semana de alta demanda cardiovascular, el cuerpo puede acumular cortisol (hormona del estrés físico). Un entorno familiar positivo, el reposo y la interacción social afectiva reducen dramáticamente los niveles de cortisol, acelerando la recuperación inmunológica y muscular.",
+        "adultRole": "Has superado tu primera semana enfocada en el corazón. Hoy debes descansar, beber mucha agua y disfrutar del tiempo libre con tu familia.",
+        "familyRole": "Día de evaluación y celebración de la Semana 8. Revisa si hubo fatiga excesiva con el nuevo volumen de caminata. Fomenta actividades recreativas sentados (juegos de mesa, leer juntos).",
+        "routine": [
+            {
+                "phase": "1. Reposo Aeróbico",
+                "details": "No hay caminatas largas programadas. Mantener actividades de higiene y vida diaria con normalidad.",
+                "image": ""
+            },
+            {
+                "phase": "2. Auditoría de Nutrición e Hidratación",
+                "details": "Asegurar un aporte constante de líquidos a lo largo del día. Revisar que la dieta siga rica en proteínas y agregar antioxidantes (frutos rojos, verduras verdes) para la recuperación cardiovascular.",
+                "image": ""
+            },
+            {
+                "phase": "3. Sesión de Vínculo (Coaching)",
+                "details": "Platicar sobre cómo se sintió la 'Caminata con Propósito'. ¿Se sintió diferente caminar para ir a un lugar específico que solo caminar en círculos en un parque? Reafirmar que ese es el modelo a seguir.",
+                "image": ""
+            }
+        ]
+    }
+]

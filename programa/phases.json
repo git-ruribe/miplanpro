@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Fase 1: Cimentación Psicológica y Biomecánica",
+    "weeks": [1, 2, 3, 4],
+    "objective": "Preparación de tejidos y creación de adherencia clínica.",
+    "description": "El objetivo inicial no es agotar al paciente, sino crear adherencia (evitando la deserción) y preparar los tendones. Convertimos el ejercicio en un hábito incidental anclado a labores domésticas (Método LiFE). Aprendemos a respirar sin maniobra de Valsalva."
+  },
+  {
+    "id": 2,
+    "title": "Fase 2: Sobrecarga, Potencia y Nutrición",
+    "weeks": [5, 6, 7, 8],
+    "objective": "Inducir adaptaciones fisiológicas y resucitar el 'Reflejo de Rescate'.",
+    "description": "Una vez dominada la base biomecánica, elevamos la intensidad. Cambiamos la cadencia de los ejercicios (fase concéntrica explosiva) siguiendo el Modelo Harvard. Implementamos la sinergia hiper-anabólica (Estudio OPEN), sincronizando ingesta de proteínas post-esfuerzo."
+  },
+  {
+    "id": 3,
+    "title": "Fase 3: Consolidación Cardiovascular",
+    "weeks": [9, 10, 11, 12],
+    "objective": "Alcanzar umbrales neuroprotectores y codificación de hábitos.",
+    "description": "Enfoque en la acumulación de 150 a 300 min de actividad aeróbica con micro-intervalos. Involucrando al adulto mayor en actividades comunitarias para blindar socialmente el hábito."
+  }
+]

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>miplan.pro | Programa de Entrenamiento</title>
+    <meta name="description"
+        content="Tu ruta clínica personalizada de vitalidad funcional.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Iconos de Phosphor (como alternativa ligera a Lucide en Vanilla JS) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/programa.css">
+</head>
+
+<body class="bg-slate-50">
+
+    <!-- Navegación Sticky (Idéntica a index.html) -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">miplan<span>.pro</span></a>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html#el-desafio">Por qué miplan.pro</a>
+                <a href="index.html#como-funciona">El Programa</a>
+                <a href="index.html#ciencia">Base Científica</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="sppb-test.html" class="btn btn-outline">Test Inicial</a>
+                <div class="user-profile-btn">
+                     <i class="ph ph-user-circle" style="font-size: 1.5rem; color: var(--secondary);"></i>
+                </div>
+            </div>
+            <!-- Hamburger para móvil -->
+            <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <!-- Menú móvil desplegable -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="index.html#el-desafio">Por qué miplan.pro</a>
+            <a href="index.html#como-funciona">El Programa</a>
+            <a href="index.html#ciencia">Base Científica</a>
+            <a href="sppb-test.html">Test Inicial</a>
+        </div>
+    </header>
+
+    <!-- App Header -->
+    <div class="app-header">
+        <div class="container app-header-container">
+            <div class="app-header-brand">
+                <div class="app-header-icon">
+                    <i class="ph ph-activity"></i>
+                </div>
+                <div>
+                    <h1 class="app-header-title">MiPlan Pro</h1>
+                    <p class="app-header-subtitle">Arquitectura de Longevidad Activa</p>
+                </div>
+            </div>
+            <div class="app-header-status" id="header-status">
+                <i class="ph ph-calendar-blank"></i>
+                <span id="header-week-info">Cargando programa...</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Layout -->
+    <div class="container app-layout pt-24 pb-12">
+        <!-- Sidebar Navigation -->
+        <aside class="app-sidebar">
+            <div class="sidebar-card">
+                <div class="sidebar-header">
+                    Ruta Clínica
+                </div>
+                <div class="sidebar-content" id="sidebar-nav">
+                    <!-- Nav items injected by JS -->
+                    <div style="padding: 1rem; text-align: center; color: var(--text-muted); font-size: 0.9rem;">
+                        <i class="ph ph-spinner ph-spin" style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--primary);"></i><br>
+                        Desplegando...
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="app-main" id="main-content">
+            <!-- Phase Banner -->
+            <div class="phase-banner" id="phase-banner">
+                <div class="phase-icon">
+                    <i class="ph ph-info"></i>
+                </div>
+                <div>
+                    <h4 class="phase-title" id="phase-title">Contexto Actual</h4>
+                    <p class="phase-desc" id="phase-desc">
+                        Cargando contexto de la fase...
+                    </p>
+                </div>
+            </div>
+
+            <!-- Day Header -->
+            <section class="card day-header-card relative overflow-hidden">
+                <i class="ph ph-sun day-bg-icon"></i>
+                <div class="day-badge" id="day-badge">...</div>
+                <h2 class="day-title" id="day-title">Titular de la sesión</h2>
+                <blockquote class="day-quote" id="day-quote">
+                    "..."
+                </blockquote>
+            </section>
+
+            <!-- Science -->
+            <section class="card science-card">
+                <div class="card-header text-emerald">
+                    <i class="ph ph-brain"></i>
+                    <h3 id="science-title">La Ciencia del Día</h3>
+                </div>
+                <p class="card-text text-emerald-dark" id="science-text">
+                    ...
+                </p>
+            </section>
+
+            <!-- Roles -->
+            <div class="roles-grid">
+                <section class="card roles-card role-adult">
+                    <div class="card-header text-blue">
+                        <i class="ph ph-heart"></i>
+                        <h3>Rol: Adulto Mayor</h3>
+                    </div>
+                    <p class="card-text" id="role-adult-text">
+                        ...
+                    </p>
+                </section>
+
+                <section class="card roles-card role-family">
+                    <div class="card-header text-indigo">
+                        <i class="ph ph-users"></i>
+                        <h3>Rol: Familiar / Coach</h3>
+                    </div>
+                    <p class="card-text" id="role-family-text">
+                        ...
+                    </p>
+                </section>
+            </div>
+
+            <!-- Routine -->
+            <section class="card routine-card">
+                <div class="card-header text-dark border-b">
+                    <i class="ph ph-stethoscope"></i>
+                    <h3>Plan de Acción Detallado</h3>
+                </div>
+                
+                <div class="routine-list" id="routine-list">
+                    <!-- Routine items injected by JS -->
+                </div>
+            </section>
+
+            <!-- Evaluation -->
+            <section class="card eval-card">
+                <div class="card-header text-amber border-b">
+                    <i class="ph ph-trophy"></i>
+                    <h3>Evaluación del Día</h3>
+                </div>
+
+                <div class="eval-form" id="eval-form">
+                    
+                    <div class="eval-group">
+                        <p class="eval-question">1. ¿Hiciste los ejercicios de hoy?</p>
+                        <div class="eval-options grid-3" id="eval-q1">
+                            <label class="eval-option" data-val="Sí, completados"><input type="radio" name="q1" value="Sí, completados">Sí, completados</label>
+                            <label class="eval-option" data-val="Solo una parte"><input type="radio" name="q1" value="Solo una parte">Solo una parte</label>
+                            <label class="eval-option" data-val="No pude hacerlo"><input type="radio" name="q1" value="No pude hacerlo">No pude hacerlo</label>
+                        </div>
+                    </div>
+
+                    <div class="eval-group">
+                        <p class="eval-question">2. ¿Nivel de esfuerzo físico?</p>
+                        <div class="eval-options grid-3" id="eval-q2">
+                            <label class="eval-option" data-val="Cómodos"><input type="radio" name="q2" value="Cómodos">Cómodos</label>
+                            <label class="eval-option" data-val="Retadores logrables"><input type="radio" name="q2" value="Retadores logrables">Retadores logrables</label>
+                            <label class="eval-option" data-val="Muy difíciles/dolor"><input type="radio" name="q2" value="Muy difíciles/dolor">Muy difíciles/dolor</label>
+                        </div>
+                    </div>
+
+                    <div class="eval-group mb-0">
+                        <p class="eval-question">3. ¿Estado de ánimo general?</p>
+                        <div class="eval-options grid-3" id="eval-q3">
+                            <label class="eval-option" data-val="Con energía"><input type="radio" name="q3" value="Con energía">Con energía</label>
+                            <label class="eval-option" data-val="Estable"><input type="radio" name="q3" value="Estable">Estable</label>
+                            <label class="eval-option" data-val="Desmotivado"><input type="radio" name="q3" value="Desmotivado">Desmotivado</label>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="logo mb-1">
+                <a style="color: white;" href="index.html">miplan<span>.pro</span></a>
+            </div>
+            <p style="opacity: 0.7; font-size: 0.9rem;">Empoderando a las familias. Transformando generaciones a través
+                de la salud.</p>
+            <p class="mt-2" style="opacity: 0.5; font-size: 0.8rem;">© 2026 miplan.pro. Regala años de vida funcionales.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/programa.js"></script>
+</body>
+
+</html>

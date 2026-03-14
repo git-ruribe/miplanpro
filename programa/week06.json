@@ -1,0 +1,198 @@
+[
+    {
+        "id": 36,
+        "week": 6,
+        "day": "Día 36",
+        "title": "Potencia Unilateral y Prevención Lateral",
+        "quote": "No solo debemos ser rápidos hacia adelante, sino fuertes en todas las direcciones.",
+        "scienceTitle": "La Ciencia del Día: Prevención de Fracturas de Cadera",
+        "science": "El 90% de las fracturas de cadera ocurren por caídas laterales (hacia los lados). Los músculos abductores (laterales de la pierna) rara vez se entrenan caminando en línea recta. Hoy introducimos desplazamientos laterales explosivos para fortalecer el glúteo medio y crear un escudo protector alrededor de la cadera.",
+        "adultRole": "Hoy te moverás de lado. Imagina que esquivas algo rápidamente. Mantén la vista al frente, no mires tus pies, confía en tu sentido del espacio.",
+        "familyRole": "Despeja un área a lo ancho de la sala. Colócate detrás de tu familiar durante los pasos laterales. Vigila que no cruce los pies al dar el paso, sino que los junte y los separe.",
+        "routine": [
+            {
+                "phase": "1. Activación Multidireccional",
+                "details": "Balanceos de pierna hacia adelante, y luego hacia los lados (abriendo y cerrando la pierna como un péndulo). 10 veces por pierna con apoyo firme.",
+                "image": ""
+            },
+            {
+                "phase": "2. Pasos Laterales de Potencia",
+                "details": "Da un paso rápido y amplio hacia la derecha, junta el pie izquierdo lentamente. Haz 10 pasos a la derecha y luego 10 pasos rápidos hacia la izquierda. (3 series).",
+                "image": ""
+            },
+            {
+                "phase": "3. Rei-ho Samurái Explosivo",
+                "details": "8 Levantamientos de silla. Sube como un cohete (1 segundo), baja controlando tu peso (3 segundos).",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "id": 37,
+        "week": 6,
+        "day": "Día 37",
+        "title": "Cognicise de Alta Interferencia (BDNF)",
+        "quote": "Forzar al cerebro a aprender algo nuevo es la mejor medicina contra el envejecimiento cognitivo.",
+        "scienceTitle": "La Ciencia del Día: BDNF y Múltiplos de 4 (HEPOP)",
+        "science": "Aumentamos el nivel del protocolo japonés HEPOP. Al cambiar la palmada a los múltiplos de 4 mientras se marcha, el cerebro libera Factor Neurotrófico Derivado del Cerebro (BDNF), una proteína que actúa como 'fertilizante' creando nuevas sinapsis y mejorando la memoria a corto plazo.",
+        "adultRole": "El reto mental sube de nivel. Marcha y cuenta en voz alta. Cada vez que llegues a un múltiplo de 4 (4, 8, 12, 16...), da una palmada y NO digas el número.",
+        "familyRole": "Hazlo con él/ella. El ritmo es clave. Si se equivocan, ríanse y sigan. La frustración bloquea el aprendizaje, la risa lo acelera.",
+        "routine": [
+            {
+                "phase": "1. Marcha HEPOP Nivel 2",
+                "details": "Marcha en el sitio. Cuenta: '1, 2, 3, [Palmada], 5, 6, 7, [Palmada]...'. Llega hasta el 40. Repite 3 veces.",
+                "image": ""
+            },
+            {
+                "phase": "2. Step-ups (Escalón) con Tarea Verbal",
+                "details": "Sube el escalón rápidamente. Al pisar arriba, di el nombre de un color. Baja lento. 10 veces por pierna (20 colores diferentes).",
+                "image": ""
+            },
+            {
+                "phase": "3. Incrustación LiFE",
+                "details": "Caminata en tándem por el pasillo y pantorrillas rápidas al lavarse las manos.",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "id": 38,
+        "week": 6,
+        "day": "Día 38",
+        "title": "Activación mTOR y Nutrición Crítica",
+        "quote": "Tu cuerpo es una obra en construcción. Hoy le damos los mejores materiales justo cuando los necesita.",
+        "scienceTitle": "La Ciencia del Día: La Vía mTOR y la Leucina",
+        "science": "El ejercicio explosivo enciende un interruptor genético llamado 'mTOR' que le dice al cuerpo que fabrique músculo. Sin embargo, este interruptor se apaga rápido si no detecta el aminoácido Leucina en la sangre. Hoy somos estrictos con la ventana anabólica (Estudio OPEN).",
+        "adultRole": "Hoy el entrenamiento será un circuito corto pero intenso. Tu misión es terminarlo y consumir tu porción de proteínas antes de que pasen 30 minutos.",
+        "familyRole": "Prepara la nutrición ANTES de que empiece a hacer ejercicio. Un batido de proteína, pechuga de pollo deshebrada o huevos cocidos deben estar listos en la mesa.",
+        "routine": [
+            {
+                "phase": "1. Circuito Anabólico Rápido",
+                "details": "2 vueltas sin descanso: 10 Pasos laterales rápidos por lado -> 8 Levantamientos Samurái explosivos -> 15 Pantorrillas rápidas.",
+                "image": ""
+            },
+            {
+                "phase": "2. Sincronización Nutricional Inmediata",
+                "details": "Consumir al menos 20-25 gramos de proteína de alta calidad inmediatamente después de terminar la última repetición.",
+                "image": ""
+            },
+            {
+                "phase": "3. Recuperación Activa",
+                "details": "Mientras se asimila la comida, realizar giros suaves de cuello y estiramiento de pecho.",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "id": 39,
+        "week": 6,
+        "day": "Día 39",
+        "title": "Bracing Dinámico y Cargas Irregulares",
+        "quote": "La vida te lanza pesos desequilibrados; hoy le enseñamos a tu centro a resistirlos sin doblarse.",
+        "scienceTitle": "La Ciencia del Día: Carga Asimétrica Avanzada",
+        "science": "Llevar un peso en una mano (carga asimétrica) mientras nos movemos rápido multiplica la activación del cuadrado lumbar. Combinar esto con la técnica de 'bracing' (tensar el abdomen) crea una armadura muscular que protege los discos intervertebrales de tirones repentinos.",
+        "adultRole": "Tensa tu abdomen como si fueras a toser justo antes de dar cada paso rápido. Mantén esa tensión pero no aguantes la respiración.",
+        "familyRole": "Aumentaremos ligeramente el peso hoy (ej. una botella de 1.5 a 2 litros, si no hay dolor). Observa que la columna se mantenga perfectamente vertical.",
+        "routine": [
+            {
+                "phase": "1. Activación de Core (Bracing)",
+                "details": "De pie, tensa el abdomen (bracing) 5 veces por 5 segundos respirando fluidamente.",
+                "image": ""
+            },
+            {
+                "phase": "2. Tándem con Carga y Giro",
+                "details": "Camina en tándem sosteniendo la botella de 1.5L en la mano derecha. Cada 3 pasos, gira la cabeza para mirar sobre tu hombro. Da la vuelta y cambia de mano.",
+                "image": ""
+            },
+            {
+                "phase": "3. Step-ups Asimétricos",
+                "details": "Sube el escalón explosivamente mientras sostienes el peso solo en la mano del mismo lado de la pierna que sube. 8 por lado.",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "id": 40,
+        "week": 6,
+        "day": "Día 40",
+        "title": "Tiempo de Reacción y Agilidad",
+        "quote": "Un cerebro rápido compensa cualquier tropiezo. Hoy afilamos tus reflejos visuales y motores.",
+        "scienceTitle": "La Ciencia del Día: Integración Viso-Motora",
+        "science": "Para evitar una caída tras pisar mal, los ojos deben enviar la señal al cerebro y este a las piernas en milisegundos. Entrenar ejercicios que requieren un procesamiento visual rápido y un movimiento físico inmediato reduce el 'tiempo de reacción electromecánico'.",
+        "adultRole": "Concéntrate al máximo. Vas a reaccionar a las señales que te den. Es normal dudar un segundo al principio.",
+        "familyRole": "Usa objetos de colores (ej. una hoja roja y una azul). Párate a 2 metros de distancia. Levanta un color y el adulto mayor deberá hacer el movimiento asociado al instante.",
+        "routine": [
+            {
+                "phase": "1. Marcha Vigorosa de Calentamiento",
+                "details": "3 minutos de marcha rápida moviendo los brazos vigorosamente.",
+                "image": ""
+            },
+            {
+                "phase": "2. Juego de Agilidad Visual",
+                "details": "De pie. Si el familiar levanta el objeto AZUL, el adulto mayor da un paso lateral rápido a la izquierda. Si levanta el ROJO, paso lateral rápido a la derecha. Haz 20 estímulos aleatorios.",
+                "image": ""
+            },
+            {
+                "phase": "3. Samurái de Potencia Final",
+                "details": "8 Levantamientos rápidos de silla para consolidar las fibras Tipo II.",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "id": 41,
+        "week": 6,
+        "day": "Día 41",
+        "title": "Coaching y Expansión del Micro-HIIT",
+        "quote": "Tu corazón es un músculo que necesita ser desafiado para mantenerse joven. Hoy subimos un poco el ritmo.",
+        "scienceTitle": "La Ciencia del Día: Adaptación Cardiovascular de Alta Intensidad",
+        "science": "El entrenamiento de intervalos altera favorablemente la rigidez arterial en adultos mayores. Al hacer que el corazón lata más fuerte por periodos muy cortos (micro-HIIT), mejoramos el volumen sistólico (la cantidad de sangre que el corazón bombea en cada latido) sin sobrecargar las articulaciones.",
+        "adultRole": "Hoy en nuestra caminata, los periodos de 'paso rápido' serán un poquito más largos. Trata de alargar tu zancada y mover los brazos con fuerza.",
+        "familyRole": "En la sesión de coaching, evalúen la fatiga de la semana. Durante la caminata, tú llevarás el tiempo de los intervalos. Asegúrate de que el terreno sea completamente plano y sin baches.",
+        "routine": [
+            {
+                "phase": "1. Revisión Semanal y Ajustes",
+                "details": "Charla de 10 minutos. ¿Cómo se sintió el juego de reacción visual? Reconocer la capacidad del cuerpo para adaptarse a estímulos nuevos.",
+                "image": ""
+            },
+            {
+                "phase": "2. Caminata Interválica Nivel 2",
+                "details": "25 minutos totales. Alternar: 3 minutos de caminata a ritmo normal seguidos de 2 minutos de caminata rápida (casi con prisa). Repetir 5 ciclos.",
+                "image": ""
+            },
+            {
+                "phase": "3. Nutrición Post-Cardio",
+                "details": "Al regresar, asegurar una ingesta adecuada de proteínas y abundantes líquidos para reponer pérdidas por sudor.",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "id": 42,
+        "week": 6,
+        "day": "Día 42",
+        "title": "Recalibración Sensorial y Descanso",
+        "quote": "Un motor potente necesita mantenimiento fino. Hoy reparamos los sensores de tu equilibrio.",
+        "scienceTitle": "La Ciencia del Día: El Sistema Vestibular en Reposo",
+        "science": "Tras una semana de alta exigencia neuromuscular, el sistema nervioso central (SNC) necesita reducir el 'ruido' sensorial. Practicar el equilibrio estático con los ojos cerrados en un día de descanso recalibra las neuronas propioceptivas, mejorando el control postural inconsciente para la siguiente semana.",
+        "adultRole": "No hay ejercicios rápidos ni fuerza hoy. Solo trabajaremos la calma y la conexión de tus pies con el suelo en total silencio.",
+        "familyRole": "Asistencia pasiva. Asegura la hidratación y apoya al adulto mayor en el único ejercicio de equilibrio de hoy, sin estímulos que lo distraigan.",
+        "routine": [
+            {
+                "phase": "1. Equilibrio Somatosensorial Profundo",
+                "details": "De pie, agarrado del respaldo de una silla muy pesada. Cierra los ojos. Respira profundo e intenta percibir cómo el peso cambia sutilmente entre los talones y las puntas. 4 series de 15 segundos.",
+                "image": ""
+            },
+            {
+                "phase": "2. Estiramientos Parasimpáticos",
+                "details": "Sentado. Estira la pierna al frente y alcanza suavemente hacia la punta (sin forzar, estirando la parte posterior de la pierna). 30 segundos por pierna.",
+                "image": ""
+            },
+            {
+                "phase": "3. Auditoría de Proteínas",
+                "details": "Verificar que la ingesta del día cumpla con el estándar (1.2 a 1.5g por kilo de peso) para reparar el daño muscular de la semana 6.",
+                "image": ""
+            }
+        ]
+    }
+]
