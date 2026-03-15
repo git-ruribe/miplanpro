@@ -38,6 +38,8 @@
     "image": "",
     "trimp": 3,
     "trimpEasier": 2,
-    "trimpHarder": 4
+    "trimpHarder": 4,
+    "easier": "Permite apoyo leve en el respaldo de la silla durante las pruebas de equilibrio si da más seguridad. El objetivo es medir, no aprobar.",
+    "harder": "Añadir en la postura tándem: mantenerla con brazos cruzados para medir la mejora máxima de equilibrio."
   }
 }

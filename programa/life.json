@@ -144,7 +144,9 @@
     "image": "",
     "trimp": 3,
     "trimpEasier": 2,
-    "trimpHarder": 5
+    "trimpHarder": 5,
+    "easier": "Solo si no hay fatiga de piernas. Semi-tándem o caminar normal si el cuerpo lo pide.",
+    "harder": "Tándem al entrar + 10 pantorrillas explosivas en el lavabo al guardar las cosas."
   },
   "d252b195608a4f151f5fef5a7705d6ef": {
     "phase": "3. Integración LiFE",
@@ -152,7 +154,9 @@
     "image": "",
     "trimp": 4,
     "trimpEasier": 2,
-    "trimpHarder": 6
+    "trimpHarder": 6,
+    "easier": "8–10 pantorrillas a ritmo normal. Solo si no hay fatiga de pantorrillas de la caminata.",
+    "harder": "20 pantorrillas explosivas + tándem por el pasillo al guardar las cosas."
   },
   "9cc93ddadce850794f2444982f5f7829": {
     "phase": "3. Integración LiFE Rápida",
@@ -160,7 +164,9 @@
     "image": "",
     "trimp": 5,
     "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimpHarder": 7,
+    "easier": "Semi-tándem hasta el lavabo. 8–10 pantorrillas a ritmo normal.",
+    "harder": "Tándem completo hasta el lavabo + 20 pantorrillas explosivas a máxima velocidad."
   },
   "0751de6291da4c9bc661d2e319027648": {
     "phase": "2. Pacto de Mantenimiento (LiFE Constante)",
@@ -168,6 +174,8 @@
     "image": "",
     "trimp": 1,
     "trimpEasier": 1,
-    "trimpHarder": 1
+    "trimpHarder": 1,
+    "easier": "Igual para todos los niveles: el pacto aplica igual sea cual sea el nivel de movilidad.",
+    "harder": "Igual para todos los niveles: el pacto aplica igual sea cual sea el nivel de movilidad."
   }
 }

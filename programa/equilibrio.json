@@ -163,7 +163,9 @@
     "details": "Al llegar a casa con las compras (carga asimétrica ligera), caminar en tándem por el pasillo para guardar las cosas en la despensa.",
     "image": "",
     "trimp": 7,
-    "trimpEasier": 5,
-    "trimpHarder": 10
+    "trimpEasier": 3,
+    "trimpHarder": 10,
+    "easier": "Carga muy ligera en una sola mano. Semi-tándem si el peso genera inestabilidad.",
+    "harder": "Tándem con carga real de compras. A mitad del pasillo, pausa de 2 segundos en equilibrio antes de continuar."
   }
 }

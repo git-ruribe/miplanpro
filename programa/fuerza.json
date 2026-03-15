@@ -195,7 +195,9 @@
     "details": "En una banca firme: 8 levantamientos rápidos. Al bajar, hazlo en 3 segundos. Presta mucha atención porque la altura de la banca puede ser diferente a la de tu silla habitual.",
     "image": "",
     "trimp": 9,
-    "trimpEasier": 5,
-    "trimpHarder": 12
+    "trimpEasier": 4,
+    "trimpHarder": 13,
+    "easier": "5 repeticiones con reposabrazos. Verificar que la banca es completamente estable antes de empezar. Si es demasiado baja o inestable, no realizarlo hoy.",
+    "harder": "10 repeticiones continuas. Cronometrar para comparar con la semana siguiente."
   }
 }

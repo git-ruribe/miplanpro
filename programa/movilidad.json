@@ -290,7 +290,9 @@
     "image": "",
     "trimp": 2,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 3,
+    "easier": "Sentado: talón en suelo, punta del zapato hacia arriba. Inclinar levemente el torso hacia la pierna. 20 segundos por pierna. Sin posición de pared.",
+    "harder": "40 segundos cada variante (gemelo recto + sóleo con rodilla doblada). Añadir 5 flexiones lentas de tobillo al final de cada estiramiento."
   },
   "43198d70a692a1796421d2207fff04f3": {
     "phase": "1. Calentamiento Extendido",
@@ -298,7 +300,9 @@
     "image": "",
     "trimp": 3,
     "trimpEasier": 2,
-    "trimpHarder": 4
+    "trimpHarder": 5,
+    "easier": "7 minutos a paso muy relajado. Conservar energía para el intervalo posterior.",
+    "harder": "10 minutos: 7 minutos suave + 3 minutos a paso moderado-rápido para llegar ya activado al HIIT."
   },
   "dc4dfa04deafe6e0b2e3ede4218bc24a": {
     "phase": "1. Calentamiento (Aproximación)",
@@ -306,7 +310,9 @@
     "image": "",
     "trimp": 3,
     "trimpEasier": 2,
-    "trimpHarder": 4
+    "trimpHarder": 5,
+    "easier": "7 minutos a paso muy suave. Conservar energía para el intervalo.",
+    "harder": "10 minutos: últimos 3 minutos a paso moderado para llegar ya activado al Micro-HIIT."
   },
   "71371caef35b387d714b2a736c888295": {
     "phase": "1. Encuentro y Movilidad",
@@ -314,7 +320,9 @@
     "image": "",
     "trimp": 2,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 3,
+    "easier": "Sentado con el invitado: solo giros suaves de hombros y balanceos de pierna ligeros. 3 minutos.",
+    "harder": "5 minutos + demostración breve de la Técnica Samurái al invitado como parte del calentamiento social."
   },
   "3e9c462d1fbe9142552685d38ff70d13": {
     "phase": "3. Estiramiento de Cuádriceps",
@@ -322,7 +330,9 @@
     "image": "",
     "trimp": 2,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 3,
+    "easier": "Sentado: llevar el talón hacia atrás doblando la rodilla hasta sentir tensión leve en el muslo. 20 segundos. Sin usar la mano si incomoda.",
+    "harder": "40 segundos por pierna. Añadir ligera inclinación del tronco hacia adelante desde la cadera para aumentar el estiramiento del recto femoral."
   },
   "a48527bef905e0e877092c2cd4da5017": {
     "phase": "1. Movilidad Libre (Lubricación)",
@@ -330,7 +340,9 @@
     "image": "",
     "trimp": 1,
     "trimpEasier": 1,
-    "trimpHarder": 2
+    "trimpHarder": 2,
+    "easier": "Solo rotaciones de tobillos y rodillas sentado. 3 minutos tranquilos.",
+    "harder": "Rotaciones libres + 5 minutos de estiramientos ligeros de pantorrillas y cuádriceps."
   },
   "42380ec38dc93c14b63796ec2810feb5": {
     "phase": "1. Caminata de Calentamiento",
@@ -338,7 +350,9 @@
     "image": "",
     "trimp": 3,
     "trimpEasier": 2,
-    "trimpHarder": 4
+    "trimpHarder": 5,
+    "easier": "7 minutos a paso muy relajado. Si hay cansancio, ir directamente al parque cercano y no uno lejano.",
+    "harder": "10 minutos con los últimos 2 a paso moderado-rápido para llegar activado al ejercicio."
   },
   "51836a53963a1c19109dfcb684faa276": {
     "phase": "1. Calentamiento Progresivo",
@@ -346,7 +360,9 @@
     "image": "",
     "trimp": 3,
     "trimpEasier": 2,
-    "trimpHarder": 4
+    "trimpHarder": 5,
+    "easier": "7 minutos de caminata suave. Respiraciones profundas sin necesidad de hacerlas audibles.",
+    "harder": "10 minutos: últimos 3 a paso moderado con braceo activo para llegar activado al HIIT más intenso."
   },
   "de5729cc48382185cbf4d3adf12f97b1": {
     "phase": "3. Estiramiento Posterior",
@@ -354,7 +370,9 @@
     "image": "",
     "trimp": 2,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 3,
+    "easier": "Sentado: talón en suelo, punta hacia arriba. 20–25 segundos por pierna. No se requiere posición de pared.",
+    "harder": "35–40 segundos por pierna. Añadir variante de sóleo con rodilla ligeramente doblada sin despegar el talón."
   },
   "7ef610a03e7d11e177cc31e59521e544": {
     "phase": "3. Estiramiento Recompensante",
@@ -362,7 +380,9 @@
     "image": "",
     "trimp": 2,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 3,
+    "easier": "Sentado: talón en suelo, punta hacia arriba para gemelos. Estiramiento de pecho en marco de puerta. 20 seg cada uno.",
+    "harder": "40 segundos por grupo. Añadir estiramiento de isquiotibiales: pierna extendida en silla baja, torso inclinado hacia la punta del pie."
   },
   "4d12756c7330e2cfb9f2dc993c402846": {
     "phase": "1. Bracing y Calentamiento",
@@ -370,6 +390,8 @@
     "image": "",
     "trimp": 3,
     "trimpEasier": 2,
-    "trimpHarder": 4
+    "trimpHarder": 5,
+    "easier": "3 bracing respiratorios sentado + 5 estocadas muy cortas y lentas de pie. Sin necesidad de velocidad.",
+    "harder": "5 bracing profundos de pie (8 seg cada uno) + 10 estocadas con bajada controlada en 3 seg."
   }
 }
