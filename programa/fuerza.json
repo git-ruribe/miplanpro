@@ -126,55 +126,69 @@
     "image": "",
     "trimp": 9,
     "trimpEasier": 5,
-    "trimpHarder": 12
+    "trimpHarder": 13,
+    "easier": "Usa los reposabrazos para iniciar el despegue. Sube en 2 segundos (no necesariamente explosivo). Baja en 5 segundos. 5 repeticiones.",
+    "harder": "8 repeticiones continuas sin descanso. El despegue debe ocurrir en menos de 1 segundo. Brazos cruzados sobre el pecho durante todo el movimiento."
   },
   "8314485ab7456340e6a7bedc857479ae": {
     "phase": "3. Potencia Samurái y Nombres",
     "details": "Haz 8 levantamientos rápidos de la silla. Por cada vez que te pongas de pie, debes decir un país de Europa. No repitas.",
     "image": "",
     "trimp": 10,
-    "trimpEasier": 6,
-    "trimpHarder": 13
+    "trimpEasier": 5,
+    "trimpHarder": 14,
+    "easier": "5 levantamientos con apoyo de reposabrazos para el despegue. En lugar de países de Europa, di cualquier país o ciudad del mundo al ponerte de pie.",
+    "harder": "8 repeticiones continuas sin descanso. Al levantarte di un país de Europa; al sentarte di su capital. No repitas ninguna combinación."
   },
   "dfc30efdc31b3a4e06bcdc2985c8895b": {
     "phase": "3. Rei-ho Samurái Explosivo",
     "details": "8 Levantamientos de silla. Sube como un cohete (1 segundo), baja controlando tu peso (3 segundos).",
     "image": "",
     "trimp": 9,
-    "trimpEasier": 5,
-    "trimpHarder": 12
+    "trimpEasier": 4,
+    "trimpHarder": 13,
+    "easier": "5 repeticiones. Usa los reposabrazos para iniciar el despegue. Baja en 4 segundos controlados.",
+    "harder": "10 repeticiones continuas. Maximiza la velocidad del primer centímetro del despegue en cada rep. Baja en 3 seg sin dejar caer el peso."
   },
   "dcd3f39cf87e984bb569db2bafb4ba41": {
     "phase": "3. Samurái de Potencia Final",
     "details": "8 Levantamientos rápidos de silla para consolidar las fibras Tipo II.",
     "image": "",
     "trimp": 9,
-    "trimpEasier": 5,
-    "trimpHarder": 12
+    "trimpEasier": 4,
+    "trimpHarder": 13,
+    "easier": "5 repeticiones con reposabrazos para iniciar el despegue. Baja en 4 segundos. Énfasis en no caer sobre la silla.",
+    "harder": "10 repeticiones continuas. Cronometrar el tiempo total e intentar mejorar respecto a la semana anterior."
   },
   "1f88d4959f070a91326a83265b92823b": {
     "phase": "2. Rei-ho de Máxima RFD",
     "details": "8 Levantamientos de silla. Concéntrate exclusivamente en que el primer impulso para despegar los glúteos de la silla sea lo más rápido posible. Baja en 4 segundos.",
     "image": "",
     "trimp": 9,
-    "trimpEasier": 5,
-    "trimpHarder": 13
+    "trimpEasier": 4,
+    "trimpHarder": 13,
+    "easier": "5 repeticiones. Usa los reposabrazos para iniciar. El objetivo es la velocidad del primer impulso aunque sea apoyado.",
+    "harder": "10 repeticiones. Entre cada repetición, 1 segundo de pausa sentado sin relajar la postura, para que cada despegue sea un impulso fresco."
   },
   "f9aa79b4de006b7c1b10bc9973d02cf2": {
     "phase": "3. Samurái con Carga Ligera",
     "details": "Haz 8 levantamientos de la silla abrazando la botella de agua contra tu pecho. Sube explosivo, baja lento.",
     "image": "",
     "trimp": 10,
-    "trimpEasier": 6,
-    "trimpHarder": 14
+    "trimpEasier": 4,
+    "trimpHarder": 14,
+    "easier": "Sin carga. 5 repeticiones. Usa los reposabrazos para el despegue si es necesario.",
+    "harder": "10 repeticiones continuas abrazando la botella más pesada disponible (1.5L). No soltar la carga en ningún momento del ciclo."
   },
   "5cabb192479a414118387a2a1420fe5e": {
     "phase": "3. Mantenimiento Samurái",
     "details": "Al regresar a casa, realiza 5 levantamientos Rei-ho de la silla de forma rápida (potencia) para no perder la adaptación de la Fase 2.",
     "image": "",
     "trimp": 7,
-    "trimpEasier": 4,
-    "trimpHarder": 10
+    "trimpEasier": 2,
+    "trimpHarder": 10,
+    "easier": "3 repeticiones con reposabrazos para arrancar. Baja en 4 segundos. Solo si no hay fatiga excesiva de la caminata.",
+    "harder": "8 repeticiones continuas de potencia. El despegue debe ser tan enérgico como en las semanas previas pese a haber caminado."
   },
   "b161ef1cb0ad0d16e0ebad8742e473c7": {
     "phase": "2. Samurái Urbano (Banca de Parque)",

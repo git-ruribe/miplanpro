@@ -168,25 +168,31 @@
     "phase": "3. Estiramiento y Digestión",
     "details": "Sentarse a consumir la proteína mientras se realizan estiramientos suaves de cuello y brazos.",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 2,
+    "trimpEasier": 1,
+    "trimpHarder": 3,
+    "easier": "Si el movimiento de cuello genera mareo o tensión, limítate a estiramientos suaves de hombros y muñecas solamente mientras consumes la proteína.",
+    "harder": "Añade un estiramiento de pecho en el marco de la puerta (20 segundos) antes de sentarte a consumir la proteína."
   },
   "3c745dba55e3c3b59e6eb91d6e10b983": {
     "phase": "1. Calentamiento VOR (Reflejo Ocular)",
     "details": "Gira la cabeza izquierda a derecha rápidamente 10 veces mientras mantienes la mirada fija en un punto al frente.",
     "image": "",
-    "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimp": 3,
+    "trimpEasier": 2,
+    "trimpHarder": 5,
+    "easier": "Gira la cabeza muy lentamente (2 segundos por lado) manteniendo la mirada fija en el pulgar. Para inmediatamente si sientes mareo o náuseas.",
+    "harder": "Después de los 10 giros laterales, haz 10 giros verticales (arriba-abajo como asintiendo) manteniendo la mirada fija en el mismo punto."
   },
   "31117865b77c7d605c0d162fc8609a50": {
     "phase": "1. Movilidad y Marcha",
     "details": "5 minutos de marcha. Elevaciones de pantorrillas continuas para calentar tobillos.",
     "image": "",
     "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimpEasier": 2,
+    "trimpHarder": 8,
+    "easier": "3 minutos de marcha sentado elevando rodillas. Pantorrillas apoyado en silla: 10 elevaciones a ritmo normal.",
+    "harder": "5 minutos incluyendo 30 segundos de marcha con rodillas a altura de cadera. Al terminar, 20 elevaciones de pantorrilla explosivas apoyado en el lavabo."
   },
   "59b42d2f551b6ac727072b884d7b72f5": {
     "phase": "2. Estiramientos Estáticos y Flexibilidad",
@@ -194,15 +200,19 @@
     "image": "",
     "trimp": 2,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 3,
+    "easier": "Pantorrillas sentado: talón en el suelo, punta hacia arriba. Estiramiento de pecho en marco de puerta en lugar de pared. Omite el cuello si hay molestias.",
+    "harder": "Mantén cada estiramiento 30 segundos. Añade estiramiento de isquiotibiales: pierna extendida en silla baja, inclina suavemente el torso hacia la punta del pie."
   },
   "1fb9689c08080e8c73f21b6544ac4b4a": {
     "phase": "1. Marcha Vigorosa de Calentamiento",
     "details": "3 minutos de marcha rápida moviendo los brazos vigorosamente.",
     "image": "",
     "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimpEasier": 2,
+    "trimpHarder": 7,
+    "easier": "2 minutos de marcha sentado elevando rodillas y moviendo brazos activamente.",
+    "harder": "3 minutos con rodillas a altura de cadera. Último minuto: pasos más largos desplazándose por la sala simulando caminata enérgica."
   },
   "8f53b68961317a99a3405123a4849341": {
     "phase": "2. Estiramientos Parasimpáticos",
@@ -210,15 +220,19 @@
     "image": "",
     "trimp": 2,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 3,
+    "easier": "Pierna extendida al frente con talón en el suelo. Inclinar levemente el torso sin forzar. 20 segundos por pierna.",
+    "harder": "40 segundos por pierna. Al final de cada estiramiento, añade 3 flexiones lentas de tobillo (punta arriba y abajo) para activar el retorno venoso."
   },
   "ee3a20c0aad1fe7a0da6e24ff582326b": {
     "phase": "1. Movilidad y Activación Articular",
     "details": "Balanceos de pierna en cruz (adelante, atrás, lado, lado). Giros de cadera amplios.",
     "image": "",
     "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimpEasier": 2,
+    "trimpHarder": 7,
+    "easier": "Sentado. Balanceos de pierna al frente y atrás. Giros suaves de cadera dibujando círculos pequeños con las manos en las caderas.",
+    "harder": "De pie sin apoyo de pared. Balanceos en 4 direcciones. Añade rotación amplia de tronco con brazos extendidos al frente."
   },
   "9d86db35998c1fdf43fb91d00d83f0d0": {
     "phase": "3. Estiramientos de Recuperación",
@@ -226,15 +240,19 @@
     "image": "",
     "trimp": 2,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 3,
+    "easier": "Pantorrillas sentado: talón en suelo, punta hacia arriba, 20 segundos por pierna. Cuádriceps: sentado con talón hacia atrás si se puede alcanzar.",
+    "harder": "40 segundos por grupo muscular. Añade estiramiento de isquiotibiales: pierna extendida en banco, torso inclinado suavemente hacia la punta del pie."
   },
   "7db520c366104bda0194ce2ac9114ad1": {
     "phase": "1. Calentamiento Articular",
     "details": "5 minutos de marcha en el sitio, rotaciones de tobillo y estiramiento dinámico de brazos.",
     "image": "",
     "trimp": 5,
-    "trimpEasier": 3,
-    "trimpHarder": 7
+    "trimpEasier": 2,
+    "trimpHarder": 7,
+    "easier": "3 minutos: rotaciones de tobillo sentado + giros suaves de hombros. Sin marcha de pie si hay fatiga previa.",
+    "harder": "5 minutos activos: marcha con braceo + 20 pantorrillas rápidas al final para activar el sistema cardiovascular antes del HIIT."
   },
   "14539f670bee2439cc966b9eabbabf9c": {
     "phase": "2. Estiramiento de Gemelos y Sóleo",
@@ -242,7 +260,9 @@
     "image": "",
     "trimp": 2,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 3,
+    "easier": "Sentado: talón en suelo, punta del zapato hacia arriba. Inclinar levemente el torso hacia la pierna. 20 segundos por pierna.",
+    "harder": "40 segundos cada variante (gemelo + sóleo). Añade 5 flexiones lentas de tobillo al final de cada estiramiento para movilizar la fascia plantar."
   },
   "14888d8cdc3a02717febbde94f04bb76": {
     "phase": "3. Estiramiento de Cuádriceps (Adaptado)",
@@ -250,15 +270,19 @@
     "image": "",
     "trimp": 2,
     "trimpEasier": 1,
-    "trimpHarder": 3
+    "trimpHarder": 3,
+    "easier": "Sentado en silla: lleva el talón hacia atrás doblando la rodilla hasta sentir tensión leve en el muslo. 20 segundos. Sin usar la mano.",
+    "harder": "40 segundos por pierna. Añade ligera inclinación del tronco hacia adelante (desde la cadera) para aumentar el estiramiento del recto femoral."
   },
   "dd93c2e61185b472613366d1f9ad64d2": {
     "phase": "1. Movilidad Dinámica en Casa",
     "details": "5 minutos de balanceos de brazos, rotaciones de tronco y elevaciones de rodillas suaves antes de salir.",
     "image": "",
     "trimp": 3,
-    "trimpEasier": 2,
-    "trimpHarder": 4
+    "trimpEasier": 1,
+    "trimpHarder": 5,
+    "easier": "3 minutos sentado: rotaciones de hombros + elevaciones de rodilla alternadas. Preparar el cuerpo sin esfuerzo de pie.",
+    "harder": "5 minutos activos: 1 minuto de marcha en sala con rodillas altas + 10 pantorrillas explosivas antes de salir."
   },
   "67ba96f3c74885b11327a464fc60b336": {
     "phase": "3. Estiramiento de Pantorrillas Obligatorio",

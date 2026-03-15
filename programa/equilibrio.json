@@ -103,48 +103,60 @@
     "details": "Cruza el pasillo caminando talón-punta sosteniendo un objeto ligero (1kg). Intenta hacerlo un poco más fluido que la semana pasada sin perder el equilibrio.",
     "image": "",
     "trimp": 7,
-    "trimpEasier": 5,
-    "trimpHarder": 10
+    "trimpEasier": 3,
+    "trimpHarder": 10,
+    "easier": "Usa un objeto muy ligero (200–300 g: taza vacía, control remoto) o camina en semi-tándem con cualquier carga. La estabilidad es lo primero; la fluidez es secundaria.",
+    "harder": "Usa una botella de 1.5 kg. Intenta aumentar el ritmo de pasos sin perder postura. A mitad del trayecto, gira suavemente la cabeza hacia un solo lado antes de continuar."
   },
   "6c3cf3cdcbfb487f885d91597381497e": {
     "phase": "3. Tándem con Doble Carga",
     "details": "Camina en tándem por el pasillo llevando una botella de agua en CADA mano. Mantén los hombros rectos y la mirada al frente.",
     "image": "",
     "trimp": 7,
-    "trimpEasier": 5,
-    "trimpHarder": 10
+    "trimpEasier": 3,
+    "trimpHarder": 10,
+    "easier": "Lleva la carga en una sola mano (no en las dos). Camina en semi-tándem si la carga genera inestabilidad. El familiar debe caminar muy cerca.",
+    "harder": "Botellas de 750 ml en cada mano. El familiar camina de frente vigilando que los hombros no se inclinen. A mitad del trayecto, gira suavemente la cabeza hacia un lado."
   },
   "29d14d891c0e8d81fa5cda0dc2214e69": {
     "phase": "2. Tándem con Carga y Giro",
     "details": "Camina en tándem sosteniendo la botella de 1.5L en la mano derecha. Cada 3 pasos, gira la cabeza para mirar sobre tu hombro. Da la vuelta y cambia de mano.",
     "image": "",
     "trimp": 7,
-    "trimpEasier": 4,
-    "trimpHarder": 10
+    "trimpEasier": 3,
+    "trimpHarder": 10,
+    "easier": "Botella ligera (500 ml) en una mano. Sin giro de cabeza. Familiar muy cerca. Semi-tándem si es necesario.",
+    "harder": "Botella 1.5L. Giro de cabeza cada 3 pasos alternando hombro derecho e izquierdo. El giro es siempre lateral, nunca hacia el piso. Mantener cadencia sin detenerse."
   },
   "684bf6474afd6eb9c03a6ba5a23a7997": {
     "phase": "1. Equilibrio Somatosensorial Profundo",
     "details": "De pie, agarrado del respaldo de una silla muy pesada. Cierra los ojos. Respira profundo e intenta percibir cómo el peso cambia sutilmente entre los talones y las puntas. 4 series de 15 segundos.",
     "image": "",
-    "trimp": 7,
-    "trimpEasier": 5,
-    "trimpHarder": 10
+    "trimp": 5,
+    "trimpEasier": 3,
+    "trimpHarder": 8,
+    "easier": "Pies separados al ancho de hombros (base amplia). Cerrar los ojos solo 10 segundos. 3 series. Agarrado firmemente con ambas manos.",
+    "harder": "Pies juntos, ojos cerrados 15 segundos. En las últimas 2 series, soltar una mano del respaldo (nunca las dos). 4 series."
   },
   "79b8d71b6010c0167322f4b6721e7500": {
     "phase": "2. Tándem con Deletreo",
     "details": "Camina en tándem por el pasillo. Mientras lo haces, el familiar te dirá palabras cortas de 4 letras (ej. M-E-S-A) y debes deletrearlas de atrás hacia adelante (A-S-E-M).",
     "image": "",
     "trimp": 7,
-    "trimpEasier": 5,
-    "trimpHarder": 10
+    "trimpEasier": 3,
+    "trimpHarder": 10,
+    "easier": "Semi-tándem (con espacio entre talón y punta). Deletrear las palabras en orden normal, no al revés.",
+    "harder": "Tándem completo. Palabras de 5 letras al revés. Si el adulto mayor se equivoca, da 2 pasos extras antes de continuar con la siguiente palabra."
   },
   "d57c86d7915f074013110312ef98403f": {
     "phase": "3. Tándem Libre Continúo",
     "details": "Aplica el Método LiFE: todo el día de hoy, los pasillos de tu casa deben caminarse exclusivamente en tándem.",
     "image": "",
     "trimp": 7,
-    "trimpEasier": 5,
-    "trimpHarder": 10
+    "trimpEasier": 3,
+    "trimpHarder": 10,
+    "easier": "Semi-tándem incidental. Si hay fatiga de piernas, caminar normal y reservar el tándem solo para el pasillo principal una vez.",
+    "harder": "Todo el día en tándem. En las transiciones de habitación a habitación, añadir un giro suave de cabeza (lateral) al cruzar la puerta."
   },
   "daab5efba582ac504a90648b7f156730": {
     "phase": "3. Tándem Incidental de Regreso",
