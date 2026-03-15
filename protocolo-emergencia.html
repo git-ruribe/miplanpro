@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolo de Seguridad | miplan.pro</title>
+    <meta name="description" content="Guía de seguridad para el coach: cuándo parar, qué hacer ante una emergencia y cuándo buscar ayuda médica.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body { background-color: var(--bg-base); }
+        .protocol-container { max-width: 800px; margin: 0 auto; padding: 120px var(--space-md) var(--space-xl); }
+        .protocol-header { text-align: center; margin-bottom: var(--space-lg); }
+        .protocol-header h1 { font-size: 2.25rem; color: var(--secondary); margin-bottom: var(--space-xs); }
+        .protocol-header p { color: var(--text-muted); max-width: 600px; margin: 0 auto; }
+
+        .alert-card { border-radius: var(--radius-md); padding: 2rem; margin-bottom: 2rem; }
+        .alert-red { background: #fff5f5; border: 2px solid #c62828; }
+        .alert-red h2 { color: #c62828; }
+        .alert-yellow { background: #fffde7; border: 2px solid #f9a825; }
+        .alert-yellow h2 { color: #e65100; }
+        .alert-green { background: #e8f5e9; border: 2px solid #2e7d32; }
+        .alert-green h2 { color: #2e7d32; }
+        .alert-blue { background: #e3f2fd; border: 2px solid #1565c0; }
+        .alert-blue h2 { color: #1565c0; }
+
+        .alert-card h2 { font-size: 1.4rem; margin-bottom: 1rem; }
+        .alert-card ul { margin-left: 1.5rem; line-height: 2; color: var(--text-main); }
+        .alert-card p { color: var(--text-main); line-height: 1.7; margin-bottom: 0.75rem; }
+
+        .print-btn { margin-top: 2rem; text-align: center; }
+
+        @media print {
+            .navbar, .print-btn, .no-print { display: none !important; }
+            .protocol-container { padding: 1rem; }
+            .alert-card { break-inside: avoid; page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar" style="height: 70px; box-shadow: var(--shadow-sm);">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">miplan<span>.pro</span></a>
+            </div>
+            <div class="nav-actions">
+                <a href="index.html" class="btn btn-link">← Volver al inicio</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="protocol-container">
+
+        <div class="protocol-header">
+            <span class="badge" style="background: #c62828;">Seguridad</span>
+            <h1>Protocolo de Seguridad para el Coach</h1>
+            <p>Lee esta guía antes de iniciar el programa. Imprime una copia y tenla visible durante cada sesión de ejercicio.</p>
+        </div>
+
+        <!-- ROJO: Parar inmediatamente -->
+        <div class="alert-card alert-red">
+            <h2>PARE el ejercicio inmediatamente si observa:</h2>
+            <ul>
+                <li><strong>Dolor en el pecho</strong> o sensación de presión/opresión</li>
+                <li><strong>Dificultad para respirar</strong> que no mejora al parar</li>
+                <li><strong>Mareo severo</strong>, sensación de desmayo o visión borrosa</li>
+                <li><strong>Palpitaciones</strong> irregulares o aceleradas sin causa</li>
+                <li><strong>Dolor agudo</strong> en articulaciones, espalda o cabeza</li>
+                <li><strong>Pérdida de equilibrio repetida</strong> (2 o más tropiezos en la misma sesión)</li>
+                <li><strong>Confusión repentina</strong> o dificultad para hablar/entender</li>
+                <li><strong>Palidez extrema</strong>, sudoración fría o náusea</li>
+            </ul>
+        </div>
+
+        <!-- AMARILLO: Qué hacer -->
+        <div class="alert-card alert-yellow">
+            <h2>Qué hacer cuando pare el ejercicio</h2>
+            <p><strong>Paso 1:</strong> Siéntelo o recuéstelo de forma segura. No lo deje solo.</p>
+            <p><strong>Paso 2:</strong> Afloje ropa ajustada. Asegure buena ventilación.</p>
+            <p><strong>Paso 3:</strong> Si puede, mida presión arterial y frecuencia cardíaca.</p>
+            <p><strong>Paso 4:</strong> Observe por 2-3 minutos. Si los síntomas ceden, NO reanude el ejercicio ese día.</p>
+            <p><strong>Paso 5:</strong> Anote qué ejercicio estaba haciendo, qué síntoma apareció y cuánto duró.</p>
+        </div>
+
+        <!-- ROJO: Cuándo llamar al 911 -->
+        <div class="alert-card alert-red">
+            <h2>Llame al 911 (o número de emergencia local) si:</h2>
+            <ul>
+                <li>El dolor de pecho <strong>no cede en 2-3 minutos</strong></li>
+                <li>Hay <strong>pérdida de conciencia</strong> (se desmaya)</li>
+                <li>Hay <strong>dificultad para respirar severa</strong> que empeora</li>
+                <li>Aparece <strong>debilidad repentina</strong> en un lado del cuerpo</li>
+                <li>Hay <strong>dificultad repentina para hablar</strong></li>
+                <li>Ocurre una <strong>caída con golpe en la cabeza</strong></li>
+            </ul>
+            <p style="margin-top: 1rem;"><strong>Mientras espera la ambulancia:</strong> No mueva a la persona a menos que esté en peligro. Si pierde la conciencia y no respira, inicie RCP si sabe hacerlo. <strong>No le dé agua, alimentos ni medicamentos por la boca</strong> a una persona con alteración de conciencia.</p>
+        </div>
+
+        <!-- AZUL: Cuándo pausar el programa -->
+        <div class="alert-card alert-blue">
+            <h2>Pause el programa y consulte al médico si:</h2>
+            <ul>
+                <li>Dolor en articulaciones que <strong>persiste más de 2 días</strong> después de una sesión</li>
+                <li>Cualquier <strong>nuevo evento médico</strong>: hospitalización, cambio de medicamentos, caída</li>
+                <li><strong>Fiebre o infección activa</strong></li>
+                <li>Mareo o fatiga inusual que se repite en <strong>2 o más sesiones seguidas</strong></li>
+                <li>El familiar expresa <strong>miedo o rechazo persistente</strong> a los ejercicios</li>
+            </ul>
+        </div>
+
+        <!-- VERDE: Cómo retomar -->
+        <div class="alert-card alert-green">
+            <h2>Cómo retomar el programa después de una pausa</h2>
+            <ul>
+                <li>Siempre con <strong>autorización del médico tratante</strong></li>
+                <li>Reinicie en la <strong>misma fase</strong> donde se pausó (no avance)</li>
+                <li>Reduzca la intensidad un <strong>20%</strong> la primera semana de regreso</li>
+                <li>Use la variante <strong>"más fácil"</strong> de cada ejercicio hasta sentir confianza</li>
+                <li>Si la pausa fue mayor a <strong>2 semanas</strong>, repita la evaluación SPPB</li>
+            </ul>
+        </div>
+
+        <!-- Signos vitales básicos -->
+        <div class="alert-card" style="background: var(--bg-surface); border: 1px solid #ddd;">
+            <h2 style="color: var(--secondary);">Referencia rápida: Signos vitales</h2>
+            <p>No es obligatorio medir signos vitales, pero si tiene equipo disponible:</p>
+            <ul>
+                <li><strong>Frecuencia cardíaca en reposo:</strong> 60-100 latidos/min es normal</li>
+                <li><strong>Presión arterial:</strong> Alerta si supera 160/100 antes del ejercicio → no ejercitar ese día</li>
+                <li><strong>Durante el ejercicio:</strong> Si la frecuencia cardíaca supera 110–120 lpm <em>y hay malestar</em> (mareo, disnea, opresión), detenerse y descansar. Una FC elevada sin síntomas durante ejercicio ligero puede mencionarse al médico en la próxima consulta.</li>
+                <li><strong>Oximetría (si tiene oxímetro):</strong> Pausar el ejercicio si la saturación baja de 94% durante la actividad. Si baja de 90% en reposo, consulte al médico antes de continuar.</li>
+            </ul>
+        </div>
+
+        <div class="print-btn">
+            <button class="btn btn-primary" onclick="window.print()">Imprimir esta guía</button>
+            <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.75rem;">Recomendamos tener una copia impresa visible durante cada sesión de ejercicio.</p>
+        </div>
+
+    </main>
+
+    <footer style="text-align: center; padding: 2rem var(--space-md); color: var(--text-muted); font-size: 0.85rem; border-top: 1px solid var(--bg-base); margin-top: 2rem;">
+        <p>© 2026 miplan.pro · <a href="index.html">Inicio</a> · <a href="sppb-test.html">Evaluación de Movilidad</a> · <a href="registro-beta.html">Registro Beta</a></p>
+        <p style="margin-top: 0.5rem;">Este documento es una guía de seguridad para el coach familiar. No sustituye la atención médica de emergencia.</p>
+    </footer>
+
+</body>
+</html>

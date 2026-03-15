@@ -103,7 +103,7 @@ function validateStep1() {
 // ---- Step 2 Derivation Logic ----
 function deriveRoute() {
     // Section A — immediate alerts (any Sí = ruta roja)
-    const aQuestions = ['a1','a2','a3','a4','a5'];
+    const aQuestions = ['a1','a2','a3','a4','a5','a6','a7','a8'];
     const anyAlerta = aQuestions.some(n => getRadioValue(n) === 'si');
     if (anyAlerta) return 'roja';
 
@@ -123,7 +123,7 @@ function deriveRoute() {
 
 // ---- Step 2 Validation ----
 function validateStep2() {
-    const aQuestions = ['a1','a2','a3','a4','a5'];
+    const aQuestions = ['a1','a2','a3','a4','a5','a6','a7','a8'];
     const cQuestions = ['c1','c2','c3'];
     const errEl = document.getElementById('err-step2');
 
@@ -154,7 +154,7 @@ function populateHiddenFields() {
 
     document.getElementById('hidden-condiciones-b').value = bChecked.join(', ') || 'ninguna';
     document.getElementById('hidden-ruta').value = state.ruta || '';
-    ['a1','a2','a3','a4','a5','c1','c2','c3'].forEach(n => {
+    ['a1','a2','a3','a4','a5','a6','a7','a8','c1','c2','c3'].forEach(n => {
         const hidden = document.getElementById('hidden-' + n);
         if (hidden) hidden.value = getRadioValue(n) || '';
     });
@@ -226,6 +226,7 @@ async function submitForm() {
     [
         'hidden-condiciones-b', 'hidden-ruta',
         'hidden-a1', 'hidden-a2', 'hidden-a3', 'hidden-a4', 'hidden-a5',
+        'hidden-a6', 'hidden-a7', 'hidden-a8',
         'hidden-c1', 'hidden-c2', 'hidden-c3'
     ].forEach(id => {
         const el = document.getElementById(id);
