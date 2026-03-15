@@ -22,11 +22,11 @@
     "trimpHarder": 8
   },
   "4cdc779c24f1bf608e15bf95a3a4db73": {
-    "phase": "2. Tándem con Rotación Cervical (LiFE Progresión)",
-    "details": "Al cruzar el pasillo en tándem (talón-punta), gira lentamente la cabeza para mirar a la derecha, da dos pasos, y luego a la izquierda. Familiar: Acompañamiento estricto.",
-    "instructions": "1. Inicia tu caminata de talón tocando la punta en el pasillo. 2. Después de dar dos pasos, gira lentamente la cabeza para mirar a la pared de tu derecha. 3. Da otros dos pasos y gira la cabeza para mirar a la pared de tu izquierda. 4. El familiar debe caminar a medio metro de distancia listo para sujetarte.",
-    "easier": "Detente completamente antes de girar la cabeza. No gires la cabeza mientras estés en movimiento.",
-    "harder": "Gira la cabeza hacia arriba (mirando al techo) mientras caminas en tándem, lo cual reta más al oído interno. Nunca gires la cabeza hacia el piso mientras estés en movimiento.",
+    "phase": "2. Tándem con Mirada Dirigida (LiFE Progresión)",
+    "details": "Al cruzar el pasillo en tándem (talón-punta), mira fijamente un punto al frente (cuadro, reloj, objeto en la pared). Familiar: Acompañamiento estricto. ⚠️ NIVEL CYAN: solo mirada fija, sin rotación cervical. NIVELES AZUL/MAGENTA: pueden añadir giro lento de cabeza.",
+    "instructions": "1. Inicia tu caminata de talón tocando la punta en el pasillo. 2. Fija la mirada en un punto estable al frente (un cuadro, un reloj, una marca en la pared). 3. Mantén la mirada fija mientras caminas con pasos lentos y controlados. 4. El familiar debe caminar a medio metro de distancia listo para sujetarte.",
+    "easier": "Detente completamente cada 3 pasos para recentrar la mirada. Semi-tándem (con espacio entre pies) si hay inestabilidad.",
+    "harder": "(Solo niveles Azul y Magenta, NO Cyan) Gira lentamente la cabeza para mirar a la derecha por 2 pasos, luego a la izquierda por 2 pasos. No realizar si tiene historial de vértigo posicional (VPPB).",
     "image": "",
     "trimp": 6,
     "trimpEasier": 3,
@@ -55,22 +55,22 @@
     "trimpHarder": 9
   },
   "035c8bf2b10655dd7e583098c766533c": {
-    "phase": "2. Equilibrio Somatosensorial (Ojos Cerrados)",
-    "details": "De pie, agarrado FIRMEMENTE del respaldo de una silla sólida. Pies juntos. Cierra los ojos y mantén la posición 10 segundos. Siente cómo tu peso se ajusta en la planta de los pies. Repite 3 veces. Familiar: vigila de cerca.",
-    "instructions": "1. Ponte de pie detrás de una silla pesada, de una mesa o en el fregadero. Familiar colócate muy cerca de lado. 2. Agárrate fuerte con AMBAS manos. 3. Junta tus pies por completo. 4. Cierra los ojos. Mantén la concentración en cómo los músculos de la planta de tu pie trabajan para mantenerte centrado. 5. Cuenta hasta 10, abre los ojos y respira. Repite 3 veces.",
-    "easier": "Mantén los pies separados a la anchura de tus hombros (base amplia) antes de cerrar los ojos para tener una plataforma más estable.",
-    "harder": "Con los pies totalmente juntos y los ojos cerrados, intenta soltar una mano del apoyo (quedando sostenido de una sola mano). ¡Nunca sueltes ambas manos con los ojos cerrados!",
+    "phase": "2. Equilibrio sobre Superficie Blanda",
+    "details": "De pie, agarrado FIRMEMENTE del respaldo de una silla sólida. Coloca un cojín o almohada doblada en el piso y párate sobre ella con ambos pies. Mantén la posición 10 segundos con los ojos ABIERTOS. Repite 3 veces. Familiar: vigila de cerca.",
+    "instructions": "1. Coloca un cojín firme o una almohada doblada en el suelo, justo detrás de una silla pesada. 2. Ponte de pie sobre el cojín, agarrado fuerte con AMBAS manos al respaldo. 3. Junta tus pies sobre el cojín. 4. Mantén los ojos abiertos y la mirada al frente. Siente cómo los músculos de la planta del pie trabajan para mantenerte estable sobre la superficie irregular. 5. Cuenta hasta 10, relaja y repite 3 veces.",
+    "easier": "Mantén los pies separados a la anchura de tus hombros sobre el cojín (base amplia). Usa una almohada más firme o delgada para menos inestabilidad.",
+    "harder": "Con los pies juntos sobre el cojín, intenta soltar una mano del apoyo (quedando sostenido de una sola mano) por 5 segundos. Nunca sueltes ambas manos.",
     "image": "",
     "trimp": 5,
     "trimpEasier": 3,
     "trimpHarder": 8
   },
   "9d801290e8757f00340afb1690d30d03": {
-    "phase": "3. Tándem con Rotación Cervical",
-    "details": "Cruza el pasillo en tándem girando la cabeza lentamente a derecha e izquierda. Usa la pared si pierdes estabilidad.",
-    "instructions": "1. Inicia la caminata talón-punta en el pasillo. 2. Da dos pasos. 3. Gira la cabeza lentamente hacia la derecha, luego hacia la izquierda sin detener tu marcha. 4. Si el giro de cabeza te hace tambalear, extiende tus brazos a los lados o roza la pared con tus dedos.",
-    "easier": "Detente por completo en seco, gira la cabeza a ambos lados, vuelve la mirada al frente y continúa tus pasos de tándem.",
-    "harder": "Gira la cabeza hacia arriba (mirando al techo) mientras caminas en tándem sin detenerte. Nunca gires la cabeza hacia el piso mientras estés en movimiento.",
+    "phase": "3. Tándem con Mirada Dirigida Avanzada",
+    "details": "Cruza el pasillo en tándem fijando la mirada en distintos puntos de la pared (derecha, izquierda, frente). ⚠️ NIVEL CYAN: solo mirada al frente, sin rotación cervical. NIVELES AZUL/MAGENTA: giro lento de cabeza. No realizar rotación cervical si tiene historial de vértigo posicional.",
+    "instructions": "1. Inicia la caminata talón-punta en el pasillo. 2. Da dos pasos mirando al frente. 3. Localiza un objeto en la pared a tu derecha y fija la mirada brevemente (2 pasos). Luego localiza un objeto a la izquierda. 4. Si pierdes estabilidad, extiende tus brazos a los lados o roza la pared con tus dedos.",
+    "easier": "Detente por completo en seco, mira a ambos lados, vuelve la mirada al frente y continúa tus pasos de tándem. Semi-tándem si hay inestabilidad.",
+    "harder": "(Solo niveles Azul y Magenta) Gira la cabeza lentamente mientras caminas sin detenerte. Nunca gires hacia arriba ni hacia el piso mientras estés en movimiento.",
     "image": "",
     "trimp": 6,
     "trimpEasier": 3,
@@ -130,13 +130,13 @@
   },
   "684bf6474afd6eb9c03a6ba5a23a7997": {
     "phase": "1. Equilibrio Somatosensorial Profundo",
-    "details": "De pie, agarrado del respaldo de una silla muy pesada. Cierra los ojos. Respira profundo e intenta percibir cómo el peso cambia sutilmente entre los talones y las puntas. 4 series de 15 segundos.",
+    "details": "De pie, agarrado del respaldo de una silla muy pesada, sobre un cojín o almohada doblada. Ojos ABIERTOS. Respira profundo e intenta percibir cómo el peso cambia sutilmente entre los talones y las puntas. 4 series de 15 segundos.",
     "image": "",
     "trimp": 5,
     "trimpEasier": 3,
     "trimpHarder": 8,
-    "easier": "Pies separados al ancho de hombros (base amplia). Cerrar los ojos solo 10 segundos. 3 series. Agarrado firmemente con ambas manos.",
-    "harder": "Pies juntos, ojos cerrados 15 segundos. En las últimas 2 series, soltar una mano del respaldo (nunca las dos). 4 series."
+    "easier": "Pies separados al ancho de hombros (base amplia) sobre el cojín. 3 series de 10 segundos. Agarrado firmemente con ambas manos. Ojos abiertos.",
+    "harder": "Pies juntos sobre el cojín, ojos abiertos, 15 segundos. En las últimas 2 series, soltar una mano del respaldo (nunca las dos). 4 series."
   },
   "79b8d71b6010c0167322f4b6721e7500": {
     "phase": "2. Tándem con Deletreo",

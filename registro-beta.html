@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Beta — miplan.pro</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/registro-beta.css">
+</head>
+
+<body class="registro-page">
+
+    <!-- Header -->
+    <header class="registro-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">miplan<span>.pro</span></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar-wrap" id="progress-bar-wrap">
+        <div class="progress-steps" id="progress-steps">
+            <div class="progress-step active" data-step="1">
+                <div class="step-dot"><span>1</span></div>
+                <div class="step-label">Tus datos</div>
+            </div>
+            <div class="progress-step" data-step="2">
+                <div class="step-dot"><span>2</span></div>
+                <div class="step-label">Elegibilidad</div>
+            </div>
+            <div class="progress-step" data-step="3">
+                <div class="step-dot"><span>3</span></div>
+                <div class="step-label">Términos</div>
+            </div>
+            <div class="progress-step" data-step="4">
+                <div class="step-dot"><span>4</span></div>
+                <div class="step-label">Listo</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <main class="registro-main">
+        <div class="form-card">
+
+            <!-- ===== INTRO ===== -->
+            <div class="step-panel active" id="panel-intro">
+                <div class="route-screen">
+                    <span class="intro-icon">🎯</span>
+                    <span class="intro-badge">Programa Beta — Acceso Gratuito</span>
+                    <h1 class="intro-title">Eres de los primeros.<br>Gracias por confiar.</h1>
+                    <p class="intro-subtitle">Estamos abriendo un grupo selecto de familias que quieran probar
+                        miplan.pro de forma gratuita y completa, a cambio de su experiencia y retroalimentación honesta.</p>
+                    <div class="intro-commitment">
+                        <p><strong>¿Qué pedimos a cambio?</strong>
+                            Completar los check-ins diarios durante las 4 semanas y responder una breve encuesta
+                            al final. Si el programa les funciona, también pedimos poder compartir su historia
+                            (con su permiso) para ayudar a otras familias.</p>
+                    </div>
+                    <button class="btn-start" id="btn-intro-start">Comenzar el registro →</button>
+                </div>
+            </div>
+
+            <!-- ===== PASO 1: Datos básicos ===== -->
+            <div class="step-panel" id="panel-step1">
+                <button class="btn-back" id="back-to-intro">← Regresar</button>
+                <h2 class="step-title">Paso 1: Datos del Coach</h2>
+                <p class="step-subtitle">Cuéntanos sobre ti y sobre tu campeón o campeona.</p>
+
+                <div class="form-divider"><span>El Coach (tú)</span></div>
+
+                <div class="form-group">
+                    <label for="coach-nombre">Tu nombre completo <span class="label-hint">*</span></label>
+                    <input type="text" id="coach-nombre" name="Nombre del Coach" placeholder="Ej. Ana López García" autocomplete="name">
+                    <span class="error-msg" id="err-coach-nombre">Por favor ingresa tu nombre.</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="coach-email">Tu correo electrónico <span class="label-hint">*</span></label>
+                    <input type="email" id="coach-email" name="Correo del Coach" placeholder="tu@correo.com" autocomplete="email">
+                    <span class="error-msg" id="err-coach-email">Por favor ingresa un correo válido.</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="coach-whatsapp">Tu número de WhatsApp <span class="label-hint">* (incluye código de país)</span></label>
+                    <input type="tel" id="coach-whatsapp" name="WhatsApp del Coach" placeholder="+52 55 1234 5678" autocomplete="tel">
+                    <span class="error-msg" id="err-coach-whatsapp">Por favor ingresa tu número de WhatsApp.</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="coach-ciudad">Ciudad <span class="label-hint">*</span></label>
+                    <input type="text" id="coach-ciudad" name="Ciudad" placeholder="Ej. Ciudad de México">
+                    <span class="error-msg" id="err-coach-ciudad">Por favor ingresa tu ciudad.</span>
+                </div>
+
+                <div class="form-divider"><span>El Campeón / Campeona</span></div>
+
+                <div class="form-group">
+                    <label for="campeon-nombre">Nombre de tu familiar <span class="label-hint">*</span></label>
+                    <input type="text" id="campeon-nombre" name="Nombre del Campeón/a" placeholder="Ej. María">
+                    <span class="error-msg" id="err-campeon-nombre">Por favor ingresa su nombre.</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="campeon-relacion">Tu relación con él/ella <span class="label-hint">*</span></label>
+                    <select id="campeon-relacion" name="Relación con el Campeón/a">
+                        <option value="">— Selecciona —</option>
+                        <option value="hijo/a">Hijo/a</option>
+                        <option value="nieto/a">Nieto/a</option>
+                        <option value="pareja">Pareja</option>
+                        <option value="hermano/a">Hermano/a</option>
+                        <option value="sobrino/a">Sobrino/a</option>
+                        <option value="cuidador profesional">Cuidador profesional</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    <span class="error-msg" id="err-campeon-relacion">Por favor selecciona una opción.</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="campeon-edad">Edad aproximada de tu familiar <span class="label-hint">*</span></label>
+                    <select id="campeon-edad" name="Edad del Campeón/a">
+                        <option value="">— Selecciona —</option>
+                        <option value="60-64">60–64 años</option>
+                        <option value="65-69">65–69 años</option>
+                        <option value="70-74">70–74 años</option>
+                        <option value="75-79">75–79 años</option>
+                        <option value="80-84">80–84 años</option>
+                        <option value="85+">85 años o más</option>
+                    </select>
+                    <span class="error-msg" id="err-campeon-edad">Por favor selecciona una opción.</span>
+                </div>
+
+                <button class="btn-next" id="btn-step1-next">Continuar →</button>
+            </div>
+
+            <!-- ===== PASO 2: Cuestionario de Elegibilidad ===== -->
+            <div class="step-panel" id="panel-step2">
+                <button class="btn-back" id="back-to-step1">← Regresar</button>
+                <h2 class="step-title">Paso 2: Cuestionario de Elegibilidad</h2>
+                <p class="step-subtitle">Responde con honestidad sobre la situación actual de tu familiar. No hay respuestas
+                    correctas o incorrectas: queremos conocer su situación para orientarte bien.</p>
+
+                <!-- SECCIÓN A: Alertas inmediatas -->
+                <h3 class="q-section-title">Sección A — Situaciones de alerta</h3>
+                <p class="q-section-desc">¿Tu familiar está atravesando actualmente alguna de estas situaciones? (Responde
+                    Sí o No en cada una)</p>
+
+                <div class="q-item">
+                    <div class="q-item-label">¿Se recupera de una cirugía, fractura o procedimiento médico
+                        <strong>en los últimos 3 meses</strong>?</div>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="a1" value="si">
+                            <span class="radio-label">Sí</span>
+                        </label>
+                        <label class="radio-option no-option">
+                            <input type="radio" name="a1" value="no">
+                            <span class="radio-label">No</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="q-item">
+                    <div class="q-item-label">¿Tuvo un evento cardiovascular reciente (infarto, derrame, ACV)
+                        <strong>en los últimos 6 meses</strong>?</div>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="a2" value="si">
+                            <span class="radio-label">Sí</span>
+                        </label>
+                        <label class="radio-option no-option">
+                            <input type="radio" name="a2" value="no">
+                            <span class="radio-label">No</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="q-item">
+                    <div class="q-item-label">¿Tiene dolor articular intenso <strong>sin diagnóstico</strong>
+                        o sin tratamiento médico activo?</div>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="a3" value="si">
+                            <span class="radio-label">Sí</span>
+                        </label>
+                        <label class="radio-option no-option">
+                            <input type="radio" name="a3" value="no">
+                            <span class="radio-label">No</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="q-item">
+                    <div class="q-item-label">¿Le han indicado reposo o restricción de actividad física
+                        por un médico recientemente?</div>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="a4" value="si">
+                            <span class="radio-label">Sí</span>
+                        </label>
+                        <label class="radio-option no-option">
+                            <input type="radio" name="a4" value="no">
+                            <span class="radio-label">No</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="q-item">
+                    <div class="q-item-label">¿Se encuentra en etapa avanzada de una enfermedad que requiere
+                        supervisión médica directa constante?</div>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="a5" value="si">
+                            <span class="radio-label">Sí</span>
+                        </label>
+                        <label class="radio-option no-option">
+                            <input type="radio" name="a5" value="no">
+                            <span class="radio-label">No</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- SECCIÓN B: Condiciones controladas -->
+                <h3 class="q-section-title" style="margin-top: 1.75rem;">Sección B — Condiciones presentes y controladas</h3>
+                <p class="q-section-desc">Marca todas las que apliquen. Tener alguna de estas condiciones
+                    <strong>no impide</strong> participar, pero nos ayuda a darte las recomendaciones correctas.</p>
+
+                <div class="checkbox-group" id="seccion-b-checks">
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="b_condiciones" value="diabetes">
+                        <span>Diabetes (controlada con medicamento o dieta)</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="b_condiciones" value="hipertension">
+                        <span>Hipertensión arterial (controlada)</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="b_condiciones" value="artritis_artrosis">
+                        <span>Artritis o artrosis diagnosticada</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="b_condiciones" value="osteoporosis">
+                        <span>Osteoporosis</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="b_condiciones" value="cardiopatia">
+                        <span>Cardiopatía crónica controlada</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="b_condiciones" value="parkinson">
+                        <span>Parkinson en etapa inicial o moderada</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="b_condiciones" value="ninguna" id="b-ninguna">
+                        <span><strong>Ninguna de las anteriores</strong></span>
+                    </label>
+                </div>
+
+                <!-- SECCIÓN C: Disponibilidad del Coach -->
+                <h3 class="q-section-title" style="margin-top: 1.75rem;">Sección C — Tu disponibilidad como Coach</h3>
+                <p class="q-section-desc">El programa requiere tu acompañamiento. Responde con sinceridad.</p>
+
+                <div class="q-item avail-item">
+                    <span class="avail-question">¿Puedes estar presente físicamente con tu familiar
+                        al menos una vez por semana?</span>
+                    <div class="avail-toggle">
+                        <input type="radio" name="c1" id="c1-si" value="si">
+                        <label for="c1-si">Sí</label>
+                        <input type="radio" name="c1" id="c1-no" value="no">
+                        <label for="c1-no">No</label>
+                    </div>
+                </div>
+
+                <div class="q-item avail-item">
+                    <span class="avail-question">¿Puedes dedicar entre 30 y 45 minutos los fines
+                        de semana para la sesión práctica?</span>
+                    <div class="avail-toggle">
+                        <input type="radio" name="c2" id="c2-si" value="si">
+                        <label for="c2-si">Sí</label>
+                        <input type="radio" name="c2" id="c2-no" value="no">
+                        <label for="c2-no">No</label>
+                    </div>
+                </div>
+
+                <div class="q-item avail-item">
+                    <span class="avail-question">¿Tienes acceso a un celular o computadora para
+                        recibir las instrucciones diarias?</span>
+                    <div class="avail-toggle">
+                        <input type="radio" name="c3" id="c3-si" value="si">
+                        <label for="c3-si">Sí</label>
+                        <input type="radio" name="c3" id="c3-no" value="no">
+                        <label for="c3-no">No</label>
+                    </div>
+                </div>
+
+                <span class="error-msg" id="err-step2" style="margin-top:0.75rem;"></span>
+
+                <button class="btn-next" id="btn-step2-next" style="margin-top:1.5rem;">Evaluar y continuar →</button>
+            </div>
+
+            <!-- ===== RUTA ROJA ===== -->
+            <div class="step-panel" id="panel-ruta-roja">
+                <div class="route-screen route-red">
+                    <span class="route-icon">❤️</span>
+                    <h3>Este no es el momento indicado</h3>
+                    <p>Gracias por tu honestidad. Con base en tus respuestas, parece que tu familiar está atravesando
+                        una situación de salud activa que requiere atención médica directa primero.</p>
+                    <p>miplan.pro está diseñado para ser un complemento al cuidado médico, no un sustituto. En este
+                        momento, lo más valioso que puedes hacer es acompañar a tu familiar con su equipo médico.</p>
+                    <p style="font-size:0.88rem; background: rgba(0,0,0,0.04); padding: 1rem; border-radius: 10px; text-align:left;">
+                        <strong style="color: #c0392b;">¿Qué puedes hacer ahora?</strong><br>
+                        Comparte este programa con el médico tratante de tu familiar y pregúntale si podría ser
+                        un complemento a su tratamiento en el futuro. Muchos médicos lo valoran positivamente
+                        cuando llega el momento correcto.
+                    </p>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">
+                        Guarda este enlace. Cuando las condiciones cambien, estaremos aquí.
+                    </p>
+                    <a href="index.html" class="btn-secondary-action" style="margin-top:1.5rem;">← Volver al inicio</a>
+                </div>
+            </div>
+
+            <!-- ===== PASO 3: Términos ===== -->
+            <div class="step-panel" id="panel-step3">
+                <button class="btn-back" id="back-to-step2">← Regresar</button>
+                <h2 class="step-title">Paso 3: Aviso Legal</h2>
+                <p class="step-subtitle">Lee con atención. Tu aceptación es necesaria para continuar.</p>
+
+                <!-- Aviso ruta amarilla (se muestra si aplica) -->
+                <div class="route-yellow" id="aviso-amarillo" style="display:none;">
+                    <p><strong>⚠️ Recomendación antes de comenzar</strong>
+                        Tu familiar tiene condiciones de salud controladas. Eso no impide participar, pero
+                        te recomendamos informar a su médico tratante antes de iniciar el programa.</p>
+                </div>
+
+                <!-- Carta médica (colapsable, solo ruta amarilla) -->
+                <details class="carta-panel" id="carta-panel" style="display:none;">
+                    <summary>📄 Generar Carta de Referencia para el Médico</summary>
+                    <div class="carta-content" id="carta-content">
+                        <h4>Estimado/a Doctor/a:</h4>
+                        <p>Le escribimos desde <strong>miplan.pro</strong>, un programa de acompañamiento familiar para
+                            el movimiento activo en adultos mayores. Un familiar de su paciente ha iniciado el proceso
+                            de registro en nuestro programa.</p>
+                        <h4>¿Qué es miplan.pro?</h4>
+                        <p>Es un programa de movimiento progresivo de bajo impacto, guiado por un familiar-coach,
+                            basado en el Método LiFE y protocolos internacionales de ejercicio multicomponente para
+                            adultos mayores. <strong>No diagnostica, no prescribe y no sustituye la atención médica.</strong></p>
+                        <h4>Tipo de actividades</h4>
+                        <p>Ejercicios de fuerza funcional (levantarse de la silla, subir escalones), equilibrio
+                            progresivo (marcha en tándem, apoyo monopodal asistido) y coordinación cognitivo-motora
+                            (cognicise). Todos de bajo impacto, en el hogar, sin equipamiento especial.</p>
+                        <h4>Condiciones reportadas por el familiar-coach</h4>
+                        <p id="carta-condiciones-texto" style="font-style:italic; color: #856404;"></p>
+                        <h4>Nuestra consulta</h4>
+                        <p>¿Considera usted que su paciente puede participar en este tipo de programa de
+                            acompañamiento de movimiento activo?</p>
+                        <p style="font-size:0.78rem; color:#999; margin-top:0.75rem;">
+                            Para consultas: correo@miplan.pro · miplan.pro
+                        </p>
+                        <button class="btn-print-carta" onclick="window.print()">🖨️ Imprimir carta</button>
+                    </div>
+                </details>
+
+                <!-- Aviso de No Sustitución Médica -->
+                <div class="legal-box">
+                    <h5>Aviso de No Sustitución Médica</h5>
+                    <p>miplan.pro es un programa de acompañamiento familiar para el movimiento activo. <strong>No es
+                        un servicio de salud, no ejerce la medicina, no realiza diagnósticos clínicos, no prescribe
+                        medicamentos ni tratamientos,</strong> y no sustituye en ningún caso la atención de un médico,
+                        fisioterapeuta u otro profesional de la salud legalmente habilitado.</p>
+                    <p>El contenido del programa tiene un propósito educativo y motivacional. Las instrucciones de
+                        actividad física incluidas han sido diseñadas con referencia a protocolos internacionales de
+                        ejercicio multicomponente para adultos mayores, pero su aplicación debe realizarse con criterio
+                        y responsabilidad por parte del Coach.</p>
+                    <p>miplan.pro recomienda expresamente que el Coach informe al médico tratante sobre la participación
+                        en el programa antes de iniciar. Ante cualquier síntoma nuevo o duda médica, la primera acción
+                        debe ser siempre consultar a un profesional de la salud.</p>
+                    <h5>Protección de Datos Personales</h5>
+                    <p>miplan.pro recaba y protege tus datos personales conforme a la Ley Federal de Protección de Datos
+                        Personales en Posesión de los Particulares (LFPDPPP). Los datos se usan exclusivamente para la
+                        prestación del servicio. No se comparten ni venden a terceros.</p>
+                    <h5>Garantía y Participación Beta</h5>
+                    <p>Como participante del programa beta, accedes de forma gratuita y completa a cambio de proporcionar
+                        retroalimentación honesta al finalizar las 4 semanas. Al aceptar, te comprometes a realizar los
+                        check-ins diarios y responder la encuesta de cierre.</p>
+                </div>
+
+                <label class="legal-accept" id="legal-accept-label">
+                    <input type="checkbox" id="acepto-terminos" name="acepto_terminos">
+                    <span>
+                        <strong>He leído y acepto las condiciones</strong>
+                        Confirmo que he respondido el cuestionario con honestidad y que comprendo que miplan.pro
+                        no sustituye la atención médica profesional.
+                    </span>
+                </label>
+
+                <span class="error-msg" id="err-legal">Debes aceptar las condiciones para continuar.</span>
+
+                <!-- Hidden fields (Formspree) -->
+                <input type="hidden" id="hidden-condiciones-b" name="Condiciones controladas (Sección B)">
+                <input type="hidden" id="hidden-ruta" name="Ruta de derivación">
+                <input type="hidden" id="hidden-a1" name="A1 - ¿Cirugía o fractura reciente (< 3 meses)?">
+                <input type="hidden" id="hidden-a2" name="A2 - ¿Evento cardiovascular reciente (< 6 meses)?">
+                <input type="hidden" id="hidden-a3" name="A3 - ¿Dolor articular intenso sin diagnóstico?">
+                <input type="hidden" id="hidden-a4" name="A4 - ¿Indicación médica de reposo?">
+                <input type="hidden" id="hidden-a5" name="A5 - ¿Enfermedad avanzada con supervisión constante?">
+                <input type="hidden" id="hidden-c1" name="C1 - ¿Presencia física ≥1 vez/semana?">
+                <input type="hidden" id="hidden-c2" name="C2 - ¿30-45 min disponibles el fin de semana?">
+                <input type="hidden" id="hidden-c3" name="C3 - ¿Acceso a celular o computadora?">
+
+                <button class="btn-submit" id="btn-step3-submit">Completar registro →</button>
+                <p class="form-note">🔒 Tus datos están protegidos y solo se usan para activar tu acceso al programa.</p>
+            </div>
+
+            <!-- ===== PASO 4: Confirmación ===== -->
+            <div class="step-panel" id="panel-step4">
+                <div class="confirm-screen">
+                    <span class="confirm-icon">🎉</span>
+                    <h2>¡Bienvenido al beta de miplan.pro!</h2>
+                    <p class="confirm-subtitle">Tu registro fue recibido. Nos pondremos en contacto contigo por
+                        WhatsApp en las próximas <strong>24–48 horas</strong> para activar tu acceso y darte
+                        los primeros pasos.</p>
+                    <div class="confirm-steps">
+                        <p>¿Qué sigue?</p>
+                        <ol>
+                            <li>Te escribiremos por WhatsApp para confirmar tu registro.</li>
+                            <li>Juntos agendaremos el <strong>Día 0</strong>: la evaluación inicial de tu campeón/a.</li>
+                            <li>Recibirás acceso a la plataforma y las instrucciones de la Semana 1.</li>
+                        </ol>
+                    </div>
+                    <a id="btn-whatsapp-share" href="#" target="_blank" class="btn-whatsapp">
+                        💬 Compartir con otra familia
+                    </a>
+                    <a href="index.html" class="btn-secondary-action">← Volver al inicio</a>
+                </div>
+            </div>
+
+        </div><!-- /form-card -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="registro-footer">
+        <p>© 2026 miplan.pro · <a href="index.html">Inicio</a> · Programa beta de acceso gratuito</p>
+    </footer>
+
+    <script src="js/registro-beta.js"></script>
+</body>
+
+</html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test VIVIFRAIL | miplan.pro</title>
+    <title>Evaluación de Movilidad | miplan.pro</title>
     <meta name="description" content="Descubre el nivel de movilidad de tu familiar con nuestra evaluación interactiva basada en evidencia clínica.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -67,7 +67,7 @@
         <!-- Paso 0: Intro -->
         <div class="step active" id="step-0">
             <div class="step-header">
-                <span class="badge">Evaluación VIVIFRAIL</span>
+                <span class="badge">Evaluación de Movilidad</span>
                 <h1 class="step-title">Descubre su punto de partida ideal</h1>
                 <p class="step-subtitle">Esta prueba (15 min aprox.) nos permite determinar el programa físico más recomendable a la capacidad funcional y riesgo de caídas de la persona mayor.</p>
             </div>
@@ -325,24 +325,62 @@
 
         <!-- Paso 10: Resultados -->
         <div class="step" id="step-10">
-            <div class="result-card glass-card">
-                <h2 class="step-title" style="margin-bottom: 2rem;">Resultados VIVIFRAIL</h2>
-                
-                <h1 id="resultTipo" style="font-size: 5rem; color: var(--primary); margin: 0; line-height: 1;">Tipo -</h1>
-                <div id="levelBadge" class="level-badge" style="font-size: 1.25rem; margin-top: 1rem;">Calculando...</div>
-                
+
+            <!-- Panel: No Apto (SPPB 0-3) -->
+            <div id="noAptoPanel" class="result-card glass-card" style="display: none;">
+                <h2 class="step-title" style="margin-bottom: 1rem;">Tu Resultado</h2>
+
+                <p id="resultScore" style="font-size: 3.5rem; font-weight: 700; color: var(--text-main); margin: 0 0 0.25rem; line-height: 1; font-family: var(--font-body);">— / 12</p>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0 0 1.5rem;">puntos SPPB</p>
+
+                <div style="background: #fff5f5; border: 2px solid #c62828; border-radius: var(--radius-md); padding: 2rem; max-width: 600px; margin: 0 auto 2rem; text-align: left;">
+                    <h3 style="color: #c62828; margin-bottom: 1rem; text-align: center;">El programa no es adecuado en este momento</h3>
+                    <p style="color: var(--text-main); line-height: 1.7; margin-bottom: 1rem;">
+                        El puntaje de su familiar indica limitaciones de movilidad significativas que requieren atención médica especializada antes de iniciar un programa de ejercicio en casa.
+                    </p>
+                    <p style="color: var(--text-main); line-height: 1.7; margin-bottom: 1.5rem;">
+                        <strong>Le recomendamos:</strong>
+                    </p>
+                    <ul style="color: var(--text-main); line-height: 1.8; margin-left: 1.5rem; margin-bottom: 1.5rem;">
+                        <li>Consultar con un <strong>geriatra o fisioterapeuta</strong> para una evaluación profesional.</li>
+                        <li>Seguir un programa de <strong>rehabilitación supervisada</strong> antes de ejercitarse en casa.</li>
+                        <li>Volver a realizar esta evaluación cuando el profesional médico lo autorice.</li>
+                    </ul>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6;">
+                        Esto no es un diagnóstico — es una guía para proteger a su familiar. Con la atención adecuada, es posible mejorar la movilidad y volver a evaluar en el futuro.
+                    </p>
+                </div>
+
+                <button class="btn btn-outline" onclick="SPPB.restart()" style="max-width: 400px; width: 100%;">Volver a hacer el test</button>
+            </div>
+
+            <!-- Panel: Resultado Normal (SPPB 4-12) -->
+            <div id="resultPanel" class="result-card glass-card">
+                <h2 class="step-title" style="margin-bottom: 1rem;">Tu Resultado</h2>
+
+                <p id="resultScoreNormal" style="font-size: 3.5rem; font-weight: 700; color: var(--text-main); margin: 0 0 0.25rem; line-height: 1; font-family: var(--font-body);">— / 12</p>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0 0 1.5rem;">puntos SPPB</p>
+
+                <h1 id="resultTipo" style="font-size: 2.25rem; font-weight: 700; color: var(--primary); margin: 0 0 0.75rem; line-height: 1.2;">—</h1>
+                <div id="levelBadge" class="level-badge" style="font-size: 1.1rem; margin-top: 0.5rem; margin-bottom: 1.25rem;">Calculando...</div>
+
                 <div id="riskWarning" style="color: #d32f2f; font-weight: bold; margin-bottom: 1rem; display: none;">⚠️ Se detectó Alto Riesgo de Caídas</div>
 
                 <p id="resultDesc" style="color: var(--text-muted); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6;">
                     --
                 </p>
-                
+
                 <div style="background: var(--bg-surface); padding: 1.5rem; border-radius: var(--radius-md); text-align: left; max-width: 600px; margin: 0 auto 2rem; border: 1px solid var(--primary-light);">
                     <h4 style="color: var(--primary); margin-bottom: 0.5rem;">Prescripción para el Coach:</h4>
                     <p id="resultPlan">miplan.pro adaptará los ejercicios diarios específicamente para este nivel.</p>
                 </div>
-                
-                <a href="index.html#comenzar" class="btn btn-primary btn-large cta-btn" style="width: 100%; max-width: 400px; margin-bottom: 1rem;">Adquirir Mi Caja de Arranque</a>
+
+                <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.75rem; max-width: 500px; margin-left: auto; margin-right: auto;">
+                    Ya tienes el nivel de tu familiar. El siguiente paso es registrarte al programa beta
+                    (gratuito) y en 24–48 horas te enviamos la rutina exacta para su nivel.
+                </p>
+                <a href="protocolo-emergencia.html" style="font-size: 0.85rem; color: #c62828; display: block; margin-bottom: 1.25rem;">⚠️ Lee el Protocolo de Seguridad antes de iniciar</a>
+                <a href="registro-beta.html" class="btn btn-primary btn-large cta-btn" style="width: 100%; max-width: 400px; margin-bottom: 1rem;">Comenzar el programa con este nivel →</a>
                 <br>
                 <button class="btn btn-link" onclick="SPPB.restart()">Volver a hacer el test</button>
             </div>

@@ -1,5 +1,5 @@
 /**
- * VIVIFRAIL Wizard Logic - miplan.pro Program
+ * Evaluación de Movilidad — miplan.pro
  */
 
 const SPPB = (() => {
@@ -7,7 +7,7 @@ const SPPB = (() => {
     let currentStep = 0;
     const totalSteps = 10;
     
-    // Scores for VIVIFRAIL
+    // Scores
     const scores = {
         eq1: null,
         eq2: null,
@@ -54,14 +54,13 @@ const SPPB = (() => {
         // Stop any running timer
         clearTimer();
 
-        // Special condition for VIVIFRAIL Equilibrio:
-        // Si puntúa 0 en eq1, pasa directo a prueba 2 (gait4m, Step 4)
+        // Si puntúa 0 en eq1, pasa directo a velocidad de marcha (Step 4)
         if (currentStep === 1 && scores.eq1 === 0) {
             currentStep = 4;
             updateView();
             return;
         }
-        // Si puntúa 0 en eq2, pasa directo a prueba 2 (gait4m, Step 4)
+        // Si puntúa 0 en eq2, pasa directo a velocidad de marcha (Step 4)
         if (currentStep === 2 && scores.eq2 === 0) {
             currentStep = 4;
             updateView();
@@ -236,43 +235,76 @@ const SPPB = (() => {
         // Fall Risk
         const riskOfFalls = (scores.fall1 === 1) || (scores.fall2 === 1) || (scores.fall3 === 1) || (scores.fall4 === 1);
 
-        // Determine Type
-        let typeLetter = 'A';
+        // Determinar nivel — sistema miplan.pro
+        // SPPB 0–3  → NO APTO (ruta roja — requiere atención médica)
+        // SPPB 4–6  → Cyan · Fragilidad
+        // SPPB 7–9  → Azul · Pre-fragilidad
+        // SPPB 10–12 → Magenta · Robustez
+        // Excepción: Magenta + riesgo de caídas → reclasifica a Azul+
+        let levelKey  = '';
+        let levelName = '';
         let badgeColor = '';
-        let badgeText = '';
+        let isNotEligible = false;
 
-        if (sppb >= 0 && sppb <= 3) {
-            typeLetter = 'A';
-            badgeColor = '#c62828'; // red
-            badgeText = 'Persona con discapacidad';
-        } else if (sppb >= 4 && sppb <= 6) {
-            typeLetter = 'B';
-            badgeColor = '#f57f17'; // orange
-            badgeText = 'Persona con fragilidad';
-        } else if (sppb >= 7 && sppb <= 9) {
-            typeLetter = 'C';
-            badgeColor = '#2e7d32'; // green
-            badgeText = 'Persona con pre-fragilidad';
-        } else if (sppb >= 10 && sppb <= 12) {
-            typeLetter = 'D';
-            badgeColor = '#1565c0'; // blue
-            badgeText = 'Persona robusta';
+        if (sppb <= 3) {
+            levelKey   = 'no-apto';
+            levelName  = 'No apto para el programa';
+            badgeColor = '#c62828';
+            isNotEligible = true;
+        } else if (sppb <= 6) {
+            levelKey   = 'cyan';
+            levelName  = 'Cyan · Fragilidad';
+            badgeColor = '#00BCD4';
+        } else if (sppb <= 9) {
+            levelKey   = 'azul';
+            levelName  = 'Azul · Pre-fragilidad';
+            badgeColor = '#1976D2';
+        } else {
+            levelKey   = 'magenta';
+            levelName  = 'Magenta · Robustez';
+            badgeColor = '#AB47BC';
         }
 
-        // Apply risk
+        // Corrección 6: Magenta con riesgo de caídas → reclasificar a Azul+
         let isPlus = false;
-        if ((typeLetter === 'B' || typeLetter === 'C') && riskOfFalls) {
-            typeLetter += '+';
+        if (levelKey === 'magenta' && riskOfFalls) {
+            levelKey   = 'azul';
+            levelName  = 'Azul · Pre-fragilidad+';
+            badgeColor = '#1976D2';
+            isPlus = true;
+        } else if ((levelKey === 'cyan' || levelKey === 'azul') && riskOfFalls) {
+            levelName += '+';
             isPlus = true;
         }
 
-        // DOM Update
-        document.getElementById('resultTipo').innerText = `Tipo ${typeLetter}`;
+        // --- DOM Update ---
+        // Actualizar puntaje en ambos paneles
+        const scoreEl = document.getElementById('resultScore');
+        const scoreNormalEl = document.getElementById('resultScoreNormal');
+        if (scoreEl) scoreEl.innerText = `${sppb} / 12`;
+        if (scoreNormalEl) scoreNormalEl.innerText = `${sppb} / 12`;
+
+        const resultPanel = document.getElementById('resultPanel');
+        const noAptoPanel = document.getElementById('noAptoPanel');
+
+        // Corrección 1: SPPB 0-3 muestra pantalla de no aptitud
+        if (isNotEligible) {
+            if (resultPanel) resultPanel.style.display = 'none';
+            if (noAptoPanel) noAptoPanel.style.display = 'block';
+            return;
+        }
+
+        // Resultado normal (SPPB 4-12)
+        if (resultPanel) resultPanel.style.display = 'block';
+        if (noAptoPanel) noAptoPanel.style.display = 'none';
+
+        document.getElementById('resultTipo').innerText = levelName;
         document.getElementById('resultTipo').style.color = badgeColor;
-        
+
         const badgeEl = document.getElementById('levelBadge');
-        badgeEl.innerText = badgeText;
+        badgeEl.innerText = levelName;
         badgeEl.style.backgroundColor = badgeColor;
+        badgeEl.style.color = 'white';
 
         const warningEl = document.getElementById('riskWarning');
         warningEl.style.display = riskOfFalls ? 'block' : 'none';
@@ -280,21 +312,23 @@ const SPPB = (() => {
         const descEl = document.getElementById('resultDesc');
         const planEl = document.getElementById('resultPlan');
 
-        // Text generation based on Protocol Pages 21-25
-        if (typeLetter === 'A') {
-            descEl.innerText = 'Tipo A corresponde con una persona mayor que no se puede levantar de la silla o encamada. Hazle saber que realizando el programa quizá pueda volver a levantarse o, al menos, ganar en seguridad y autonomía.';
-            planEl.innerHTML = 'El programa tiene una duración de <strong>12 semanas</strong> (30-45 min al día). El ejercicio de caminar sólo se iniciará cuando la persona haya mejorado su fuerza muscular.';
-        } else if (typeLetter.startsWith('B')) {
-            descEl.innerText = 'El tipo B (Frágil) se refiere a aquellas personas que marchan con dificultad o con ayuda. Quizá pueda volver a caminar sin ayuda o al menos ganar autonomía y equilibrio.';
-            planEl.innerHTML = `Duración de <strong>12 semanas</strong> (45-60 min al día). <br><br><strong>Prueba de botella:</strong> Llena 2 botellas de agua de 500ml. Comprueba si es capaz de hacer 30 repeticiones. Ajusta el agua hasta que se note cierto esfuerzo, y revisa el peso tras 6 semanas.`;
-            if(isPlus) planEl.innerHTML += `<br><br><em>Atención a recomendaciones médicas por Riesgo de Caídas.</em>`;
-        } else if (typeLetter.startsWith('C')) {
-            descEl.innerText = 'El tipo C (Pre-frágil) indica ligeras dificultades cuando caminan y tienen ciertas dificultades para levantarse o con el equilibrio. Es muy importante que realice ejercicio físico para seguir disfrutando de los paseos.';
-            planEl.innerHTML = `Duración de <strong>12 semanas</strong> (45-60 min al día). <br><br><strong>Prueba de botella:</strong> Debes calibrar peso usando botellas de 500ml hasta lograr unas 30 repeticiones con esfuerzo moderado.`;
-            if(isPlus) planEl.innerHTML += `<br><br><em>Atención a recomendaciones médicas por Riesgo de Caídas.</em>`;
-        } else if (typeLetter === 'D') {
-            descEl.innerText = 'El tipo D (Robusto) se refiere a aquellas personas que tienen limitaciones físicas mínimas o sin limitación. Es muy importante que realice ejercicio físico para que sea capaz de conservar su autonomía por muchos años.';
-            planEl.innerHTML = 'Duración de <strong>12 semanas</strong> (45-60 min al día). Se recomienda calibrar su peso con botellas de 500ml (o más) para ejercicios de fuerza.';
+        // Descripciones y prescripciones por nivel
+        if (levelKey === 'cyan') {
+            descEl.innerText = 'Su familiar presenta limitaciones de movilidad que requieren atención especial. miplan.pro tiene ejercicios específicamente diseñados para este punto de partida — avanzar es posible, semana a semana.';
+            planEl.innerHTML = 'Programa de <strong>12 semanas · 30–45 min diarios</strong> · Ejercicios del nivel Cyan adaptados para construir fuerza y confianza desde la base.';
+            if (isPlus) planEl.innerHTML += '<br><br><em>⚠️ Considera informar al médico tratante sobre el riesgo de caídas detectado antes de iniciar.</em>';
+        } else if (levelKey === 'azul') {
+            if (isPlus && sppb >= 10) {
+                // Magenta reclasificado a Azul+ por riesgo de caídas
+                descEl.innerText = 'Aunque su puntaje físico es alto, el historial de caídas indica que necesita el track de Pre-fragilidad con atención especial al equilibrio y prevención de caídas.';
+            } else {
+                descEl.innerText = 'Su familiar muestra algunas dificultades al caminar o al levantarse. El programa lo llevará paso a paso hacia una movilidad más independiente y segura.';
+            }
+            planEl.innerHTML = 'Programa de <strong>12 semanas · 45–60 min diarios</strong> · Ejercicios del nivel Azul con progresión gradual en fuerza y equilibrio.<br><br><strong>Prueba de botella:</strong> Llena 2 botellas de 500 ml. Ajusta el agua hasta que 30 repeticiones requieran esfuerzo moderado. Revisa el peso tras 6 semanas.';
+            if (isPlus) planEl.innerHTML += '<br><br><em>⚠️ Considera informar al médico tratante sobre el riesgo de caídas detectado antes de iniciar.</em>';
+        } else {
+            descEl.innerText = 'Su familiar tiene una base física sólida. El programa la/lo mantendrá activo/a y le añadirá fuerza, equilibrio y resistencia para conservar esa independencia por muchos años.';
+            planEl.innerHTML = 'Programa de <strong>12 semanas · 45–60 min diarios</strong> · Ejercicios del nivel Magenta para mantener y superar el nivel actual.<br><br><strong>Prueba de botella:</strong> Calibra el peso (500 ml o más) hasta que 30 repeticiones requieran esfuerzo real. Revisa el peso tras 6 semanas.';
         }
     };
 

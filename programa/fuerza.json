@@ -56,9 +56,9 @@
   },
   "63671febfc878824d5f5d6afeb558c12": {
     "phase": "2. Rei-ho Modificado (Potencia Suave)",
-    "details": "Levantarse de la silla: Sube en 2 segundos (rápido y explosivo, exhalando fuerte). Pausa un segundo de pie. Baja en 5 segundos (lento y controlado). 8 repeticiones.",
-    "instructions": "1. Siéntate en la silla, brazos cruzados. 2. Inhala y, al exhalar fuertemente, impúlsate hacia arriba lo más rápido posible, logrando ponerte de pie en 1 o 2 segundos. 3. Quédate totalmente derecho por 1 segundo. 4. Baja a sentarte tomando tus 5 segundos reglamentarios. 5. Repite 8 veces.",
-    "easier": "Permite el uso de los reposabrazos para el primer empuje hacia arriba. El impulso con los brazos debe ser mínimo: solo para iniciar el movimiento, no para cargar el peso de la subida.",
+    "details": "Levantarse de la silla: Sube en 2 segundos (rápido, exhalando fuerte). Pausa 2 segundos de pie para estabilizarte. Baja en 5 segundos (lento y controlado). 8 repeticiones. ⚠️ PARE si siente mareo, dolor de pecho, visión borrosa o palpitaciones.",
+    "instructions": "1. Siéntate en la silla, brazos cruzados. 2. Inhala y, al exhalar fuertemente, impúlsate hacia arriba en 2 segundos. 3. Quédate totalmente derecho por 2 segundos — permite que tu cuerpo se estabilice. Si sientes mareo, siéntate inmediatamente. 4. Baja a sentarte tomando tus 5 segundos reglamentarios. 5. Repite 8 veces.",
+    "easier": "NIVEL CYAN: Levantamiento Controlado — sube en 3 segundos (NO explosivo), pausa de 2 segundos de pie, baja en 5 segundos. Permite el uso de los reposabrazos. 5 repeticiones. Si siente mareo al ponerse de pie, siéntese inmediatamente.",
     "harder": "Sostén un objeto ligero (como un libro grueso o una botella de agua pequeña) abrazado contra tu pecho mientras te levantas rápido y bajas lento.",
     "image": "",
     "trimp": 9,
@@ -122,7 +122,7 @@
   },
   "175f09a56ef8112aa36620429c486410": {
     "phase": "2. Rei-ho de Potencia (Sit-to-stand)",
-    "details": "Sentado en la silla. Exhala y ponte de pie de forma EXPLOSIVA (1 segundo). Pausa arriba 1 segundo. Siéntate muy lentamente en 3 segundos. Repite 8 veces.",
+    "details": "Sentado en la silla. Exhala y ponte de pie con fuerza (1-2 segundos). Pausa arriba 2 segundos para estabilizarte. Siéntate muy lentamente en 3 segundos. Repite 8 veces. ⚠️ PARE si siente mareo, dolor de pecho, visión borrosa o palpitaciones.",
     "image": "",
     "trimp": 9,
     "trimpEasier": 5,

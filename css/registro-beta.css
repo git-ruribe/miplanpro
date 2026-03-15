@@ -1,0 +1,872 @@
+/* ==========================================================================
+   Registro Beta — miplan.pro
+   Extends css/style.css variables
+   ========================================================================== */
+
+/* Layout */
+.registro-page {
+    min-height: 100vh;
+    background: var(--bg-base);
+    display: flex;
+    flex-direction: column;
+}
+
+.registro-header {
+    background: var(--bg-surface);
+    border-bottom: 1px solid rgba(42, 77, 80, 0.1);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.registro-header .logo a {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--secondary);
+}
+
+.registro-header .logo span {
+    color: var(--primary);
+}
+
+/* ---- Progress Bar ---- */
+.progress-bar-wrap {
+    background: var(--bg-surface);
+    padding: 1rem 0 0;
+    border-bottom: 1px solid rgba(42, 77, 80, 0.08);
+}
+
+.progress-steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 0 1.5rem 1rem;
+}
+
+.progress-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.35rem;
+    flex: 1;
+    position: relative;
+}
+
+.progress-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    background: var(--border, #e5e7eb);
+    z-index: 0;
+    transition: background var(--transition-base);
+}
+
+.progress-step.completed:not(:last-child)::after {
+    background: var(--primary);
+}
+
+.step-dot {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #e5e7eb;
+    background: var(--bg-surface);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #aaa;
+    position: relative;
+    z-index: 1;
+    transition: all var(--transition-base);
+}
+
+.progress-step.active .step-dot {
+    border-color: var(--primary);
+    background: var(--primary);
+    color: white;
+}
+
+.progress-step.completed .step-dot {
+    border-color: var(--primary);
+    background: var(--primary);
+    color: white;
+}
+
+.progress-step.completed .step-dot::after {
+    content: '✓';
+    font-size: 0.75rem;
+}
+
+.progress-step.completed .step-dot span {
+    display: none;
+}
+
+.step-label {
+    font-size: 0.7rem;
+    color: #aaa;
+    text-align: center;
+    font-family: var(--font-body);
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.progress-step.active .step-label {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.progress-step.completed .step-label {
+    color: var(--secondary);
+}
+
+/* ---- Main Container ---- */
+.registro-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 1.5rem 4rem;
+}
+
+.form-card {
+    background: var(--bg-surface);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 580px;
+    animation: fadeUp 0.35s ease both;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ---- Step Panels ---- */
+.step-panel {
+    display: none;
+}
+
+.step-panel.active {
+    display: block;
+    animation: fadeUp 0.3s ease both;
+}
+
+/* ---- Intro Panel ---- */
+.intro-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.intro-badge {
+    display: inline-block;
+    background: rgba(217, 119, 87, 0.1);
+    color: var(--primary);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.8rem;
+    border-radius: var(--radius-full);
+    margin-bottom: 1rem;
+}
+
+.intro-title {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    color: var(--secondary);
+    margin-bottom: 0.75rem;
+    line-height: 1.2;
+}
+
+.intro-subtitle {
+    color: var(--text-muted);
+    line-height: 1.65;
+    margin-bottom: 1.5rem;
+}
+
+.intro-commitment {
+    background: rgba(42, 77, 80, 0.05);
+    border-left: 3px solid var(--secondary);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.75rem;
+}
+
+.intro-commitment p {
+    font-size: 0.9rem;
+    color: var(--secondary);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.intro-commitment strong {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+/* ---- Form Fields ---- */
+.step-title {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    color: var(--secondary);
+    margin-bottom: 0.4rem;
+}
+
+.step-subtitle {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 1.75rem;
+    line-height: 1.5;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--secondary);
+    margin-bottom: 0.4rem;
+}
+
+.form-group .label-hint {
+    font-weight: 400;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    margin-left: 0.3rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border: 1.5px solid #e0e0e0;
+    border-radius: var(--radius-md);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    color: var(--text-main);
+    background: var(--bg-base);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(217, 119, 87, 0.15);
+}
+
+.form-group input.error,
+.form-group select.error {
+    border-color: #e53e3e;
+    box-shadow: 0 0 0 3px rgba(229, 62, 62, 0.1);
+}
+
+.error-msg {
+    font-size: 0.78rem;
+    color: #e53e3e;
+    margin-top: 0.3rem;
+    display: none;
+}
+
+.error-msg.visible {
+    display: block;
+}
+
+.form-divider {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+}
+
+.form-divider::before,
+.form-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #e5e7eb;
+}
+
+.form-divider span {
+    color: var(--secondary);
+    font-weight: 600;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* ---- Section Titles (within questionnaire) ---- */
+.q-section-title {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    color: var(--secondary);
+    margin: 1.5rem 0 0.35rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 1.5px solid rgba(42, 77, 80, 0.12);
+}
+
+.q-section-desc {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+/* ---- Yes/No Radio Buttons ---- */
+.radio-group {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.radio-option {
+    flex: 1;
+    cursor: pointer;
+}
+
+.radio-option input[type="radio"] {
+    display: none;
+}
+
+.radio-option .radio-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 0.6rem 1rem;
+    border: 1.5px solid #e0e0e0;
+    border-radius: var(--radius-md);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    background: var(--bg-base);
+    transition: all var(--transition-fast);
+    text-align: center;
+}
+
+.radio-option input[type="radio"]:checked + .radio-label {
+    border-color: var(--primary);
+    background: rgba(217, 119, 87, 0.08);
+    color: var(--primary);
+}
+
+.radio-option.no-option input[type="radio"]:checked + .radio-label {
+    border-color: var(--secondary);
+    background: rgba(42, 77, 80, 0.07);
+    color: var(--secondary);
+}
+
+/* ---- Question Items ---- */
+.q-item {
+    padding: 0.85rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.q-item:last-child {
+    border-bottom: none;
+}
+
+.q-item-label {
+    font-size: 0.9rem;
+    color: var(--text-main);
+    margin-bottom: 0.6rem;
+    line-height: 1.45;
+}
+
+/* ---- Checkboxes ---- */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-top: 0.25rem;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    cursor: pointer;
+}
+
+.checkbox-item input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    accent-color: var(--primary);
+    flex-shrink: 0;
+}
+
+.checkbox-item span {
+    font-size: 0.88rem;
+    color: var(--text-main);
+    line-height: 1.4;
+}
+
+/* ---- Availability Section (C) ---- */
+.avail-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.avail-item:last-child {
+    border-bottom: none;
+}
+
+.avail-question {
+    flex: 1;
+    font-size: 0.9rem;
+    color: var(--text-main);
+    line-height: 1.45;
+    padding-top: 0.2rem;
+}
+
+.avail-toggle {
+    display: flex;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.avail-toggle label {
+    padding: 0.4rem 0.85rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: all var(--transition-fast);
+}
+
+.avail-toggle input[type="radio"] {
+    display: none;
+}
+
+.avail-toggle input[type="radio"]:checked + label {
+    background: var(--secondary);
+    color: white;
+}
+
+.avail-toggle label:first-of-type {
+    border-right: 1px solid #e0e0e0;
+}
+
+/* ---- Legal Section ---- */
+.legal-box {
+    background: var(--bg-base);
+    border: 1px solid rgba(42, 77, 80, 0.15);
+    border-radius: var(--radius-md);
+    padding: 1.25rem 1.5rem;
+    max-height: 220px;
+    overflow-y: auto;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    line-height: 1.65;
+    margin-bottom: 1.25rem;
+}
+
+.legal-box h5 {
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    color: var(--secondary);
+    margin-bottom: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.legal-box h5:first-child {
+    margin-top: 0;
+}
+
+.legal-accept {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1rem 1.25rem;
+    background: rgba(42, 77, 80, 0.05);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    margin-bottom: 1.25rem;
+    border: 1.5px solid transparent;
+    transition: border-color var(--transition-fast);
+}
+
+.legal-accept:hover {
+    border-color: var(--secondary);
+}
+
+.legal-accept input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    accent-color: var(--secondary);
+    cursor: pointer;
+}
+
+.legal-accept span {
+    font-size: 0.88rem;
+    color: var(--secondary);
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.legal-accept span strong {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 0.15rem;
+}
+
+/* ---- Route Screens ---- */
+.route-screen {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.route-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.route-screen h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--secondary);
+    margin-bottom: 0.75rem;
+}
+
+.route-screen p {
+    color: var(--text-muted);
+    line-height: 1.65;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.route-red .route-icon { color: #e05c5c; }
+.route-red h3 { color: #c0392b; }
+
+.route-yellow {
+    background: rgba(212, 175, 55, 0.08);
+    border: 1.5px solid rgba(212, 175, 55, 0.3);
+    border-radius: var(--radius-md);
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1.25rem;
+    text-align: left;
+}
+
+.route-yellow p {
+    font-size: 0.88rem;
+    color: #856404;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.route-yellow strong {
+    display: block;
+    color: #704d00;
+    margin-bottom: 0.3rem;
+    font-size: 0.88rem;
+}
+
+/* ---- Confirmation Screen ---- */
+.confirm-screen {
+    text-align: center;
+    padding: 1.5rem 0 0.5rem;
+}
+
+.confirm-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.confirm-screen h2 {
+    font-family: var(--font-heading);
+    font-size: 1.7rem;
+    color: var(--secondary);
+    margin-bottom: 0.75rem;
+}
+
+.confirm-screen .confirm-subtitle {
+    color: var(--text-muted);
+    line-height: 1.65;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+.confirm-steps {
+    background: rgba(42, 77, 80, 0.04);
+    border-radius: var(--radius-md);
+    padding: 1.25rem 1.5rem;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.confirm-steps p {
+    font-size: 0.82rem;
+    color: var(--secondary);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.75rem;
+}
+
+.confirm-steps ol {
+    padding-left: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.confirm-steps ol li {
+    font-size: 0.9rem;
+    color: var(--text-main);
+    line-height: 1.45;
+}
+
+/* ---- Buttons ---- */
+.btn-next,
+.btn-submit,
+.btn-start {
+    width: 100%;
+    padding: 0.9rem 1.5rem;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: var(--radius-md);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background var(--transition-fast), transform var(--transition-fast);
+    margin-top: 0.5rem;
+}
+
+.btn-next:hover,
+.btn-submit:hover,
+.btn-start:hover {
+    background: var(--primary-hover);
+    transform: translateY(-1px);
+}
+
+.btn-next:disabled,
+.btn-submit:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.btn-secondary-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+    background: transparent;
+    color: var(--secondary);
+    border: 1.5px solid var(--secondary);
+    border-radius: var(--radius-md);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    text-decoration: none;
+    margin-top: 0.75rem;
+}
+
+.btn-secondary-action:hover {
+    background: var(--secondary);
+    color: white;
+}
+
+.btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 0.85rem 2rem;
+    background: #25D366;
+    color: white;
+    border: none;
+    border-radius: var(--radius-md);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background var(--transition-fast);
+    margin-top: 0.5rem;
+}
+
+.btn-whatsapp:hover {
+    background: #1ebe5d;
+}
+
+.btn-back {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    cursor: pointer;
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-bottom: 1rem;
+    font-family: var(--font-body);
+    transition: color var(--transition-fast);
+}
+
+.btn-back:hover {
+    color: var(--secondary);
+}
+
+/* ---- Carta médica panel ---- */
+.carta-panel {
+    margin-top: 1.25rem;
+    border: 1.5px solid rgba(212, 175, 55, 0.4);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.carta-panel summary {
+    padding: 0.85rem 1.25rem;
+    background: rgba(212, 175, 55, 0.08);
+    cursor: pointer;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--secondary);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.carta-panel summary::-webkit-details-marker { display: none; }
+
+.carta-panel[open] summary {
+    border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+}
+
+.carta-content {
+    padding: 1.25rem;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+.carta-content h4 {
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    color: var(--secondary);
+    margin-bottom: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.carta-content h4:first-child { margin-top: 0; }
+
+.btn-print-carta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.75rem;
+    padding: 0.5rem 1rem;
+    background: var(--secondary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: var(--font-body);
+    transition: background var(--transition-fast);
+}
+
+.btn-print-carta:hover {
+    background: var(--secondary-light);
+}
+
+/* ---- Formspree hidden inputs note ---- */
+.form-note {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-align: center;
+    margin-top: 0.75rem;
+    line-height: 1.5;
+}
+
+/* ---- Footer ---- */
+.registro-footer {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    border-top: 1px solid rgba(42, 77, 80, 0.08);
+}
+
+.registro-footer a {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 640px) {
+    .form-card {
+        padding: 1.75rem 1.25rem;
+        border-radius: var(--radius-md);
+        box-shadow: var(--shadow-sm);
+    }
+
+    .registro-main {
+        padding: 1.5rem 0.75rem 3rem;
+    }
+
+    .intro-title {
+        font-size: 1.5rem;
+    }
+
+    .step-label {
+        display: none;
+    }
+
+    .avail-item {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .avail-toggle {
+        align-self: flex-start;
+    }
+
+    .progress-steps {
+        padding: 0 1rem 1rem;
+    }
+}
