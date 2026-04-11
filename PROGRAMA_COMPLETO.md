@@ -2,7 +2,6 @@
 
 **Fecha de generación:** 2026-03-15
 
-**Para revisión por:** Geriatras y Fisioterapeutas
 
 ---
 

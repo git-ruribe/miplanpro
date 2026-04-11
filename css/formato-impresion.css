@@ -1,0 +1,82 @@
+/* ==========================================================================
+   Estilos para Impresión — miplan.pro
+   Optimizado para Manuales Fisicos y Bitácoras
+   ========================================================================== */
+
+@media print {
+    /* Ocultar elementos web innecesarios */
+    .navbar, .footer, .btn, .hamburger, .mobile-menu, .nav-actions {
+        display: none !important;
+    }
+
+    /* Reset de márgenes y fuentes */
+    body {
+        background: white !important;
+        color: black !important;
+        font-family: 'Inter', sans-serif;
+        font-size: 12pt;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1, h2, h3, h4 {
+        color: #2A4D50 !important; /* Mantener el color corporativo para impresión */
+        font-family: 'Lora', serif;
+        page-break-after: avoid;
+    }
+
+    .container {
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Tablas de bitácora */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #f8f8f8 !important;
+        -webkit-print-color-adjust: exact;
+    }
+
+    /* Evitar que bloques se corten a la mitad en móviles */
+    .pricing-card, .feature-card, .science-card {
+        page-break-inside: avoid;
+        break-inside: avoid;
+        border: 1px solid #eee !important;
+        box-shadow: none !important;
+    }
+
+    /* Forzar saltos de página */
+    .page-break {
+        page-break-before: always;
+    }
+
+    /* Iconos y Checklist */
+    .check {
+        color: #1DA068 !important;
+        -webkit-print-color-adjust: exact;
+    }
+
+    /* Tamaño de letra grande para Campeona */
+    .manual-campeona {
+        font-size: 14pt;
+    }
+
+    /* Estilo de la bitácora física */
+    .tracking-log td {
+        height: 60px; /* Espacio para escribir */
+    }
+}
